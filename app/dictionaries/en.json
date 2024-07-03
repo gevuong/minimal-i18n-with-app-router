@@ -1,0 +1,15 @@
+{
+  "navbarItems": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Our Story",
+      "href": "/our-story"
+    }
+  ],
+  "products": {
+    "cart": "Add to Cart"
+  }
+}

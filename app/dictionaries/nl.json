@@ -1,0 +1,15 @@
+{
+  "navbarItems": [
+    {
+      "label": "Thuis",
+      "href": "/"
+    },
+    {
+      "label": "Ons verhaal",
+      "href": "/our-story"
+    }
+  ],
+  "products": {
+    "cart": "Toevoegen aan Winkelwagen"
+  }
+}
