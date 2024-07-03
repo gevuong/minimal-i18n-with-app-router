@@ -14,7 +14,17 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
+
   basePath: isProd ? '/minimal-i18n-with-app-router' : '',
+  /**
+   * Disable server-based image optimization. Next.js does not support the
+   * Image Optimization API with static exports.
+   *
+   * @see https://nextjs.org/docs/app/api-reference/components/image#unoptimized
+   */
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
