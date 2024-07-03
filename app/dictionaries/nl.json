@@ -9,6 +9,9 @@
       "href": "/our-story"
     }
   ],
+  "ourStory": {
+    "title": "Ons Verhaal"
+  },
   "products": {
     "cart": "Toevoegen aan Winkelwagen"
   }

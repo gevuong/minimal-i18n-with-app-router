@@ -14,7 +14,7 @@ const Navbar = ({
       <ul className="flex p-5">
         {dict.map((item) => (
           <li className="pr-5" key={item.label}>
-            <Link href={`/${lang}/${item.href}`}>{item.label}</Link>
+            <Link href={`/${lang}${item.href}`}>{item.label}</Link>
           </li>
         ))}
       </ul>

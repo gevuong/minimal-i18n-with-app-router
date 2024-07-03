@@ -9,6 +9,9 @@
       "href": "/our-story"
     }
   ],
+  "ourStory": {
+    "title": "Our Story"
+  },
   "products": {
     "cart": "Add to Cart"
   }
