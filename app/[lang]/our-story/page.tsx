@@ -1,5 +1,5 @@
 import { Locale } from '@/i18n-config';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import MaskHeader from '../../assets/mask_header.png';
 import { getDictionary } from '../dictionary';
 
@@ -12,7 +12,7 @@ const OurStoryPage = async ({
   return (
     <div>
       <h1>{dict.ourStory.title}</h1>
-      <Image
+      <ExportedImage
         className="object-cover"
         src={MaskHeader}
         alt=""
