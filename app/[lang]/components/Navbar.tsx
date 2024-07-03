@@ -1,6 +1,7 @@
 import { Locale } from '@/i18n-config';
 import Link from 'next/link';
-import { getDictionary } from './dictionary';
+import { getDictionary } from '../dictionary';
+import LocaleSelect from './LocaleSelect';
 
 const Navbar = ({
   dict,
@@ -17,6 +18,9 @@ const Navbar = ({
             <Link href={`/${lang}${item.href}`}>{item.label}</Link>
           </li>
         ))}
+        <li>
+          <LocaleSelect />
+        </li>
       </ul>
     </nav>
   );

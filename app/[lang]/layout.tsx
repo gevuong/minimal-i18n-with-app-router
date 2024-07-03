@@ -1,9 +1,9 @@
 import { i18n, Locale } from '@/i18n-config';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Navbar from './components/Navbar';
 import { getDictionary } from './dictionary';
 import './globals.css';
-import Navbar from './Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 

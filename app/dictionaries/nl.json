@@ -12,7 +12,16 @@
   "ourStory": {
     "title": "Ons Verhaal"
   },
-  "products": {
-    "cart": "Toevoegen aan Winkelwagen"
+  "homePage": {
+    "t1": "Ga aan de slag met bewerken",
+    "p1": "Door ",
+    "t2": "Documenten ",
+    "p2": "Vind diepgaande informatie over de functies en API van Next.js.",
+    "t3": "Leren ",
+    "p3": "Leer meer over Next.js in een interactieve cursus met quizzen!",
+    "t4": "Sjablonen ",
+    "p4": "Ontdek startersjablonen voor Next.js.",
+    "t5": "Aanwenden ",
+    "p5": "Implementeer uw Next.js-site onmiddellijk op een deelbare URL met Vercel."
   }
 }
