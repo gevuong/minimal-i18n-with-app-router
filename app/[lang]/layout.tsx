@@ -2,7 +2,6 @@ import { i18n, Locale } from '@/i18n-config';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from './components/Navbar';
-import { getDictionary } from './dictionary';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,12 +22,10 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { lang: Locale };
 }>) {
-  const dict = await getDictionary(lang);
-
   return (
     <html lang={lang}>
       <body className={inter.className}>
-        <Navbar lang={lang} dict={dict.navbarItems} />
+        <Navbar lang={lang} />
         {children}
       </body>
     </html>

@@ -3,17 +3,13 @@ import Link from 'next/link';
 import { getDictionary } from '../dictionary';
 import LocaleSelect from './LocaleSelect';
 
-const Navbar = ({
-  dict,
-  lang,
-}: {
-  dict: Awaited<ReturnType<typeof getDictionary>>['navbarItems'];
-  lang: Locale;
-}) => {
+const Navbar = async ({ lang }: { lang: Locale }) => {
+  const { navbar } = await getDictionary(lang);
+
   return (
     <nav>
       <ul className="flex p-5">
-        {dict.map((item) => (
+        {navbar.map((item) => (
           <li className="pr-5" key={item.label}>
             <Link href={`/${lang}${item.href}`}>{item.label}</Link>
           </li>

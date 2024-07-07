@@ -22,7 +22,7 @@ const LocaleSelect = () => {
 
   return (
     <div>
-      <select onChange={handleChange} defaultValue={locale}>
+      <select onChange={handleChange} value={locale}>
         {i18n.locales.map((locale) => (
           <option key={locale} value={locale}>
             {locale.toUpperCase()}
