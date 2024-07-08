@@ -3,13 +3,13 @@ import nextConfig from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { getDictionary } from './dictionary';
 
-export default async function Home({
+export default function Home({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
   const { basePath } = nextConfig;
-  const { home } = await getDictionary(lang);
+  const { home } = getDictionary(lang);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

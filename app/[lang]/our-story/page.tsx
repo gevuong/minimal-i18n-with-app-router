@@ -6,12 +6,12 @@ import { Fragment } from 'react';
 import { getDictionary } from '../dictionary';
 import ValuesCard from './ValuesCard';
 
-export default async function OurStoryPage({
+export default function OurStoryPage({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) {
-  const dict = await getDictionary(lang);
+  const dict = getDictionary(lang);
   const {
     ourStory: { aboutUsSection, storySection, valuesSection, privacySection },
   } = dict;

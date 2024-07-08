@@ -9,6 +9,10 @@ const navbar: NavbarItem[] = [
     label: 'Nuestra historia',
     href: '/our-story',
   },
+  {
+    label: 'Un mundo joven',
+    href: '/one-young-world',
+  },
 ];
 
 export default navbar;

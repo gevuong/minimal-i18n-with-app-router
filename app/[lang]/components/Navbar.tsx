@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { getDictionary } from '../dictionary';
 import LocaleSelect from './LocaleSelect';
 
-const Navbar = async ({ lang }: { lang: Locale }) => {
-  const { navbar } = await getDictionary(lang);
+const Navbar = ({ lang }: { lang: Locale }) => {
+  const { navbar } = getDictionary(lang);
 
   return (
     <nav>
