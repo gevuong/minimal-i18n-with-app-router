@@ -1,4 +1,5 @@
 import { type TeamLeadCard } from '@/app/dictionaries/types/teamLeads';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 
 const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
@@ -8,6 +9,7 @@ const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
         className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
         src={image}
         alt={altText}
+        basePath={basePath}
       />
 
       {/* apply opaque background to dim card */}

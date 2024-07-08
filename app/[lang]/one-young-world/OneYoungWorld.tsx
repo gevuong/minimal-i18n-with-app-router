@@ -1,4 +1,5 @@
 import { type OywSection } from '@/app/dictionaries/types/oneYoungWorld';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import TestimonialSlider from './TestimonialSlider';
@@ -67,6 +68,7 @@ const OneYoungWorld = ({
                     className="my-auto h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
                     src={card.image}
                     alt={card.altText}
+                    basePath={basePath}
                   />
                   <div className="space-y-4">
                     <h3 className="text-lg md:text-xl">{card.title}</h3>

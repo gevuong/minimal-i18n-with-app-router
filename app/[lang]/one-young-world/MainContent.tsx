@@ -3,6 +3,7 @@ import type {
   OywSection,
 } from '@/app/dictionaries/types/oneYoungWorld';
 import { TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { useState } from 'react';
 import Navbar from './Navbar';
@@ -27,6 +28,7 @@ const MainContent = ({ teamLeads, oyw, navbarTexts }: Props) => {
           src={oyw.bgImage}
           alt={oyw.altText}
           priority
+          basePath={basePath}
         />
       )}
 

@@ -1,4 +1,5 @@
 import { type Testimonial } from '@/app/dictionaries/types/oneYoungWorld';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 
 interface Props extends Testimonial {
@@ -32,6 +33,7 @@ const TestimonialCard = ({
             alt={altText}
             width="64"
             height="64"
+            basePath={basePath}
           />
           <div className="text-base">{name}</div>
           <div className="text-sm">{origin}</div>
