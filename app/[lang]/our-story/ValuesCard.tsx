@@ -1,3 +1,4 @@
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { StaticImageData } from 'next/image';
 
@@ -16,7 +17,13 @@ const ValuesCard = ({ title, image, imageText, text }: ValuesCard) => {
         <h3 className="text-lg font-semibold text-[#3686ff] sm:text-2xl">
           {title}
         </h3>
-        <ExportedImage alt={imageText} src={image} width={35} height={35} />
+        <ExportedImage
+          alt={imageText}
+          src={image}
+          width={35}
+          height={35}
+          basePath={basePath}
+        />
       </div>
 
       <p className="mb-4 hidden font-black text-[#3686ff] lg:block">___</p>

@@ -5,11 +5,11 @@ import ExportedImage from 'next-image-export-optimizer';
 import { getDictionary } from '../dictionary';
 import MainContent from './MainContent';
 
-export default function OneYoungWorldPage({
+const OneYoungWorldPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };
-}) {
+}) => {
   const {
     oneYoungWorld: { header, navbarTexts, oyw },
     teamLeads,
@@ -49,4 +49,6 @@ export default function OneYoungWorldPage({
       </div>
     </div>
   );
-}
+};
+
+export default OneYoungWorldPage;

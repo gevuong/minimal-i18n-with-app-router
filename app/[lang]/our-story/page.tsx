@@ -1,20 +1,16 @@
 import { HalfToneDots, MaskHeader } from '@/app/assets/images/ourStory/index';
 import { Locale } from '@/i18n-config';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import { getDictionary } from '../dictionary';
 import ValuesCard from './ValuesCard';
 
-export default function OurStoryPage({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const dict = getDictionary(lang);
+const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     ourStory: { aboutUsSection, storySection, valuesSection, privacySection },
-  } = dict;
+  } = getDictionary(lang);
 
   return (
     <div className="relative">
@@ -26,6 +22,7 @@ export default function OurStoryPage({
             src={MaskHeader}
             alt=""
             priority
+            basePath={basePath}
           />
 
           {/* Text Container */}
@@ -47,6 +44,7 @@ export default function OurStoryPage({
           src={HalfToneDots}
           alt=""
           className="absolute h-full w-full object-cover opacity-40"
+          basePath={basePath}
         />
 
         {/* Story, Values, and Privacy Container */}
@@ -120,34 +118,6 @@ export default function OurStoryPage({
       </div>
     </div>
   );
-}
+};
 
-// import { Locale } from '@/i18n-config';
-// import NextConfig from '@/next.config.mjs';
-// import ExportedImage from 'next-image-export-optimizer';
-// import { getDictionary } from '../dictionary';
-
-// const OurStoryPage = async ({
-//   params: { lang },
-// }: {
-//   params: { lang: Locale };
-// }) => {
-//   const { basePath } = NextConfig;
-//   const dict = await getDictionary(lang);
-
-//   return (
-//     <div>
-//       <h1>{dict.ourStory.title}</h1>
-//       <ExportedImage
-//         className="object-cover"
-//         src={`${basePath}/mask_header.png`}
-//         alt=""
-//         width={1512}
-//         height={997}
-//         priority
-//       />
-//     </div>
-//   );
-// };
-
-// export default OurStoryPage;
+export default OurStoryPage;
