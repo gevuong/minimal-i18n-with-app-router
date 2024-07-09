@@ -13,6 +13,10 @@ const navbar: NavbarItem[] = [
     label: 'Un mundo joven',
     href: '/one-young-world',
   },
+  {
+    label: 'FAQ',
+    href: '/faq',
+  },
 ];
 
 export default navbar;
