@@ -2,7 +2,7 @@ import type {
   OywNavbarTexts,
   OywSection,
 } from '@/app/dictionaries/types/oneYoungWorld';
-import { TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
+import { type TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { useState } from 'react';

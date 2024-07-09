@@ -1,12 +1,12 @@
 'use client';
 
 import type { QA } from '@/app/dictionaries/types/faq';
-import { Locale } from '@/i18n-config';
+import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import debounce from 'lodash.debounce';
 import ExportedImage from 'next-image-export-optimizer';
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { getDictionary } from '../dictionary';
+import { getDictionary } from '../../dictionaries';
 import AccordionItem from './AccordionItem';
 import TopicCard from './TopicCard';
 

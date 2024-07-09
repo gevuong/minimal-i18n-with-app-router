@@ -1,7 +1,7 @@
-import { Locale } from '@/i18n-config';
-import enMetadata from '../dictionaries/en/index';
-import esMetadata from '../dictionaries/es/index';
-import { I18nData } from '../dictionaries/types';
+import { type Locale } from '@/i18n-config';
+import enMetadata from './en/index';
+import esMetadata from './es/index';
+import { type I18nData } from './types';
 
 const dictionaries: Record<Locale, I18nData> = {
   en: enMetadata,

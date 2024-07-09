@@ -19,7 +19,7 @@ import {
   Veronica,
   Yulie,
 } from '@/app/assets/images/oneYoungWorld';
-import { TeamLeadsType } from '../types/teamLeads';
+import { type TeamLeadsType } from '../types/teamLeads';
 
 const teamLeads: TeamLeadsType = {
   title: 'OYW Team Leads',

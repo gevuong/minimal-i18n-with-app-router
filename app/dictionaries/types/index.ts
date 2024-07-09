@@ -1,9 +1,9 @@
-import { FAQ } from './faq';
-import { Home } from './home';
-import { NavbarItem } from './navbar';
-import { OneYoungWorld } from './oneYoungWorld';
-import { OurStory } from './ourStory';
-import { TeamLeadsType } from './teamLeads';
+import { type FAQ } from './faq';
+import { type Home } from './home';
+import { type NavbarItem } from './navbar';
+import { type OneYoungWorld } from './oneYoungWorld';
+import { type OurStory } from './ourStory';
+import { type TeamLeadsType } from './teamLeads';
 
 export interface I18nData {
   faq: FAQ;

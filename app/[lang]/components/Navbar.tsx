@@ -1,6 +1,6 @@
-import { Locale } from '@/i18n-config';
+import { type Locale } from '@/i18n-config';
 import Link from 'next/link';
-import { getDictionary } from '../dictionary';
+import { getDictionary } from '../../dictionaries';
 import LocaleSelect from './LocaleSelect';
 
 const Navbar = ({ lang }: { lang: Locale }) => {

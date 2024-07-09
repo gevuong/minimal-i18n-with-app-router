@@ -1,4 +1,4 @@
-import { I18nData } from '../types';
+import { type I18nData } from '../types';
 import faq from './faq';
 import home from './home';
 import navbar from './navbar';

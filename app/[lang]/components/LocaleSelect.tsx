@@ -1,6 +1,6 @@
 'use client';
 
-import { i18n, Locale } from '@/i18n-config';
+import { i18n, type Locale } from '@/i18n-config';
 import { usePathname, useRouter } from 'next/navigation';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);

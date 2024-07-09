@@ -1,6 +1,6 @@
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import { StaticImageData } from 'next/image';
+import { type StaticImageData } from 'next/image';
 
 export interface ValuesCard {
   title: string;

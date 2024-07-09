@@ -9,7 +9,7 @@ import {
   SebastianTestimonial,
   YouthIcon,
 } from '@/app/assets/images/oneYoungWorld';
-import { OneYoungWorld } from '../types/oneYoungWorld';
+import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {

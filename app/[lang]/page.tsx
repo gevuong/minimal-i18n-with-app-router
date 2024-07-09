@@ -1,7 +1,7 @@
-import { Locale } from '@/i18n-config';
+import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import { getDictionary } from './dictionary';
+import { getDictionary } from '../dictionaries';
 
 const Home = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { home } = getDictionary(lang);

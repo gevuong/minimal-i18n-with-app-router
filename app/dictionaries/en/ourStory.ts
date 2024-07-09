@@ -6,7 +6,7 @@ import {
   RecycleIcon,
   TeamIcon,
 } from '@/app/assets/images/ourStory';
-import { OurStory } from '../types/ourStory';
+import { type OurStory } from '../types/ourStory';
 
 const ourStory: OurStory = {
   aboutUsSection: {

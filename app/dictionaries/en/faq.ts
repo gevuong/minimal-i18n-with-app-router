@@ -8,7 +8,7 @@ import {
   RecycleIcon,
   SearchIcon,
 } from '@/app/assets/images/faq';
-import { FAQ } from '../types/faq';
+import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {

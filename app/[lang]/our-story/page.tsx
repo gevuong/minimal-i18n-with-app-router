@@ -1,10 +1,10 @@
 import { HalfToneDots, MaskHeader } from '@/app/assets/images/ourStory/index';
-import { Locale } from '@/i18n-config';
+import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { getDictionary } from '../dictionary';
+import { getDictionary } from '../../dictionaries';
 import ValuesCard from './ValuesCard';
 
 const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
