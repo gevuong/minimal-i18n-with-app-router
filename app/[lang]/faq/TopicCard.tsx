@@ -1,4 +1,5 @@
 import { type FAQTopicCard } from '@/app/dictionaries/types/faq';
+import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 
 interface Props extends FAQTopicCard {
@@ -34,7 +35,12 @@ const TopicCard = ({
       onClick={handleTopicClick}
       className={`flex cursor-pointer flex-col justify-between space-y-2 rounded-xl px-6 py-4 text-center shadow-lg sm:px-9 ${bgStyle}`}
     >
-      <ExportedImage className="mx-auto" src={img} alt={altText} />
+      <ExportedImage
+        className="mx-auto"
+        src={img}
+        alt={altText}
+        basePath={basePath}
+      />
       <h3>{title}</h3>
     </div>
   );

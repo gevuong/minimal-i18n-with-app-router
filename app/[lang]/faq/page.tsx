@@ -2,6 +2,7 @@
 
 import type { QA } from '@/app/dictionaries/types/faq';
 import { Locale } from '@/i18n-config';
+import { basePath } from '@/next.config.mjs';
 import debounce from 'lodash.debounce';
 import ExportedImage from 'next-image-export-optimizer';
 import { Fragment, useEffect, useMemo, useState } from 'react';
@@ -67,6 +68,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             src={headerSection.img}
             alt={headerSection.altText}
             priority
+            basePath={basePath}
           />
 
           {/* Text and Input Container */}
@@ -100,6 +102,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <ExportedImage
                     src={headerSection.input.img}
                     alt={headerSection.input.altText}
+                    basePath={basePath}
                   />
                 </span>
               </div>
