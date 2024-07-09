@@ -1,11 +1,11 @@
 // Icons
-export { default as LoopIcon } from './card1.png';
-export { default as GlobeIcon } from './card2.png';
-export { default as HeartRhythmIcon } from './card3.png';
-export { default as TeamIcon } from './card4.png';
-export { default as FingerSnapIcon } from './card5.png';
-export { default as PhoneInHandIcon } from './card7.png';
+export { default as FingerSnapIcon } from './icons/icon-finger-snap.webp';
+export { default as GlobeIcon } from './icons/icon-globe.webp';
+export { default as HeartRhythmIcon } from './icons/icon-heart-rhythm.webp';
+export { default as LoopIcon } from './icons/icon-loop.webp';
+export { default as PhoneInHandIcon } from './icons/icon-phone-in-hand.webp';
+export { default as TeamIcon } from './icons/icon-team.webp';
 
 // Background Images
-export { default as HalfToneDots } from './halftone_dots.png';
-export { default as MaskHeader } from './mask_header.webp';
+export { default as HalfToneDots } from './bg-halftone-dots.webp';
+export { default as MaskHeader } from './bg-mask-header.webp';
