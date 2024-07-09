@@ -1,4 +1,4 @@
-export type Home = {
+export interface Home {
   t1: string;
   p1: string;
   t2: string;
@@ -9,4 +9,4 @@ export type Home = {
   p4: string;
   t5: string;
   p5: string;
-};
+}

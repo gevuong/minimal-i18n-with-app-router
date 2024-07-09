@@ -2,8 +2,8 @@ import {
   FingerSnapIcon,
   GlobeIcon,
   HeartRhythmIcon,
-  LoopIcon,
   PhoneInHandIcon,
+  RecycleIcon,
   TeamIcon,
 } from '@/app/assets/images/ourStory';
 import { OurStory } from '../types/ourStory';
@@ -53,7 +53,7 @@ const ourStory: OurStory = {
     cards: [
       {
         title: 'Transformación',
-        image: LoopIcon,
+        image: RecycleIcon,
         imageText: 'icono de bucle',
         text: 'Nuestro objetivo es transformar los costosos sistemas de salud mediante el uso de la tecnología para impulsar los cambios necesarios.',
       },

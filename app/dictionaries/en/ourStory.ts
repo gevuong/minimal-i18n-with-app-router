@@ -2,8 +2,8 @@ import {
   FingerSnapIcon,
   GlobeIcon,
   HeartRhythmIcon,
-  LoopIcon,
   PhoneInHandIcon,
+  RecycleIcon,
   TeamIcon,
 } from '@/app/assets/images/ourStory';
 import { OurStory } from '../types/ourStory';
@@ -53,7 +53,7 @@ const ourStory: OurStory = {
     cards: [
       {
         title: 'Transformation',
-        image: LoopIcon,
+        image: RecycleIcon,
         imageText: 'loop icon',
         text: 'We aim to transform expensive healthcare systems by using technology to drive necessary changes.',
       },
