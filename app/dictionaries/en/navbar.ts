@@ -6,6 +6,10 @@ const navbar: NavbarItem[] = [
     href: '/',
   },
   {
+    label: 'Publications',
+    href: '/publications',
+  },
+  {
     label: 'Our Story',
     href: '/our-story',
   },

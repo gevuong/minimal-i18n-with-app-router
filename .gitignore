@@ -36,4 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # optimized state images
+/public/nextImageExportOptimizer
 /assets
