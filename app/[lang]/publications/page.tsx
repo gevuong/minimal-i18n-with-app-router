@@ -59,6 +59,7 @@ const PublicationsPage = ({
           className="absolute h-full w-full object-cover opacity-30"
           alt=""
           priority
+          basePath={basePath}
         />
 
         {/* Publications Section */}
