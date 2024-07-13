@@ -1,12 +1,12 @@
 // Background
-export { default as BodyBackground } from './body-bg.jpg';
-export { default as HeaderBackground } from './header-bg.png';
+export { default as BodyBackground } from './bg-body.jpg';
+export { default as HeaderBackground } from './bg-header.png';
 
 // Icons
-export { default as AmbassadorIcon } from '../../icons/oyw-icon-1.png';
-export { default as YouthIcon } from '../../icons/oyw-icon-2.png';
-export { default as GlobeIcon } from '../../icons/oyw-icon-3.png';
-export { default as DiverseIcon } from '../../icons/oyw-icon-4.png';
+export { default as AmbassadorIcon } from '../../icons/icon-female.png';
+export { default as DiverseIcon } from '../../icons/icon-globe-with-markers.png';
+export { default as GlobeIcon } from '../../icons/icon-man-lifting-globe.png';
+export { default as YouthIcon } from '../../icons/icon-youth-in-circle.png';
 
 // Testimonial
 export { default as GonzaloTestimonial } from './testimonials/gonzalo-square-pic.png';
