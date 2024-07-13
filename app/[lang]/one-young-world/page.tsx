@@ -22,11 +22,13 @@ const OneYoungWorldPage = ({
       <section>
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <ExportedImage
-            className="absolute h-full w-full object-cover opacity-30"
+            className="absolute object-cover opacity-30"
             src={header.image}
             alt={header.altText}
             priority
             basePath={basePath}
+            fill
+            sizes="100vw"
           />
 
           {/* Text Container */}
