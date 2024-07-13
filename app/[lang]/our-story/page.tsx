@@ -1,6 +1,6 @@
-import { HalfToneDots, MaskHeader } from '@/app/assets/images/ourStory/index';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
+import { HalfToneDots, MaskHeader } from '@/public/images/ourStory/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';

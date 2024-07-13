@@ -8,7 +8,7 @@ import {
   MarcosTestimonial,
   SebastianTestimonial,
   YouthIcon,
-} from '@/app/assets/images/oneYoungWorld';
+} from '@/public/images/oneYoungWorld';
 import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {

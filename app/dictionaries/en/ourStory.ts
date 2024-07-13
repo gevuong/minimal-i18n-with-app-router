@@ -5,7 +5,7 @@ import {
   PhoneInHandIcon,
   RecycleIcon,
   TeamIcon,
-} from '@/app/assets/images/ourStory';
+} from '@/public/images/ourStory';
 import { type OurStory } from '../types/ourStory';
 
 const ourStory: OurStory = {

@@ -1,5 +1,5 @@
-import { ArrowDownIcon } from '@/app/assets/images/faq';
 import { basePath } from '@/next.config.mjs';
+import ArrowDownIcon from '@/public/icons/icon-arrow-down.png';
 import ExportedImage from 'next-image-export-optimizer';
 
 const ArrowIcon = ({ isActive }: { isActive: boolean }) => {

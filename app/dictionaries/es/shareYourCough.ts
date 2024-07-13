@@ -1,4 +1,4 @@
-import VirufyLogo from '@/app/assets/images/virufy.svg';
+import VirufyLogo from '@/public/logos/virufy.svg';
 import { type ShareYourCough } from '../types/shareYourCough';
 
 const shareYourCough: ShareYourCough = {

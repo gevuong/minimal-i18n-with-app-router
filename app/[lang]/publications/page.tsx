@@ -1,11 +1,11 @@
 'use client';
 
+import { type Locale } from '@/i18n-config';
+import { basePath } from '@/next.config.mjs';
 import {
   HexagonDottedBackground,
   PhoneHeader,
-} from '@/app/assets/images/publications/index';
-import { type Locale } from '@/i18n-config';
-import { basePath } from '@/next.config.mjs';
+} from '@/public/images/publications/index';
 import ExportedImage from 'next-image-export-optimizer';
 import { useState } from 'react';
 import { getDictionary } from '../../dictionaries';

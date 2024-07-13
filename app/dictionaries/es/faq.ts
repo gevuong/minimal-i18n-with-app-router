@@ -7,7 +7,7 @@ import {
   QuestionMarkIcon,
   RecycleIcon,
   SearchIcon,
-} from '@/app/assets/images/faq';
+} from '@/public/images/faq';
 import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {

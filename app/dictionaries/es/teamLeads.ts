@@ -18,7 +18,7 @@ import {
   Shreya,
   Veronica,
   Yulie,
-} from '@/app/assets/images/oneYoungWorld';
+} from '@/public/images/oneYoungWorld';
 import { type TeamLeadsType } from '../types/teamLeads';
 
 const teamLeads: TeamLeadsType = {
