@@ -2,7 +2,6 @@
 export { default as BgHeader } from './bg-ai-hand.png';
 
 // Icons
-export { default as ArrowDownIcon } from '../../icons/icon-arrow-down.png';
 export { default as GlobeIcon } from '../../icons/icon-globe-white.png';
 export { default as MonitorIcon } from '../../icons/icon-monitor-white.png';
 export { default as PhoneInHandIcon } from '../../icons/icon-phone-in-hand-white.png';
