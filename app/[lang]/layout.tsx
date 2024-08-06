@@ -1,10 +1,12 @@
 import { i18n, type Locale } from '@/i18n-config';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Nunito_Sans } from 'next/font/google';
 import Navbar from './Navbar';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,7 +26,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang={lang}>
-      <body className={inter.className}>
+      <body className={nunitoSans.className}>
         <Navbar lang={lang} />
         {children}
       </body>
