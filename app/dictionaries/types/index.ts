@@ -1,3 +1,4 @@
+import { type Ai } from './ai';
 import { type FAQ } from './faq';
 import { type Home } from './home';
 import { type NavbarType } from './navbar';
@@ -8,6 +9,7 @@ import { type ShareYourCough } from './shareYourCough';
 import { type TeamLeadsType } from './teamLeads';
 
 export interface I18nData {
+  ai: Ai;
   faq: FAQ;
   home: Home;
   navbar: NavbarType;
