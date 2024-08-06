@@ -1,26 +1,29 @@
-import { type NavbarItem } from '../types/navbar';
+import { type NavbarType } from '../types/navbar';
 
-const navbar: NavbarItem[] = [
-  {
-    label: 'Home',
-    href: '/',
+export const navbar: NavbarType = {
+  home: 'Home',
+  ourTechnology: {
+    section: 'Technology',
+    howItWorks: 'AI',
+    OurResearch: 'Publications',
   },
-  {
-    label: 'Publications',
-    href: '/publications',
+  coughCheckApp: {
+    section: 'CoughCheck App',
+    covid19: 'Covid-19',
+    flu: 'Flu',
+    copd: 'COPD',
+    rsv: 'RSV',
   },
-  {
-    label: 'Our Story',
-    href: '/our-story',
+  aboutUs: {
+    section: 'About Us',
+    ourStory: 'Our Story',
+    ourPeople: 'Our People',
+    ourSupporters: 'Our Supporters',
+    blog: 'Blog',
+    oneYoungWorld: 'One Young World',
   },
-  {
-    label: 'One Young World',
-    href: '/one-young-world',
-  },
-  {
-    label: 'FAQ',
-    href: '/faq',
-  },
-];
+  faq: 'FAQ',
+  donate: 'DONATE',
+};
 
 export default navbar;
