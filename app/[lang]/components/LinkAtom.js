@@ -4,8 +4,8 @@ import { LinkAtomProps } from '../themes';
 export default function LinkAtom({ Routes, Style }) {
   return (
     <>
-      {Routes.map(({ label, route, id }) => (
-        <Link key={id} href={route} className={`${LinkAtomProps?.[Style]}`}>
+      {Routes.map(({ label, route }) => (
+        <Link key={label} href={route} className={`${LinkAtomProps?.[Style]}`}>
           {label}
         </Link>
       ))}
