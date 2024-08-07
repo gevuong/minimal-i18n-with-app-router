@@ -1,6 +1,7 @@
 import { type I18nData } from '../types';
 import ai from './ai';
 import faq from './faq';
+import footer from './footer';
 import home from './home';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
@@ -12,6 +13,7 @@ import teamLeads from './teamLeads';
 const enMetadata: I18nData = {
   ai,
   faq,
+  footer,
   home,
   navbar,
   oneYoungWorld,

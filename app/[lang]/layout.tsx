@@ -1,8 +1,9 @@
 import { i18n, type Locale } from '@/i18n-config';
 import type { Metadata } from 'next';
 import { Nunito_Sans } from 'next/font/google';
-import Navbar from './Navbar';
+import Footer from './Footer';
 import './globals.css';
+import Navbar from './Navbar';
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default async function RootLayout({
       <body className={nunitoSans.className}>
         <Navbar lang={lang} />
         {children}
+        <Footer lang={lang} />
       </body>
     </html>
   );

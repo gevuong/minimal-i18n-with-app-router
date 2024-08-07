@@ -7,11 +7,7 @@ import { Fragment } from 'react';
 import { getDictionary } from '../../dictionaries';
 import AiCard from './AiCard';
 
-export default function AiPage({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     ai: { heroSection, aiSection },
   } = getDictionary(lang);
@@ -94,4 +90,6 @@ export default function AiPage({
       </div>
     </div>
   );
-}
+};
+
+export default AiPage;

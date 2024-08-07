@@ -1,5 +1,6 @@
 import { type Ai } from './ai';
 import { type FAQ } from './faq';
+import { type Footer } from './footer';
 import { type Home } from './home';
 import { type NavbarType } from './navbar';
 import { type OneYoungWorld } from './oneYoungWorld';
@@ -11,6 +12,7 @@ import { type TeamLeadsType } from './teamLeads';
 export interface I18nData {
   ai: Ai;
   faq: FAQ;
+  footer: Footer;
   home: Home;
   navbar: NavbarType;
   oneYoungWorld: OneYoungWorld;
