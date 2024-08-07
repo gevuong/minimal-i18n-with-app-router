@@ -2,12 +2,14 @@
 
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
-import CloseMenu from '@/public/icons/icon-close-menu-white.svg';
-import GoFundMeIcon from '@/public/icons/icon-gofundme.png';
-import BarsMenu from '@/public/icons/icon-hamburger-menu-white.svg';
-import PaypalIcon from '@/public/icons/icon-paypal.png';
-import DonateModalImg from '@/public/images/navbar/hero-donate.png';
-import VirufyLogo from '@/public/logos/virufy.svg';
+import {
+  CloseMenuIcon,
+  DonateHero,
+  GoFundMeIcon,
+  HamburgerMenuIcon,
+  PaypalIcon,
+  VirufyLogo,
+} from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -113,7 +115,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <div className="flex w-full rounded-t">
                       <ExportedImage
                         className="w-full"
-                        src={DonateModalImg}
+                        src={DonateHero}
                         basePath={basePath}
                         alt="Help us fight against respiratory diseases. We need your contribution in order to continue helping millions of people in the fight against respiratory diseases."
                       />
@@ -209,14 +211,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   {navbar ? (
                     <ExportedImage
                       className="w-[30px] h-[18px]"
-                      src={CloseMenu}
+                      src={CloseMenuIcon}
                       alt="close menu icon"
                       basePath={basePath}
                     />
                   ) : (
                     <ExportedImage
                       className="w-[30px] h-[18px]"
-                      src={BarsMenu}
+                      src={HamburgerMenuIcon}
                       alt="hamburger menu icon"
                       basePath={basePath}
                     />
