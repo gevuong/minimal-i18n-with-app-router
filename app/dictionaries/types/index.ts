@@ -4,6 +4,7 @@ import { type Footer } from './footer';
 import { type Home } from './home';
 import { type NavbarType } from './navbar';
 import { type OneYoungWorld } from './oneYoungWorld';
+import { type OurPeople } from './ourPeople';
 import { type OurStory } from './ourStory';
 import { type Publications } from './publications';
 import { type ShareYourCough } from './shareYourCough';
@@ -16,6 +17,7 @@ export interface I18nData {
   home: Home;
   navbar: NavbarType;
   oneYoungWorld: OneYoungWorld;
+  ourPeople: OurPeople;
   ourStory: OurStory;
   publications: Publications;
   shareYourCough: ShareYourCough;

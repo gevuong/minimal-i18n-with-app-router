@@ -35,9 +35,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
       ? setActiveLink('ourTechnology')
       : window.location.pathname === '/es/our-story'
       ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/OurPeople1'
+      : window.location.pathname === '/es/our-people'
       ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/OurPeople2'
+      : window.location.pathname === '/es/amils-story'
       ? setActiveLink('aboutUs')
       : window.location.pathname === '/es/supporters'
       ? setActiveLink('aboutUs')
@@ -53,9 +53,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
       ? setActiveLink('ourTechnology')
       : window.location.pathname === '/en/our-story'
       ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/OurPeople1'
+      : window.location.pathname === '/en/our-people'
       ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/OurPeople2'
+      : window.location.pathname === '/en/amils-story'
       ? setActiveLink('aboutUs')
       : window.location.pathname === '/en/supporters'
       ? setActiveLink('aboutUs')
@@ -365,7 +365,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                       <Link
                         className="py-3 text-white hover:font-bold"
-                        href={`/${lang}/OurPeople1`}
+                        href={`/${lang}/our-people`}
                       >
                         {aboutUs?.ourPeople}
                       </Link>

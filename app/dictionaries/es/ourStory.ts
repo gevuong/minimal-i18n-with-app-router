@@ -26,7 +26,7 @@ const ourStory: OurStory = {
         },
         {
           type: 'link',
-          url: '/OurPeople2',
+          url: '/amils-story',
           text: 'el fundador de Virufy, Amil Khanzada',
         },
         {
