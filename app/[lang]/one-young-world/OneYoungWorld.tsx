@@ -1,14 +1,23 @@
 import { type OywSection } from '@/app/dictionaries/types/oneYoungWorld';
+import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import TestimonialSlider from './TestimonialSlider';
 
+type OywProps = {
+  oywSection: OywSection;
+  lang: Locale;
+};
+
 const OneYoungWorld = ({
-  virufyAndOyw: { title: oywTitle, subTitle, texts, videoUrl, videoTitle },
-  whyOyw: { title: whyOywTitle, cards },
-  volunteerStories: { title: volunteerTitle, text, testimonials },
-}: OywSection) => {
+  lang,
+  oywSection: {
+    virufyAndOyw: { title: oywTitle, subTitle, texts, videoUrl, videoTitle },
+    whyOyw: { title: whyOywTitle, cards },
+    volunteerStories: { title: volunteerTitle, text, testimonials },
+  },
+}: OywProps) => {
   return (
     <article>
       <div className="mx-auto max-w-5xl">
@@ -61,7 +70,7 @@ const OneYoungWorld = ({
             </h2>
 
             {/* Cards Container */}
-            <div className="space-y-16 rounded-2xl bg-[#3578de4f] py-10 pr-4 font-medium md:grid md:grid-cols-2 md:gap-12 md:space-y-0 md:space-x-0 md:bg-inherit md:py-0">
+            <div className="space-y-16 rounded-2xl bg-[#3578de4f] py-10 pr-4 font-medium md:grid md:grid-cols-2 md:gap-12 md:space-x-0 md:space-y-0 md:bg-inherit md:py-0">
               {cards.map((card) => (
                 <div key={card.title} className="flex justify-center space-x-2">
                   <ExportedImage
@@ -99,8 +108,8 @@ const OneYoungWorld = ({
             {/* Slider Container */}
             <TestimonialSlider testimonials={testimonials} />
             <Link
-              className="w-auto rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] px-6 py-4 text-sm font-medium md:py-4 md:px-12 md:text-base"
-              href="/job-listing"
+              className="w-auto rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] px-6 py-4 text-sm font-medium md:px-12 md:py-4 md:text-base"
+              href={`/${lang}/job-listing`}
             >
               Join our Team
             </Link>

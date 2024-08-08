@@ -3,6 +3,7 @@ import type {
   OywSection,
 } from '@/app/dictionaries/types/oneYoungWorld';
 import { type TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
+import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { useState } from 'react';
@@ -11,12 +12,13 @@ import OneYoungWorld from './OneYoungWorld';
 import TeamLeads from './TeamLeads/TeamLeads';
 
 interface Props {
+  lang: Locale;
   oyw: OywSection;
   navbarTexts: OywNavbarTexts;
   teamLeads: TeamLeadsType;
 }
 
-const MainContent = ({ teamLeads, oyw, navbarTexts }: Props) => {
+const MainContent = ({ lang, teamLeads, oyw, navbarTexts }: Props) => {
   const [showTeamLeads, setShowTeamLeads] = useState(false);
 
   return (
@@ -42,7 +44,7 @@ const MainContent = ({ teamLeads, oyw, navbarTexts }: Props) => {
         {showTeamLeads ? (
           <TeamLeads {...teamLeads} />
         ) : (
-          <OneYoungWorld {...oyw} />
+          <OneYoungWorld lang={lang} oywSection={oyw} />
         )}
       </main>
     </>

@@ -3,6 +3,7 @@ import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
 import { type Home } from './home';
+import { type JobListing } from './jobListing';
 import { type NavbarType } from './navbar';
 import { type OneYoungWorld } from './oneYoungWorld';
 import { type OurPeople } from './ourPeople';
@@ -17,6 +18,7 @@ export interface I18nData {
   faq: FAQ;
   footer: Footer;
   home: Home;
+  jobListing: JobListing;
   navbar: NavbarType;
   oneYoungWorld: OneYoungWorld;
   ourPeople: OurPeople;
