@@ -1,4 +1,5 @@
 import { type Ai } from './ai';
+import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
 import { type Home } from './home';
@@ -12,6 +13,7 @@ import { type TeamLeadsType } from './teamLeads';
 
 export interface I18nData {
   ai: Ai;
+  amilsStory: AmilsStory;
   faq: FAQ;
   footer: Footer;
   home: Home;

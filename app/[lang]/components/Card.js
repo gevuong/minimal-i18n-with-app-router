@@ -9,14 +9,14 @@ export default function Card({ CardsData }) {
 
   return (
     <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4 text-center items-center justify-center mt-5 w-full lg:w-[80rem] xl:w-[80rem] mx-[10rem] lg:mx-[5rem]">
-      {CardsData?.map(({ route, name, text, subtitle, id }, index) => (
+      {CardsData?.map(({ route, name, text, subtitle }, index) => (
         <div
           className={`flex flex-col items-center space-y-4 p-4 w-full ${
             remainder === 1 && index === CardsData.length - 1
               ? 'lg:col-start-2'
               : ''
           }`}
-          key={id}
+          key={name}
         >
           <div className="relative w-full">
             <div className="absolute top-4 lg:top-5 xl:top-7 z-10 w-full">

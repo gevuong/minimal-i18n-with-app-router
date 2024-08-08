@@ -1,5 +1,6 @@
 import { type I18nData } from '../types';
 import ai from './ai';
+import amilsStory from './amilsStory';
 import faq from './faq';
 import footer from './footer';
 import home from './home';
@@ -13,6 +14,7 @@ import teamLeads from './teamLeads';
 
 const esMetadata: I18nData = {
   ai,
+  amilsStory,
   faq,
   footer,
   home,
