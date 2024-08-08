@@ -297,7 +297,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       } peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
                                     relative before:w-full before:h-0.5 before:origin-right before:transition-transform
                                     before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`}
-                      href={`/${lang}/Covid19`}
+                      href={`/${lang}/covid19`}
                     >
                       {coughCheckApp?.section}
                     </Link>
@@ -311,25 +311,25 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     >
                       <Link
                         className="px-5 py-2 pt-5 text-[white] hover:font-bold"
-                        href={`/${lang}/Covid19`}
+                        href={`/${lang}/covid19`}
                       >
                         {coughCheckApp?.covid19}
                       </Link>
                       <Link
                         className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/Flu`}
+                        href={`/${lang}/flu`}
                       >
                         {coughCheckApp?.flu}
                       </Link>
                       <Link
                         className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/Copd`}
+                        href={`/${lang}/copd`}
                       >
                         {coughCheckApp?.copd}
                       </Link>
                       <Link
                         className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/RSV`}
+                        href={`/${lang}/rsv`}
                       >
                         {coughCheckApp?.rsv}
                       </Link>

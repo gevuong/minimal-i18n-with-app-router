@@ -29,11 +29,7 @@ import Card from '../components/Card';
 import Section4 from '../components/Section4';
 import Title from '../components/Title';
 
-export default function OurPeople1({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     ourPeople: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = getDictionary(lang);
@@ -228,4 +224,6 @@ export default function OurPeople1({
       </div>
     </>
   );
-}
+};
+
+export default OurPeoplePage;
