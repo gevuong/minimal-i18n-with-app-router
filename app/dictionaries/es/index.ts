@@ -4,6 +4,7 @@ import amilsStory from './amilsStory';
 import faq from './faq';
 import footer from './footer';
 import home from './home';
+import jobDetails from './jobDetails';
 import jobListing from './jobListing';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
@@ -19,6 +20,7 @@ const esMetadata: I18nData = {
   faq,
   footer,
   home,
+  jobDetails,
   jobListing,
   navbar,
   oneYoungWorld,
