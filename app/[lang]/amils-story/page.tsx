@@ -19,13 +19,8 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <>
-      <div
-        className="flex flex-col justify-center items-center 
-      bg-gradient-to-b from-[#000] to-[#2D5987]
-      hidden sm:hidden md:hidden xl:block overflow-hidden
-    "
-      >
-        <div className="flex flex-col justify-center items-center mx-auto my-[3.5vw] max-w-[1650px] h-[100%]">
+      <div className="flex hidden flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:hidden xl:block">
+        <div className="mx-auto my-[3.5vw] flex h-[100%] max-w-[1650px] flex-col items-center justify-center">
           <div className="m-10 mt-[40px]">
             <Video
               width={`1200px`}
@@ -33,23 +28,9 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               url="https://www.youtube.com/watch?v=od0GGkbC_gQ"
             />
           </div>
-          <div
-            className="mt-[80px] mb-[80px] flex flex-wrap flex-row items-start
-          sm:flex-col sm:items-center
-          md:flex-row md:items-end
-          lg:flex-row lg:items-end
-          xl:flex-row xl:items-end
-        "
-          >
-            <div
-              className="ml-[10vw] w-[438px]
-            sm:w-[438px]
-            md:w-[350px]
-            lg:w-[300px]
-            xl:w-[365px]
-          "
-            >
-              <div className="text-white m-10">
+          <div className="mb-[80px] mt-[80px] flex flex-row flex-wrap items-start sm:flex-col sm:items-center md:flex-row md:items-end lg:flex-row lg:items-end xl:flex-row xl:items-end">
+            <div className="ml-[10vw] w-[438px] sm:w-[438px] md:w-[350px] lg:w-[300px] xl:w-[365px]">
+              <div className="m-10 text-white">
                 <Title
                   H="h5"
                   Text={sectionAmil.titleAmil}
@@ -57,17 +38,14 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 />
               </div>
               <ExportedImage
-                className="w-[300px] h-[400px]"
+                className="h-[400px] w-[300px]"
                 src={AmilInMeeting}
                 alt="Amil in a meeting"
                 priority
                 basePath={basePath}
               />
             </div>
-            <div
-              className="flex-col flex-1 text-xl m-2 mr-[10vw] text-white
-          "
-            >
+            <div className="m-2 mr-[10vw] flex-1 flex-col text-xl text-white">
               <Text Style="" Text={sectionAmil.textAmil[0]} TextClassProps="" />
               <Text
                 Style=""
@@ -81,28 +59,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               />
             </div>
           </div>
-          <div
-            className="ml-[10vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
-          sm:flex-col sm:items-center
-          md:flex-row md:items-end
-          lg:flex-row lg:items-end
-          xl:flex-row xl:items-end
-        "
-          >
+          <div className="mb-[20px] ml-[10vw] mt-[20px] flex flex-row flex-wrap items-start sm:flex-col sm:items-center md:flex-row md:items-end lg:flex-row lg:items-end xl:flex-row xl:items-end">
             <div className="ml-2">
               <ExportedImage
-                className="w-[550px] h-[360px]"
+                className="h-[360px] w-[550px]"
                 src={AmilInLab}
                 alt="Amil and his coworkers in a lab"
                 priority
                 basePath={basePath}
               />
             </div>
-            <div
-              className="flex-col flex-1
-            mr-[4vw] text-xl text-white
-          "
-            >
+            <div className="mr-[4vw] flex-1 flex-col text-xl text-white">
               <div className="m-12 mr-[6vw]">
                 <Text
                   Style=""
@@ -112,20 +79,9 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               </div>
             </div>
           </div>
-          <div
-            className="mr-[10vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
-          sm:flex-col sm:items-center
-          md:flex-row md:items-end
-          lg:flex-row lg:items-end
-          xl:flex-row xl:items-end
-        "
-          >
-            <div
-              className="flex-col flex-1
-            ml-4 text-xl text-white
-          "
-            >
-              <div className="ml-[10vw] m-10">
+          <div className="mb-[20px] mr-[10vw] mt-[20px] flex flex-row flex-wrap items-start sm:flex-col sm:items-center md:flex-row md:items-end lg:flex-row lg:items-end xl:flex-row xl:items-end">
+            <div className="ml-4 flex-1 flex-col text-xl text-white">
+              <div className="m-10 ml-[10vw]">
                 <Text
                   Style=""
                   Text={sectionAmil.textAmil[4]}
@@ -134,34 +90,23 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               </div>
             </div>
             <ExportedImage
-              className="w-[550px] h-[360px]"
+              className="h-[360px] w-[550px]"
               src={AmilInJapan}
               alt="Amil with his friends in Japan"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="ml-[10vw] mt-[10px] mb-[100px] flex flex-wrap flex-row items-start
-          sm:flex-col sm:items-center
-          md:flex-row md:items-end
-          lg:flex-row lg:items-end
-          xl:flex-row xl:items-end
-        "
-          >
-            <div className="flex sm:flex ml-2 mr-[4vw] text-white">
+          <div className="mb-[100px] ml-[10vw] mt-[10px] flex flex-row flex-wrap items-start sm:flex-col sm:items-center md:flex-row md:items-end lg:flex-row lg:items-end xl:flex-row xl:items-end">
+            <div className="ml-2 mr-[4vw] flex text-white sm:flex">
               <ExportedImage
-                className="w-[550px] h-[450px]"
+                className="h-[450px] w-[550px]"
                 src={AmilAtOneYoungWorld}
                 alt="Amil shaking hands at the One Young World conference"
                 priority
                 basePath={basePath}
               />
-              <div
-                className="flex-col flex-1
-            ml-4 mr-[4.5vw] text-xl text-white
-            "
-              >
+              <div className="ml-4 mr-[4.5vw] flex-1 flex-col text-xl text-white">
                 <div className="m-4">
                   <Text
                     Style=""
@@ -177,10 +122,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               </div>
             </div>
           </div>
-          <section
-            className="rounded-[20px]
-          bg-[#215995] shadow-lg m-20 mb-[200px]"
-          >
+          <section className="m-20 mb-[200px] rounded-[20px] bg-[#215995] shadow-lg">
             <div className="m-20 text-white">
               <Title
                 H={'h5'}
@@ -203,19 +145,10 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Desktop */}
-      <div
-        className="grid justify-center items-center 
-      bg-gradient-to-b from-[#000] to-[#2D5987]
-      hidden
-      sm:hidden
-      md:hidden
-      lg:block
-      xl:hidden
-    "
-      >
+      <div className="grid hidden items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:hidden lg:block xl:hidden">
         {/* First row */}
-        <div className="flex justify-center items-center">
-          <div className="mt-[80px] mb-[20px]">
+        <div className="flex items-center justify-center">
+          <div className="mb-[20px] mt-[80px]">
             <Video
               width={`800px`}
               height={`450px`}
@@ -225,14 +158,14 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Second row */}
-        <div className="mt-[80px] mb-[80px] ml-[2vw] mr-[2vw] flex flex-row items-start">
-          <div className="justify-center items-center ml-[5vw]">
-            <div className="justify-center m-8 text-white">
+        <div className="mb-[80px] ml-[2vw] mr-[2vw] mt-[80px] flex flex-row items-start">
+          <div className="ml-[5vw] items-center justify-center">
+            <div className="m-8 justify-center text-white">
               <Title H="h2" Text={sectionAmil.titleAmil} TitleClassProps="" />
             </div>
             <div className="ml-[4vw]">
               <ExportedImage
-                className="w-[200px] h-[275px]"
+                className="h-[275px] w-[200px]"
                 src={AmilInMeeting}
                 alt="Amil in a meeting"
                 priority
@@ -240,10 +173,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               />
             </div>
           </div>
-          <div
-            className="flex flex-col flex-1 text-sm mt-[10vw] mr-[12vw] text-white
-        "
-          >
+          <div className="mr-[12vw] mt-[10vw] flex flex-1 flex-col text-sm text-white">
             <Text Style="" Text={sectionAmil.textAmil[0]} TextClassProps="" />
             <Text
               Style=""
@@ -259,42 +189,32 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Third row */}
-        <div
-          className="mt-[60px] mb-[10px] ml-[2vw] mr-[2vw] 
-        flex flex-row items-start"
-        >
+        <div className="mb-[10px] ml-[2vw] mr-[2vw] mt-[60px] flex flex-row items-start">
           <div className="ml-[8.5vw]">
             <ExportedImage
-              className="w-[375px] h-[225px]"
+              className="h-[225px] w-[375px]"
               src={AmilInLab}
               alt="Amil and his coworkers in a lab"
               priority
               basePath={basePath}
             />
           </div>
-          <div className="flex-col flex-1 ml-4 mr-[3vw]">
-            <div className="text-sm text-white m-1.5 mr-[10vw]">
+          <div className="ml-4 mr-[3vw] flex-1 flex-col">
+            <div className="m-1.5 mr-[10vw] text-sm text-white">
               <Text Style="" Text={sectionAmil.textAmil[3]} TextClassProps="" />
             </div>
           </div>
         </div>
 
         {/* Fourth row */}
-        <div
-          className="mt-[10px] mb-[10px] mr-[14vw]
-        flex flex-row items-start"
-        >
-          <div
-            className="flex-col flex-1
-          ml-4 text-sm text-white
-        "
-          >
-            <div className="ml-[9vw] m-2">
+        <div className="mb-[10px] mr-[14vw] mt-[10px] flex flex-row items-start">
+          <div className="ml-4 flex-1 flex-col text-sm text-white">
+            <div className="m-2 ml-[9vw]">
               <Text Style="" Text={sectionAmil.textAmil[4]} TextClassProps="" />
             </div>
           </div>
           <ExportedImage
-            className="w-[375px] h-[225px]"
+            className="h-[225px] w-[375px]"
             src={AmilInJapan}
             alt="Amil with his friends in Japan"
             priority
@@ -303,24 +223,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fifth row */}
-        <div
-          className="mt-[10px] mb-[10px] ml-[2vw] mr-[2vw] 
-        flex flex-row items-start"
-        >
+        <div className="mb-[10px] ml-[2vw] mr-[2vw] mt-[10px] flex flex-row items-start">
           <div className="ml-[8.5vw]">
             <ExportedImage
-              className="w-[375px] h-[300px]"
+              className="h-[300px] w-[375px]"
               src={AmilAtOneYoungWorld}
               alt="Amil shaking hands at the One Young World conference"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="flex-col flex-1
-          ml-4 mr-[10vw] text-sm text-white
-        "
-          >
+          <div className="ml-4 mr-[10vw] flex-1 flex-col text-sm text-white">
             <div className="m-1.5">
               <Text Style="" Text={sectionAmil.textAmil[5]} TextClassProps="" />
               <Text Style="" Text={sectionAmil.textAmil[6]} TextClassProps="" />
@@ -329,11 +242,8 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         {/* Publications */}
         <div className="flex flex-col justify-center">
-          <section
-            className="rounded-[20px]
-          bg-[#215995] shadow-lg m-20 mb-[100px]"
-          >
-            <div className="flex flex-col m-10 text-white">
+          <section className="m-20 mb-[100px] rounded-[20px] bg-[#215995] shadow-lg">
+            <div className="m-10 flex flex-col text-white">
               <Title
                 H={'h5'}
                 Text={sectionAmil.titlePublications}
@@ -355,19 +265,10 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Tablet */}
-      <div
-        className="grid justify-center items-center 
-      bg-gradient-to-b from-[#000] to-[#2D5987]
-      hidden
-      sm:hidden
-      md:block
-      lg:hidden
-      xl:hidden
-    "
-      >
+      <div className="grid hidden items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:block lg:hidden xl:hidden">
         {/* First row */}
-        <div className="flex justify-center items-center">
-          <div className="mt-[80px] mb-[20px]">
+        <div className="flex items-center justify-center">
+          <div className="mb-[20px] mt-[80px]">
             <Video
               width={`650px`}
               height={`350px`}
@@ -377,14 +278,14 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Second row */}
-        <div className="mt-[60px] mb-[80px] ml-[1vw] mr-[2vw] flex flex-row items-start">
-          <div className="justify-center items-center ml-[4vw]">
-            <div className="justify-center m-4 text-white">
+        <div className="mb-[80px] ml-[1vw] mr-[2vw] mt-[60px] flex flex-row items-start">
+          <div className="ml-[4vw] items-center justify-center">
+            <div className="m-4 justify-center text-white">
               <Title H="h2" Text={sectionAmil.titleAmil} TitleClassProps="" />
             </div>
             <div className="ml-[2vw]">
               <ExportedImage
-                className="w-[200px] h-[275px]"
+                className="h-[275px] w-[200px]"
                 src={AmilInMeeting}
                 alt="Amil in a meeting"
                 priority
@@ -392,10 +293,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               />
             </div>
           </div>
-          <div
-            className="flex flex-col flex-1 text-xs mt-[10vw] mr-[14vw] text-white
-        "
-          >
+          <div className="mr-[14vw] mt-[10vw] flex flex-1 flex-col text-xs text-white">
             <Text Style="" Text={sectionAmil.textAmil[0]} TextClassProps="" />
             <Text
               Style=""
@@ -411,42 +309,32 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Third row */}
-        <div
-          className="mt-[60px] mb-[10px] ml-[2vw] mr-[2vw] 
-        flex flex-row items-start"
-        >
+        <div className="mb-[10px] ml-[2vw] mr-[2vw] mt-[60px] flex flex-row items-start">
           <div className="ml-[6vw]">
             <ExportedImage
-              className="w-[325px] h-[200px]"
+              className="h-[200px] w-[325px]"
               src={AmilInLab}
               alt="Amil and his coworkers in a lab"
               priority
               basePath={basePath}
             />
           </div>
-          <div className="flex-col flex-1 ml-4 mr-[3vw]">
-            <div className="text-xs text-white m-1.5 mr-[4vw]">
+          <div className="ml-4 mr-[3vw] flex-1 flex-col">
+            <div className="m-1.5 mr-[4vw] text-xs text-white">
               <Text Style="" Text={sectionAmil.textAmil[3]} TextClassProps="" />
             </div>
           </div>
         </div>
 
         {/* Fourth row */}
-        <div
-          className="mt-[10px] mb-[10px] mr-[6vw]
-        flex flex-row items-start"
-        >
-          <div
-            className="flex-col flex-1
-          ml-4 text-xs text-white
-        "
-          >
-            <div className="ml-[6vw] m-2">
+        <div className="mb-[10px] mr-[6vw] mt-[10px] flex flex-row items-start">
+          <div className="ml-4 flex-1 flex-col text-xs text-white">
+            <div className="m-2 ml-[6vw]">
               <Text Style="" Text={sectionAmil.textAmil[4]} TextClassProps="" />
             </div>
           </div>
           <ExportedImage
-            className="w-[325px] h-[200px]"
+            className="h-[200px] w-[325px]"
             src={AmilInJapan}
             alt="Amil with his friends in Japan"
             priority
@@ -455,24 +343,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fifth row */}
-        <div
-          className="mt-[10px] mb-[10px] ml-[2vw] mr-[2vw] 
-        flex flex-row items-start"
-        >
+        <div className="mb-[10px] ml-[2vw] mr-[2vw] mt-[10px] flex flex-row items-start">
           <div className="ml-[6vw]">
             <ExportedImage
-              className="w-[325px] h-[275px]"
+              className="h-[275px] w-[325px]"
               src={AmilAtOneYoungWorld}
               alt="Amil shaking hands at the One Young World conference"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="flex-col flex-1
-          ml-4 mr-[4vw] text-xs text-white
-        "
-          >
+          <div className="ml-4 mr-[4vw] flex-1 flex-col text-xs text-white">
             <div className="m-2">
               <Text Style="" Text={sectionAmil.textAmil[5]} TextClassProps="" />
               <Text Style="" Text={sectionAmil.textAmil[6]} TextClassProps="" />
@@ -482,11 +363,8 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
         {/* Publications */}
         <div className="flex flex-col justify-center">
-          <section
-            className="rounded-[20px]
-          bg-[#215995] shadow-lg m-20 mb-[100px]"
-          >
-            <div className="flex flex-col m-10 text-white">
+          <section className="m-20 mb-[100px] rounded-[20px] bg-[#215995] shadow-lg">
+            <div className="m-10 flex flex-col text-white">
               <Title
                 H={'h5'}
                 Text={sectionAmil.titlePublications}
@@ -508,17 +386,11 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Mobile */}
-      <div
-        className="grid justify-center items-center 
-      bg-gradient-to-b from-[#000] to-[#2D5987]
-      lg:hidden 
-      md:hidden
-    "
-      >
+      <div className="grid items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] md:hidden lg:hidden">
         {/* First row */}
-        <div className="mt-[80px] mb-[20px]">
+        <div className="mb-[20px] mt-[80px]">
           {/* First grid item */}
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <Video
               width={`310px`}
               height={`250px`}
@@ -528,23 +400,19 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         {/* Second row */}
         <div className="mt-[20px]">
-          <div className="grid flex justify-center items-center">
-            <div className="flex justify-center items-center text-white m-10">
+          <div className="flex grid items-center justify-center">
+            <div className="m-10 flex items-center justify-center text-white">
               <Title H="h2" Text={sectionAmil.titleAmil} TitleClassProps="" />
             </div>
             <ExportedImage
-              className="w-[240px] h-[300px]"
+              className="h-[300px] w-[240px]"
               src={AmilInMeeting}
               alt="Amil in a meeting"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="grid flex justify-center items-center
-          text-xl mt-[20px] mx-10 my-8 text-white
-        "
-          >
+          <div className="mx-10 my-8 mt-[20px] flex grid items-center justify-center text-xl text-white">
             <Text
               Style="subtitle"
               Text={sectionAmil.textAmil[0]}
@@ -564,21 +432,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Third row */}
-        <div className="grid flex justify-center items-center">
-          <div className="flex justify-center items-center">
+        <div className="flex grid items-center justify-center">
+          <div className="flex items-center justify-center">
             <ExportedImage
-              className="w-[325px] h-[250px]"
+              className="h-[250px] w-[325px]"
               src={AmilInLab}
               alt="Amil and his coworkers in a lab"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="flex-col flex-1
-          mx-10 my-8 text-xl text-white
-        "
-          >
+          <div className="mx-10 my-8 flex-1 flex-col text-xl text-white">
             <Text
               Style="subtitle"
               Text={sectionAmil.textAmil[3]}
@@ -588,21 +452,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fourth row */}
-        <div className="grid flex justify-center items-center">
-          <div className="flex justify-center items-center">
+        <div className="flex grid items-center justify-center">
+          <div className="flex items-center justify-center">
             <ExportedImage
-              className="w-[325px] h-[250px]"
+              className="h-[250px] w-[325px]"
               src={AmilInJapan}
               alt="Amil with his friends in Japan"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="flex-col flex-1
-          mx-10 my-8 text-xl text-white
-        "
-          >
+          <div className="mx-10 my-8 flex-1 flex-col text-xl text-white">
             <Text
               Style="subtitle"
               Text={sectionAmil.textAmil[4]}
@@ -612,21 +472,17 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fifth row */}
-        <div className="grid flex justify-center items-center">
-          <div className="flex justify-center items-center">
+        <div className="flex grid items-center justify-center">
+          <div className="flex items-center justify-center">
             <ExportedImage
-              className="w-[325px] h-[275px]"
+              className="h-[275px] w-[325px]"
               src={AmilAtOneYoungWorld}
               alt="Amil shaking hands at the One Young World conference"
               priority
               basePath={basePath}
             />
           </div>
-          <div
-            className="flex-col flex-1
-          mx-10 my-8 text-xl text-white
-        "
-          >
+          <div className="mx-10 my-8 flex-1 flex-col text-xl text-white">
             <Text
               Style="subtitle"
               Text={sectionAmil.textAmil[5]}
@@ -641,11 +497,8 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Publications */}
-        <section
-          className="rounded-[50px]
-        bg-[#215995] shadow-lg mt-[50px] mb-[50px] m-[20px]"
-        >
-          <div className="flex flex-col items-center text-center m-6 text-white">
+        <section className="m-[20px] mb-[50px] mt-[50px] rounded-[50px] bg-[#215995] shadow-lg">
+          <div className="m-6 flex flex-col items-center text-center text-white">
             <Title
               H={'h3'}
               Text={sectionAmil.titlePublications}

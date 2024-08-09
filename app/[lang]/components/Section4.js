@@ -1,5 +1,5 @@
 import { basePath } from '@/next.config.mjs';
-import ImageSection4 from '@/public/images/ourPeople/Amil.png';
+import { Amil } from '@/public/images/ourPeople';
 import ExportedImage from 'next-image-export-optimizer';
 import Button1 from './Button2';
 import TitleText from './TitleText';
@@ -17,16 +17,11 @@ export default function Section4({
   buttonRoute,
 }) {
   return (
-    <div className="text-center mt-[100px] mb-[40px] flex flex-col space-y-4 mx-[5vw]">
-      <div className="w-full flex justify-center mb-8 lg:hidden">
-        <ExportedImage
-          src={ImageSection4}
-          alt={alt}
-          priority
-          basePath={basePath}
-        />
+    <div className="mx-[5vw] mb-[40px] mt-[100px] flex flex-col space-y-4 text-center">
+      <div className="mb-8 flex w-full justify-center lg:hidden">
+        <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
       </div>
-      <div className="w-full text-center flex flex-col items-center gap-5 lg:hidden">
+      <div className="flex w-full flex-col items-center gap-5 text-center lg:hidden">
         <TitleText
           TitleSize={TitleSize1}
           TitleLabel={TitleLabel1}
@@ -67,17 +62,12 @@ export default function Section4({
         />
       </div>
 
-      <div className="hidden lg:flex items-center flex-1 mt-[80px]">
-        <div className="w-1/2 flex items-center justify-start">
-          <ExportedImage
-            src={ImageSection4}
-            alt={alt}
-            priority
-            basePath={basePath}
-          />
+      <div className="mt-[80px] hidden flex-1 items-center lg:flex">
+        <div className="flex w-1/2 items-center justify-start">
+          <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
         </div>
-        <div className="w-1/2 flex items-center justify-start sm:justify-center">
-          <div className="w-full text-left flex flex-col gap-5">
+        <div className="flex w-1/2 items-center justify-start sm:justify-center">
+          <div className="flex w-full flex-col gap-5 text-left">
             <TitleText
               TitleSize={TitleSize1}
               TitleLabel={TitleLabel1}
@@ -105,7 +95,7 @@ export default function Section4({
               TitleClassProps={'text-white'}
               TextClassProps={'text-white'}
             />
-            <div className="hidden sm:flex flex-col justify-center">
+            <div className="hidden flex-col justify-center sm:flex">
               <Button1
                 size="medium"
                 type="primary"

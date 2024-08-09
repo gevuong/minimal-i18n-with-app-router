@@ -1,5 +1,5 @@
-// Images
-export { default as BgHeader } from './bg-ai-hand.png';
+// Background Images
+export { default as BgHeader } from './bg-ai-hand.webp';
 
 // Icons
 export { default as GlobeIcon } from '../../icons/icon-globe-white.png';

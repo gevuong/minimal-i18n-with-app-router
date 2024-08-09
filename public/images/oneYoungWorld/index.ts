@@ -1,6 +1,6 @@
 // Background
-export { default as BodyBackground } from './bg-body.jpg';
-export { default as HeaderBackground } from './bg-header.png';
+export { default as BgBody } from './bg-body.webp';
+export { default as BgHeader } from './bg-header.webp';
 
 // Icons
 export { default as AmbassadorIcon } from '../../icons/icon-female.png';

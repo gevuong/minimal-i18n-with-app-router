@@ -1,10 +1,10 @@
 import {
   AmbassadorIcon,
-  BodyBackground,
+  BgBody,
+  BgHeader,
   DiverseIcon,
   GlobeIcon,
   GonzaloTestimonial,
-  HeaderBackground,
   MarcosTestimonial,
   SebastianTestimonial,
   YouthIcon,
@@ -14,7 +14,7 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 const oneYoungWorld: OneYoungWorld = {
   header: {
     text: 'Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do.',
-    image: HeaderBackground,
+    image: BgHeader,
     altText: '',
   },
   navbarTexts: {
@@ -22,7 +22,7 @@ const oneYoungWorld: OneYoungWorld = {
     teamLeads: 'Team Leads',
   },
   oyw: {
-    bgImage: BodyBackground,
+    bgImage: BgBody,
     altText: '',
     virufyAndOyw: {
       title: 'One Young World',

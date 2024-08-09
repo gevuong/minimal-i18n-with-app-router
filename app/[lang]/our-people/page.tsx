@@ -1,28 +1,30 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
-import HeaderBackground from '@/public/images/ourPeople/bg-header.jpg';
-import Card1 from '@/public/images/ourPeople/card1.jpg';
-import Card10 from '@/public/images/ourPeople/card10.jpg';
-import Card11 from '@/public/images/ourPeople/card11.jpg';
-import Card12 from '@/public/images/ourPeople/card12.jpg';
-import Card13 from '@/public/images/ourPeople/card13.jpg';
-import Card15 from '@/public/images/ourPeople/card15.jpg';
-import Card16 from '@/public/images/ourPeople/card16.jpg';
-import Card17 from '@/public/images/ourPeople/card17.jpg';
-import Card18 from '@/public/images/ourPeople/card18.jpg';
-import Card19 from '@/public/images/ourPeople/card19.jpg';
-import Card2 from '@/public/images/ourPeople/card2.jpg';
-import Card20 from '@/public/images/ourPeople/card20.jpg';
-import Card21 from '@/public/images/ourPeople/card21.jpg';
-import Card22 from '@/public/images/ourPeople/card22.jpg';
-import Card23 from '@/public/images/ourPeople/card23.jpg';
-import Card3 from '@/public/images/ourPeople/card3.jpg';
-import Card4 from '@/public/images/ourPeople/card4.jpg';
-import Card5 from '@/public/images/ourPeople/card5.jpg';
-import Card6 from '@/public/images/ourPeople/card6.jpg';
-import Card7 from '@/public/images/ourPeople/card7.jpg';
-import Card8 from '@/public/images/ourPeople/card8.jpg';
-import Card9 from '@/public/images/ourPeople/card9.jpg';
+import {
+  BgHeader,
+  Card1,
+  Card10,
+  Card11,
+  Card12,
+  Card13,
+  Card15,
+  Card16,
+  Card17,
+  Card18,
+  Card19,
+  Card2,
+  Card20,
+  Card21,
+  Card22,
+  Card23,
+  Card3,
+  Card4,
+  Card5,
+  Card6,
+  Card7,
+  Card8,
+  Card9,
+} from '@/public/images/ourPeople';
 import ExportedImage from 'next-image-export-optimizer';
 import { getDictionary } from '../../dictionaries';
 import Card from '../components/Card';
@@ -172,11 +174,11 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <>
       <div className="w-full overflow-hidden">
-        <div className="over overflow-hidden relative flex justify-center">
+        <div className="over relative flex justify-center overflow-hidden">
           <div className="contrast-1 brightness-100">
             <ExportedImage
               className="h-full w-screen object-cover"
-              src={HeaderBackground}
+              src={BgHeader}
               alt=""
               priority
               basePath={basePath}
@@ -191,13 +193,13 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       <div
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col items-center justify-center"
         style={{
           background:
             'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)',
         }}
       >
-        <div className="flex flex-col justify-center items-center max-w-[1440px]">
+        <div className="flex max-w-[1440px] flex-col items-center justify-center">
           <Section4
             TitleSize1="h1"
             TitleSize2="h3"
