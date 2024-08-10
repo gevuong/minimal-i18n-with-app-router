@@ -1,6 +1,15 @@
 import { type JobListing } from '../types/jobListing';
 
 const jobListing: JobListing = {
+  titleImage:
+    'Virufy is entirely run by volunteers and pro bono partner companies.',
+  title: 'Our Mission',
+  text: 'Virufy, a nonprofit research consortium of researchers, innovators, and scientists, has united volunteers from 25+ countries to develop a smartphone app for the detection of COVID-19. Initially developed as a Stanford University COVID-19 Response Innovation Lab project, Virufy’s artificial intelligence (AI) COVID-19 diagnostic solution fights the pandemic through widespread, accessible, and free testing.',
+  modal: {
+    text: 'Do you understand these are all unpaid, volunteer positions?',
+    yes: 'Yes',
+    no: 'No',
+  },
   jobList: [
     {
       category: 'Engineering',
@@ -133,15 +142,6 @@ const jobListing: JobListing = {
       ],
     },
   ],
-  titleImage:
-    'Virufy is entirely run by volunteers and pro bono partner companies.',
-  title: 'Our Mission',
-  text: 'Virufy, a nonprofit research consortium of researchers, innovators, and scientists, has united volunteers from 25+ countries to develop a smartphone app for the detection of COVID-19. Initially developed as a Stanford University COVID-19 Response Innovation Lab project, Virufy’s artificial intelligence (AI) COVID-19 diagnostic solution fights the pandemic through widespread, accessible, and free testing.',
-  modal: {
-    text: 'Do you understand these are all unpaid, volunteer positions?',
-    yes: 'Yes',
-    no: 'No',
-  },
 };
 
 export default jobListing;

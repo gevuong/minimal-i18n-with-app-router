@@ -2,7 +2,6 @@ import { type JobDetails } from '../types/jobDetails';
 
 const jobDetails: JobDetails = {
   '1': {
-    id: 1,
     title: 'Software Engineer',
     description:
       'Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.',
@@ -32,7 +31,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '2': {
-    id: 2,
     title: 'Machine Learning Engineer',
     description:
       'Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.',
@@ -65,7 +63,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '3': {
-    id: 3,
     title: 'Machine Learning Engineer (Modeling)',
     description:
       'Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.',
@@ -96,7 +93,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '4': {
-    id: 4,
     title: 'Audio Signal Processing Engineer',
     description:
       'Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.',
@@ -124,7 +120,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '5': {
-    id: 5,
     title: 'DevOps Engineer',
     description:
       'Seeking a part-time volunteer to work with machine learning, deep learning, and signal processing for audio analysis in a medical setting. We welcome students and professionals with experience in these domains. The candidate will be immersed in a highly collaborative environment alongside senior AI engineers and mentors.',
@@ -156,7 +151,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '6': {
-    id: 6,
     title: 'Infosec Engineer',
     description:
       'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the management and development team to help manage the internal data privacy concerns, potentially under mentorship from senior licensed lawyers.',
@@ -188,7 +182,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '7': {
-    id: 7,
     title: 'Data Privacy Intern',
     description:
       'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with Virufy management and globally-dispersed legal teams to help manage data privacy concerns for their local jurisdictions.',
@@ -215,7 +208,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '8': {
-    id: 8,
     title: 'Associate Data Scientist',
     description:
       'Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.',
@@ -244,7 +236,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '9': {
-    id: 9,
     title: 'Business Manager',
     description:
       'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy management and development team to help manage the overall business, product, and finances.',
@@ -274,7 +265,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '10': {
-    id: 10,
     title: 'Project Manager',
     description:
       'We are looking for a Skilled & Talented Project Manager who loves to solve problems on the fly. You will be working with the Company Operations Lead on executing multiple projects & initiatives with Tight deadlines. You will have to step in and create systems & processes for everything to flow smoothly. The work environment is a startup work environment so there will be a lot of “newness” to the job - Which means that you will be creating efficient processes for the organization along with the guidance & direction of the Operations Lead. For more details on the role, see below.',
@@ -307,7 +297,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '11': {
-    id: 11,
     title: 'Product Manager',
     description:
       'This person will contribute on a part-time volunteer basis and collaborate closely with the development team, define the product roadmap, manage development progress and align with stakeholders.',
@@ -340,7 +329,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '12': {
-    id: 12,
     title: 'HR Business Partner',
     description:
       'Seeking a part-time, volunteer HR Partner to work as part of the management team.',
@@ -375,7 +363,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '13': {
-    id: 13,
     title: 'Human Resources Administrative Assistant',
     description:
       'Seeking an individual to assist in all HR-related administrative tasks. This person will report directly to the Human Resources Team Lead.',
@@ -407,7 +394,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '14': {
-    id: 14,
     title: 'Technical Recruiter',
     description:
       'Communicate with HR and Virufy leadership for the available positions and their requirements.',
@@ -435,7 +421,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '15': {
-    id: 15,
     title: 'Corporate Attorney (IT Oriented)',
     description:
       'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with Virufy management and globally-dispersed legal teams to help manage data privacy concerns for their local jurisdictions.',
@@ -463,7 +448,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '16': {
-    id: 16,
     title: 'Paralegal',
     description:
       'Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy globally-dispersed legal team.',
@@ -494,7 +478,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '17': {
-    id: 17,
     title: 'Business Analyst',
     description:
       'Business analysts are the drivers of our continued growth and success. With their commitment to innovation, these analysts seek, develop, and help implement strategic initiatives for improved efficiency and productivity. We’re currently searching for an experienced business analyst to help guide our organization to the future. From researching progressive systems solutions to evaluating their impacts, the ideal candidate will be a detailed planner, expert communicator, and top-notch analyst. This person should also be wholly committed to the discovery and development of innovative solutions in an ever-changing digital landscape.',
@@ -534,7 +517,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '18': {
-    id: 18,
     title: 'Python Programmer',
     description: 'Looking for Python Programmers',
     responsibilities: [],
@@ -556,7 +538,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '19': {
-    id: 19,
     title: 'Technical Writer',
     description:
       'Because of our commitment to client satisfaction, Virufy has grown into an industry leader. The driving force behind this commitment is an unwavering belief in clear and effective communications. We’re searching for an experienced technical writer to join our team and help take our client-focused services to new heights. The ideal candidate will have proven success in a highly technical field, such as software development, computer science, or engineering. Also important in this role are an ability to evaluate and analyze complex information and a natural desire to help people understand it.',
@@ -597,7 +578,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '20': {
-    id: 20,
     title: 'Quality Assurance Engineer',
     description:
       'We are a healthcare AI nonprofit startup focused on developing innovative solutions to combat COVID-19. Our mission is to leverage artificial intelligence and machine learning to create a mobile application that can detect the presence of COVID-19 through analysis of cough sounds. We are committed to improving public health and safety by providing accurate and accessible tools for early detection and prevention of infectious diseases.',
@@ -633,7 +613,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '21': {
-    id: 21,
     title: 'AWS Developer',
     description:
       'We are seeking an experienced AWS Developer to join our team. The ideal candidate will possess a strong background in building scalable, reliable, and maintainable services on AWS. You will collaborate with cross-functional teams to design, develop, and deploy applications and services on the AWS platform.',
@@ -676,7 +655,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '22': {
-    id: 22,
     title: 'AWS Architect',
     description:
       'This Technical Architect will join a modernization effort from Monolithic architecture to Cloud based systems. This Architect will be providing technical leadership across multiple teams within our client’s organization to help establish standards, tools and help other teams gain perspective. They will be collaborating with key stakeholders to outline the design, implementation and adaption of several cloud-based solutions and technologies. This person needs to be comfortable evaluating API Platforms, Event-Based Architectures, Serverless Technologies, and Observability Platforms.',
@@ -728,7 +706,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '23': {
-    id: 23,
     title: 'AWS Engineer',
     description:
       'Virufy is on the lookout for an AWS Engineer willing to contribute on a volunteer basis. This role offers the chance to immerse oneself in cloud computing and infrastructure, especially within the Amazon Web Services environment, while making a meaningful impact.',
@@ -760,7 +737,6 @@ const jobDetails: JobDetails = {
     ],
   },
   '24': {
-    id: 24,
     title: 'Cloud Engineer',
     description:
       'As Virufy expands into multiple countries, we need greater organization of our data. We have more than 700,000 cough samples from disparate sources—and growing. As such, the primary responsibility of this role is to build data pipelines from these external sources to a data warehouse. We’re on AWS, but pivoting towards open-source tooling.',
@@ -799,7 +775,6 @@ const jobDetails: JobDetails = {
   },
   //Steven Hunt will give the details for this opening next week
   '25': {
-    id: 25,
     title: 'Unix Administrator',
     description: 'Coming soon',
     responsibilities: ['Coming soon'],
