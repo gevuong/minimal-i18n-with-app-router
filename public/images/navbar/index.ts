@@ -1,5 +1,5 @@
 export { default as VirufyLogo } from '../../logos/virufy.svg';
-export { default as DonateHero } from './hero-donate.png';
+export { default as DonateHero } from './hero-donate.webp';
 
 // Flag Icons
 export { default as BrazilFlagIcon } from '../../icons/icon-flag-brazil.png';
