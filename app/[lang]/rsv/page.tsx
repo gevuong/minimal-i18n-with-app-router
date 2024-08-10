@@ -2,7 +2,7 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { BodyBackground, RsvHeaderBackground } from '@/public/images/diseases';
 import ExportedImage from 'next-image-export-optimizer';
-import DiseasesNavbar from '../components/DiseasesNavbar';
+import DiseasesNavbar from '../components/coughCheck/DiseasesNavbar';
 
 const RsvPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
@@ -21,10 +21,10 @@ const RsvPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           />
 
           {/* Text Container */}
-          <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[650px]">
+          <div className="relative flex h-[300px] flex-col items-center justify-center md:h-[650px]">
             {/* Sizing & Spacing Container */}
             <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-4xl">
-              <h1 className="md:text-4xl text-2xl font-large leading-loose md:leading-normal">
+              <h1 className="font-large text-2xl leading-loose md:text-4xl md:leading-normal">
                 RSV
               </h1>
             </div>
@@ -49,8 +49,8 @@ const RsvPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         {/* Content Container */}
         <div className="relative z-10">
           <DiseasesNavbar lang={lang} />
-          <div className="text-left px-10 text-white mt-8">
-            <p className="md:text-2xl text-xl">Information coming soon.</p>
+          <div className="mt-8 px-10 text-left text-white">
+            <p className="text-xl md:text-2xl">Information coming soon.</p>
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { getDictionary } from '../dictionaries';
-import LinkAtom from './components/LinkAtom';
+import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
 
@@ -127,141 +127,139 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   {/*body*/}
 
                   <div className="flex w-full items-center justify-center">
-                    <div className="w-full px-0 ">
+                    <div className="w-full px-0">
                       <div>
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Argentina
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1Fef7l77QP3EZboej6mw_q7fBNrayvs03/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Política de Privacidad
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Bolivia
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Política de Privacidad
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Brazil
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1Zl9QO-Dliik84xjuXCdFGcDOk5GytXr1/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Política de Privacidade
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Colombia
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1eQOx81C5e5CoESYsEnrE9sWhCkTMDPEq/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Política de Privacidad
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Greece
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1n8YZTb3bAqLLL5ygVE8-MstdzECcKJ_b/view">
-                            <p className="mt-3 px-4  py-3">
-                              Πολιτική απορρήτου
-                            </p>
+                            <p className="mt-3 px-4 py-3">Πολιτική απορρήτου</p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Mexico
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1Qr3cFttfhjUoKxLcQrVEhsuO-OJ6VE0_/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Aviso De Privacidad
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Peru
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1UgN2Bu2XIvv2YirLRYloSPlbYln_uzf9/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               Política de Privacidad
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             United States
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view">
-                            <p className="mt-3 px-4  py-3">Privacy Policy</p>
+                            <p className="mt-3 px-4 py-3">Privacy Policy</p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Europe
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view">
-                            <p className="mt-3 px-4  py-3">Privacy Policy</p>
+                            <p className="mt-3 px-4 py-3">Privacy Policy</p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Japan
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/11RTMmnHW4SqHNf7htr3xuSi-o2v2vWlp/view">
-                            <p className="mt-3 px-4  py-3">
+                            <p className="mt-3 px-4 py-3">
                               プライバシーポリシー
                             </p>
                           </a>
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             Other Countries
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <a href="https://drive.google.com/file/d/1fUIe6FBss6WrwsrssVr6OM_2uFFVhESD/view">
-                            <p className="mt-3 px-4  py-3">Privacy Policy</p>
+                            <p className="mt-3 px-4 py-3">Privacy Policy</p>
                           </a>
                         </details>
 
@@ -486,14 +484,14 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   {/*body*/}
 
                   <div className="flex w-full items-center justify-center">
-                    <div className="w-full px-0 ">
+                    <div className="w-full px-0">
                       <div>
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             1. General
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             The Covid Detection Foundation (“Virufy”, “we”, “us”
                             or “our”), a California nonprofit corporation
                             located at 4546, El Camino Real, B10 #614, Los
@@ -587,12 +585,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             2. What are Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             Cookies are text files containing small pieces of
                             data that are stored on your computer or mobile
                             device whenever you access a website. They are used
@@ -616,12 +614,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         </details>
 
                         <hr className="border-1 border-gray-400" />
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             3. How do we use Cookies
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             Cookies are messages that web servers pass to web
                             browsers when you visit websites. Cookies are most
                             commonly used to track website activity, to track
@@ -679,12 +677,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
                         <hr className="border-1 border-gray-400" />
 
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             4. How can you control Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             You have the right to decide whether to accept or
                             reject cookies. You do not have to accept cookies
                             and consent can be withdrawn at any time. Please
@@ -730,12 +728,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
                         <hr className="border-1 border-gray-400" />
 
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             5. Amendments to this Cookie Policy
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             We may update this Cookie Policy from time to time
                             in order to reflect, for example, changes to the
                             cookies we use or for other operational, legal or
@@ -754,12 +752,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
                         <hr className="border-1 border-gray-400" />
 
-                        <details className="mb-3  w-full cursor-pointer bg-white">
+                        <details className="mb-3 w-full cursor-pointer bg-white">
                           <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
                             6. How can you contact us with questions?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4  py-3">
+                          <p className="mt-3 px-4 py-3">
                             If you have any concerns relating to our use of
                             cookies or other technologies, please contact us at
                             <hr className="border-0" />
@@ -786,7 +784,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               <ExportedImage
                 src={VirufyLogo}
                 alt="Virufy logo"
-                className="w-[160px] h-[48px]"
+                className="h-[48px] w-[160px]"
                 basePath={basePath}
               />
             </Link>
@@ -800,8 +798,8 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     key={index}
                     className={`${
                       activeLink === link.label
-                        ? 'solid relative border-b-2 before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
-                        : 'relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                        ? 'solid relative border-b-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                        : 'relative before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                     }`}
                     href={link.route}
                     onClick={() => setActiveLink(link.label)}
@@ -840,7 +838,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               <ExportedImage
                 src={InstagramIconWhite}
                 alt="Instagram icon"
-                className="w-[30px] h-[40px]"
+                className="h-[40px] w-[30px]"
                 basePath={basePath}
               />
             </Link>
@@ -851,7 +849,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               <ExportedImage
                 src={LinkedInIconWhite}
                 alt="LinkedIn icon"
-                className="w-[30px] h-[40px]"
+                className="h-[40px] w-[30px]"
                 basePath={basePath}
               />
             </Link>
@@ -862,7 +860,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               <ExportedImage
                 src={InstagramIconDarkTurquoise}
                 alt="Instagram icon"
-                className="w-[30px] h-[40px]"
+                className="h-[40px] w-[30px]"
                 basePath={basePath}
               />
             </Link>
@@ -873,7 +871,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               <ExportedImage
                 src={LinkedInIconDarkTurquoise}
                 alt="LinkedIn icon"
-                className="w-[30px] h-[40px]"
+                className="h-[40px] w-[30px]"
                 basePath={basePath}
               />
             </Link>

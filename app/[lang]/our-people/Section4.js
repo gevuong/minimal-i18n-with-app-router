@@ -1,8 +1,8 @@
 import { basePath } from '@/next.config.mjs';
 import { Amil } from '@/public/images/ourPeople';
 import ExportedImage from 'next-image-export-optimizer';
-import Button1 from './Button2';
-import TitleText from './TitleText';
+import TitleText from '../components/TitleText';
+import Button from './Button';
 
 export default function Section4({
   ContainerTitleProps,
@@ -49,7 +49,7 @@ export default function Section4({
           TitleClassProps={'text-white'}
           TextClassProps={'text-white'}
         />
-        <Button1
+        <Button
           size="medium"
           type="primary"
           path={buttonRoute}
@@ -96,7 +96,7 @@ export default function Section4({
               TextClassProps={'text-white'}
             />
             <div className="hidden flex-col justify-center sm:flex">
-              <Button1
+              <Button
                 size="medium"
                 type="primary"
                 path={buttonRoute}

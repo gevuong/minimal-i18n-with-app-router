@@ -1,25 +1,30 @@
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import Text from './Text';
-import Title from './Title';
+import Text from '../components/Text';
+import Title from '../components/Title';
+import { type CardData } from './page';
 
-export default function Card({ CardsData }) {
+type AdvisorCardsProps = {
+  cards: CardData[];
+};
+
+const AdvisorCards = ({ cards }: AdvisorCardsProps) => {
   // Calculate the number of cards in the last row
-  const remainder = CardsData?.length % 3;
+  const remainder = cards?.length % 3;
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-4 text-center items-center justify-center mt-5 w-full lg:w-[80rem] xl:w-[80rem] mx-[10rem] lg:mx-[5rem]">
-      {CardsData?.map(({ route, name, text, subtitle }, index) => (
+    <div className="mx-[10rem] mb-4 mt-5 grid w-full grid-cols-2 items-center justify-center gap-4 text-center lg:mx-[5rem] lg:w-[80rem] lg:grid-cols-3 xl:w-[80rem]">
+      {cards?.map(({ route, name, text, subtitle }, index) => (
         <div
-          className={`flex flex-col items-center space-y-4 p-4 w-full ${
-            remainder === 1 && index === CardsData.length - 1
+          className={`flex w-full flex-col items-center space-y-4 p-4 ${
+            remainder === 1 && index === cards.length - 1
               ? 'lg:col-start-2'
               : ''
           }`}
           key={name}
         >
           <div className="relative w-full">
-            <div className="absolute top-4 lg:top-5 xl:top-7 z-10 w-full">
+            <div className="absolute top-4 z-10 w-full lg:top-5 xl:top-7">
               <Text
                 Style="subtitleCompact"
                 Text={subtitle}
@@ -33,7 +38,7 @@ export default function Card({ CardsData }) {
               priority
               basePath={basePath}
             />
-            <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 p-1 top-[66%] lg:top-[70%]">
+            <div className="absolute inset-x-0 bottom-0 top-[66%] bg-black bg-opacity-50 p-1 lg:top-[70%]">
               {name && (
                 <Title
                   H="h4compact"
@@ -53,4 +58,6 @@ export default function Card({ CardsData }) {
       ))}
     </div>
   );
-}
+};
+
+export default AdvisorCards;

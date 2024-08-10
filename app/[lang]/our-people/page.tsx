@@ -26,17 +26,25 @@ import {
   Card9,
 } from '@/public/images/ourPeople';
 import ExportedImage from 'next-image-export-optimizer';
+import { type StaticImageData } from 'next/image';
 import { getDictionary } from '../../dictionaries';
-import Card from '../components/Card';
-import Section4 from '../components/Section4';
 import Title from '../components/Title';
+import AdvisorCards from './AdvisorCards';
+import Section4 from './Section4';
+
+export type CardData = {
+  route: StaticImageData;
+  name: string;
+  subtitle: string;
+  text: string;
+};
 
 const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     ourPeople: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = getDictionary(lang);
 
-  const CardsData = [
+  const cards: CardData[] = [
     {
       route: Card1,
       name: 'Kara Meister, M.D.',
@@ -221,7 +229,7 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                    bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
           />
 
-          <Card CardsData={CardsData} />
+          <AdvisorCards cards={cards} />
         </div>
       </div>
     </>

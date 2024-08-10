@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LinkAtomProps } from '../themes';
+import { LinkAtomProps } from '../../themes';
 
 export default function LinkAtom({ Routes, Style }) {
   return (

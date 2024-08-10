@@ -10,7 +10,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import { getDictionary } from '../../dictionaries';
 import Text from '../components/Text';
 import Title from '../components/Title';
-import Video from '../components/Video';
+import Video from './Video';
 
 const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {

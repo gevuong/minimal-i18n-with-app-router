@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ButtonSize, ButtonType } from '../themes';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
-export default function Button2({
+export default function Button({
   size,
   type,
   label,
