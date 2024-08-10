@@ -30,7 +30,7 @@ export default async function RootLayout({
     <html lang={lang}>
       <body className={nunitoSans.className}>
         <Navbar lang={lang} />
-        {children}
+        <main>{children}</main>
         <Footer lang={lang} />
       </body>
     </html>

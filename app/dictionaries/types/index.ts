@@ -2,7 +2,6 @@ import { type Ai } from './ai';
 import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
-import { type Home } from './home';
 import { type JobDetails } from './jobDetails';
 import { type JobListing } from './jobListing';
 import { type NavbarType } from './navbar';
@@ -18,7 +17,6 @@ export interface I18nData {
   amilsStory: AmilsStory;
   faq: FAQ;
   footer: Footer;
-  home: Home;
   jobDetails: JobDetails;
   jobListing: JobListing;
   navbar: NavbarType;
