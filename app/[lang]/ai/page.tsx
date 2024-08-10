@@ -26,7 +26,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           />
 
           {/* Title, Text, Link Container */}
-          <div className="relative flex flex-col items-center justify-center pt-60 pb-40 lg:right-[100px]">
+          <div className="relative flex flex-col items-center justify-center pb-40 pt-60 lg:right-[100px]">
             {/* Sizing & Spacing Container */}
             <div className="max-w-xl space-y-28 px-10 text-center text-white lg:max-w-3xl lg:text-left">
               <h2 className="text-4xl font-semibold lg:text-5xl lg:font-normal">
@@ -37,7 +37,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     <span key={i} className="text-blue-500">
                       {text.text}
                     </span>
-                  )
+                  ),
                 )}
               </h2>
 
@@ -46,8 +46,8 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
                   <Link
-                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-sm font-medium lg:py-4 lg:px-8 lg:text-lg"
-                    href={heroSection.url}
+                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-sm font-medium lg:px-8 lg:py-4 lg:text-lg"
+                    href={`/${lang}/${heroSection.url}`}
                   >
                     {heroSection.linkText}
                   </Link>
