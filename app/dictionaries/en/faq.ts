@@ -214,6 +214,6 @@ const faq: FAQ = {
       },
     ]
   },
-}
+};
 
 export default faq;
