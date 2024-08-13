@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { getDictionary } from '../../dictionaries';
 import PublicationCard from './PublicationCard';
 import ShareYourCoughModal from './ShareYourCoughModal';
+import { useRouter } from 'next/navigation';
 
 const PublicationsPage = ({
   params: { lang },
@@ -23,7 +24,12 @@ const PublicationsPage = ({
 
   const [isShareYourCoughModalOpen, setIsShareYourCoughModalOpen] =
     useState(false);
-
+    
+    const router = useRouter();
+    const handleRedirect = () => {
+      router.push('/en/job-listing');
+    };
+  
   return (
     <div className="relative">
       {/* Hero Section */}
@@ -87,7 +93,7 @@ const PublicationsPage = ({
 
             <button
               className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:py-4 md:px-8 md:text-lg"
-              onClick={() => setIsShareYourCoughModalOpen(true)}
+              onClick={handleRedirect}
             >
               {coughSection.linkText}
             </button>
@@ -97,6 +103,9 @@ const PublicationsPage = ({
 
       {/* Share Your Cough Modal */}
       <ShareYourCoughModal
+
+
+
         isOpen={isShareYourCoughModalOpen}
         handleClose={() => setIsShareYourCoughModalOpen(false)}
         lang={lang}
