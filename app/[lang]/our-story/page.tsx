@@ -16,7 +16,7 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative -top-24">
       {/* About Us/Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-black to-[#162b4c] ">
+        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-40"
             src={MaskHeader}
