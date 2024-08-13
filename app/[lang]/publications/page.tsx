@@ -25,7 +25,7 @@ const PublicationsPage = ({
     useState(false);
 
   return (
-    <div className="relative">
+    <div className="relative -top-24">
       {/* Hero Section */}
       <section>
         {/* Hero Container */}

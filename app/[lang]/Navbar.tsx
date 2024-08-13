@@ -29,7 +29,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const currPathname = usePathname();
 
   useEffect(() => {
-    window.location.pathname === '/es/'
+    window.location.pathname === '/es'
       ? setActiveLink('home')
       : window.location.pathname === '/es/ai'
       ? setActiveLink('ourTechnology')
@@ -47,7 +47,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       ? setActiveLink('aboutUs')
       : window.location.pathname === '/es/faq'
       ? setActiveLink('faq')
-      : window.location.pathname === '/en/'
+      : window.location.pathname === '/en'
       ? setActiveLink('home')
       : window.location.pathname === '/en/ai'
       ? setActiveLink('ourTechnology')

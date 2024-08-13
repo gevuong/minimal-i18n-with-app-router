@@ -16,6 +16,7 @@ import { getDictionary } from '../dictionaries';
 import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
+import { usePathname } from 'next/navigation';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = [
@@ -53,16 +54,16 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
   const [activeLink, setActiveLink] = useState('');
+  
+  const currPath = usePathname();
 
   useEffect(() => {
-    {
-      links1.map((link) => {
-        link.route === window.location.pathname
-          ? setActiveLink(link.label)
-          : '';
-      });
-    }
-  });
+    links1.map((link) => {
+      if (link.route === currPath) {
+        setActiveLink(link.label);
+      }
+    });
+  },[currPath]);
 
   return (
     <>
