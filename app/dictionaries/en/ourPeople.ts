@@ -7,7 +7,7 @@ const ourPeople: OurPeople = {
     titleMeetOurFounder: 'Meet Our Founder',
     titleAmil: 'Amil Khanzada',
     textAmil:
-      'MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences',
+      "Doctorate of Engineering Candidate, University of Fukui, Japan . Former MBA & Master of Engineering(Data Science) Joint-Degree Student , UC Berkeley.",
     button: 'READ MORE',
   },
   sectionAdvisors: {

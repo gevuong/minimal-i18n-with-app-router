@@ -43,9 +43,9 @@ const publications: Publications = {
       linkText: 'Read More',
     },
   ],
-  coughSection: {
-    title: "Let's help the world and save lives by recording your cough",
-    linkText: 'Share Your Cough',
+  collaborateSection: {
+    title: 'Interested to collaborate on our research?',
+    linkText: 'Join Our Team',
   },
 };
 

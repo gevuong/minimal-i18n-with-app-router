@@ -7,22 +7,23 @@ import {
   PhoneHeader,
 } from '@/public/images/publications/index';
 import ExportedImage from 'next-image-export-optimizer';
-import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { getDictionary } from '../../dictionaries';
 import PublicationCard from './PublicationCard';
-import ShareYourCoughModal from './ShareYourCoughModal';
 
 const PublicationsPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) => {
+  const router = useRouter();
   const {
-    publications: { publicationsSection, publicationsCards, coughSection },
+    publications: {
+      publicationsSection,
+      publicationsCards,
+      collaborateSection,
+    },
   } = getDictionary(lang);
-
-  const [isShareYourCoughModalOpen, setIsShareYourCoughModalOpen] =
-    useState(false);
 
   return (
     <div className="relative">
@@ -39,7 +40,7 @@ const PublicationsPage = ({
           />
 
           {/* Text Container */}
-          <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 pt-64 pb-40 text-center font-medium opacity-95">
+          <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 pb-40 pt-64 text-center font-medium opacity-95">
             <h1 className="text-4xl text-green-500 sm:text-5xl">
               {publicationsSection.title}
             </h1>
@@ -77,30 +78,21 @@ const PublicationsPage = ({
           </div>
         </section>
 
-        {/* Share Your Cough Section */}
+        {/* Join Our Team Section */}
         <section>
-          {/* Share Your Cough Container */}
           <div className="relative mx-auto max-w-4xl space-y-24 px-8 py-40 text-center font-medium text-white md:space-y-14">
             <h2 className="text-4xl leading-normal md:leading-relaxed">
-              {coughSection.title}
+              {collaborateSection.title}
             </h2>
-
             <button
-              className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:py-4 md:px-8 md:text-lg"
-              onClick={() => setIsShareYourCoughModalOpen(true)}
+              className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
+              onClick={() => router.push(`/${lang}/job-listing`)}
             >
-              {coughSection.linkText}
+              {collaborateSection.linkText}
             </button>
           </div>
         </section>
       </div>
-
-      {/* Share Your Cough Modal */}
-      <ShareYourCoughModal
-        isOpen={isShareYourCoughModalOpen}
-        handleClose={() => setIsShareYourCoughModalOpen(false)}
-        lang={lang}
-      />
     </div>
   );
 };
