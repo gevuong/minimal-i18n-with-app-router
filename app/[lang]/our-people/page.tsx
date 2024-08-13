@@ -61,7 +61,6 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       subtitle: 'Executive Marketing Advisor',
       text: 'Former CMO - Adobe Board Member - CommonSpirit Health',
     },
-  
     {
       route: Card5,
       name: 'Madhav Datt',
@@ -74,7 +73,6 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       subtitle: 'Executive Legal Advisor',
       text: 'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
     },
-
     {
       route: Card8,
       name: 'Ronan Dunlop',

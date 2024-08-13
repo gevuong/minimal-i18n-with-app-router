@@ -43,8 +43,8 @@ const publications: Publications = {
       linkText: 'Read More',
     },
   ],
-  coughSection: {
-    title: "Interested to collaborate on our research?",
+  collaborateSection: {
+    title: 'Interested to collaborate on our research?',
     linkText: 'Join Our Team',
   },
 };
