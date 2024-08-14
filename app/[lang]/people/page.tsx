@@ -37,7 +37,7 @@ export type CardData = {
   text: string;
 };
 
-const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = getDictionary(lang);
@@ -222,4 +222,4 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   );
 };
 
-export default OurPeoplePage;
+export default PeoplePage;
