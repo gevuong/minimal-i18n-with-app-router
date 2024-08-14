@@ -10,6 +10,7 @@ import { type OurPeople } from './ourPeople';
 import { type OurStory } from './ourStory';
 import { type Publications } from './publications';
 import { type ShareYourCough } from './shareYourCough';
+import { type Supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
 
 export interface I18nData {
@@ -25,5 +26,6 @@ export interface I18nData {
   ourStory: OurStory;
   publications: Publications;
   shareYourCough: ShareYourCough;
+  supporters: Supporters;
   teamLeads: TeamLeadsType;
 }

@@ -11,6 +11,7 @@ import ourPeople from './ourPeople';
 import ourStory from './ourStory';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
+import supporters from './supporters';
 import teamLeads from './teamLeads';
 
 const enMetadata: I18nData = {
@@ -26,6 +27,7 @@ const enMetadata: I18nData = {
   ourStory,
   publications,
   shareYourCough,
+  supporters,
   teamLeads,
 };
 
