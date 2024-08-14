@@ -15,16 +15,15 @@ Virufy is a nonprofit research organization developing artificial intelligence (
 
 ### Deploying to Github Pages
 
-Github Pages is designed to host and publish static files. Therefore, the app needed to be [statically exported](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#configuration), but that came with its own challenges.
+Github Pages is designed to host and publish static files. Therefore, the Next.js app needed to be [statically exported](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#configuration), but that came with its own challenges.
 
 1. [Static exports does not support internationalized routing with Pages Router](https://nextjs.org/docs/pages/building-your-application/routing/internationalization#how-does-this-work-with-static-generation).
 
-   - The project we adopted used Pages Router. I had tried converting the existing routing layer to App Router and deploying to Github Pages and although deploy appeared to be successful, the Github Pages returned a 404.
-   - I went ahead and rebuilt the app using the most up-to-date routing layer, App Router which supports internationalized routing.
+   - The [project we adopted](https://github.com/virufy6/virufy6.github.io/tree/release) used Pages Router. After spending considerable time updating Pages Router to the newest router, App Router, and deploying to Github Pages without success, I went ahead and built a new Next.js app from the ground up with App Router, and ensured it was deployable to GPages from the start.
 
 2. [Static exports does not support image optimization](https://nextjs.org/docs/pages/building-your-application/routing/internationalization#how-does-this-work-with-static-generation).
 
-   - When a site is statically generated, Next.js does not optimize images at build time. Instead, it will serve unoptimized images when the image enters the viewport, which led to extremely slow page load times and massive network requests that downloaded MB of data.
+   - When a site is statically generated, Next.js does not optimize images at build time. Instead, it will serve unoptimized images when the image enters the viewport, which led to extremely slow page load times and massive network requests that downloaded MBs of data.
    - I used [next-image-export-optimizer](https://github.com/Niels-IO/next-image-export-optimizer) to optimize all static images by converting them to WEBP. This significantly reduced image size and page load times.
    - For example, a background JPG that was 1.25MB was reduced to 47KB. Page load times reduced from 9 seconds to 2. Repo size reduced from 49.6MB to 2.7MB.
 
