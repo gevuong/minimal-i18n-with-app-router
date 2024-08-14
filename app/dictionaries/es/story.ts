@@ -5,10 +5,10 @@ import {
   PhoneInHandIcon,
   RecycleIcon,
   TeamIcon,
-} from '@/public/images/ourStory';
-import { type OurStory } from '../types/ourStory';
+} from '@/public/images/story';
+import { type Story } from '../types/story';
 
-const ourStory: OurStory = {
+const story: Story = {
   aboutUsSection: {
     title: 'Sobre Nosotros',
     texts: [
@@ -97,4 +97,4 @@ const ourStory: OurStory = {
   },
 };
 
-export default ourStory;
+export default story;

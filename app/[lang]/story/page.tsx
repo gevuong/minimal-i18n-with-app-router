@@ -1,15 +1,15 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
-import { HalfToneDots, MaskHeader } from '@/public/images/ourStory/index';
+import { BgBody, BgHeader } from '@/public/images/story';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import { getDictionary } from '../../dictionaries';
 import ValuesCard from './ValuesCard';
 
-const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    ourStory: { aboutUsSection, storySection, valuesSection, privacySection },
+    story: { aboutUsSection, storySection, valuesSection, privacySection },
   } = getDictionary(lang);
 
   return (
@@ -19,7 +19,7 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-40"
-            src={MaskHeader}
+            src={BgHeader}
             alt=""
             priority
             basePath={basePath}
@@ -41,7 +41,7 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       {/* Gradient Overlay Container */}
       <div className="relative bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <ExportedImage
-          src={HalfToneDots}
+          src={BgBody}
           alt=""
           className="absolute h-full w-full object-cover opacity-40"
           basePath={basePath}
@@ -70,7 +70,7 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         >
                           {text.text}
                         </Link>
-                      )
+                      ),
                     )}
                   </p>
                 ))}
@@ -89,7 +89,7 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </h2>
 
                 {/* Cards Container */}
-                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132d62] px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-y-16 lg:gap-x-20 lg:space-y-0 lg:px-20">
+                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132d62] px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-x-20 lg:gap-y-16 lg:space-y-0 lg:px-20">
                   {valuesSection.cards.map((card) => (
                     <div key={card.title}>
                       <ValuesCard {...card} />
@@ -120,4 +120,4 @@ const OurStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   );
 };
 
-export default OurStoryPage;
+export default StoryPage;

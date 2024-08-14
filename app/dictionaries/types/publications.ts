@@ -1,9 +1,9 @@
-import { type Section } from './ourStory';
+import { type Section } from './story';
 
 export interface Publications {
   publicationsSection: Section;
   publicationsCards: PublicationCard[];
-  coughSection: PublicationsCoughSection;
+  collaborateSection: PublicationsCollaborateSection;
 }
 
 export interface PublicationCard {
@@ -13,7 +13,7 @@ export interface PublicationCard {
   linkText: string;
 }
 
-interface PublicationsCoughSection {
+interface PublicationsCollaborateSection {
   title: string;
   linkText: string;
 }

@@ -23,7 +23,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
     { label: 'Home', route: [`/${lang}`] },
     { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
     { label: 'CoughCheck App', route: [`/${lang}/covid19`, `/${lang}/flu`, `/${lang}/copd`, `/${lang}/rsv`] },
-    { label: 'About', route: [`/${lang}/our-story`, `/${lang}/our-people`, `/${lang}/our-supporters`, `/${lang}/one-young-world`] },
+    { label: 'About Us', route: [`/${lang}/story`, `/${lang}/people`, `/${lang}/supporters`, `/${lang}/one-young-world`] },
     { label: 'FAQ', route: [`/${lang}/faq`] },
   ];
 
@@ -63,7 +63,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
         setActiveLink(link.label);
       }
     });
-  }, [currPath]);
+  }, [currPath, links1]);
 
   return (
     <>
@@ -802,7 +802,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         ? 'solid relative border-b-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                         : 'relative before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                     }`}
-                    href={link.route}
+                    href={link.route[0]}
                     onClick={() => setActiveLink(link.label)}
                   >
                     {link.label}

@@ -6,6 +6,7 @@ import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Text from '../components/Text';
 
@@ -19,6 +20,11 @@ const JobList = ({
   modal: JobModal;
 }) => {
   const [showModalConfirmation, setShowModalConfirmation] = useState(true);
+  const router = useRouter();
+  const closeModalAndGoToPreviousPage = (): void => {
+    setShowModalConfirmation(false);
+    router.back();
+  };
 
   return (
     <>
@@ -40,14 +46,12 @@ const JobList = ({
                       priority
                       basePath={basePath}
                     />
-                    <Link
+                    <button
                       className="hidden md:block"
-                      type="button"
-                      href={`/${lang}/one-young-world`}
-                      onClick={() => setShowModalConfirmation(false)}
+                      onClick={closeModalAndGoToPreviousPage}
                     >
                       X
-                    </Link>
+                    </button>
                   </div>
 
                   <div className="flex w-full rounded-t text-center md:text-left">
@@ -66,15 +70,13 @@ const JobList = ({
                     >
                       {modal?.yes}
                     </Link>
-                    <Link
+                    <button
                       className="mx-auto mt-6 flex w-[260px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 font-bold text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[320px] md:font-medium"
-                      type="button"
-                      href={`/${lang}/one-young-world`}
+                      onClick={closeModalAndGoToPreviousPage}
                     >
-                      {modal?.no}
-                    </Link>
+                      {modal.no}
+                    </button>
                   </div>
-                  {/*buttons*/}
                 </div>
               </div>
             </div>
