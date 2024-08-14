@@ -20,11 +20,11 @@ import { usePathname } from 'next/navigation';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = [
-    { label: 'Home', route: `/${lang}` },
-    { label: 'Technology', route: `/${lang}/ai` },
-    { label: 'CoughCheck App', route: `/${lang}/covid19` },
-    { label: 'About', route: `/${lang}/our-story` },
-    { label: 'FAQ', route: `/${lang}/faq` },
+    { label: 'Home', route: [`/${lang}`] },
+    { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+    { label: 'CoughCheck App', route: [`/${lang}/covid19`, `/${lang}/flu`, `/${lang}/copd`, `/${lang}/rsv`] },
+    { label: 'About', route: [`/${lang}/our-story`, `/${lang}/our-people`, `/${lang}/our-supporters`, `/${lang}/one-young-world`] },
+    { label: 'FAQ', route: [`/${lang}/faq`] },
   ];
 
   const privacyDetails = [
@@ -58,12 +58,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const currPath = usePathname();
 
   useEffect(() => {
-    links1.map((link) => {
-      if (link.route === currPath) {
+    links1.forEach((link) => {
+      if (link.route.some((r) => r === currPath)) {
         setActiveLink(link.label);
       }
     });
-  },[currPath]);
+  }, [currPath]);
 
   return (
     <>
