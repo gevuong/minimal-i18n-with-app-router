@@ -87,13 +87,6 @@ export default function Section3({
                     priority
                     basePath={basePath}
                   />
-                  {/* <Image
-                    className="h-[300px] w-auto xl:h-[800px]"
-                    src={VirufyMobilePhone}
-                    width="0"
-                    height="0"
-                    alt="Image of a mobile with Virufy's logo on it"
-                  /> */}
                 </div>
               </div>
             </div>
@@ -111,17 +104,6 @@ export default function Section3({
                   {buttonText}
                 </button>
               </Link>
-              {/* <button
-                className={`medium primary h-[45px] w-[315px] text-white xl:h-[65px] xl:w-[250px]`}
-                style={{
-                  borderRadius: '50px',
-                  background:
-                    'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
-                }}
-                onClick={() => (window.location.href = '/ai')}
-              >
-                {buttonText}
-              </button> */}
             </div>
           </div>
         </div>
