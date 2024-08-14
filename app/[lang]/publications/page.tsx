@@ -26,7 +26,7 @@ const PublicationsPage = ({
   } = getDictionary(lang);
 
   return (
-    <div className="relative">
+    <div className="relative -top-24">
       {/* Hero Section */}
       <section>
         {/* Hero Container */}

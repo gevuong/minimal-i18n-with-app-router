@@ -29,45 +29,34 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const currPathname = usePathname();
 
   useEffect(() => {
-    window.location.pathname === '/es/'
+    window.location.pathname === `/${lang}`
       ? setActiveLink('home')
-      : window.location.pathname === '/es/ai'
+      : window.location.pathname === `/${lang}/ai`
         ? setActiveLink('ourTechnology')
-        : window.location.pathname === '/es/publications'
+        : window.location.pathname === `/${lang}/publications`
           ? setActiveLink('ourTechnology')
-          : window.location.pathname === '/es/story'
-            ? setActiveLink('aboutUs')
-            : window.location.pathname === '/es/people'
-              ? setActiveLink('aboutUs')
-              : window.location.pathname === '/es/amils-story'
-                ? setActiveLink('aboutUs')
-                : window.location.pathname === '/es/supporters'
-                  ? setActiveLink('aboutUs')
-                  : window.location.pathname === '/es/one-young-world'
+          : window.location.pathname === `/${lang}/covid19`
+            ? setActiveLink('coughCheckApp')
+            : window.location.pathname === `/${lang}/flu`
+              ? setActiveLink('coughCheckApp')
+              : window.location.pathname === `/${lang}/copd`
+                ? setActiveLink('coughCheckApp')
+                : window.location.pathname === `/${lang}/rsv`
+                  ? setActiveLink('coughCheckApp')
+                  : window.location.pathname === `/${lang}/story`
                     ? setActiveLink('aboutUs')
-                    : window.location.pathname === '/es/faq'
-                      ? setActiveLink('faq')
-                      : window.location.pathname === '/en/'
-                        ? setActiveLink('home')
-                        : window.location.pathname === '/en/ai'
-                          ? setActiveLink('ourTechnology')
-                          : window.location.pathname === '/en/publications'
-                            ? setActiveLink('ourTechnology')
-                            : window.location.pathname === '/en/story'
-                              ? setActiveLink('aboutUs')
-                              : window.location.pathname === '/en/people'
-                                ? setActiveLink('aboutUs')
-                                : window.location.pathname === '/en/amils-story'
-                                  ? setActiveLink('aboutUs')
-                                  : window.location.pathname ===
-                                      '/en/supporters'
-                                    ? setActiveLink('aboutUs')
-                                    : window.location.pathname ===
-                                        '/en/one-young-world'
-                                      ? setActiveLink('aboutUs')
-                                      : window.location.pathname === '/en/faq'
-                                        ? setActiveLink('faq')
-                                        : setActiveLink('');
+                    : window.location.pathname === `/${lang}/people`
+                      ? setActiveLink('aboutUs')
+                      : window.location.pathname === `/${lang}/amils-story`
+                        ? setActiveLink('aboutUs')
+                        : window.location.pathname === `/${lang}/supporters`
+                          ? setActiveLink('aboutUs')
+                          : window.location.pathname ===
+                              `/${lang}/one-young-world`
+                            ? setActiveLink('aboutUs')
+                            : window.location.pathname === `/${lang}/faq`
+                              ? setActiveLink('faq')
+                              : setActiveLink('');
   });
 
   useEffect(() => {
@@ -294,14 +283,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${
-                        navbar ? 'font-bold' : ''
-                      } peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100`}
+                      className={`${navbar ? 'font-bold' : ''} ${
+                        activeLink === 'coughCheckApp'
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                      } `}
                       href={`/${lang}/covid19`}
                     >
                       {coughCheckApp?.section}
                     </Link>
-
                     <div
                       className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar

@@ -13,7 +13,7 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = getDictionary(lang);
 
   return (
-    <div className="relative">
+    <div className="relative -top-24">
       {/* About Us/Hero Section */}
       <section>
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">

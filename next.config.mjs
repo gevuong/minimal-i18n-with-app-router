@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   /**
    * Enable static exports for the App Router.
@@ -19,7 +20,7 @@ const nextConfig = {
    * or set to an empty string.
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: '',
+  basePath: isProd ? '/minimal-i18n-with-app-router' : '',
 
   /**
    * Add basic configs to optimize static images at build time

@@ -17,7 +17,7 @@ const OneYoungWorldPage = ({
   } = getDictionary(lang);
 
   return (
-    <div className="relative">
+    <div className="relative -top-24">
       {/* Header/Hero Section */}
       <section>
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">

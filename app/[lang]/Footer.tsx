@@ -16,14 +16,15 @@ import { getDictionary } from '../dictionaries';
 import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
+import { usePathname } from 'next/navigation';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = [
-    { label: 'Home', route: `/${lang}` },
-    { label: 'Technology', route: `/${lang}/ai` },
-    { label: 'CoughCheck App', route: `/${lang}/covid19` },
-    { label: 'About', route: `/${lang}/story` },
-    { label: 'FAQ', route: `/${lang}/faq` },
+    { label: 'Home', route: [`/${lang}`] },
+    { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+    { label: 'CoughCheck App', route: [`/${lang}/covid19`, `/${lang}/flu`, `/${lang}/copd`, `/${lang}/rsv`] },
+    { label: 'About Us', route: [`/${lang}/story`, `/${lang}/people`, `/${lang}/supporters`, `/${lang}/one-young-world`] },
+    { label: 'FAQ', route: [`/${lang}/faq`] },
   ];
 
   const privacyDetails = [
@@ -53,16 +54,16 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
   const [activeLink, setActiveLink] = useState('');
+  
+  const currPath = usePathname();
 
   useEffect(() => {
-    {
-      links1.map((link) => {
-        link.route === window.location.pathname
-          ? setActiveLink(link.label)
-          : '';
-      });
-    }
-  });
+    links1.forEach((link) => {
+      if (link.route.some((r) => r === currPath)) {
+        setActiveLink(link.label);
+      }
+    });
+  }, [currPath, links1]);
 
   return (
     <>
@@ -801,7 +802,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         ? 'solid relative border-b-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                         : 'relative before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                     }`}
-                    href={link.route}
+                    href={link.route[0]}
                     onClick={() => setActiveLink(link.label)}
                   >
                     {link.label}
