@@ -93,7 +93,9 @@ const PublicationsPage = ({
 
             <button
               className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:py-4 md:px-8 md:text-lg"
-              onClick={handleRedirect}
+              // onClick={() => setIsShareYourCoughModalOpen(true)}
+              onClick={handleRedirect}    
+
             >
               {coughSection.linkText}
             </button>
