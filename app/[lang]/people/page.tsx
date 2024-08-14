@@ -22,7 +22,7 @@ import {
   Card6,
   Card8,
   Card9,
-} from '@/public/images/ourPeople';
+} from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import { type StaticImageData } from 'next/image';
 import { getDictionary } from '../../dictionaries';
@@ -39,7 +39,7 @@ export type CardData = {
 
 const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    ourPeople: { titleImage, sectionMeetOurFounder, sectionAdvisors },
+    people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = getDictionary(lang);
 
   const cards: CardData[] = [

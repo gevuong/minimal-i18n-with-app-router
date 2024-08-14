@@ -1,5 +1,5 @@
 import { basePath } from '@/next.config.mjs';
-import { Amil } from '@/public/images/ourPeople';
+import { Amil } from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import TitleText from '../components/TitleText';
 import Button from './Button';

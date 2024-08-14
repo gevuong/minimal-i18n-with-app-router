@@ -1,4 +1,4 @@
-export interface OurPeople {
+export interface People {
   titleImage: string;
   sectionMeetOurFounder: sectionMeetOurFounder;
   sectionAdvisors: sectionAdvisors;
