@@ -64,7 +64,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <ExportedImage
                 className="h-[360px] w-[550px]"
                 src={AmilInLab}
-                alt="Amil and his coworkers in a lab"
+                alt="Amil with nursing staff supporting Virufy’s clinical studies in Colombia, South America"
                 priority
                 basePath={basePath}
               />
@@ -92,7 +92,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <ExportedImage
               className="h-[360px] w-[550px]"
               src={AmilInJapan}
-              alt="Amil with his friends in Japan"
+              alt="Amil with Japanese students and staff in his ZenIT programming school"
               priority
               basePath={basePath}
             />
@@ -102,7 +102,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <ExportedImage
                 className="h-[450px] w-[550px]"
                 src={AmilAtOneYoungWorld}
-                alt="Amil shaking hands at the One Young World conference"
+                alt="Amil’s encounter with former Prime Minister and current NATO president Mark Rutte"
                 priority
                 basePath={basePath}
               />

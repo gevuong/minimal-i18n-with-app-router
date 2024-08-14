@@ -44,7 +44,7 @@ const publications: Publications = {
       linkText: 'Leer más',
     },
   ],
-  coughSection: {
+  collaborateSection: {
     title: 'Ayudemos al mundo y salvemos vidas registrando tu tos',
     linkText: 'Comparte tu tos',
   },

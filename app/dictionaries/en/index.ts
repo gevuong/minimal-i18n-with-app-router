@@ -7,10 +7,11 @@ import jobDetails from './jobDetails';
 import jobListing from './jobListing';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
-import ourPeople from './ourPeople';
-import ourStory from './ourStory';
+import people from './people';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
+import story from './story';
+import supporters from './supporters';
 import teamLeads from './teamLeads';
 
 const enMetadata: I18nData = {
@@ -22,10 +23,11 @@ const enMetadata: I18nData = {
   jobListing,
   navbar,
   oneYoungWorld,
-  ourPeople,
-  ourStory,
+  people,
+  story,
   publications,
   shareYourCough,
+  supporters,
   teamLeads,
 };
 

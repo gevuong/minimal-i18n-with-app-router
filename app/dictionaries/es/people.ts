@@ -1,6 +1,6 @@
-import { type OurPeople } from '../types/ourPeople';
+import { type People } from '../types/people';
 
-const ourPeople: OurPeople = {
+const people: People = {
   titleImage:
     'Nos unimos desde todo el mundo para derrotar al COVID-19 tos a la vez.',
   sectionMeetOurFounder: {
@@ -15,4 +15,4 @@ const ourPeople: OurPeople = {
   },
 };
 
-export default ourPeople;
+export default people;

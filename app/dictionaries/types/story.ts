@@ -1,6 +1,6 @@
 import { type StaticImageData } from 'next/image';
 
-export interface OurStory {
+export interface Story {
   aboutUsSection: AboutUsSection;
   storySection: StorySection;
   valuesSection: ValuesSection;

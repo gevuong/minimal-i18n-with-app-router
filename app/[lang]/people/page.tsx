@@ -18,13 +18,11 @@ import {
   Card22,
   Card23,
   Card3,
-  Card4,
   Card5,
   Card6,
-  Card7,
   Card8,
   Card9,
-} from '@/public/images/ourPeople';
+} from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import { type StaticImageData } from 'next/image';
 import { getDictionary } from '../../dictionaries';
@@ -41,7 +39,7 @@ export type CardData = {
 
 const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    ourPeople: { titleImage, sectionMeetOurFounder, sectionAdvisors },
+    people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = getDictionary(lang);
 
   const cards: CardData[] = [
@@ -64,12 +62,6 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       text: 'Former CMO - Adobe Board Member - CommonSpirit Health',
     },
     {
-      route: Card4,
-      name: 'Anaïs Rameau, M.D.',
-      subtitle: 'Clinical Advisor',
-      text: 'Assistant Professor of ENT - Cornell University Doctor of Medicine - McGill University',
-    },
-    {
       route: Card5,
       name: 'Madhav Datt',
       subtitle: 'Executive Nonprofit Advisor',
@@ -80,12 +72,6 @@ const OurPeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       name: 'Rafi Azim-Khan',
       subtitle: 'Executive Legal Advisor',
       text: 'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
-    },
-    {
-      route: Card7,
-      name: 'Richard Swartzbaugh',
-      subtitle: 'Executive Advisor',
-      text: 'Risk Management - Curaesoft J.D. - University of Iowa',
     },
     {
       route: Card8,
