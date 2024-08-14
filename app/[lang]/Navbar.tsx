@@ -32,42 +32,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
     window.location.pathname === '/es'
       ? setActiveLink('home')
       : window.location.pathname === '/es/ai'
-<<<<<<< HEAD
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/es/publications'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/es/our-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/our-people'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/amils-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/supporters'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/one-young-world'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/faq'
-      ? setActiveLink('faq')
-      : window.location.pathname === '/en'
-      ? setActiveLink('home')
-      : window.location.pathname === '/en/ai'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/en/publications'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/en/our-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/our-people'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/amils-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/supporters'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/one-young-world'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/faq'
-      ? setActiveLink('faq')
-      : setActiveLink('');
-=======
         ? setActiveLink('ourTechnology')
         : window.location.pathname === '/es/publications'
           ? setActiveLink('ourTechnology')
@@ -83,7 +47,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     ? setActiveLink('aboutUs')
                     : window.location.pathname === '/es/faq'
                       ? setActiveLink('faq')
-                      : window.location.pathname === '/en/'
+                      : window.location.pathname === '/en'
                         ? setActiveLink('home')
                         : window.location.pathname === '/en/ai'
                           ? setActiveLink('ourTechnology')
@@ -104,7 +68,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                                       : window.location.pathname === '/en/faq'
                                         ? setActiveLink('faq')
                                         : setActiveLink('');
->>>>>>> 9ebd83559b0bc24d9ed52fc0b7bc67d5a0803f0b
   });
 
   useEffect(() => {
