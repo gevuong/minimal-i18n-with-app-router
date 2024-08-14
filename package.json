@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next-image-export-optimizer",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "serve": "npx serve@latest out"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8",
