@@ -153,13 +153,6 @@ export default function Section2({
           priority
           basePath={basePath}
         />
-        {/* <ImageAtomLocal
-          ImageStyleProps=""
-          imagesize={sizeImg}
-          border={borderImg}
-          src={src}
-          alt={altImg}
-        /> */}
       </div>
       <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
         <div className="mx-auto flex max-w-screen-xl flex-col">
@@ -205,17 +198,6 @@ export default function Section2({
                     {buttonText}
                   </button>
                 </Link>
-                {/* <button
-                  className={`medium primary h-[35px] w-[270px] text-white sm:h-[45px] sm:w-[315px] xl:h-[65px] xl:w-[250px]`}
-                  style={{
-                    borderRadius: '50px',
-                    background:
-                      'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
-                  }}
-                  onClick={() => (window.location.href = '/ai')}
-                >
-                  {buttonText}
-                </button> */}
               </div>
             </div>
             <div className="mt-[0.2rem] flex flex-col items-start sm:ml-0 sm:mt-[0.3rem]">
