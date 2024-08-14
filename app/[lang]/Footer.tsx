@@ -22,7 +22,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
     { label: 'Home', route: `/${lang}` },
     { label: 'Technology', route: `/${lang}/ai` },
     { label: 'CoughCheck App', route: `/${lang}/covid19` },
-    { label: 'About', route: `/${lang}/our-story` },
+    { label: 'About', route: `/${lang}/story` },
     { label: 'FAQ', route: `/${lang}/faq` },
   ];
 

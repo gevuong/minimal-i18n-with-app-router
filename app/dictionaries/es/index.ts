@@ -8,9 +8,9 @@ import jobListing from './jobListing';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
 import ourPeople from './ourPeople';
-import ourStory from './ourStory';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
+import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 
@@ -24,7 +24,7 @@ const esMetadata: I18nData = {
   navbar,
   oneYoungWorld,
   ourPeople,
-  ourStory,
+  story,
   publications,
   shareYourCough,
   supporters,

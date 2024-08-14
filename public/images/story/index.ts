@@ -7,5 +7,5 @@ export { default as RecycleIcon } from '../../icons/icon-recycle.webp';
 export { default as TeamIcon } from '../../icons/icon-team.webp';
 
 // Background Images
-export { default as HalfToneDots } from './bg-halftone-dots.webp';
-export { default as MaskHeader } from './bg-mask-header.webp';
+export { default as BgBody } from './bg-body.webp';
+export { default as BgHeader } from './bg-header.webp';

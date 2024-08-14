@@ -1,15 +1,8 @@
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import { type StaticImageData } from 'next/image';
+import { type ValuesCard as ValuesCardProps } from '../../dictionaries/types/story';
 
-export interface ValuesCard {
-  title: string;
-  image: StaticImageData;
-  imageText: string;
-  text: string;
-}
-
-const ValuesCard = ({ title, image, imageText, text }: ValuesCard) => {
+const ValuesCard = ({ title, image, imageText, text }: ValuesCardProps) => {
   return (
     <>
       {/* Title Container */}

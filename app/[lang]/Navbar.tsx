@@ -32,40 +32,42 @@ export default function Navbar({ lang }: { lang: Locale }) {
     window.location.pathname === '/es/'
       ? setActiveLink('home')
       : window.location.pathname === '/es/ai'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/es/publications'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/es/our-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/our-people'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/amils-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/supporters'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/one-young-world'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/es/faq'
-      ? setActiveLink('faq')
-      : window.location.pathname === '/en/'
-      ? setActiveLink('home')
-      : window.location.pathname === '/en/ai'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/en/publications'
-      ? setActiveLink('ourTechnology')
-      : window.location.pathname === '/en/our-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/our-people'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/amils-story'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/supporters'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/one-young-world'
-      ? setActiveLink('aboutUs')
-      : window.location.pathname === '/en/faq'
-      ? setActiveLink('faq')
-      : setActiveLink('');
+        ? setActiveLink('ourTechnology')
+        : window.location.pathname === '/es/publications'
+          ? setActiveLink('ourTechnology')
+          : window.location.pathname === '/es/story'
+            ? setActiveLink('aboutUs')
+            : window.location.pathname === '/es/our-people'
+              ? setActiveLink('aboutUs')
+              : window.location.pathname === '/es/amils-story'
+                ? setActiveLink('aboutUs')
+                : window.location.pathname === '/es/supporters'
+                  ? setActiveLink('aboutUs')
+                  : window.location.pathname === '/es/one-young-world'
+                    ? setActiveLink('aboutUs')
+                    : window.location.pathname === '/es/faq'
+                      ? setActiveLink('faq')
+                      : window.location.pathname === '/en/'
+                        ? setActiveLink('home')
+                        : window.location.pathname === '/en/ai'
+                          ? setActiveLink('ourTechnology')
+                          : window.location.pathname === '/en/publications'
+                            ? setActiveLink('ourTechnology')
+                            : window.location.pathname === '/en/story'
+                              ? setActiveLink('aboutUs')
+                              : window.location.pathname === '/en/our-people'
+                                ? setActiveLink('aboutUs')
+                                : window.location.pathname === '/en/amils-story'
+                                  ? setActiveLink('aboutUs')
+                                  : window.location.pathname ===
+                                      '/en/supporters'
+                                    ? setActiveLink('aboutUs')
+                                    : window.location.pathname ===
+                                        '/en/one-young-world'
+                                      ? setActiveLink('aboutUs')
+                                      : window.location.pathname === '/en/faq'
+                                        ? setActiveLink('faq')
+                                        : setActiveLink('');
   });
 
   useEffect(() => {
@@ -120,9 +122,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         alt="Help us fight against respiratory diseases. We need your contribution in order to continue helping millions of people in the fight against respiratory diseases."
                       />
                       {/* Close button */}
-                      <div className="absolute flex w-full flex-col items-end pt-3 pr-5">
+                      <div className="absolute flex w-full flex-col items-end pr-5 pt-3">
                         <button
-                          className="flex justify-center rounded-full font-medium text-white text-xl shadow-xl outline-none transition-all duration-150 ease-linear"
+                          className="flex justify-center rounded-full text-xl font-medium text-white shadow-xl outline-none transition-all duration-150 ease-linear"
                           type="button"
                           onClick={() => setShowModal(false)}
                         >
@@ -131,9 +133,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </div>
                     </div>
                     {/*body*/}
-                    <div className="relative flex flex-col items-center p-6 bg-gradient-to-b from-[#273F6A] to-[#4167AD] rounded-b-2xl">
-                      <p className=" mt-2 mb-6 text-lg leading-relaxed">
-                        <span className="text-center color-black text-gray-200">
+                    <div className="relative flex flex-col items-center rounded-b-2xl bg-gradient-to-b from-[#273F6A] to-[#4167AD] p-6">
+                      <p className="mb-6 mt-2 text-lg leading-relaxed">
+                        <span className="color-black text-center text-gray-200">
                           Donate Options
                         </span>
                       </p>
@@ -143,12 +145,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       >
                         {/* paypal button */}
                         <button
-                          className="mr-1 mb-3 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.9rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
+                          className="mb-3 mr-1 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.9rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
                           type="button"
                           onClick={() => setShowModal(false)}
                         >
                           <ExportedImage
-                            className="w-[110px] h-[27px]"
+                            className="h-[27px] w-[110px]"
                             src={PaypalIcon}
                             alt="Paypal icon"
                             basePath={basePath}
@@ -161,12 +163,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       >
                         {/* gofundme button */}
                         <button
-                          className="mr-1 mb-1 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.8rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
+                          className="mb-1 mr-1 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.8rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
                           type="button"
                           onClick={() => setShowModal(false)}
                         >
                           <ExportedImage
-                            className="w-[103px] h-[30px]"
+                            className="h-[30px] w-[103px]"
                             src={GoFundMeIcon}
                             alt="Gofundme icon"
                             basePath={basePath}
@@ -188,7 +190,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             <div className="flex items-center justify-between py-3 lg:block lg:py-5">
               <Link href={`/${lang}`} className="flex lg:hidden">
                 <ExportedImage
-                  className="w-[100px] h-[48px]"
+                  className="h-[48px] w-[100px]"
                   src={VirufyLogo}
                   alt="Virufy logo"
                   basePath={basePath}
@@ -196,7 +198,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
               </Link>
               <Link href={`/${lang}`} className="hidden lg:flex">
                 <ExportedImage
-                  className="w-[160px] h-[48px]"
+                  className="h-[48px] w-[160px]"
                   src={VirufyLogo}
                   alt="Virufy logo"
                   basePath={basePath}
@@ -210,14 +212,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 >
                   {navbar ? (
                     <ExportedImage
-                      className="w-[30px] h-[18px]"
+                      className="h-[18px] w-[30px]"
                       src={CloseMenuIcon}
                       alt="close menu icon"
                       basePath={basePath}
                     />
                   ) : (
                     <ExportedImage
-                      className="w-[30px] h-[18px]"
+                      className="h-[18px] w-[30px]"
                       src={HamburgerMenuIcon}
                       alt="hamburger menu icon"
                       basePath={basePath}
@@ -232,7 +234,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             <div
               className={`mt-8 flex-1 justify-self-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
                 navbar
-                  ? 'absolute block bg-black text-center w-full left-0 top-6'
+                  ? 'absolute left-0 top-6 block w-full bg-black text-center'
                   : 'hidden'
               }`}
             >
@@ -242,8 +244,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'home'
-                          ? 'py-2 solid border-b-2'
-                          : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                          ? 'solid border-b-2 py-2'
+                          : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                       }`}
                       href={`/${lang}`}
                     >
@@ -257,8 +259,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'ourTechnology'
-                          ? 'peer py-2 text-white solid border-b-2'
-                          : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                       }`}
                       href={`/${lang}/ai`}
                     >
@@ -266,10 +268,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
 
                     <div
-                      className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${
+                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
-                          ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2'
-                          : 'hidden ml-[-60px]'
+                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                          : 'ml-[-60px] hidden'
                       } hover:flex peer-hover:flex`}
                     >
                       <Link
@@ -294,19 +296,17 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <Link
                       className={`${
                         navbar ? 'font-bold' : ''
-                      } peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
-                                    relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`}
+                      } peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100`}
                       href={`/${lang}/covid19`}
                     >
                       {coughCheckApp?.section}
                     </Link>
 
                     <div
-                      className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${
+                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
-                          ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2'
-                          : 'hidden ml-[-35px]'
+                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                          : 'ml-[-35px] hidden'
                       } hover:flex peer-hover:flex`}
                     >
                       <Link
@@ -343,25 +343,24 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'aboutUs'
-                          ? 'peer py-2 text-white solid border-b-2'
-                          : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
-                      }
-                                        `}
-                      href={`/${lang}/our-story`}
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                      } `}
+                      href={`/${lang}/story`}
                     >
                       {aboutUs?.section}
                     </Link>
 
                     <div
-                      className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${
+                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
-                          ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2'
-                          : 'hidden ml-[-60px]'
+                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                          : 'ml-[-60px] hidden'
                       } hover:flex peer-hover:flex`}
                     >
                       <Link
-                        className="pt-6 pb-3 text-white hover:font-bold"
-                        href={`/${lang}/our-story`}
+                        className="pb-3 pt-6 text-white hover:font-bold"
+                        href={`/${lang}/story`}
                       >
                         {aboutUs?.ourStory}
                       </Link>
@@ -391,8 +390,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'faq'
-                          ? 'peer py-2 text-white solid border-b-2'
-                          : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                       }`}
                       href={`/${lang}/faq`}
                     >
