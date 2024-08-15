@@ -1,8 +1,8 @@
 import type {
   OywNavbarTexts,
   OywSection,
-} from '@/app/dictionaries/types/oneYoungWorld';
-import { type TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
+} from '@/app/i18n/types/oneYoungWorld';
+import { type TeamLeadsType } from '@/app/i18n/types/teamLeads';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';

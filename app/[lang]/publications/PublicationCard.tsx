@@ -1,4 +1,4 @@
-import { type PublicationCard } from '@/app/dictionaries/types/publications';
+import { type PublicationCard } from '@/app/i18n/types/publications';
 import Link from 'next/link';
 
 const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {

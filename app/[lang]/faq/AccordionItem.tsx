@@ -1,4 +1,4 @@
-import type { QA } from '@/app/dictionaries/types/faq';
+import type { QA } from '@/app/i18n/types/faq';
 import { useState } from 'react';
 import ArrowIcon from './ArrowIcon';
 

@@ -1,6 +1,6 @@
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import { type ValuesCard as ValuesCardProps } from '../../dictionaries/types/story';
+import { type ValuesCard as ValuesCardProps } from '../../i18n/types/story';
 
 const ValuesCard = ({ title, image, imageText, text }: ValuesCardProps) => {
   return (

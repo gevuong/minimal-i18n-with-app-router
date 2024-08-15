@@ -1,6 +1,6 @@
 import { i18n, type Locale } from '@/i18n-config';
 import Link from 'next/link';
-import { getDictionary } from '../../../dictionaries';
+import { usei18n } from '../../../i18n';
 import Title from '../../components/Title';
 
 const NUM_JOB_OPENINGS = 25;
@@ -23,7 +23,7 @@ const JobDetailPage = ({
 }: {
   params: { lang: Locale; id: string };
 }) => {
-  const { jobDetails } = getDictionary(lang);
+  const { jobDetails } = usei18n(lang);
   const {
     title,
     description,

@@ -2,13 +2,13 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { BgHeader } from '@/public/images/supporters';
 import ExportedImage from 'next-image-export-optimizer';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 
 const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     supporters: { supportersList },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <div className="bg-[#4064AD]">

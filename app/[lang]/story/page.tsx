@@ -4,13 +4,13 @@ import { BgBody, BgHeader } from '@/public/images/story';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import ValuesCard from './ValuesCard';
 
 const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     story: { aboutUsSection, storySection, valuesSection, privacySection },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <div className="relative -top-24">

@@ -1,4 +1,4 @@
-import { type Testimonial } from '@/app/dictionaries/types/oneYoungWorld';
+import { type Testimonial } from '@/app/i18n/types/oneYoungWorld';
 import { useState } from 'react';
 import TestimonialCard from './TestimonialCard';
 

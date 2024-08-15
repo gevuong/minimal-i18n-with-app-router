@@ -1,4 +1,4 @@
-import { type TeamLeadCard } from '@/app/dictionaries/types/teamLeads';
+import { type TeamLeadCard } from '@/app/i18n/types/teamLeads';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 

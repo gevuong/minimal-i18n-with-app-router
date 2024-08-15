@@ -1,4 +1,4 @@
-import { type FAQTopicCard } from '@/app/dictionaries/types/faq';
+import { type FAQTopicCard } from '@/app/i18n/types/faq';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 

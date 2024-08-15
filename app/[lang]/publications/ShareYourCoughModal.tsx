@@ -2,7 +2,7 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import Modal from './Modal';
 
 interface Prop {
@@ -12,7 +12,7 @@ interface Prop {
 }
 
 const ShareYourCoughModal = ({ isOpen, handleClose, lang }: Prop) => {
-  const { shareYourCough: ShareYourCough } = getDictionary(lang);
+  const { shareYourCough: ShareYourCough } = usei18n(lang);
 
   return (
     <Modal isOpen={isOpen} handleClose={handleClose}>

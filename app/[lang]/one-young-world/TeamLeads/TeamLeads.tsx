@@ -1,4 +1,4 @@
-import { type TeamLeadsType } from '@/app/dictionaries/types/teamLeads';
+import { type TeamLeadsType } from '@/app/i18n/types/teamLeads';
 import TeamLeadCard from './TeamLeadCard';
 
 const TeamLeads = ({ title, cards }: TeamLeadsType) => {

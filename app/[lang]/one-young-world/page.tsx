@@ -3,7 +3,7 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import MainContent from './MainContent';
 
 const OneYoungWorldPage = ({
@@ -14,7 +14,7 @@ const OneYoungWorldPage = ({
   const {
     oneYoungWorld: { header, navbarTexts, oyw },
     teamLeads,
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <div className="relative -top-24">

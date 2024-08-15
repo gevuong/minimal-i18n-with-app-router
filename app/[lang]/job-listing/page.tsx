@@ -2,7 +2,7 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { HeroBackground } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import TitleText from '../components/TitleText';
 import JobList from './JobList';
@@ -10,7 +10,7 @@ import JobList from './JobList';
 const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     jobListing: { titleImage, title, text, jobList, modal },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     // background img with title text in center
