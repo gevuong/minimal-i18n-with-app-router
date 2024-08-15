@@ -20,6 +20,8 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-40"
             src={BgHeader}
+            width={1512}
+            height={997}
             alt=""
             priority
             basePath={basePath}
@@ -41,9 +43,12 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       {/* Gradient Overlay Container */}
       <div className="relative bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <ExportedImage
+          className="absolute h-full w-full object-cover opacity-40"
           src={BgBody}
           alt=""
-          className="absolute h-full w-full object-cover opacity-40"
+          width={1512}
+          height={2793}
+          priority
           basePath={basePath}
         />
 

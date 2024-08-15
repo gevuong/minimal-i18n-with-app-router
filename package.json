@@ -1,8 +1,12 @@
 {
   "name": "minimal-i18n-with-app-router-v2",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
+    "test": "vitest",
+    "test-once": "vitest run",
+    "coverage": "vitest run --coverage",
     "dev": "next dev",
     "build": "next build && next-image-export-optimizer",
     "start": "next start",
@@ -18,17 +22,23 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.0",
     "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.14.15",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "jsdom": "^24.1.1",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "vitest": "^2.0.5"
   }
 }
