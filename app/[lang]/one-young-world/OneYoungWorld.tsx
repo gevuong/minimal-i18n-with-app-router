@@ -1,4 +1,4 @@
-import { type OywSection } from '@/app/dictionaries/types/oneYoungWorld';
+import { type OywSection } from '@/app/i18n/types/oneYoungWorld';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';

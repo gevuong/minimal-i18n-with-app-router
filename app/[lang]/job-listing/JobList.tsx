@@ -1,6 +1,6 @@
 'use client';
 
-import type { Job, JobModal } from '@/app/dictionaries/types/jobListing';
+import type { Job, JobModal } from '@/app/i18n/types/jobListing';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/jobListing';

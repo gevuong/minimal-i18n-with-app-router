@@ -7,7 +7,7 @@ import {
   AmilInMeeting,
 } from '@/public/images/amilsStory/index';
 import ExportedImage from 'next-image-export-optimizer';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import Text from '../components/Text';
 import Title from '../components/Title';
 import Video from './Video';
@@ -15,7 +15,7 @@ import Video from './Video';
 const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     amilsStory: { sectionAmil },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <>

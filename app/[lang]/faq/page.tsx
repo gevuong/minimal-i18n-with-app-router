@@ -1,12 +1,12 @@
 'use client';
 
-import type { QA } from '@/app/dictionaries/types/faq';
+import type { QA } from '@/app/i18n/types/faq';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import debounce from 'lodash.debounce';
 import ExportedImage from 'next-image-export-optimizer';
 import { Fragment, useEffect, useMemo, useState } from 'react';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import AccordionItem from './AccordionItem';
 import TopicCard from './TopicCard';
 
@@ -16,7 +16,7 @@ const DEBOUNCE_TIME_MS = 300;
 const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     faq: { headerSection, topicsSection, questionsByTopic },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   // prevent recomputation after every re-render
   const allQuestions: QA[] = useMemo(

@@ -1,4 +1,4 @@
-import { type OywNavbarTexts } from '@/app/dictionaries/types/oneYoungWorld';
+import { type OywNavbarTexts } from '@/app/i18n/types/oneYoungWorld';
 
 interface Props {
   showTeamLeads: boolean;

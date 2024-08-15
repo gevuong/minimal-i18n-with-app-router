@@ -12,7 +12,7 @@ import VirufyLogo from '@/public/logos/virufy.svg';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { getDictionary } from '../dictionaries';
+import { usei18n } from '../i18n';
 import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
@@ -47,7 +47,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
   const {
     footer: { sectionPersonalInformation },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   const [showModalCookiesSetting, setShowModalCookiesSetting] = useState(false);
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false);

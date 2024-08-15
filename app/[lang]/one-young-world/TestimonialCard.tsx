@@ -1,4 +1,4 @@
-import { type Testimonial } from '@/app/dictionaries/types/oneYoungWorld';
+import { type Testimonial } from '@/app/i18n/types/oneYoungWorld';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 

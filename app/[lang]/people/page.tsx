@@ -25,7 +25,7 @@ import {
 } from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import { type StaticImageData } from 'next/image';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import AdvisorCards from './AdvisorCards';
 import Section4 from './Section4';
@@ -40,7 +40,7 @@ export type CardData = {
 const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   const cards: CardData[] = [
     {

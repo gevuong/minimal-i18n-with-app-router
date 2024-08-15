@@ -1,4 +1,4 @@
-import { type AiCard } from '@/app/dictionaries/types/ai';
+import { type AiCard } from '@/app/i18n/types/ai';
 
 const AiCard = ({ title, text, style }: AiCard) => {
   return (

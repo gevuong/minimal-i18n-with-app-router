@@ -8,7 +8,7 @@ import {
 } from '@/public/images/publications/index';
 import ExportedImage from 'next-image-export-optimizer';
 import { useRouter } from 'next/navigation';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import PublicationCard from './PublicationCard';
 
 const PublicationsPage = ({
@@ -23,7 +23,7 @@ const PublicationsPage = ({
       publicationsCards,
       collaborateSection,
     },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <div className="relative -top-24">

@@ -14,13 +14,13 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { getDictionary } from '../dictionaries';
+import { usei18n } from '../i18n';
 import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
     navbar: { home, ourTechnology, coughCheckApp, aboutUs, faq, donate },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);

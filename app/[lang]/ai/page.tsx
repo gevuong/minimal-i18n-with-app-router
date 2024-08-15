@@ -4,13 +4,13 @@ import { SplashBackground, WaveBackground } from '@/public/images/ai/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
-import { getDictionary } from '../../dictionaries';
+import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
 
 const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     ai: { heroSection, aiSection },
-  } = getDictionary(lang);
+  } = usei18n(lang);
 
   return (
     <div className="relative -top-24">
