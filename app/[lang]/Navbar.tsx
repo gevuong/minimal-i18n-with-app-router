@@ -26,38 +26,38 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   const currPathname = usePathname();
 
-  const links1 = [
-    { label: 'Home', route: [`/${lang}`] },
-    { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
-    {
-      label: 'CoughCheck App',
-      route: [
-        `/${lang}/covid19`,
-        `/${lang}/flu`,
-        `/${lang}/copd`,
-        `/${lang}/rsv`,
-      ],
-    },
-    {
-      label: 'About Us',
-      route: [
-        `/${lang}/story`,
-        `/${lang}/people`,
-        `/${lang}/supporters`,
-        `/${lang}/one-young-world`,
-        `/${lang}/amils-story`,
-      ],
-    },
-    { label: 'FAQ', route: [`/${lang}/faq`] },
-  ];
-
   useEffect(() => {
+    const links1 = [
+      { label: 'Home', route: [`/${lang}`] },
+      { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+      {
+        label: 'CoughCheck App',
+        route: [
+          `/${lang}/covid19`,
+          `/${lang}/flu`,
+          `/${lang}/copd`,
+          `/${lang}/rsv`,
+        ],
+      },
+      {
+        label: 'About Us',
+        route: [
+          `/${lang}/story`,
+          `/${lang}/people`,
+          `/${lang}/supporters`,
+          `/${lang}/one-young-world`,
+          `/${lang}/amils-story`,
+        ],
+      },
+      { label: 'FAQ', route: [`/${lang}/faq`] },
+    ];
+
     links1.forEach((link) => {
       if (link.route.some((r) => r === currPathname)) {
         setActiveLink(link.label);
       }
     });
-  }, [currPathname, links1]);
+  }, [currPathname, lang]);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
