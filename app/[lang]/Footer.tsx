@@ -23,7 +23,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
     { label: 'Home', route: [`/${lang}`] },
     { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
     { label: 'CoughCheck App', route: [`/${lang}/covid19`, `/${lang}/flu`, `/${lang}/copd`, `/${lang}/rsv`] },
-    { label: 'About Us', route: [`/${lang}/story`, `/${lang}/people`, `/${lang}/supporters`, `/${lang}/one-young-world`] },
+    { label: 'About Us', route: [`/${lang}/story`, `/${lang}/people`, `/${lang}/supporters`, `/${lang}/one-young-world`, `/${lang}/amils-story`] },
     { label: 'FAQ', route: [`/${lang}/faq`] },
   ];
 
