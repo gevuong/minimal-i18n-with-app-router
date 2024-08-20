@@ -11,21 +11,41 @@ import {
 import VirufyLogo from '@/public/logos/virufy.svg';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../i18n';
 import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
-import { usePathname } from 'next/navigation';
 
 const Footer = ({ lang }: { lang: Locale }) => {
-  const links1 = [
-    { label: 'Home', route: [`/${lang}`] },
-    { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
-    { label: 'CoughCheck App', route: [`/${lang}/covid19`, `/${lang}/flu`, `/${lang}/copd`, `/${lang}/rsv`] },
-    { label: 'About Us', route: [`/${lang}/story`, `/${lang}/people`, `/${lang}/supporters`, `/${lang}/one-young-world`] },
-    { label: 'FAQ', route: [`/${lang}/faq`] },
-  ];
+  const links1 = useMemo(
+    () => [
+      { label: 'Home', route: [`/${lang}`] },
+      { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+      {
+        label: 'CoughCheck App',
+        route: [
+          `/${lang}/covid19`,
+          `/${lang}/flu`,
+          `/${lang}/copd`,
+          `/${lang}/rsv`,
+        ],
+      },
+      {
+        label: 'About Us',
+        route: [
+          `/${lang}/story`,
+          `/${lang}/people`,
+          `/${lang}/supporters`,
+          `/${lang}/one-young-world`,
+          `/${lang}/amils-story`,
+        ],
+      },
+      { label: 'FAQ', route: [`/${lang}/faq`] },
+    ],
+    [lang],
+  );
 
   const privacyDetails = [
     {
@@ -54,7 +74,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
   const [activeLink, setActiveLink] = useState('');
-  
+
   const currPath = usePathname();
 
   useEffect(() => {
