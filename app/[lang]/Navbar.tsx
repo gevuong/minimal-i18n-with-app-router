@@ -12,8 +12,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
-import { ButtonSize, ButtonType } from './themes';
 import DonateModal from './components/navbar/DonateModal';
+import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {

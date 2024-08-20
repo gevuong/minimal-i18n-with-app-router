@@ -1,18 +1,15 @@
-import {
-    DonateHero,
-    GoFundMeIcon,
-    PaypalIcon
-  } from '@/public/images/navbar/index';
 import { basePath } from '@/next.config.mjs';
+import {
+  DonateHero,
+  GoFundMeIcon,
+  PaypalIcon,
+} from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 
-export default function DonateModal({close}) {
-
+export default function DonateModal({ close }) {
   return (
-      <>
-      <div
-        className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
-      >
+    <>
+      <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
         <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px]">
           {/*content*/}
           <div className="relative flex w-full flex-col rounded-2xl border-0 bg-white shadow-lg outline-none focus:outline-none">
