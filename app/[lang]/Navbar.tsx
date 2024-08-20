@@ -27,7 +27,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const currPathname = usePathname();
 
   useEffect(() => {
-    const links1 = [
+    const links = [
       { label: 'Home', route: [`/${lang}`] },
       { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
       {
@@ -52,7 +52,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
 
-    links1.forEach((link) => {
+    links.forEach((link) => {
       if (link.route.some((r) => r === currPathname)) {
         setActiveLink(link.label);
       }
