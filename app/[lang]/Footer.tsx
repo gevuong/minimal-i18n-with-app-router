@@ -11,12 +11,12 @@ import {
 import VirufyLogo from '@/public/logos/virufy.svg';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../i18n';
 import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
-import { usePathname } from 'next/navigation';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = useMemo(
