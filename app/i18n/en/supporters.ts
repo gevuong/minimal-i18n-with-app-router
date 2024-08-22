@@ -70,10 +70,6 @@ const supporters: Supporters = {
       img: SPIIcon,
       alt: 'SPI',
     },
-    // {
-    //   img: StanfordMedicineIcon,
-    //   alt: 'Stanford Medicine',
-    // },
     {
       img: ServiceBotsIcon,
       alt: 'Service Bots',
