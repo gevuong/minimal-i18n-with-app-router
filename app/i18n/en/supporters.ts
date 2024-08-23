@@ -24,7 +24,6 @@ import {
   SherlockCommunicationsIcon,
   SPIIcon,
   StanfordHealthcareInnovationLabIcon,
-  StanfordMedicineIcon,
   XoorIcon,
 } from '@/public/images/supporters';
 import { type Supporters } from '../types/supporters';
@@ -70,10 +69,6 @@ const supporters: Supporters = {
     {
       img: SPIIcon,
       alt: 'SPI',
-    },
-    {
-      img: StanfordMedicineIcon,
-      alt: 'Stanford Medicine',
     },
     {
       img: ServiceBotsIcon,
