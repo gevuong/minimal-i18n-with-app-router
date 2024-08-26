@@ -7,7 +7,7 @@ Virufy is a nonprofit research organization developing artificial intelligence (
 - Next.js 14.2.4
 - React 18
 - Typescript 5.5.4
-- TailwindCSS
+- TailwindCSS 3.4.1
 - Netlify
 - Github Pages
 
@@ -22,10 +22,11 @@ By default, Next.js uses Node to run applications. Github Pages on the other han
    - The [project we adopted](https://github.com/virufy6/virufy6.github.io/tree/release) used Pages Router. After spending a decent amount of time updating Pages Router to the newest router, App Router, and deploying to Github Pages without success, we went ahead and built a new Next.js app from the ground up with App Router, and ensured it was deployable to GPages from the start.
    - All webpages were then migrated from the former project to this new repo.
 
-2. [Static exports does not support image optimization](https://nextjs.org/docs/pages/building-your-application/routing/internationalization#how-does-this-work-with-static-generation).
+2. [Static exports does not support image optimization at build time](https://github.com/vercel/next.js/discussions/19065).
 
-   - When a site is statically generated, Next.js does not optimize images at build time. Instead, it will serve unoptimized images, and only do so when the [image enters the viewport](https://nextjs.org/docs/pages/building-your-application/optimizing/images). This led to extremely slow page load times and network requests that downloaded MBs of data.
-   - We used [next-image-export-optimizer](https://github.com/Niels-IO/next-image-export-optimizer) to optimize all static images (excluding icons and logos), which converted all JPG and PNG files to the modern WEBP format. This significantly reduced image size and page load times.
+   - When a site is statically generated, Next.js will serve unoptimized images, and only do so when the [image enters the viewport](https://nextjs.org/docs/pages/building-your-application/optimizing/images). This led to extremely slow page load times and network requests that downloaded MBs of data.
+   - Although [image optimization through `next/image` can be used with static export](https://nextjs.org/docs/app/building-your-application/deploying/static-exports#image-optimization), it required using a custom image loader and a service like Cloudinary to optimize images. We wanted to keep the project simple and not have to rely on another third party service unless we had to.
+   - We used [next-image-export-optimizer](https://github.com/Niels-IO/next-image-export-optimizer) to optimize all static images (excluding icons and logos) at build time, which converted all JPG and PNG files to the modern WEBP format. This significantly reduced image size and page load times.
    - For example, a background 1.25MB JPG file was reduced to 47KB. Content download times reduced from 9.2s to 1.17s, and Largest Content Paint (LCP) reduced from 6.3s to 2s.
 
 ## Run Locally
