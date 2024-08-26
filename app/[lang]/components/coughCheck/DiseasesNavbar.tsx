@@ -8,7 +8,7 @@ const DiseasesNavbar = ({ lang }: { lang: Locale }) => {
   const activePath = usePathname();
 
   return (
-    <nav className="flex justify-around border-b border-t border-gray-500 text-white md:items-center md:justify-center md:gap-x-24 md:border-none md:font-semibold md:pt-2 md:opacity-95">
+    <nav className="flex justify-around border-b border-t border-gray-500 text-white md:items-center md:justify-center md:gap-x-24 md:border-none md:pt-2 md:font-semibold md:opacity-95">
       <NavItem
         href={`/${lang}/covid19`}
         text="COVID-19"
