@@ -1,7 +1,7 @@
-import { redirect } from 'next/navigation';
+import RedirectWithSpinner from '../../components/RedirectWithSpinner';
 
 const AmilBioPage = () => {
-  redirect('https://tiny.cc/amil-bio');
+  return <RedirectWithSpinner targetUrl={'https://tiny.cc/amil-bio'} />;
 };
 
 export default AmilBioPage;
