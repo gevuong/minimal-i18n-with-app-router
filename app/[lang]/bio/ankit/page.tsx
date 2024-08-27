@@ -1,7 +1,7 @@
-import { redirect } from 'next/navigation';
+import RedirectWithSpinner from '../../components/RedirectWithSpinner';
 
 const AnkitBioPage = () => {
-  redirect('https://tiny.cc/ankit-bio');
+  return <RedirectWithSpinner targetUrl={'https://tiny.cc/ankit-bio'} />;
 };
 
 export default AnkitBioPage;

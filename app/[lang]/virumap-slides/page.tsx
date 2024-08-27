@@ -1,16 +1,17 @@
 import { type Locale } from '@/i18n-config';
-import { redirect } from 'next/navigation';
+import RedirectWithSpinner from '../components/RedirectWithSpinner';
 
 const VirumapSlidesPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) => {
-  if (lang === 'ja') {
-    redirect('https://tiny.cc/virumap-slides-jp');
-  } else {
-    redirect('https://tiny.cc/virumap-slides');
-  }
+  const targetUrl =
+    lang === 'ja'
+      ? 'https://tiny.cc/virumap-slide-jp'
+      : 'https://tiny.cc/virumap-slides';
+
+  return <RedirectWithSpinner targetUrl={targetUrl} />;
 };
 
 export default VirumapSlidesPage;
