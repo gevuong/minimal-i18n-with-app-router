@@ -320,12 +320,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     <div className="w-full px-0">
                       {sectionPersonalInformation.map((detail, index) => (
                         <div key={index}>
-                          <details className="mb-3 w-full cursor-pointer bg-white">
+                          <details className="mb-3 cursor-pointer w-full bg-white">
                             <summary className="mt-3 flex justify-between bg-white px-4 py-3 font-bold text-black after:content-['+']">
                               {detail.title}
                             </summary>
                             <hr className="border-1 mt-3 border-gray-400" />
-                            <p className="mt-3 px-4 py-3 text-black">
+                            <p className="mt-3 px-4 py-3 text-black cursor-auto">
                               {detail.content}
                             </p>
                           </details>
@@ -379,7 +379,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             1. General
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 px-4 py-3 text-black cursor-auto">
                             The Covid Detection Foundation (“Virufy”, “we”, “us”
                             or “our”), a California nonprofit corporation
                             located at 4546, El Camino Real, B10 #614, Los
