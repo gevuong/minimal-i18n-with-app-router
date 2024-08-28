@@ -47,19 +47,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
     [lang],
   );
 
-  const privacyDetails = [
-    {
-      title: 'Lorem Ipsum',
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut fermentum nibh. Ut at purus nec erat tincidunt fermentum et quis enim. Curabitur sagittis quam augue, at dignissim elit suscipit nec. Suspendisse tincidunt ullamcorper quam, nec finibus ligula iaculis in. Integer ornare nibh quis ipsum congue sodales. Aliquam faucibus ex velit, a pretium sapien finibus quis. Phasellus eu metus nibh. Donec porta urna augue, sed fermentum ex finibus et. Aliquam volutpat lorem metus, non aliquet eros sodales sed. Aliquam nec lorem ornare, blandit tellus eget, vehicula felis. Sed pellentesque, justo ut posuere scelerisque, sem eros luctus ipsum, sed malesuada odio leo nec risus. Morbi ac mauris varius, tempus quam quis, pharetra nunc. Curabitur lacinia finibus sapien, id mollis sapien dapibus nec. Vivamus volutpat et lorem in dignissim.',
-    },
-    {
-      title: 'Lorem Ipsum',
-      content:
-        'Aenean lacinia interdum malesuada. Nam pharetra sem a erat scelerisque, nec iaculis erat venenatis. Donec enim dui, euismod vel magna at, semper vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id ultricies leo. Cras aliquet egestas lectus quis porta. Morbi vel augue sed tortor malesuada venenatis at in ipsum. Sed dolor sapien, lobortis ac scelerisque in, semper sit amet ante. Nullam ornare lacus et ante semper, sit amet aliquet libero molestie. Curabitur ornare, ex sit amet aliquet cursus, dolor est pellentesque sapien, nec ornare risus quam sed velit. Pellentesque ante magna, ultricies quis massa vitae, convallis vestibulum urna. Mauris massa metus, volutpat at consequat posuere, mattis eu mauris.',
-    },
-  ];
-
   const links2 = [{ label: 'Cookie Policy', route: '#' }];
   const links4 = [{ label: 'Privacy Policy', route: '#' }];
   const links5 = [{ label: 'Do Not Sell My Personal Information', route: '#' }];
