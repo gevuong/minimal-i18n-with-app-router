@@ -320,12 +320,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     <div className="w-full px-0">
                       {sectionPersonalInformation.map((detail, index) => (
                         <div key={index}>
-                          <details className="mb-3 cursor-pointer w-full bg-white">
+                          <details className="mb-3 w-full cursor-pointer bg-white">
                             <summary className="mt-3 flex justify-between bg-white px-4 py-3 font-bold text-black after:content-['+']">
                               {detail.title}
                             </summary>
                             <hr className="border-1 mt-3 border-gray-400" />
-                            <p className="mt-3 px-4 py-3 text-black cursor-auto">
+                            <p className="mt-3 cursor-auto px-4 py-3 text-black">
                               {detail.content}
                             </p>
                           </details>
@@ -379,7 +379,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             1. General
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black cursor-auto">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             The Covid Detection Foundation (“Virufy”, “we”, “us”
                             or “our”), a California nonprofit corporation
                             located at 4546, El Camino Real, B10 #614, Los
@@ -500,7 +500,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             2. What are Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             Cookies are text files containing small pieces of
                             data that are stored on your computer or mobile
                             device whenever you access a website. They are used
@@ -529,7 +529,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             3. How do we use Cookies
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             Cookies are messages that web servers pass to web
                             browsers when you visit websites. Cookies are most
                             commonly used to track website activity, to track
@@ -597,7 +597,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             4. How can you control Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             You have the right to decide whether to accept or
                             reject cookies. You do not have to accept cookies
                             and consent can be withdrawn at any time. Please
@@ -678,7 +678,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             5. Amendments to this Cookie Policy
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             We may update this Cookie Policy from time to time
                             in order to reflect, for example, changes to the
                             cookies we use or for other operational, legal or
@@ -702,7 +702,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             6. How can you contact us with questions?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <p className="mt-3 px-4 py-3 text-black">
+                          <p className="mt-3 cursor-auto px-4 py-3 text-black">
                             If you have any concerns relating to our use of
                             cookies or other technologies, please contact us at
                             <hr className="border-0" />
