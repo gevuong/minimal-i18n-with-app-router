@@ -14,7 +14,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../i18n';
-import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
 
