@@ -762,17 +762,17 @@ const Footer = ({ lang }: { lang: Locale }) => {
             <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
-            <div onClick={() => setShowModalCookiesPolicy(true)}>
-              <LinkAtom Routes={links2} Style={`text-[15px]`} />
-            </div>
+            <button onClick={() => setShowModalCookiesPolicy(true)}>
+              {links2[0].label}
+            </button>
             <div className="font-bold lg:hidden">|</div>
-            <div onClick={() => setShowModalPrivacyPolicy(true)}>
-              <LinkAtom Routes={links4} Style={`text-[15px]`} />
-            </div>
+            <button onClick={() => setShowModalPrivacyPolicy(true)}>
+              {links4[0].label}
+            </button>
             <div className="font-bold lg:hidden">|</div>
-            <div onClick={() => setShowModalMyInformation(true)}>
-              <LinkAtom Routes={links5} Style={`text-[15px]`} />
-            </div>
+            <button onClick={() => setShowModalMyInformation(true)}>
+              {links5[0].label}
+            </button>
           </li>
           <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
             <Link
