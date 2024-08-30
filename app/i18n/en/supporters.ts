@@ -24,8 +24,8 @@ import {
   SherlockCommunicationsIcon,
   SPIIcon,
   StanfordHealthcareInnovationLabIcon,
+  TakemotoLabIcon,
   XoorIcon,
-  TakemotoIcon,
 } from '@/public/images/supporters';
 import { type Supporters } from '../types/supporters';
 
@@ -136,8 +136,8 @@ const supporters: Supporters = {
       alt: 'Arkangel Ai',
     },
     {
-      img: TakemotoIcon,
-      alt: 'Takemoto',
+      img: TakemotoLabIcon,
+      alt: 'Takemoto Lab',
     },
   ],
 };
