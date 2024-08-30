@@ -12,7 +12,13 @@ import VirufyLogo from '@/public/logos/virufy.svg';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import {
+  type Dispatch,
+  type SetStateAction,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
 import { usei18n } from '../i18n';
 import Text from './components/Text';
 import Title from './components/Title';
@@ -46,10 +52,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
     [lang],
   );
 
-  const links2 = [{ label: 'Cookie Policy', route: '#' }];
-  const links4 = [{ label: 'Privacy Policy', route: '#' }];
-  const links5 = [{ label: 'Do Not Sell My Personal Information', route: '#' }];
-
   const {
     footer: { sectionPersonalInformation },
   } = usei18n(lang);
@@ -61,6 +63,24 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const [activeLink, setActiveLink] = useState('');
 
   const currPath = usePathname();
+
+  const footerPrivacyLinks: {
+    label: string;
+    showModal: Dispatch<SetStateAction<boolean>>;
+  }[] = [
+    {
+      label: 'Cookie Policy',
+      showModal: setShowModalCookiesPolicy,
+    },
+    {
+      label: 'Privacy Policy',
+      showModal: setShowModalPrivacyPolicy,
+    },
+    {
+      label: 'Do Not Sell My Personal Info',
+      showModal: setShowModalMyInformation,
+    },
+  ];
 
   useEffect(() => {
     links1.forEach((link) => {
@@ -783,17 +803,14 @@ const Footer = ({ lang }: { lang: Locale }) => {
             <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
-            <button onClick={() => setShowModalCookiesPolicy(true)}>
-              {links2[0].label}
-            </button>
-            <div className="font-bold lg:hidden">|</div>
-            <button onClick={() => setShowModalPrivacyPolicy(true)}>
-              {links4[0].label}
-            </button>
-            <div className="font-bold lg:hidden">|</div>
-            <button onClick={() => setShowModalMyInformation(true)}>
-              {links5[0].label}
-            </button>
+            {footerPrivacyLinks.map(({ label, showModal }, idx) => (
+              <>
+                {idx > 0 && <div className="font-bold lg:hidden">|</div>}
+                <button key={label} onClick={() => showModal(true)}>
+                  {label}
+                </button>
+              </>
+            ))}
           </li>
           <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
             <Link
