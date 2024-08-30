@@ -70,6 +70,28 @@ const Footer = ({ lang }: { lang: Locale }) => {
     });
   }, [currPath, links1]);
 
+  const handleKeyPress = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      setShowModalCookiesPolicy(false);
+      setShowModalPrivacyPolicy(false);
+      setShowModalMyInformation(false);
+    }
+  };
+
+  useEffect(() => {
+    if (
+      showModalMyInformation ||
+      showModalCookiesPolicy ||
+      showModalPrivacyPolicy
+    ) {
+      window.addEventListener('keydown', handleKeyPress);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
+
   return (
     <>
       <div>
@@ -304,7 +326,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         'mt-[80px] text-center md:mt-[30px] md:mx-auto mb-[30px]'
                       }
                     />
-                    <div className="absolute flex w-full flex-col items-end p-6">
+                    <div className="absolute flex w-full flex-col items-end p-6 md:p-1 lg:p-6">
                       <button
                         className="flex h-[35px] w-[35px] justify-center rounded-full bg-gray-300 px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-400"
                         type="button"
