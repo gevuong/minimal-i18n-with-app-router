@@ -12,9 +12,14 @@ import VirufyLogo from '@/public/logos/virufy.svg';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import {
+  type Dispatch,
+  type SetStateAction,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
 import { usei18n } from '../i18n';
-import LinkAtom from './components/footer/LinkAtom';
 import Text from './components/Text';
 import Title from './components/Title';
 
@@ -47,10 +52,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
     [lang],
   );
 
-  const links2 = [{ label: 'Cookie Policy', route: '#' }];
-  const links4 = [{ label: 'Privacy Policy', route: '#' }];
-  const links5 = [{ label: 'Do Not Sell My Personal Information', route: '#' }];
-
   const {
     footer: { sectionPersonalInformation },
   } = usei18n(lang);
@@ -63,6 +64,24 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
   const currPath = usePathname();
 
+  const footerPrivacyLinks: {
+    label: string;
+    showModal: Dispatch<SetStateAction<boolean>>;
+  }[] = [
+    {
+      label: 'Cookie Policy',
+      showModal: setShowModalCookiesPolicy,
+    },
+    {
+      label: 'Privacy Policy',
+      showModal: setShowModalPrivacyPolicy,
+    },
+    {
+      label: 'Do Not Sell My Personal Info',
+      showModal: setShowModalMyInformation,
+    },
+  ];
+
   useEffect(() => {
     links1.forEach((link) => {
       if (link.route.some((r) => r === currPath)) {
@@ -70,6 +89,28 @@ const Footer = ({ lang }: { lang: Locale }) => {
       }
     });
   }, [currPath, links1]);
+
+  const handleKeyPress = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      setShowModalCookiesPolicy(false);
+      setShowModalPrivacyPolicy(false);
+      setShowModalMyInformation(false);
+    }
+  };
+
+  useEffect(() => {
+    if (
+      showModalMyInformation ||
+      showModalCookiesPolicy ||
+      showModalPrivacyPolicy
+    ) {
+      window.addEventListener('keydown', handleKeyPress);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
 
   return (
     <>
@@ -305,7 +346,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         'mt-[80px] text-center md:mt-[30px] md:mx-auto mb-[30px]'
                       }
                     />
-                    <div className="absolute flex w-full flex-col items-end p-6">
+                    <div className="absolute flex w-full flex-col items-end p-6 md:p-1 lg:p-6">
                       <button
                         className="flex h-[35px] w-[35px] justify-center rounded-full bg-gray-300 px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-400"
                         type="button"
@@ -762,17 +803,14 @@ const Footer = ({ lang }: { lang: Locale }) => {
             <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
-            <div onClick={() => setShowModalCookiesPolicy(true)}>
-              <LinkAtom Routes={links2} Style={`text-[15px]`} />
-            </div>
-            <div className="font-bold lg:hidden">|</div>
-            <div onClick={() => setShowModalPrivacyPolicy(true)}>
-              <LinkAtom Routes={links4} Style={`text-[15px]`} />
-            </div>
-            <div className="font-bold lg:hidden">|</div>
-            <div onClick={() => setShowModalMyInformation(true)}>
-              <LinkAtom Routes={links5} Style={`text-[15px]`} />
-            </div>
+            {footerPrivacyLinks.map(({ label, showModal }, idx) => (
+              <>
+                {idx > 0 && <div className="font-bold lg:hidden">|</div>}
+                <button key={label} onClick={() => showModal(true)}>
+                  {label}
+                </button>
+              </>
+            ))}
           </li>
           <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
             <Link
