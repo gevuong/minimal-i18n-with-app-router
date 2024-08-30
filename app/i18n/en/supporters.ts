@@ -25,6 +25,7 @@ import {
   SPIIcon,
   StanfordHealthcareInnovationLabIcon,
   XoorIcon,
+  TakemotoIcon,
 } from '@/public/images/supporters';
 import { type Supporters } from '../types/supporters';
 
@@ -133,6 +134,10 @@ const supporters: Supporters = {
     {
       img: ArkangelAiIcon,
       alt: 'Arkangel Ai',
+    },
+    {
+      img: TakemotoIcon,
+      alt: 'Takemoto',
     },
   ],
 };

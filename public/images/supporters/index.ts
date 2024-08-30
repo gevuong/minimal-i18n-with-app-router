@@ -27,3 +27,4 @@ export { default as SherlockCommunicationsIcon } from '../../icons/icon-sherlock
 export { default as SPIIcon } from '../../icons/icon-spi.webp';
 export { default as StanfordHealthcareInnovationLabIcon } from '../../icons/icon-stanford-healthcare-innovation-lab.webp';
 export { default as XoorIcon } from '../../icons/icon-xoor.webp';
+export { default as TakemotoIcon } from '../../icons/icon-takemoto.webp';
