@@ -28,7 +28,7 @@ const AccordionItemFooter = ({ title, content }: SectionPersonalInformation) => 
         }`}
         >
           <div className="px-5 py-4">
-            <p className="leading-relaxed text-stone-300" dangerouslySetInnerHTML={{ __html: content }}/>
+            <p className="leading-relaxed" dangerouslySetInnerHTML={{ __html: content }}/>
           </div>
         </div>
       </div>
