@@ -17,7 +17,7 @@ export default function Section4({
   buttonRoute,
 }) {
   return (
-    <div className="mx-[5vw] mb-[40px] mt-[100px] flex flex-col space-y-4 text-center">
+    <div className="mx-10 mb-10 mt-24 flex flex-col space-y-4 text-center">
       <div className="mb-8 flex w-full justify-center lg:hidden">
         <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
       </div>
@@ -62,8 +62,8 @@ export default function Section4({
         />
       </div>
 
-      <div className="mt-[80px] hidden flex-1 items-center lg:flex">
-        <div className="flex w-1/2 items-center justify-start">
+      <div className="mt-20 hidden flex-1 items-center lg:flex">
+        <div className="flex w-1/2 items-center justify-start pr-6">
           <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
         </div>
         <div className="flex w-1/2 items-center justify-start sm:justify-center">

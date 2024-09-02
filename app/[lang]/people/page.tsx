@@ -1,40 +1,41 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
 import {
+  AnaisRameau,
   BgHeader,
-  Card1,
-  Card10,
-  Card11,
-  Card12,
-  Card13,
-  Card15,
-  Card16,
-  Card17,
-  Card18,
-  Card19,
-  Card2,
-  Card20,
-  Card21,
-  Card22,
-  Card23,
-  Card3,
-  Card5,
-  Card6,
-  Card8,
-  Card9,
+  GeorgePegelow,
+  JureLeskovec,
+  KaraMeister,
+  KhwajaShaik,
+  LesAtlas,
+  MadhavDatt,
+  MansoorAhmed,
+  ManujAggarwal,
+  MarkHaseltine,
+  MathijsDeVaan,
+  MelissaDyrdahl,
+  MertPilanci,
+  PedroSiena,
+  RafiAzimKhan,
+  RichardSwartzbaugh,
+  RichWalcoff,
+  RokSosic,
+  RonanDunlop,
+  TaisukeFukuno,
+  TsutomuIto,
+  VictorWang,
 } from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import { type StaticImageData } from 'next/image';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
-import AdvisorCards from './AdvisorCards';
 import Section4 from './Section4';
 
 export type CardData = {
-  route: StaticImageData;
+  img: StaticImageData;
   name: string;
-  subtitle: string;
-  text: string;
+  role: string;
+  texts: string[];
 };
 
 const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
@@ -44,124 +45,171 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   const cards: CardData[] = [
     {
-      route: Card1,
+      img: KaraMeister,
       name: 'Kara Meister, M.D.',
-      subtitle: 'Clinical Advisor',
-      text: 'Clinical Assistant Professor of ENT Stanford School of Medicine',
+      role: 'Clinical Advisor',
+      texts: [
+        'Clinical Assistant Professor of ENT Stanford School of Medicine',
+      ],
     },
     {
-      route: Card2,
+      img: JureLeskovec,
       name: 'Dr. Jure Leskovec',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Chief Scientist - Pinterest Associate Professor of AI - Stanford',
+      role: 'Artificial Intelligence Advisor',
+      texts: [
+        'Chief Scientist - Pinterest',
+        'Associate Professor of AI - Stanford',
+      ],
     },
     {
-      route: Card3,
+      img: MelissaDyrdahl,
       name: 'Melissa Dyrdahl',
-      subtitle: 'Executive Marketing Advisor',
-      text: 'Former CMO - Adobe Board Member - CommonSpirit Health',
+      role: 'Executive Marketing Advisor',
+      texts: ['Former CMO - Adobe', 'Board Member - CommonSpirit Health'],
     },
     {
-      route: Card5,
+      img: AnaisRameau,
+      name: 'Anaïs Rameau, M.D.',
+      role: 'Executive Marketing Advisor',
+      texts: [
+        'Asst. Professor of ENT - Cornell University',
+        'Doctor of Medicine - McGill',
+      ],
+    },
+    {
+      img: MadhavDatt,
       name: 'Madhav Datt',
-      subtitle: 'Executive Nonprofit Advisor',
-      text: 'Founder - Green the Gene Former Global Representative for Youth - UN EP',
+      role: 'Executive Nonprofit Advisor',
+      texts: [
+        'Founder - Green the Gene',
+        'Former Global Representative for Youth - UN EP',
+      ],
     },
     {
-      route: Card6,
+      img: RafiAzimKhan,
       name: 'Rafi Azim-Khan',
-      subtitle: 'Executive Legal Advisor',
-      text: 'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
+      role: 'Executive Legal Advisor',
+      texts: [
+        'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
+      ],
     },
     {
-      route: Card8,
+      img: RichardSwartzbaugh,
+      name: 'Richard Swartzbaugh',
+      role: 'Executive Advisor',
+      texts: ['Risk Management - Curaesoft', 'J.D. - University of Iowa'],
+    },
+    {
+      img: RonanDunlop,
       name: 'Ronan Dunlop',
-      subtitle: 'Executive Nonprofit Advisor',
-      text: 'Founder - Green the Gene Former Global Representative for Youth - UN EP',
+      role: 'Executive Nonprofit Advisor',
+      texts: [
+        'Former Head of Marketing - Pivotal/VMWare',
+        'VP of Marketing - Cohuman',
+      ],
     },
     {
-      route: Card9,
+      img: MarkHaseltine,
       name: 'Mark Haseltine',
-      subtitle: 'Executive Advisor',
-      text: 'Former CTO/CPO - edX Computer Science alumnus - MIT',
+      role: 'Executive Advisor',
+      texts: ['Former CTO/CPO - edX', 'Computer Science alumnus - MIT'],
     },
     {
-      route: Card10,
+      img: MansoorAhmed,
       name: 'Mansoor Ahmed',
-      subtitle: 'Clinical Research Advisor',
-      text: 'Founder & CEO - Cleveland Sleep Research Center                                 MBBS - King Edward Medical University',
+      role: 'Clinical Research Advisor',
+      texts: [
+        'Founder & CEO - Cleveland Sleep Research Center',
+        'MBBS - King Edward Medical University',
+      ],
     },
     {
-      route: Card11,
+      img: MertPilanci,
       name: 'Mert Pilanci',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Assistant Professor of AI Stanford University Electrical Engineering',
+      role: 'Artificial Intelligence Advisor',
+      texts: [
+        'Asst. Professor of AI - Stanford University, Electrical Engineering',
+      ],
     },
     {
-      route: Card12,
+      img: VictorWang,
       name: 'Victor Wang',
-      subtitle: 'Executive Advisor',
-      text: 'Founder and Chairman- China Silicon Valley                                                     MBA - Stanford Graduate School of Business',
+      role: 'Executive Advisor',
+      texts: [
+        'Founder & Chairman - China Silicon Valley',
+        'MBA - Stanford Graduate School of Business',
+      ],
     },
     {
-      route: Card13,
+      img: RokSosic,
       name: 'Rok Sosic',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Senior Research Engineer             Stanford School of Engineering',
+      role: 'Artificial Intelligence Advisor',
+      texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
     },
     {
-      route: Card15,
+      img: MathijsDeVaan,
       name: 'Mathijs De Vaan',
-      subtitle: 'Asst. Professor - UC Berkeley',
-      text: 'Management of Organizations              PhD Sociology - Columbia University',
+      role: 'Asst. Professor - UC Berkeley',
+      texts: [
+        'Management of Organizations PhD Sociology - Columbia University',
+      ],
     },
     {
-      route: Card16,
+      img: PedroSiena,
       name: 'Pedro Siena',
-      subtitle: 'Brazil Executive Advisor',
-      text: 'Founder and CEO - Siena Company                                Mentor - Stanford Lean Launchpad',
+      role: 'Brazil Executive Advisor',
+      texts: [
+        'Founder and CEO - Siena Company',
+        'Mentor - Stanford Lean Launchpad',
+      ],
     },
     {
-      route: Card17,
+      img: KhwajaShaik,
       name: 'Khwaja Shaik',
-      subtitle: 'Chief Technology Officer - IBM',
-      text: 'MOSH, Vice Chair, Board Member     Board Member - University of North Florida Computing',
+      role: 'Chief Technology Officer - IBM',
+      texts: [
+        'MOSH, Vice Chair, Board Member',
+        'Board Member - University of North Florida Computing',
+      ],
     },
     {
-      route: Card18,
+      img: GeorgePegelow,
       name: 'George Pegelow',
-      subtitle: 'Executive Visionary Advisor',
-      text: 'Martial Arts & Philosophy Professor - Stanford University',
+      role: 'Executive Visionary Advisor',
+      texts: ['Martial Arts & Philosophy Professor - Stanford University'],
     },
     {
-      route: Card19,
+      img: RichWalcoff,
       name: 'Rich Walcoff',
-      subtitle: 'Communications Advisor',
-      text: 'Sports Director - KGO Radio',
+      role: 'Communications Advisor',
+      texts: ['Sports Director - KGO Radio'],
     },
     {
-      route: Card20,
+      img: TaisukeFukuno,
       name: 'Taisuke Fukuno',
-      subtitle: 'Executive IT Advisor',
-      text: 'Founder - Open Data Japan        Chairman - jig.jp',
+      role: 'Executive IT Advisor',
+      texts: ['Founder - Open Data Japan', 'Chairman - jig.jp'],
     },
     {
-      route: Card21,
+      img: TsutomuIto,
       name: 'Tsutomu Ito',
-      subtitle: 'Executive Visionary Advisor',
-      text: 'Founder - Tannan FM Radio                 Lead Architect, Bullet Train',
+      role: 'Executive Visionary Advisor',
+      texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
     },
     {
-      route: Card22,
+      img: ManujAggarwal,
       name: 'Manuj Aggarwal',
-      subtitle: 'Executive AI, Strategy And Marketing Advisor',
-      text: 'Chief Innovation Officer - TetraNoodle Technologies',
+      role: 'Executive AI, Strategy And Marketing Advisor',
+      texts: ['Chief Innovation Officer - TetraNoodle Technologies'],
     },
     {
-      route: Card23,
+      img: LesAtlas,
       name: 'Dr. Les Atlas',
-      subtitle: 'Audio and Machine Learning Advisor',
-      text: 'Professor of Electrical and Computer Engineering - University of Washington                 Ph.D. Electrical Engineering, Stanford',
+      role: 'Audio and Machine Learning Advisor',
+      texts: [
+        'Professor of Electrical and Computer Engineering - University of Washington',
+        'Ph.D. Electrical Engineering, Stanford',
+      ],
     },
   ];
 
@@ -210,12 +258,43 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <Title
             H="h1"
             Text={sectionAdvisors.title}
-            TitleClassProps="text-center mt-20 bg-transparent 
+            TitleClassProps="text-center my-10 bg-transparent 
                    bg-clip-text text-transparent
                    bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
           />
 
-          <AdvisorCards cards={cards} />
+          {/* Cards Container */}
+          <div className="grid grid-cols-2 gap-4 px-4 pb-24 text-white sm:gap-6 lg:gap-12 xl:grid-cols-3">
+            {cards.map((card, i) => (
+              <div key={i} className="relative">
+                <ExportedImage
+                  className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
+                  src={card.img}
+                  alt={card.name}
+                  basePath={basePath}
+                />
+
+                {/* apply opaque background to dim card */}
+                <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20 text-white"></div>
+
+                <div className="absolute inset-x-0 top-2 px-1 text-center text-sm font-bold text-white md:text-2xl">
+                  {card.role}
+                </div>
+
+                {/* Text Container */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-black bg-opacity-50 px-2 py-1 text-center md:h-40">
+                  <h2 className="pb-1 text-xs font-bold md:text-2xl">
+                    {card.name}
+                  </h2>
+                  {card.texts.map((text, i) => (
+                    <div key={i} className="text-[9px] md:text-lg">
+                      {text}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

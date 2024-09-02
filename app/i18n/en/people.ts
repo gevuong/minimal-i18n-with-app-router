@@ -7,7 +7,7 @@ const people: People = {
     titleMeetOurFounder: 'Meet Our Founder',
     titleAmil: 'Amil Khanzada',
     textAmil:
-      'Doctorate of Engineering Candidate, University of Fukui, Japan . Former MBA & Master of Engineering(Data Science) Joint-Degree Student , UC Berkeley.',
+      'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
     button: 'READ MORE',
   },
   sectionAdvisors: {
