@@ -1,5 +1,5 @@
 import { type TeamLeadsType } from '@/app/i18n/types/teamLeads';
-import TeamLeadCard from './TeamLeadCard';
+import PersonCard from '../../components/PersonCard';
 
 const TeamLeads = ({ title, cards }: TeamLeadsType) => {
   return (
@@ -13,7 +13,7 @@ const TeamLeads = ({ title, cards }: TeamLeadsType) => {
         {/* Cards Container */}
         <div className="grid grid-cols-2 gap-6 lg:gap-12 xl:grid-cols-3">
           {cards.map((card, i) => (
-            <TeamLeadCard key={i} {...card} />
+            <PersonCard key={i} {...card} />
           ))}
         </div>
       </div>
