@@ -81,7 +81,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </div>
 
                 {/* Text Container */}
-                <div className="absolute bottom-0 left-0 right-0 h-[80px] bg-black bg-opacity-50 px-1 py-1 text-center md:h-40">
+                <div className="absolute bottom-0 left-0 right-0 h-[84px] bg-black bg-opacity-50 px-1 py-1 text-center sm:h-[72px] md:h-[148px]">
                   <h2 className="text-xs font-bold md:text-2xl">{name}</h2>
                   {texts.map((text, i) => (
                     <div key={i} className="text-[8px] md:text-lg">
