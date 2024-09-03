@@ -1,5 +1,5 @@
 import { basePath } from '@/next.config.mjs';
-import { Amil } from '@/public/images/people';
+import { AmilKhanzada } from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
 import TitleText from '../components/TitleText';
 import Button from './Button';
@@ -19,7 +19,12 @@ export default function Section4({
   return (
     <div className="mx-10 mb-10 mt-24 flex flex-col space-y-4 text-center">
       <div className="mb-8 flex w-full justify-center lg:hidden">
-        <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
+        <ExportedImage
+          src={AmilKhanzada}
+          alt={alt}
+          priority
+          basePath={basePath}
+        />
       </div>
       <div className="flex w-full flex-col items-center gap-5 text-center lg:hidden">
         <TitleText
@@ -64,7 +69,12 @@ export default function Section4({
 
       <div className="mt-20 hidden flex-1 items-center lg:flex">
         <div className="flex w-1/2 items-center justify-start pr-6">
-          <ExportedImage src={Amil} alt={alt} priority basePath={basePath} />
+          <ExportedImage
+            src={AmilKhanzada}
+            alt={alt}
+            priority
+            basePath={basePath}
+          />
         </div>
         <div className="flex w-1/2 items-center justify-start sm:justify-center">
           <div className="flex w-full flex-col gap-5 text-left">

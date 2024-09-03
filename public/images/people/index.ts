@@ -1,7 +1,7 @@
 export { default as BgHeader } from './bg-header.webp';
 
 // Cards
-export { default as Amil } from './amil.webp';
+export { default as AmilKhanzada } from './amil-khanzada.webp';
 export { default as AnaisRameau } from './anais-rameau.webp';
 export { default as GeorgePegelow } from './george-pegelow.webp';
 export { default as JureLeskovec } from './jure-leskovec.webp';

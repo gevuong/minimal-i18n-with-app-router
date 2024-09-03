@@ -10,5 +10,4 @@ export interface TeamLeadCard {
   texts: string[];
   image: StaticImageData;
   altText: string;
-  role?: string;
 }
