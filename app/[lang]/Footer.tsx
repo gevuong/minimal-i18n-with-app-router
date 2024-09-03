@@ -270,7 +270,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             1. General
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[75rem]">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               The Covid Detection Foundation (“Virufy”, “we”,
                               “us” or “our”), a California nonprofit corporation
@@ -289,14 +289,14 @@ const Footer = ({ lang }: { lang: Locale }) => {
                               COVID-19 detection.
                               <div className="mt-4">
                                 <p>For users located in Europe:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Recital 30 of the European General Data
                                   Protection Regulation 2016/679 (the “GDPR”).
                                 </li>
                                 <br />
                                 <p>For users located in Spain:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Recital 30 of the European General Data
                                   Protection Regulation 2016/679 (the “GDPR”)
@@ -306,21 +306,21 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                 </li>
                                 <br />
                                 <p>For users located in Argentina:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Argentinian Law 25.326 on Protection of
                                   Personal Data.
                                 </li>
                                 <br />
                                 <p>For users located in Brazil:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under the
                                   General Personal Data Protection Law, number
                                   13.709 / 2018 of Brazil (the “LGPD”).
                                 </li>
                                 <br />
                                 <p>For users located in Colombia:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Colombian law 1581 of 2012.
                                 </li>
@@ -329,7 +329,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                   For users located in the United Mexican
                                   States:
                                 </p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be considered part of
                                   the Virufy Privacy Notice and will be treated
                                   under the Federal Law on Protection of
@@ -340,13 +340,13 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                 </li>
                                 <br />
                                 <p>For users located in Bolivia:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Bolivian Law.
                                 </li>
                                 <br />
                                 <p>For users located in Peru:</p>
-                                <li>
+                                <li className="pl-2">
                                   This cookie policy will be treated under
                                   Peruvian Law.
                                 </li>
@@ -397,7 +397,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             2. What are Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-60">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-96">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               Cookies are text files containing small pieces of
                               data that are stored on your computer or mobile
@@ -428,7 +428,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             3. How do we use Cookies
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[37rem]">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               Cookies are messages that web servers pass to web
                               browsers when you visit websites. Cookies are most
@@ -499,7 +499,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             4. How can you control Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[500px]">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               You have the right to decide whether to accept or
                               reject cookies. You do not have to accept cookies
@@ -582,7 +582,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             5. Amendments to this Cookie Policy
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[500px]">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[1000px]">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               We may update this Cookie Policy from time to time
                               in order to reflect, for example, changes to the
@@ -607,7 +607,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             6. How can you contact us with questions?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[80px]">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-40">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               If you have any concerns relating to our use of
                               cookies or other technologies, please contact us
