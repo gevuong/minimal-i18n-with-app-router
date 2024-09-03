@@ -22,7 +22,7 @@ import {
 import { usei18n } from '../i18n';
 import Text from './components/Text';
 import Title from './components/Title';
-import AccordionItemFooter from './components/footer/AccordianItemFooter';
+import AccordionItemFooter from './components/footer/AccordionItemFooter';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = useMemo(
