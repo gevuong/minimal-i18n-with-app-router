@@ -1,169 +1,15 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
-import {
-  BgHeader,
-  Card1,
-  Card10,
-  Card11,
-  Card12,
-  Card13,
-  Card15,
-  Card16,
-  Card17,
-  Card18,
-  Card19,
-  Card2,
-  Card20,
-  Card21,
-  Card22,
-  Card23,
-  Card3,
-  Card5,
-  Card6,
-  Card8,
-  Card9,
-} from '@/public/images/people';
+import { BgHeader } from '@/public/images/people';
 import ExportedImage from 'next-image-export-optimizer';
-import { type StaticImageData } from 'next/image';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
-import AdvisorCards from './AdvisorCards';
 import Section4 from './Section4';
-
-export type CardData = {
-  route: StaticImageData;
-  name: string;
-  subtitle: string;
-  text: string;
-};
 
 const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = usei18n(lang);
-
-  const cards: CardData[] = [
-    {
-      route: Card1,
-      name: 'Kara Meister, M.D.',
-      subtitle: 'Clinical Advisor',
-      text: 'Clinical Assistant Professor of ENT Stanford School of Medicine',
-    },
-    {
-      route: Card2,
-      name: 'Dr. Jure Leskovec',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Chief Scientist - Pinterest Associate Professor of AI - Stanford',
-    },
-    {
-      route: Card3,
-      name: 'Melissa Dyrdahl',
-      subtitle: 'Executive Marketing Advisor',
-      text: 'Former CMO - Adobe Board Member - CommonSpirit Health',
-    },
-    {
-      route: Card5,
-      name: 'Madhav Datt',
-      subtitle: 'Executive Nonprofit Advisor',
-      text: 'Founder - Green the Gene Former Global Representative for Youth - UN EP',
-    },
-    {
-      route: Card6,
-      name: 'Rafi Azim-Khan',
-      subtitle: 'Executive Legal Advisor',
-      text: 'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
-    },
-    {
-      route: Card8,
-      name: 'Ronan Dunlop',
-      subtitle: 'Executive Nonprofit Advisor',
-      text: 'Founder - Green the Gene Former Global Representative for Youth - UN EP',
-    },
-    {
-      route: Card9,
-      name: 'Mark Haseltine',
-      subtitle: 'Executive Advisor',
-      text: 'Former CTO/CPO - edX Computer Science alumnus - MIT',
-    },
-    {
-      route: Card10,
-      name: 'Mansoor Ahmed',
-      subtitle: 'Clinical Research Advisor',
-      text: 'Founder & CEO - Cleveland Sleep Research Center                                 MBBS - King Edward Medical University',
-    },
-    {
-      route: Card11,
-      name: 'Mert Pilanci',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Assistant Professor of AI Stanford University Electrical Engineering',
-    },
-    {
-      route: Card12,
-      name: 'Victor Wang',
-      subtitle: 'Executive Advisor',
-      text: 'Founder and Chairman- China Silicon Valley                                                     MBA - Stanford Graduate School of Business',
-    },
-    {
-      route: Card13,
-      name: 'Rok Sosic',
-      subtitle: 'Artificial Intelligence Advisor',
-      text: 'Senior Research Engineer             Stanford School of Engineering',
-    },
-    {
-      route: Card15,
-      name: 'Mathijs De Vaan',
-      subtitle: 'Asst. Professor - UC Berkeley',
-      text: 'Management of Organizations              PhD Sociology - Columbia University',
-    },
-    {
-      route: Card16,
-      name: 'Pedro Siena',
-      subtitle: 'Brazil Executive Advisor',
-      text: 'Founder and CEO - Siena Company                                Mentor - Stanford Lean Launchpad',
-    },
-    {
-      route: Card17,
-      name: 'Khwaja Shaik',
-      subtitle: 'Chief Technology Officer - IBM',
-      text: 'MOSH, Vice Chair, Board Member     Board Member - University of North Florida Computing',
-    },
-    {
-      route: Card18,
-      name: 'George Pegelow',
-      subtitle: 'Executive Visionary Advisor',
-      text: 'Martial Arts & Philosophy Professor - Stanford University',
-    },
-    {
-      route: Card19,
-      name: 'Rich Walcoff',
-      subtitle: 'Communications Advisor',
-      text: 'Sports Director - KGO Radio',
-    },
-    {
-      route: Card20,
-      name: 'Taisuke Fukuno',
-      subtitle: 'Executive IT Advisor',
-      text: 'Founder - Open Data Japan        Chairman - jig.jp',
-    },
-    {
-      route: Card21,
-      name: 'Tsutomu Ito',
-      subtitle: 'Executive Visionary Advisor',
-      text: 'Founder - Tannan FM Radio                 Lead Architect, Bullet Train',
-    },
-    {
-      route: Card22,
-      name: 'Manuj Aggarwal',
-      subtitle: 'Executive AI, Strategy And Marketing Advisor',
-      text: 'Chief Innovation Officer - TetraNoodle Technologies',
-    },
-    {
-      route: Card23,
-      name: 'Dr. Les Atlas',
-      subtitle: 'Audio and Machine Learning Advisor',
-      text: 'Professor of Electrical and Computer Engineering - University of Washington                 Ph.D. Electrical Engineering, Stanford',
-    },
-  ];
 
   return (
     <>
@@ -210,12 +56,42 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <Title
             H="h1"
             Text={sectionAdvisors.title}
-            TitleClassProps="text-center mt-20 bg-transparent 
+            TitleClassProps="text-center my-10 bg-transparent 
                    bg-clip-text text-transparent
                    bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
           />
 
-          <AdvisorCards cards={cards} />
+          {/* Cards Container */}
+          <div className="grid grid-cols-2 gap-4 px-6 pb-24 text-white sm:gap-6 lg:gap-12 xl:grid-cols-3">
+            {sectionAdvisors.advisors.map(({ img, name, role, texts }) => (
+              <div key={name} className="relative">
+                <ExportedImage
+                  className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
+                  src={img}
+                  alt={name}
+                  basePath={basePath}
+                />
+
+                {/* apply opaque background to dim card */}
+                <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
+
+                {/* Role Container */}
+                <div className="absolute inset-x-0 top-2 px-1 text-center text-xs font-bold text-white md:text-2xl">
+                  {role}
+                </div>
+
+                {/* Text Container */}
+                <div className="absolute bottom-0 left-0 right-0 h-[84px] bg-black bg-opacity-50 px-1 py-1 text-center sm:h-[72px] md:h-[148px]">
+                  <h2 className="text-xs font-bold md:text-2xl">{name}</h2>
+                  {texts.map((text, i) => (
+                    <div key={i} className="text-[8px] md:text-lg">
+                      {text}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
