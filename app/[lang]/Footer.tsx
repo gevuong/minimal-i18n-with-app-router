@@ -14,15 +14,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   type Dispatch,
+  Fragment,
   type SetStateAction,
   useEffect,
   useMemo,
   useState,
 } from 'react';
 import { usei18n } from '../i18n';
+import AccordionItem from './components/AccordionItem';
 import Text from './components/Text';
 import Title from './components/Title';
-import AccordionItemFooter from './components/footer/AccordionItemFooter';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = useMemo(
@@ -179,7 +180,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     <div className="w-full px-0">
                       <div>
                         {sectionPrivacyPolicy.map((detail, index) => (
-                          <AccordionItemFooter {...detail} key={index} />
+                          <AccordionItem {...detail} key={index} />
                         ))}
                       </div>
                     </div>
@@ -223,7 +224,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   <div className="flex w-full items-center justify-center">
                     <div className="w-full px-0">
                       {sectionPersonalInformation.map((detail, index) => (
-                        <AccordionItemFooter {...detail} key={index} />
+                        <AccordionItem {...detail} key={index} />
                       ))}
                     </div>
                   </div>
@@ -671,12 +672,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
             {footerPrivacyLinks.map(({ label, showModal }, idx) => (
-              <>
+              <Fragment key={label}>
                 {idx > 0 && <div className="font-bold lg:hidden">|</div>}
                 <button key={label} onClick={() => showModal(true)}>
                   {label}
                 </button>
-              </>
+              </Fragment>
             ))}
           </li>
           <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
