@@ -1,8 +1,6 @@
-export interface Footer {
-  sectionPersonalInformation: SectionPersonalInformation[];
-}
+import { type QA } from './faq';
 
-export interface SectionPersonalInformation {
-  title: string;
-  content: string;
+export interface Footer {
+  sectionPersonalInformation: QA[];
+  sectionPrivacyPolicy: QA[];
 }
