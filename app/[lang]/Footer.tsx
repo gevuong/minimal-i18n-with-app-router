@@ -14,6 +14,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   type Dispatch,
+  Fragment,
   type SetStateAction,
   useEffect,
   useMemo,
@@ -804,12 +805,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
             {footerPrivacyLinks.map(({ label, showModal }, idx) => (
-              <>
+              <Fragment key={label}>
                 {idx > 0 && <div className="font-bold lg:hidden">|</div>}
                 <button key={label} onClick={() => showModal(true)}>
                   {label}
                 </button>
-              </>
+              </Fragment>
             ))}
           </li>
           <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">

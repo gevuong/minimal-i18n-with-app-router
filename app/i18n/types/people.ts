@@ -1,3 +1,5 @@
+import { type StaticImageData } from 'next/image';
+
 export interface People {
   titleImage: string;
   sectionMeetOurFounder: sectionMeetOurFounder;
@@ -13,4 +15,12 @@ export interface sectionMeetOurFounder {
 
 export interface sectionAdvisors {
   title: string;
+  advisors: CardData[];
 }
+
+type CardData = {
+  img: StaticImageData;
+  name: string;
+  role: string;
+  texts: string[];
+};

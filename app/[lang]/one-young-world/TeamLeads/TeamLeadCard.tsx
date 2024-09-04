@@ -13,7 +13,7 @@ const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
       />
 
       {/* apply opaque background to dim card */}
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-30"></div>
+      <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
 
       {/* Text Container */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-black bg-opacity-50 px-2 py-2 text-center md:h-40">
