@@ -397,7 +397,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                             2. What are Cookies?
                           </summary>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-96">
+                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
                             <p className="mt-3 cursor-auto px-4 py-3 text-white">
                               Cookies are text files containing small pieces of
                               data that are stored on your computer or mobile
