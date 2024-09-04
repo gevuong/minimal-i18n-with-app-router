@@ -21,9 +21,9 @@ import {
   useState,
 } from 'react';
 import { usei18n } from '../i18n';
+import AccordionItem from './components/AccordionItem';
 import Text from './components/Text';
 import Title from './components/Title';
-import AccordionItemFooter from './components/footer/AccordionItemFooter';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const links1 = useMemo(
@@ -180,7 +180,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     <div className="w-full px-0">
                       <div>
                         {sectionPrivacyPolicy.map((detail, index) => (
-                          <AccordionItemFooter {...detail} key={index} />
+                          <AccordionItem {...detail} key={index} />
                         ))}
                       </div>
                     </div>
@@ -224,7 +224,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   <div className="flex w-full items-center justify-center">
                     <div className="w-full px-0">
                       {sectionPersonalInformation.map((detail, index) => (
-                        <AccordionItemFooter {...detail} key={index} />
+                        <AccordionItem {...detail} key={index} />
                       ))}
                     </div>
                   </div>

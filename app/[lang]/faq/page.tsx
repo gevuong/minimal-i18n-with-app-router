@@ -7,7 +7,7 @@ import debounce from 'lodash.debounce';
 import ExportedImage from 'next-image-export-optimizer';
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../../i18n';
-import AccordionItem from './AccordionItem';
+import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
 
 const DEFAULT_TOPIC = 'Common Questions';
@@ -72,7 +72,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           />
 
           {/* Text and Input Container */}
-          <div className="relative flex flex-col items-center justify-center pt-32 pb-8 md:pt-72 md:pb-48">
+          <div className="relative flex flex-col items-center justify-center pb-8 pt-32 md:pb-48 md:pt-72">
             {/* Sizing & Spacing Container */}
             <div className="px-8 text-center font-medium text-white">
               {/* Header */}
@@ -91,7 +91,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {/* Input Container */}
               <div className="relative mb-2 flex items-center md:mb-8">
                 <input
-                  className="w-full rounded-full py-4 pl-5 pr-12 text-xs text-neutral-500 sm:pr-14 sm:pl-8 sm:text-sm md:w-[680px] md:text-base"
+                  className="w-full rounded-full py-4 pl-5 pr-12 text-xs text-neutral-500 sm:pl-8 sm:pr-14 sm:text-sm md:w-[680px] md:text-base"
                   type="search"
                   placeholder={headerSection.input.placeholder}
                   onChange={handleSearchInputChange}
