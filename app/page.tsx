@@ -1,8 +1,8 @@
 import { i18n } from '@/i18n-config';
-import { redirect } from 'next/navigation';
+import RedirectWithSpinner from './[lang]/components/RedirectWithSpinner';
 
 const RootPage = () => {
-  redirect(`/${i18n.defaultLocale}`);
+  return <RedirectWithSpinner targetUrl={`/${i18n.defaultLocale}`} />;
 };
 
 export default RootPage;
