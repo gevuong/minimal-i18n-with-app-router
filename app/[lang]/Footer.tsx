@@ -51,7 +51,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ],
-    [lang],
+    [lang]
   );
 
   const {
@@ -113,6 +113,32 @@ const Footer = ({ lang }: { lang: Locale }) => {
       window.removeEventListener('keydown', handleKeyPress);
     };
   }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
+
+  const [isOpenItem1, setIsOpenItem1] = useState(false);
+  const [isOpenItem2, setIsOpenItem2] = useState(false);
+  const [isOpenItem3, setIsOpenItem3] = useState(false);
+  const [isOpenItem4, setIsOpenItem4] = useState(false);
+  const [isOpenItem5, setIsOpenItem5] = useState(false);
+  const [isOpenItem6, setIsOpenItem6] = useState(false);
+
+  const handleToggleItem1 = () => {
+    setIsOpenItem1(!isOpenItem1);
+  };
+  const handleToggleItem2 = () => {
+    setIsOpenItem2(!isOpenItem2);
+  };
+  const handleToggleItem3 = () => {
+    setIsOpenItem3(!isOpenItem3);
+  };
+  const handleToggleItem4 = () => {
+    setIsOpenItem4(!isOpenItem4);
+  };
+  const handleToggleItem5 = () => {
+    setIsOpenItem5(!isOpenItem5);
+  };
+  const handleToggleItem6 = () => {
+    setIsOpenItem6(!isOpenItem6);
+  };
 
   return (
     <>
@@ -266,13 +292,24 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   <div className="flex w-full items-center justify-center">
                     <div className="w-full px-0">
                       <div>
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        <div className="mb-3 w-full">
+                          <hr className="border-1 border-gray-400" />
+                          <button
+                            onClick={handleToggleItem1}
+                            className="mt-3 flex w-full cursor-pointer justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             1. General
-                          </summary>
-                          <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem1 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem1 ? 'max-h-[160rem]' : 'max-h-0'}`}
+                          >
+                            <hr className="border-1 mt-3 border-gray-400" />
+                            <p className="mt-3 px-4 py-3 text-white">
                               The Covid Detection Foundation (“Virufy”, “we”,
                               “us” or “our”), a California nonprofit corporation
                               located at 4546, El Camino Real, B10 #614, Los
@@ -290,67 +327,83 @@ const Footer = ({ lang }: { lang: Locale }) => {
                               COVID-19 detection.
                               <div className="mt-4">
                                 <p>For users located in Europe:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Recital 30 of the European General Data
-                                  Protection Regulation 2016/679 (the “GDPR”).
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Recital 30 of the European General Data
+                                    Protection Regulation 2016/679 (the “GDPR”).
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Spain:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Recital 30 of the European General Data
-                                  Protection Regulation 2016/679 (the “GDPR”)
-                                  and under Article 22 of Law 34/2002, of July
-                                  11, on information society services and
-                                  electronic commerce (LSSICE).
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Recital 30 of the European General Data
+                                    Protection Regulation 2016/679 (the “GDPR”)
+                                    and under Article 22 of Law 34/2002, of July
+                                    11, on information society services and
+                                    electronic commerce (LSSICE).
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Argentina:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Argentinian Law 25.326 on Protection of
-                                  Personal Data.
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Argentinian Law 25.326 on Protection of
+                                    Personal Data.
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Brazil:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under the
-                                  General Personal Data Protection Law, number
-                                  13.709 / 2018 of Brazil (the “LGPD”).
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under the
+                                    General Personal Data Protection Law, number
+                                    13.709 / 2018 of Brazil (the “LGPD”).
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Colombia:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Colombian law 1581 of 2012.
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Colombian law 1581 of 2012.
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>
                                   For users located in the United Mexican
                                   States:
                                 </p>
-                                <li className="pl-2">
-                                  This cookie policy will be considered part of
-                                  the Virufy Privacy Notice and will be treated
-                                  under the Federal Law on Protection of
-                                  Personal Data Held by Private Parties.
-                                  Whenever reference is made to “Privacy Policy”
-                                  in the present, the term “Privacy Notice” is
-                                  understood interchangeably.
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be considered part
+                                    of the Virufy Privacy Notice and will be
+                                    treated under the Federal Law on Protection
+                                    of Personal Data Held by Private Parties.
+                                    Whenever reference is made to “Privacy
+                                    Policy” in the present, the term “Privacy
+                                    Notice” is understood interchangeably.
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Bolivia:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Bolivian Law.
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Bolivian Law.
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>For users located in Peru:</p>
-                                <li className="pl-2">
-                                  This cookie policy will be treated under
-                                  Peruvian Law.
-                                </li>
+                                <ul className="list-disc pl-5 text-white">
+                                  <li>
+                                    This cookie policy will be treated under
+                                    Peruvian Law.
+                                  </li>
+                                </ul>
                                 <br />
                                 <p>
                                   Virufy is the “data controller” of, and
@@ -390,16 +443,26 @@ const Footer = ({ lang }: { lang: Locale }) => {
                               </div>
                             </p>
                           </div>
-                        </details>
+                        </div>
 
-                        <hr className="border-1 border-gray-400" />
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex cursor-pointer justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        <div className="mb-3 w-full">
+                          <hr className="border-1 border-gray-400" />
+                          <button
+                            onClick={handleToggleItem2}
+                            className="mt-3 flex w-full cursor-pointer justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             2. What are Cookies?
-                          </summary>
-                          <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem2 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem2 ? 'max-h-[70rem]' : 'max-h-0'}`}
+                          >
+                            <hr className="border-1 mt-3 border-gray-400" />
+                            <p className="mt-3 px-4 py-3 text-white">
                               Cookies are text files containing small pieces of
                               data that are stored on your computer or mobile
                               device whenever you access a website. They are
@@ -421,16 +484,26 @@ const Footer = ({ lang }: { lang: Locale }) => {
                               analytics).
                             </div>
                           </div>
-                        </details>
+                        </div>
 
-                        <hr className="border-1 border-gray-400" />
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        <div className="mb-3 w-full">
+                          <hr className="border-1 border-gray-400" />
+                          <button
+                            onClick={handleToggleItem3}
+                            className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             3. How do we use Cookies
-                          </summary>
-                          <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem3 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem3 ? 'max-h-[99rem]' : 'max-h-0'}`}
+                          >
+                            <hr className="border-1 mt-3 border-gray-400" />
+                            <p className="mt-3 px-4 py-3 text-white">
                               Cookies are messages that web servers pass to web
                               browsers when you visit websites. Cookies are most
                               commonly used to track website activity, to track
@@ -442,66 +515,80 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                 make the website user-friendly:
                               </div>
                               <div className="mt-4">
-                                <li>Essential Cookies</li>
-                                The Website may use technical cookies to carry
-                                out activities that are strictly necessary for
-                                the operation or delivery of services. They
-                                include, for example, cookies that allow you to
-                                access secure areas of the website. We use this
-                                cookie to obtain the required consent to process
-                                data.
-                              </div>
-                              <div className="mt-4">
-                                <li>Preference Cookies</li>
-                                These cookies enable a website to remember
-                                information that changes the way the website
-                                behaves or looks, like preferred language or the
-                                region that you are in.
-                              </div>
-                              <div className="mt-4">
-                                <li>Performance Cookies</li>
-                                Also known as analytics cookies, these cookies
-                                may be used to collect information about your
-                                use of the Website and make the Website more
-                                user-friendly. Usage of analytic cookies
-                                includes but is not limited to distinguishing
-                                users and understanding overall patterns of
-                                usage of the Website. We use this information in
-                                aggregate form to improve the way our Website
-                                works.{' '}
-                              </div>
-                              <div className="mt-4">
-                                <li>Marketing Cookies</li>
-                                These cookies are used to track visitors across
-                                websites. The intention is to display ads that
-                                are relevant and engaging for the individual
-                                user and thereby more valuable for publishers
-                                and third party advertisers.
-                                <hr className="border-0" />
-                                These cookies can be deleted or blocked by
-                                adjusting your browser settings (see Section 4,
-                                How can you control Cookies, below).
-                                Alternatively, please follow the links below to
-                                opt-out: Google Analytics:{' '}
-                                <a
-                                  href="https://tools.google.com/dlpage/gaoptout"
-                                  className="hover:text-blue-600"
-                                >
-                                  https://tools.google.com/dlpage/gaoptout
-                                </a>
+                                <ul className="list-inside list-disc pl-5">
+                                  <li>
+                                    <strong>Essential Cookies</strong>: The
+                                    Website may use technical cookies to carry
+                                    out activities that are strictly necessary
+                                    for the operation or delivery of services.
+                                    They include, for example, cookies that
+                                    allow you to access secure areas of the
+                                    website. We use this cookie to obtain the
+                                    required consent to process data.
+                                  </li>
+                                  <li className="mt-4">
+                                    <strong>Preference Cookies</strong>: These
+                                    cookies enable a website to remember
+                                    information that changes the way the website
+                                    behaves or looks, like preferred language or
+                                    the region that you are in.
+                                  </li>
+                                  <li className="mt-4">
+                                    <strong>Performance Cookies</strong>: Also
+                                    known as analytics cookies, these cookies
+                                    may be used to collect information about
+                                    your use of the Website and make the Website
+                                    more user-friendly. Usage of analytic
+                                    cookies includes but is not limited to
+                                    distinguishing users and understanding
+                                    overall patterns of usage of the Website. We
+                                    use this information in aggregate form to
+                                    improve the way our Website works.
+                                  </li>
+                                  <li className="mt-4">
+                                    <strong>Marketing Cookies</strong>: These
+                                    cookies are used to track visitors across
+                                    websites. The intention is to display ads
+                                    that are relevant and engaging for the
+                                    individual user and thereby more valuable
+                                    for publishers and third-party advertisers.
+                                    <hr className="border-0" />
+                                    These cookies can be deleted or blocked by
+                                    adjusting your browser settings (see Section
+                                    4, How can you control Cookies, below).
+                                    Alternatively, please follow the links below
+                                    to opt-out: Google Analytics:
+                                    <a
+                                      href="https://tools.google.com/dlpage/gaoptout"
+                                      className="hover:text-blue-600"
+                                    >
+                                      https://tools.google.com/dlpage/gaoptout
+                                    </a>
+                                  </li>
+                                </ul>
                               </div>
                             </p>
                           </div>
-                        </details>
+                        </div>
 
-                        <hr className="border-1 border-gray-400" />
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        <div className="mb-3 w-full">
+                          <hr className="border-1 border-gray-400" />
+                          <button
+                            onClick={handleToggleItem4}
+                            className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             4. How can you control Cookies?
-                          </summary>
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem4 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-full">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem4 ? 'max-h-[70rem]' : 'max-h-0'}`}
+                          >
+                            <p className="mt-3 px-4 py-3 text-white">
                               You have the right to decide whether to accept or
                               reject cookies. You do not have to accept cookies
                               and consent can be withdrawn at any time. Please
@@ -574,17 +661,28 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                 </a>
                               </div>
                             </p>
+                            <hr className="border-1 border-gray-400" />
                           </div>
-                        </details>
+                        </div>
 
-                        <hr className="border-1 border-gray-400" />
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        <div className="mb-3 w-full">
+                          {/* <hr className="border-1 border-gray-400" /> */}
+                          <button
+                            onClick={handleToggleItem5}
+                            className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             5. Amendments to this Cookie Policy
-                          </summary>
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem5 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
                           <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-[1000px]">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem5 ? 'max-h-[1000px]' : 'max-h-0'}`}
+                          >
+                            <p className="mt-3 px-4 py-3 text-white">
                               We may update this Cookie Policy from time to time
                               in order to reflect, for example, changes to the
                               cookies we use or for other operational, legal or
@@ -600,16 +698,31 @@ const Footer = ({ lang }: { lang: Locale }) => {
                                 indicates when it was last updated.
                               </div>
                             </p>
+                            <hr className="border-1 border-gray-400" />
                           </div>
-                        </details>
-                        <hr className="border-1 border-gray-400" />
-                        <details className="group mb-3 w-full cursor-pointer">
-                          <summary className="mt-3 flex justify-between px-4 py-3 font-bold text-white transition-all duration-500 after:content-['⌵'] group-open:after:rotate-180">
+                        </div>
+
+                        <div className="mb-3 mt-3 w-full">
+                          <button
+                            onClick={handleToggleItem6}
+                            className="flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                          >
                             6. How can you contact us with questions?
-                          </summary>
-                          <hr className="border-1 mt-3 border-gray-400" />
-                          <div className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out group-open:max-h-40">
-                            <p className="mt-3 cursor-auto px-4 py-3 text-white">
+                            <span
+                              className={`transition-transform duration-500 ${isOpenItem6 ? 'rotate-180' : ''}`}
+                            >
+                              ⌵
+                            </span>
+                          </button>
+                          {isOpenItem6 ? (
+                            <hr className="border-1 mt-3 border-gray-400" />
+                          ) : (
+                            ''
+                          )}
+                          <div
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem6 ? 'max-h-40' : 'max-h-0'}`}
+                          >
+                            <p className="mt-3 px-4 py-3 text-white">
                               If you have any concerns relating to our use of
                               cookies or other technologies, please contact us
                               at
@@ -622,7 +735,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                               </a>
                             </p>
                           </div>
-                        </details>
+                        </div>
                       </div>
                     </div>
                   </div>
