@@ -666,10 +666,9 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         </div>
 
                         <div className="mb-3 w-full">
-                          {/* <hr className="border-1 border-gray-400" /> */}
                           <button
                             onClick={handleToggleItem5}
-                            className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                            className="mt-3 flex w-full justify-between px-4 py-3 text-left font-bold text-white transition-all duration-500"
                           >
                             5. Amendments to this Cookie Policy
                             <span
@@ -705,7 +704,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         <div className="mb-3 mt-3 w-full">
                           <button
                             onClick={handleToggleItem6}
-                            className="flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
+                            className="flex w-full justify-between px-4 py-3 text-left font-bold text-white transition-all duration-500"
                           >
                             6. How can you contact us with questions?
                             <span
