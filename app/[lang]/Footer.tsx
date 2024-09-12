@@ -114,30 +114,21 @@ const Footer = ({ lang }: { lang: Locale }) => {
     };
   }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
 
-  const [isOpenItem1, setIsOpenItem1] = useState(false);
-  const [isOpenItem2, setIsOpenItem2] = useState(false);
-  const [isOpenItem3, setIsOpenItem3] = useState(false);
-  const [isOpenItem4, setIsOpenItem4] = useState(false);
-  const [isOpenItem5, setIsOpenItem5] = useState(false);
-  const [isOpenItem6, setIsOpenItem6] = useState(false);
+  const [isOpen, setIsOpen] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
-  const handleToggleItem1 = () => {
-    setIsOpenItem1(!isOpenItem1);
-  };
-  const handleToggleItem2 = () => {
-    setIsOpenItem2(!isOpenItem2);
-  };
-  const handleToggleItem3 = () => {
-    setIsOpenItem3(!isOpenItem3);
-  };
-  const handleToggleItem4 = () => {
-    setIsOpenItem4(!isOpenItem4);
-  };
-  const handleToggleItem5 = () => {
-    setIsOpenItem5(!isOpenItem5);
-  };
-  const handleToggleItem6 = () => {
-    setIsOpenItem6(!isOpenItem6);
+  const handleToggle = (index: number) => {
+    setIsOpen((prev) => {
+      const newState = [...prev];
+      newState[index] = !newState[index];
+      return newState;
+    });
   };
 
   return (
@@ -295,18 +286,18 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         <div className="mb-3 w-full">
                           <hr className="border-1 border-gray-400" />
                           <button
-                            onClick={handleToggleItem1}
+                            onClick={() => handleToggle(0)}
                             className="mt-3 flex w-full cursor-pointer justify-between px-4 py-3 font-bold text-white transition-all duration-500"
                           >
                             1. General
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem1 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[0] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem1 ? 'max-h-[160rem]' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[0] ? 'max-h-[160rem]' : 'max-h-0'}`}
                           >
                             <hr className="border-1 mt-3 border-gray-400" />
                             <p className="mt-3 px-4 py-3 text-white">
@@ -448,18 +439,18 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         <div className="mb-3 w-full">
                           <hr className="border-1 border-gray-400" />
                           <button
-                            onClick={handleToggleItem2}
+                            onClick={() => handleToggle(1)}
                             className="mt-3 flex w-full cursor-pointer justify-between px-4 py-3 font-bold text-white transition-all duration-500"
                           >
                             2. What are Cookies?
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem2 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[1] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem2 ? 'max-h-[70rem]' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[1] ? 'max-h-[70rem]' : 'max-h-0'}`}
                           >
                             <hr className="border-1 mt-3 border-gray-400" />
                             <p className="mt-3 px-4 py-3 text-white">
@@ -489,18 +480,18 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         <div className="mb-3 w-full">
                           <hr className="border-1 border-gray-400" />
                           <button
-                            onClick={handleToggleItem3}
+                            onClick={() => handleToggle(2)}
                             className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
                           >
                             3. How do we use Cookies
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem3 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[2] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem3 ? 'max-h-[99rem]' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[2] ? 'max-h-[99rem]' : 'max-h-0'}`}
                           >
                             <hr className="border-1 mt-3 border-gray-400" />
                             <p className="mt-3 px-4 py-3 text-white">
@@ -574,19 +565,19 @@ const Footer = ({ lang }: { lang: Locale }) => {
                         <div className="mb-3 w-full">
                           <hr className="border-1 border-gray-400" />
                           <button
-                            onClick={handleToggleItem4}
+                            onClick={() => handleToggle(3)}
                             className="mt-3 flex w-full justify-between px-4 py-3 font-bold text-white transition-all duration-500"
                           >
                             4. How can you control Cookies?
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem4 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[3] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem4 ? 'max-h-[70rem]' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[3] ? 'max-h-[70rem]' : 'max-h-0'}`}
                           >
                             <p className="mt-3 px-4 py-3 text-white">
                               You have the right to decide whether to accept or
@@ -667,19 +658,19 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
                         <div className="mb-3 w-full">
                           <button
-                            onClick={handleToggleItem5}
+                            onClick={() => handleToggle(4)}
                             className="mt-3 flex w-full justify-between px-4 py-3 text-left font-bold text-white transition-all duration-500"
                           >
                             5. Amendments to this Cookie Policy
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem5 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[4] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
                           <hr className="border-1 mt-3 border-gray-400" />
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem5 ? 'max-h-[1000px]' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[4] ? 'max-h-[1000px]' : 'max-h-0'}`}
                           >
                             <p className="mt-3 px-4 py-3 text-white">
                               We may update this Cookie Policy from time to time
@@ -703,24 +694,20 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
                         <div className="mb-3 mt-3 w-full">
                           <button
-                            onClick={handleToggleItem6}
+                            onClick={() => handleToggle(5)}
                             className="flex w-full justify-between px-4 py-3 text-left font-bold text-white transition-all duration-500"
                           >
                             6. How can you contact us with questions?
                             <span
-                              className={`transition-transform duration-500 ${isOpenItem6 ? 'rotate-180' : ''}`}
+                              className={`transition-transform duration-500 ${isOpen[5] ? 'rotate-180' : ''}`}
                             >
                               ⌵
                             </span>
                           </button>
-                          {isOpenItem6 ? (
-                            <hr className="border-1 mt-3 border-gray-400" />
-                          ) : (
-                            ''
-                          )}
                           <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpenItem6 ? 'max-h-40' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen[5] ? 'max-h-40' : 'max-h-0'}`}
                           >
+                            <hr className="border-1 border-gray-400" />
                             <p className="mt-3 px-4 py-3 text-white">
                               If you have any concerns relating to our use of
                               cookies or other technologies, please contact us
