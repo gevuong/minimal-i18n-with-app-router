@@ -136,8 +136,8 @@ const people: People = {
         name: 'Tetsuji Madarame',
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
-          'Advisory Board, theDock Maritime VC',
-          'MBA - Stanford Graduate School of Business',
+          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
+          'MBA - Stanford School of Business',
         ],
       },
       {
