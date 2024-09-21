@@ -3,86 +3,86 @@ import { type Footer } from '../types/footer';
 const footer: Footer = {
   sectionPersonalInformation: [
     {
-      question: 'Derechos de la Ley de Privacidad del Consumidor de California',
+      question: 'カリフォルニア州消費者プライバシー法の権利',
       answer:
-        'Los consumidores de California tienen derecho al conocimiento, acceso y supresión de su información personal en virtud de la Ley de Privacidad del Consumidor de California. Los consumidores de California también tienen derecho a optar por que una empresa no venda su información personal y a no ser discriminados por ejercer uno de sus derechos de privacidad de California. Virufy no vende la información personal de los consumidores de California y no discrimina en respuesta a las solicitudes de derechos de privacidad.',
+        'カリフォルニア州の消費者は、カリフォルニア州消費者プライバシー法に基づき、個人情報の知識、アクセス、削除の権利を持っています。また、カリフォルニア州の消費者には、自分の個人情報の販売を企業に拒否する権利、およびプライバシー権を行使したことによって差別されない権利があります。Virufyは、カリフォルニア州の消費者の個人情報を販売することはなく、プライバシー権リクエストに対して差別することもありません。',
     },
     {
       question:
-        'Virufy proporciona información sobre nuestras prácticas de privacidad en nuestra Política de privacidad',
+        'Virufyのプライバシー慣行に関する通知はプライバシーポリシーで提供されています',
       answer:
-        'La política de privacidad incluye qué información y datos personales se recopilan, la fuente de la información y los datos personales recopilados, cómo se procesan y almacenan la información y los datos personales, y los fines del uso de la información personal. Virufy también revela qué información personal y, en su caso, las categorías de terceros a los que se revelan los datos y la información personal. Más información sobre cómo Virufy maneja la información personal en relación con los servicios específicos de Virufy se presenta en los avisos específicos de servicio en o antes de su primer uso de la aplicación web Virufy y disponible en cualquier momento. Para ver una copia de las últimas versiones de los avisos de privacidad específicos del servicio y las divulgaciones específicas de California, consulte nuestra Política de privacidad.',
+        'プライバシーポリシーには、収集される個人情報やデータの種類、収集元、個人情報やデータの処理および保存方法、使用目的が記載されています。また、Virufyが個人情報を開示する場合、そのカテゴリーや第三者についても開示されます。特定のVirufyサービスに関連してVirufyが個人情報をどのように扱うかについての詳細は、Virufyウェブアプリの最初の使用時またはそれ以前に提供され、いつでも利用可能です。サービスごとのプライバシー通知およびカリフォルニア州向けの開示の最新版は、プライバシーポリシーでご確認ください。',
     },
     {
-      question: 'Cómo ejercer estos derechos?',
+      question: '上記の権利を行使する方法',
       answer:
-        'Los consumidores de California pueden ejercer sus derechos de acceso o eliminación de su información directamente o a través de un agente autorizado poniéndose en contacto con Virufy en study@virufy.org. Virufy le solicitará la información que considere necesaria para verificar su identidad por motivos de seguridad y para evitar fraudes. Esta información puede incluir nombre, información de contacto e información relacionada con tu relación con Virufy, pero la información específica solicitada puede diferir dependiendo de las circunstancias de tu solicitud para tu seguridad y para proteger los derechos de privacidad. Si eliminamos su información personal, haremos que cierta información personal sobre usted sea permanentemente irrecuperable y también desidentificaremos cierta información personal.',
+        'カリフォルニア州の消費者は、直接または代理人を通じて、自分の情報にアクセスしたり削除したりする権利を行使できます。Virufyにstudy@virufy.orgに連絡することで可能です。Virufyは、セキュリティと詐欺防止のために、あなたの身元を確認するために必要と考える情報を要求します。この情報には、名前、連絡先情報、Virufyとの関係に関連する情報が含まれる場合がありますが、リクエストの状況によって要求される具体的な情報は異なる場合があります。あなたの個人情報を削除する場合、特定の個人情報を永久に回復不可能な状態にし、また特定の個人情報を識別不能な状態にします。',
     },
     {
-      question: 'Marketing directo y no seguimiento',
+      question: 'ダイレクトマーケティングとDo Not Track',
       answer:
-        'Virufy no rastrea a sus clientes a lo largo del tiempo ni a través de sitios web de terceros para ofrecer publicidad dirigida y, por lo tanto, no responde a las señales de "no rastrear" de los navegadores web. Si llega a nuestro sitio web a través de un enlace de un sitio de terceros que sí responde a las solicitudes de "no rastreo", el reconocimiento de cualquier solicitud de "no rastreo" que haya iniciado finalizará en cuanto llegue a nuestro sitio web. Los terceros no pueden recopilar ninguna otra información de identificación personal de los sitios web de Virufy a menos que usted se la proporcione directamente. Esto también se describe en nuestra Política de privacidad.',
+        'Virufyは、第三者のウェブサイトを通じて時間をかけて顧客を追跡してターゲット広告を提供することはなく、したがって「Do Not Track」信号には対応していません。当社のウェブサイトに第三者サイトからリンクして到着した場合、その「Do Not Track」リクエストの認識は、当社のウェブサイトに到着した時点で終了します。第三者がVirufyのウェブサイトから個人を識別できる情報を収集することは、あなたが直接提供しない限りできません。これについては、プライバシーポリシーでも説明されています。',
     },
     {
-      question: 'Aviso para menores',
+      question: '未成年者に関する通知',
       answer:
-        'No recopilamos conscientemente información en línea de niños menores de 18 años. Si se nos notifica que hemos recopilado información personal, tal y como se define en la Ley de Protección de la Privacidad Infantil en Internet ("COPPA"), de un menor de 13 años, eliminaremos la información lo antes posible. Nunca vendemos la información personal de menores de 18 años y no lo haríamos en el futuro sin la autorización afirmativa del consumidor si tiene entre 13 y 16 años, o del padre o tutor de un consumidor menor de 13 años.',
+        '当社は、18歳未満の子供からオンラインで情報を故意に収集することはありません。もし13歳未満の子供の個人情報（COPPAに定義される）を収集したことが通知された場合、その情報は可能な限り迅速に削除されます。また、18歳未満の未成年者の個人情報を販売することはなく、将来的に13～16歳の消費者や13歳未満の消費者の親または保護者の明確な許可がない限り、そうすることはありません。',
     },
   ],
   sectionPrivacyPolicy: [
     {
-      question: 'Argentina',
-      answer: 'Política de Privacidad',
+      question: 'アルゼンチン',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1Fef7l77QP3EZboej6mw_q7fBNrayvs03/view',
     },
     {
-      question: 'Bolivia',
-      answer: 'Política de Privacidad',
+      question: 'ボリビア',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view',
     },
     {
-      question: 'Brazil',
-      answer: 'Política de Privacidade',
+      question: 'ブラジル',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1Zl9QO-Dliik84xjuXCdFGcDOk5GytXr1/view',
     },
     {
-      question: 'Colombia',
-      answer: 'Política de Privacidad',
+      question: 'コロンビア',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1eQOx81C5e5CoESYsEnrE9sWhCkTMDPEq/view',
     },
     {
-      question: 'Greece',
-      answer: 'Πολιτική απορρήτου',
+      question: 'ギリシャ',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1n8YZTb3bAqLLL5ygVE8-MstdzECcKJ_b/view',
     },
     {
-      question: 'Mexico',
-      answer: 'Aviso De Privacidad',
+      question: 'メキシコ',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1Qr3cFttfhjUoKxLcQrVEhsuO-OJ6VE0_/view',
     },
     {
-      question: 'Peru',
-      answer: 'Política de Privacidad',
+      question: 'ペルー',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1UgN2Bu2XIvv2YirLRYloSPlbYln_uzf9/view',
     },
     {
-      question: 'United States',
-      answer: 'Privacy Policy',
+      question: 'アメリカ合衆国',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
     },
     {
-      question: 'Europe',
-      answer: 'Privacy Policy',
+      question: 'ヨーロッパ',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
     },
     {
-      question: 'Japan',
+      question: '日本',
       answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/11RTMmnHW4SqHNf7htr3xuSi-o2v2vWlp/view',
     },
     {
-      question: 'Other Countries',
-      answer: 'Privacy Policy',
+      question: 'その他の国々',
+      answer: 'プライバシーポリシー',
       link: 'https://drive.google.com/file/d/1fUIe6FBss6WrwsrssVr6OM_2uFFVhESD/view',
     },
   ],

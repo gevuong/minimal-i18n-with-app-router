@@ -5,29 +5,29 @@ const ai: Ai = {
     title: [
       {
         type: 'text',
-        text: 'La Ciencia detrás de ',
+        text: '科学的根拠に基づく ',
       },
       {
         type: 'span',
         text: 'Virufy',
       },
     ],
-    text: 'La Inteligencia Artificial (IA) es capaz de detectar diferencias mínimas en los patrones vocales para detectar la presencia de enfermedades.',
+    text: '人工知能（AI）は、声のパターンの微小な違いを検出して、病気の存在を検知する能力があります。',
     url: '/publications',
-    linkText: 'Vea nuestra Investigación',
+    linkText: '私たちの研究',
   },
   aiSection: {
-    title: '¿Cómo funciona la Inteligencia Artificial (IA)?',
+    title: 'AIはどのように機能しますか？',
     aiCards: [
       {
         title: '01',
-        text: 'Nuestra revolucionaria aplicación CoughCheck emplea tecnología de inteligencia artificial de vanguardia. Con solo toser en su teléfono, nuestra aplicación captura y analiza distintos patrones de tos utilizando sofisticados algoritmos de aprendizaje automático y redes neuronales.',
-        style: 'tracking-widest',
+        text: '私たちの画期的なアプリは、ディープラーニングアルゴリズムと音声信号処理技術を使用して、呼吸パターンを分析する最先端のAI技術を活用しています。',
+        style: 'tracking-widest text-[2.5rem] sm:text-6xl',
       },
       {
         title: '02',
-        text: 'Examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, Al compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.',
-        style: '',
+        text: 'AIは、咳の持続時間、頻度、音程など、さまざまな要素を精査します。包括的なデータベースを利用して、記録された咳のパターンを呼吸器疾患の既知の指標と慎重に比較し、潜在的な健康問題の早期発見を可能にします。',
+        style: 'text-[2.5rem] sm:text-6xl',
       },
     ],
   },

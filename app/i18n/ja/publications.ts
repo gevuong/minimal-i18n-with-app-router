@@ -2,51 +2,48 @@ import { type Publications } from '../types/publications';
 
 const publications: Publications = {
   publicationsSection: {
-    title: 'Publicaciones',
+    title: '出版物',
     texts: [
-      'A continuación puede encontrar varios de nuestros artículos que muestran el desarrollo y la ciencia detrás del poder de Virufy.',
+      '以下では、Virufyの開発とその科学的根拠を示すいくつかの論文をご覧いただけます。',
     ],
   },
   publicationsCards: [
     {
-      title:
-        'Transformador Multimodal Jerárquico para Detección Automática de COVID-19',
-      date: 'Octubre 2022',
+      title: 'COVID-19自動検出のための階層型マルチモーダルトランスフォーマー',
+      date: '2022年10月',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
-      linkText: 'Leer más',
+      linkText: '続きを読む',
     },
     {
-      title:
-        'Calculadora de Covid 19: impacto socioeconómico positivo en EE. UU.',
-      date: 'Enero 2022',
+      title: 'Covid 19計算機 -- 米国の社会経済に与えるポジティブな影響',
+      date: '2022年1月',
       url: 'https://arxiv.org/abs/2201.11109',
-      linkText: 'Leer más',
+      linkText: '続きを読む',
     },
     {
       title:
-        'Uso del aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 a partir de la tos',
-      date: 'Enero 2022',
+        '咳からCOVID-19を分類するための大規模集約データセットを用いたディープラーニング',
+      date: '2022年1月',
       url: 'https://arxiv.org/abs/2201.01669',
-      linkText: 'Leer más',
+      linkText: '続きを読む',
     },
     {
-      title:
-        'Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19',
-      date: 'Septiembre 2021',
+      title: 'COVID-19咳AIシステムの展開における課題と機会',
+      date: '2021年9月',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
-      linkText: 'Leer más',
+      linkText: '続きを読む',
     },
     {
       title:
-        'Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos',
-      date: 'Noviembre 2020',
+        'Virufy: 咳からCOVID-19を検出するAIのためのクラウドソーシングおよび臨床データセットのグローバル適用性',
+      date: '2020年11月',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
-      linkText: 'Leer más',
+      linkText: '続きを読む',
     },
   ],
   collaborateSection: {
-    title: 'Ayudemos al mundo y salvemos vidas registrando tu tos',
-    linkText: 'Comparte tu tos',
+    title: '私たちの研究に協力しませんか？',
+    linkText: 'チームに参加',
   },
 };
 

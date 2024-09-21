@@ -2,134 +2,142 @@ import { type JobListing } from '../types/jobListing';
 
 const jobListing: JobListing = {
   titleImage:
-    'Virufy está gestionado íntegramente por voluntarios y empresas asociadas pro bono.',
-  title: 'Nuestra misión',
-  text: 'Virufy, un consorcio de investigación sin fines de lucro formado por investigadores, innovadores y científicos, ha unido a voluntarios de más de 25 países para desarrollar una aplicación para teléfonos inteligentes para la detección de COVID-19. Desarrollada inicialmente como un proyecto del Laboratorio de Innovación de Respuesta al COVID-19 de la Universidad de Stanford, la solución de diagnóstico de COVID-19 con inteligencia artificial (IA) de Virufy lucha contra la pandemia mediante pruebas generalizadas, accesibles y gratuitas.',
+    'Virufyはすべてボランティアとプロボノパートナー企業によって運営されています。',
+  title: '私たちの使命',
+  text: 'Virufyに参加し、COVID-19と戦う画期的なグローバル活動の一翼を担いましょう！革新的な非営利コンソーシアムとして、私たちは25か国以上の専門家を集め、ウイルス検出のための最先端のスマートフォンアプリを開発しました。もともとスタンフォード大学のCOVID-19対応イノベーションラボプロジェクトとして始まった私たちのAI駆動の診断ソリューションは、アクセス可能で無料の検査の新しい基準を設定しています。Virufyでボランティアとして活動することで、最先端のAIツールを使った実践的な経験を積み、プロフェッショナルなネットワークを広げ、重要な目的に貢献することができます。この機会を利用して、イノベーションの最前線に立ち、パンデミック対応の未来を形作るお手伝いをしましょう！',
   modal: {
-    text: '¿Entiende que todos estos son puestos voluntarios no remunerados?',
-    yes: 'Si',
-    no: 'No',
+    text: 'これらがすべて無給のボランティアポジションであることをご理解いただけますか？',
+    yes: 'はい',
+    no: 'いいえ',
   },
   jobList: [
     {
-      category: 'Ingeniería',
+      category: 'エンジニアリング',
       positions: [
         {
-          title: 'Ingeniero de Software',
+          title: 'ソフトウェアエンジニア',
           id: 1,
         },
         {
-          title: 'Ingeniero de Aprendizaje Automático',
+          title: '機械学習エンジニア',
           id: 2,
         },
         {
-          title: 'Ingeniero de Aprendizaje Automático (Modelado)',
+          title: '機械学習エンジニア（モデリング）',
           id: 3,
         },
         {
-          title: 'Ingeniero de Procesamiento de Señales de Audio',
+          title: 'オーディオ信号処理エンジニア',
           id: 4,
         },
         {
-          title: 'Ingeniero DevOps',
+          title: 'DevOpsエンジニア',
           id: 5,
         },
         {
-          title: 'Ingeniero de Seguridad Informática',
+          title: '情報セキュリティエンジニア',
           id: 6,
         },
       ],
     },
     {
-      category: 'Datos',
+      category: 'データ',
       positions: [
         {
-          title: 'Pasante de Privacidad de Datos',
+          title: 'データプライバシーインターン',
           id: 7,
         },
         {
-          title: 'Científico de Datos Asociado',
+          title: 'アソシエイトデータサイエンティスト',
           id: 8,
         },
       ],
     },
     {
-      category: 'Gestión',
+      category: 'マネジメント',
       positions: [
         {
-          title: 'Gerente de Negocios',
+          title: 'ビジネスマネージャー',
           id: 9,
         },
         {
-          title: 'Gerente de Proyectos',
+          title: 'プロジェクトマネージャー',
           id: 10,
         },
         {
-          title: 'Gerente de Producto',
+          title: 'プロダクトマネージャー',
           id: 11,
         },
       ],
     },
     {
-      category: 'Recursos Humanos',
+      category: '人事',
       positions: [
         {
-          title: 'Socio de Negocios de RRHH',
+          title: 'HRビジネスパートナー',
           id: 12,
         },
-      ],
-    },
-    {
-      category: 'Legal',
-      positions: [
         {
-          title: 'Abogado Corporativo (Orientado a TI)',
+          title: 'HRアドミニストレーティブアシスタント',
           id: 13,
         },
         {
-          title: 'Paralegal',
+          title: 'テクニカルリクルーター',
           id: 14,
         },
       ],
     },
     {
-      category: 'Tecnología de la Información (TI)',
+      category: '法務',
       positions: [
         {
-          title: 'Analista de Negocios',
+          title: '企業弁護士（IT志向）',
           id: 15,
         },
         {
-          title: 'Programador de Python',
+          title: 'パラリーガル',
           id: 16,
         },
+      ],
+    },
+    {
+      category: '情報技術（IT）',
+      positions: [
         {
-          title: 'Redactor Técnico',
+          title: 'ビジネスアナリスト',
           id: 17,
         },
         {
-          title: 'Ingeniero de Garantía de Calidad',
+          title: 'Pythonプログラマー',
           id: 18,
         },
         {
-          title: 'Desarrollador de AWS',
+          title: 'テクニカルライター',
           id: 19,
         },
         {
-          title: 'Arquitecto de AWS',
+          title: '品質保証エンジニア',
           id: 20,
         },
         {
-          title: 'Ingeniero de AWS',
+          title: 'AWS開発者',
           id: 21,
         },
         {
-          title: 'Ingeniero de Nube',
+          title: 'AWSアーキテクト',
           id: 22,
         },
         {
-          title: 'Administrador de Unix',
+          title: 'AWSエンジニア',
           id: 23,
+        },
+        {
+          title: 'クラウドエンジニア',
+          id: 24,
+        },
+        {
+          title: 'Unix管理者',
+          id: 25,
         },
       ],
     },
