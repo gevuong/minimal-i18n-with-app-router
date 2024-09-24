@@ -17,7 +17,7 @@ import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, coughCheckApp, aboutUs, faq, donate },
+    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed 
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
