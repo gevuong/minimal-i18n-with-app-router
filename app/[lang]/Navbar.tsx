@@ -203,7 +203,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
                 {/* coughcheck app link */}
-                <li className="text-white">
+                {/* <li className="text-white">
                   <div>
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
@@ -248,7 +248,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                     </div>
                   </div>
-                </li>
+                </li> */}
 
                 {/* about us link */}
                 <li className="text-white">
