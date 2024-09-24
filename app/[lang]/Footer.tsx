@@ -30,15 +30,15 @@ const Footer = ({ lang }: { lang: Locale }) => {
     () => [
       { label: 'Home', route: [`/${lang}`] },
       { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
-      {
-        label: 'CoughCheck App',
-        route: [
-          `/${lang}/covid19`,
-          `/${lang}/flu`,
-          `/${lang}/copd`,
-          `/${lang}/rsv`,
-        ],
-      },
+      // {
+      //   label: 'CoughCheck App',
+      //   route: [
+      //     `/${lang}/covid19`,
+      //     `/${lang}/flu`,
+      //     `/${lang}/copd`,
+      //     `/${lang}/rsv`,
+      //   ],
+      // },
       {
         label: 'About Us',
         route: [

@@ -17,7 +17,7 @@ import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, coughCheckApp, aboutUs, faq, donate },
+    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed 
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -203,7 +203,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
                 {/* coughcheck app link */}
-                <li className="text-white">
+                {/* <li className="text-white">
                   <div>
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
@@ -248,7 +248,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                     </div>
                   </div>
-                </li>
+                </li> */}
 
                 {/* about us link */}
                 <li className="text-white">
