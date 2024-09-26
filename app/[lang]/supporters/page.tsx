@@ -42,7 +42,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {/* Supporters mobile view */}
             <div className="flex w-full flex-wrap justify-center">
               {supportersList.map(({ img, alt, link }) => (
-                <div className="mx-1 flex basis-1/4 justify-center" key={alt}>
+                <div className="mx-1 flex basis-1/4 justify-center my-auto" key={alt}>
                   <a href={link}>
                     <ExportedImage
                       src={img}
@@ -63,7 +63,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {/* Supporters */}
             <div className="flex w-full flex-wrap justify-center">
               {supportersList.map(({ img, alt, link }) => (
-                <div className="mx-0 flex basis-1/4 justify-center" key={alt}>
+                <div className="mx-0 flex basis-1/4 justify-center my-auto" key={alt}>
                   <a href={link}>
                     <ExportedImage
                       src={img}
