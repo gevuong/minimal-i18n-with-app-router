@@ -25,7 +25,7 @@ import {
 import { type People } from '../types/people';
 
 const people: People = {
-  titleImage: '私たちは世界中から団結し、咳一つで感染症を克服します。',
+  titleImage: '私たちは世界中から団結し、咳一つ一つから感染症を克服します。',
   sectionMeetOurFounder: {
     titleMeetOurFounder: '創設者紹介',
     titleAmil: 'アミル・カンザダ',

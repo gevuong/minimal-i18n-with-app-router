@@ -9,7 +9,7 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
-      title: 'COVID-19自動検出のための階層型マルチモーダルトランスフォーマー',
+      title: 'COVID-19自動検出のための階層型マルチモデルトランスフォーマー',
       date: '2022年10月',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
       linkText: '続きを読む',
