@@ -7,4 +7,5 @@ export type Supporters = {
 type SupporterImg = {
   img: StaticImageData;
   alt: string;
+  link: string;
 };

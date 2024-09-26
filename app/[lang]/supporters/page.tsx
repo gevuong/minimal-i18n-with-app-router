@@ -41,14 +41,16 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <div className="mt-[80px] w-[100vw] max-w-[1440px] md:hidden">
             {/* Supporters mobile view */}
             <div className="flex w-full flex-wrap justify-center">
-              {supportersList.map(({ img, alt }) => (
+              {supportersList.map(({ img, alt, link }) => (
                 <div className="mx-1 flex basis-1/4 justify-center" key={alt}>
-                  <ExportedImage
-                    src={img}
-                    alt={alt}
-                    priority
-                    basePath={basePath}
-                  />
+                  <a href={link}>
+                    <ExportedImage
+                      src={img}
+                      alt={alt}
+                      priority
+                      basePath={basePath}
+                    />
+                  </a>
                 </div>
               ))}
             </div>
@@ -60,14 +62,16 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
             {/* Supporters */}
             <div className="flex w-full flex-wrap justify-center">
-              {supportersList.map(({ img, alt }) => (
+              {supportersList.map(({ img, alt, link }) => (
                 <div className="mx-0 flex basis-1/4 justify-center" key={alt}>
-                  <ExportedImage
-                    src={img}
-                    alt={alt}
-                    priority
-                    basePath={basePath}
-                  />
+                  <a href={link}>
+                    <ExportedImage
+                      src={img}
+                      alt={alt}
+                      priority
+                      basePath={basePath}
+                    />
+                  </a>
                 </div>
               ))}
             </div>
