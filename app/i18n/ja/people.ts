@@ -84,10 +84,7 @@ const people: People = {
         img: MayXu,
         name: 'May Xu',
         role: 'Data and AI Product Strategy Advisor',
-        texts: [
-          'Founder / Executive Coach',
-          'M.S. - Stanford University',
-        ],
+        texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
       },
       {
         img: RafiAzimKhan,
@@ -144,7 +141,7 @@ const people: People = {
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford School of Business',
+          'MBA - Stanford GSB',
         ],
       },
       {
