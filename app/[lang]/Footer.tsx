@@ -149,7 +149,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
         {showModalCookiesSetting ? (
           <>
             <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
+              <div className="relative mx-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]">
                 {/*content*/}
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -187,7 +187,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               onClick={handleCloseModal} // Close modal when clicking outside
             >
               <div
-                className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]"
+                className="relative mx-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]"
                 onClick={handleModalClick} // Stop propagation when clicking inside modal
               >
                 {/*content*/}
@@ -241,7 +241,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               onClick={handleCloseModal}
             >
               <div
-                className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]"
+                className="relative mx-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]"
                 onClick={handleModalClick} // Stop propagation when clicking inside modal
               >
                 {/*content*/}
@@ -294,7 +294,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               onClick={handleCloseModal}
             >
               <div
-                className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]"
+                className="relative mx-auto h-3/4 w-[300px] md:w-[500px] lg:w-[1000px]"
                 onClick={handleModalClick}
               >
                 {/*content*/}
