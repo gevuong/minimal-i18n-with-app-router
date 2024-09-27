@@ -1,26 +1,29 @@
 import {
-  AnaisRameau,
-  GeorgePegelow,
+  AyomideOwoyemi,
+  FaisalCheema,
+  FumihikoYokota,
+  HiroyukiKunishima,
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
   MansoorAhmed,
   ManujAggarwal,
   MarkHaseltine,
-  MathijsDeVaan,
+  MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  PedroSiena,
+  NobuyoshiOzawa,
   RafiAzimKhan,
-  RichardSwartzbaugh,
-  RichWalcoff,
+  RichardNall,
   RokSosic,
   RonanDunlop,
-  TaisukeFukuno,
+  TetsujiMadarame,
   TsutomuIto,
   VictorWang,
+  YukitoshiNakatani,
 } from '@/public/images/people';
 import { type People } from '../types/people';
 
@@ -35,7 +38,7 @@ const people: People = {
     button: 'LEER MÁS',
   },
   sectionAdvisors: {
-    title: 'Asesores',
+    title: 'Advisors',
     advisors: [
       {
         img: KaraMeister,
@@ -61,12 +64,11 @@ const people: People = {
         texts: ['Former CMO - Adobe', 'Board Member - CommonSpirit Health'],
       },
       {
-        img: AnaisRameau,
-        name: 'Anaïs Rameau, M.D.',
-        role: 'Executive Marketing Advisor',
+        img: KutsunaSatoshi,
+        name: 'Kutsuna Satoshi',
+        role: 'Executive Clinical Advisor',
         texts: [
-          'Asst. Professor of ENT - Cornell University',
-          'Doctor of Medicine - McGill',
+          'Infection Control and Prevention Professor - Osaka University',
         ],
       },
       {
@@ -79,18 +81,18 @@ const people: People = {
         ],
       },
       {
+        img: MayXu,
+        name: 'May Xu',
+        role: 'Data and AI Product Strategy Advisor',
+        texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
+      },
+      {
         img: RafiAzimKhan,
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
         texts: [
           'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
         ],
-      },
-      {
-        img: RichardSwartzbaugh,
-        name: 'Richard Swartzbaugh',
-        role: 'Executive Advisor',
-        texts: ['Risk Management - Curaesoft', 'J.D. - University of Iowa'],
       },
       {
         img: RonanDunlop,
@@ -117,12 +119,36 @@ const people: People = {
         ],
       },
       {
+        img: FaisalCheema,
+        name: 'Faisal Cheema',
+        role: 'Executive Clinical Advisor',
+        texts: [
+          'Associate Professor of Biomedical & Clinical Sciences',
+          'Tilman J. Fertitta College of Medicine, University of Houston',
+        ],
+      },
+      {
         img: MertPilanci,
         name: 'Mert Pilanci',
         role: 'Artificial Intelligence Advisor',
         texts: [
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
+      },
+      {
+        img: TetsujiMadarame,
+        name: 'Tetsuji Madarame',
+        role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
+        texts: [
+          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
+          'MBA - Stanford GSB',
+        ],
+      },
+      {
+        img: YukitoshiNakatani,
+        name: 'Yukitoshi Nakatani',
+        role: 'Japan Executive Advisor',
+        texts: ['CEO, IT Value Consulting', 'Former Director, Accenture Japan'],
       },
       {
         img: VictorWang,
@@ -140,20 +166,12 @@ const people: People = {
         texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
       },
       {
-        img: MathijsDeVaan,
-        name: 'Mathijs De Vaan',
-        role: 'Asst. Professor - UC Berkeley',
+        img: RichardNall,
+        name: 'Richard Nall',
+        role: 'Marketing Advisor',
         texts: [
-          'Management of Organizations PhD Sociology - Columbia University',
-        ],
-      },
-      {
-        img: PedroSiena,
-        name: 'Pedro Siena',
-        role: 'Brazil Executive Advisor',
-        texts: [
-          'Founder and CEO - Siena Company',
-          'Mentor - Stanford Lean Launchpad',
+          'CEO - The Brand Garden',
+          `Master's Organizational Leadership - Henley`,
         ],
       },
       {
@@ -166,22 +184,13 @@ const people: People = {
         ],
       },
       {
-        img: GeorgePegelow,
-        name: 'George Pegelow',
-        role: 'Executive Visionary Advisor',
-        texts: ['Martial Arts & Philosophy Professor - Stanford University'],
-      },
-      {
-        img: RichWalcoff,
-        name: 'Rich Walcoff',
-        role: 'Communications Advisor',
-        texts: ['Sports Director - KGO Radio'],
-      },
-      {
-        img: TaisukeFukuno,
-        name: 'Taisuke Fukuno',
-        role: 'Executive IT Advisor',
-        texts: ['Founder - Open Data Japan', 'Chairman - jig.jp'],
+        img: AyomideOwoyemi,
+        name: 'Ayomide Owoyemi',
+        role: 'Executive Clinical Advisor',
+        texts: [
+          'PhD Biomedical Sciences - University of Illinois Chicago',
+          'Ambassador - One Young World Nigeria',
+        ],
       },
       {
         img: TsutomuIto,
@@ -203,6 +212,26 @@ const people: People = {
           'Professor of Electrical and Computer Engineering - University of Washington',
           'Ph.D. Electrical Engineering, Stanford',
         ],
+      },
+      {
+        img: NobuyoshiOzawa,
+        name: 'Nobuyoshi Ozawa',
+        role: 'Japan Clinical Development Lead',
+        texts: ['Clinical Development Department Group Manager, CRO'],
+      },
+      {
+        img: HiroyukiKunishima,
+        name: 'Hiroyuki Kunishima',
+        role: 'Infectious Diseases Advisor',
+        texts: [
+          'Department of Infectious Diseases, St. Marianna University Hospital',
+        ],
+      },
+      {
+        img: FumihikoYokota,
+        name: 'Fumihiko Yokota',
+        role: 'Public Health Advisor',
+        texts: ['Associate Professor of Epidemiology, Kyushu University'],
       },
     ],
   },
