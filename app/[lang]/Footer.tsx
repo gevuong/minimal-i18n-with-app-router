@@ -132,24 +132,13 @@ const Footer = ({ lang }: { lang: Locale }) => {
     });
   };
 
-  const handleCloseModal = () => {
-    setShowModalPrivacyPolicy(false);
-    setShowModalCookiesPolicy(false);
-    setShowModalMyInformation(false);
-  };
-
-  const handleModalClick = (e: { stopPropagation: () => void; }) => {
-    // Prevent click inside modal from propagating to the overlay
-    e.stopPropagation();
-  };
-
   return (
     <>
       <div>
         {showModalCookiesSetting ? (
           <>
             <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-3/4 md:h-auto w-[300px] md:w-[500px] lg:w-[1000px]">
+              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
                 {/*content*/}
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -182,14 +171,8 @@ const Footer = ({ lang }: { lang: Locale }) => {
       <div>
         {showModalPrivacyPolicy ? (
           <>
-            <div
-              className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
-              onClick={handleCloseModal} // Close modal when clicking outside
-            >
-              <div
-                className="relative mx-auto h-3/4 md:h-auto w-[300px] md:w-[500px] lg:w-[1000px]"
-                onClick={handleModalClick} // Stop propagation when clicking inside modal
-              >
+            <div className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
                 {/*content*/}
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[#010101] to-[#244D7E] shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -225,10 +208,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               </div>
             </div>
 
-            <div
-              className="fixed inset-0 z-40 bg-black opacity-25"
-              onClick={handleCloseModal}
-            ></div>
+            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}
       </div>
@@ -236,14 +216,8 @@ const Footer = ({ lang }: { lang: Locale }) => {
       <div>
         {showModalMyInformation ? (
           <>
-            <div
-              className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
-              onClick={handleCloseModal}
-            >
-              <div
-                className="relative mx-auto h-3/4 md:h-auto w-[300px] md:w-[500px] lg:w-[1000px]"
-                onClick={handleModalClick} // Stop propagation when clicking inside modal
-              >
+            <div className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
                 {/*content*/}
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[#010101] to-[#244D7E] shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -278,10 +252,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               </div>
             </div>
 
-            <div
-              className="fixed inset-0 z-40 bg-black opacity-25"
-              onClick={handleCloseModal}
-            ></div>
+            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}
       </div>
@@ -289,14 +260,8 @@ const Footer = ({ lang }: { lang: Locale }) => {
       <div>
         {showModalCookiesPolicy ? (
           <>
-            <div
-              className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
-              onClick={handleCloseModal}
-            >
-              <div
-                className="relative mx-auto h-3/4 md:h-auto w-[300px] md:w-[500px] lg:w-[1000px]"
-                onClick={handleModalClick}
-              >
+            <div className="fixed inset-0 z-[111] flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
                 {/*content*/}
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[#010101] to-[#244D7E] shadow-lg outline-none focus:outline-none">
                   {/*header*/}
@@ -768,10 +733,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
               </div>
             </div>
 
-            <div
-              className="fixed inset-0 z-40 bg-black opacity-25"
-              onClick={handleCloseModal}
-            ></div>
+            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}
       </div>
