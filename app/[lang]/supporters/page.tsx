@@ -2,6 +2,7 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { BgHeader } from '@/public/images/supporters';
 import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 
@@ -41,14 +42,19 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <div className="mt-[80px] w-[100vw] max-w-[1440px] md:hidden">
             {/* Supporters mobile view */}
             <div className="flex w-full flex-wrap justify-center">
-              {supportersList.map(({ img, alt }) => (
-                <div className="mx-1 flex basis-1/4 justify-center" key={alt}>
-                  <ExportedImage
-                    src={img}
-                    alt={alt}
-                    priority
-                    basePath={basePath}
-                  />
+              {supportersList.map(({ img, alt, link }) => (
+                <div
+                  className="mx-1 my-auto flex basis-1/4 justify-center px-2 sm:px-4"
+                  key={alt}
+                >
+                  <Link href={link} target="_blank">
+                    <ExportedImage
+                      src={img}
+                      alt={alt}
+                      priority
+                      basePath={basePath}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
@@ -59,15 +65,20 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <div className="mb-40"></div>
 
             {/* Supporters */}
-            <div className="flex w-full flex-wrap justify-center">
-              {supportersList.map(({ img, alt }) => (
-                <div className="mx-0 flex basis-1/4 justify-center" key={alt}>
-                  <ExportedImage
-                    src={img}
-                    alt={alt}
-                    priority
-                    basePath={basePath}
-                  />
+            <div className="flex w-full flex-wrap justify-center px-12">
+              {supportersList.map(({ img, alt, link }) => (
+                <div
+                  className="mx-0 my-auto flex basis-1/4 justify-center px-6"
+                  key={alt}
+                >
+                  <Link href={link} target="_blank">
+                    <ExportedImage
+                      src={img}
+                      alt={alt}
+                      priority
+                      basePath={basePath}
+                    />
+                  </Link>
                 </div>
               ))}
             </div>
