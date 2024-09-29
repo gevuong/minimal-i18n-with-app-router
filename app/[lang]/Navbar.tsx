@@ -14,10 +14,11 @@ import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
 import DonateModal from './components/navbar/DonateModal';
 import { ButtonSize, ButtonType } from './themes';
+import LocaleSelect from './components/LocaleSelect';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed 
+    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -312,6 +313,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
+
+                <li className=''>
+                  <LocaleSelect />
+                </li>
+
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
