@@ -60,7 +60,7 @@ const LocaleSelect = () => {
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center bg-transparent text-xs text-white hover:font-bold focus:outline-none"
+        className="flex items-center rounded-full border border-gray-500 bg-transparent p-4 text-xs text-white hover:font-bold focus:outline-none lg:border-none lg:p-0"
       >
         <ExportedImage
           src={flagIcons[locale]}
@@ -85,7 +85,7 @@ const LocaleSelect = () => {
       </button>
 
       {dropdownOpen && (
-        <div className="absolute -left-2 z-10 mt-2 w-28 rounded-md bg-black lg:bg-transparent">
+        <div className="absolute z-10 mt-2 w-28 rounded-md bg-black lg:-left-2 lg:bg-transparent">
           {i18n.locales.map((localeOption) => (
             <button
               key={localeOption}
