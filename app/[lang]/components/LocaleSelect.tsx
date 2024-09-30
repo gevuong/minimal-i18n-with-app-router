@@ -4,9 +4,9 @@ import { i18n, type Locale } from '@/i18n-config';
 import ExportedImage from 'next-image-export-optimizer';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
-import { USFlagIcon as en } from '@/out/images/navbar/index';
-import { JapanFlagIcon as ja } from '@/out/images/navbar/index';
-import { SpainFlagIcon as es } from '@/out/images/navbar/index';
+import { USFlagIcon as en } from '@/public/images/navbar/index';
+import { JapanFlagIcon as ja } from '@/public/images/navbar/index';
+import { SpainFlagIcon as es } from '@/public/images/navbar/index';
 import type { StaticImageData } from 'next/image';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
