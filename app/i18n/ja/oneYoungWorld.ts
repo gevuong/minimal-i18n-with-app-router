@@ -13,7 +13,7 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {
-    text: '企業や組織は、その広範な知識をもって私たちを支援し、私たちが行っていることに対して安全性と確実性を提供してくれます。',
+    text: '企業や組織は、その豊富な知識で私たちを支え、私たちの活動において安心と確実性を提供してくれています。',
     image: BgHeader,
     altText: '',
   },
