@@ -95,7 +95,7 @@ const faq: FAQ = {
         question:
           'Where can I download the app? Will it be available for iOS and Android?',
         answer:
-          'The app will be available for download at https://virufy.org/app, as we need government or medical approval in some countries to put our app into the official app stores. The app can be connected to and from a smartphone. Thus, it is compatible with any operating system including iOS or Android.',
+          'The app will be available for usage on our mobile friendly website as we need government or medical approval in some countries to put our app into the official app stores. The app can be connected to and from a smartphone. Thus, it is compatible with any operating system including iOS or Android.',
       },
       {
         question: 'Will the application be available for free and worldwide?',
@@ -103,26 +103,16 @@ const faq: FAQ = {
           'As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.',
       },
       {
-        question: 'Do you plan to extend this app in a startup?',
+        question: 'Do you plan to extend this app in a for-profit startup?',
         answer:
-          'Virufy is a non-profit. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
-      },
-      {
-        question: 'When will the app be available for my country?',
-        answer:
-          'Virufy strives to comply with data privacy laws which vary by country. We are very happy to extend to your country if we are able to connect with a pro bono data privacy lawyer to review our privacy policy and consent form.',
+          'Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
       },
     ],
     'About Virufy': [
       {
         question: 'How was the initiative created?',
         answer:
-          'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world.As a One Young World Japan ambassador who has travelled to over a dozen countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
-      },
-      {
-        question: 'What will your organization do?',
-        answer:
-          'Virufy is building the world’s largest dataset of COVID cough sounds by generating a movement where millions of people collectively contribute their data to fight COVID and other upper respiratory diseases. As a 501(c)(3) non-profit startup free of institutional red tape and with a diverse team from more than 20 countries, we are well positioned to make this happen. This app will iniltially be released in low-income countries and will allow for mass-scale, anonymous testing to slow the virus spread. We hope to unite people across borders and create a new paradigm for global collaboration. We want to create a future where community spread of infectious diseases is greatly reduced, as the world population is empowered by smartphone app to detect illnesses early on.',
+          'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
       },
       {
         question: 'How is Virufy different from other groups working on similar projects?',
@@ -156,13 +146,13 @@ const faq: FAQ = {
       },
       {
         question: 'Will the application use AI developed by third parties or created just for this purpose?',
-        answer:'Virufy has its own AI research team and is open to collaboration and integration of AI algorithms from other research groups.',
+        answer:'Virufy has its own AI research team with patented technology. We are open to collaboration, co-development, and integration of AI algorithms from other research groups.',
       },
     ],
     'Finances':[
       {
         question: 'Do I need to make any financial contribution to donate my cough?',
-        answer:'Virufy is currently only collecting coughs from certain countries, which can be found in our app: https://virufy.org/app',
+        answer:'Virufy is currently only collecting coughs from certain countries, which can be found in our app: <a href=https://virufy.org/study>virufy.org/study</a>',
       },
       {
         question: 'Do I need to have coughing symptoms to donate my cough?',
@@ -174,17 +164,17 @@ const faq: FAQ = {
       },
       {
         question: 'What are the operational expenses for the organization?',
-        answer:'We are currently completely volunteer run. Our main budget requirements are for marketing to complete data collection. We would also need money for computation later on after scaling to a large user base.',
+        answer:'We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.',
       },
       {
         question: 'Does the team get funding? If so, where and how much? What is it used on?',
-        answer:'We do not have funding yet, as we are just starting to apply for grants after recently obtaining 501(c)(3) status.',
+        answer:'We partner with several universities to apply for R&D grants leveraging our 501(c)(3) status.',
       },
     ],
     'Privacy':[
       {
         question: 'How will Virufy securely store my data?',
-        answer:'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at https://aws.amazon.com/en/privacy/. If you would like to learn more, please refer to the Virufy privacy policy.',
+        answer:'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at <a href=https://aws.amazon.com/en/privacy/>https://aws.amazon.com/en/privacy/</a>. If you would like to learn more, please refer to the Virufy privacy policy.',
       },
       {
         question: 'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
@@ -202,7 +192,7 @@ const faq: FAQ = {
     'Other':[
       {
         question: 'How can I support Virufy more?',
-        answer:'You can join our team today and look at the join page for more information. You can also support us at GoFundMe. You can also contact us for partnership.',
+        answer:'You can join our team today and look at the <a href=https://virufy.org/join>join page</a> for more information. You can also support us at GoFundMe. You can also contact us for partnership.',
       },
       {
         question: 'How does distribution work, and how will Virufy become more widespread?',
