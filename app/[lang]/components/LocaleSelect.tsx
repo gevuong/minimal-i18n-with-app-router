@@ -1,21 +1,21 @@
 'use client';
 
 import { i18n, type Locale } from '@/i18n-config';
-// import ExportedImage from 'next-image-export-optimizer';
+import ExportedImage from 'next-image-export-optimizer';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
-// import { USFlagIcon as en } from '@/out/images/navbar';
-// import { JapanFlagIcon as ja } from '@/out/images/navbar';
-// import { SpainFlagIcon as es } from '@/out/images/navbar';
-// import type { StaticImageData } from 'next/image';
+import { USFlagIcon as en } from '../../../out/images/navbar';
+import { JapanFlagIcon as ja } from '../../../out/images/navbar';
+import { SpainFlagIcon as es } from '../../../out/images/navbar';
+import type { StaticImageData } from 'next/image';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 
-// const flagIcons: Record<Locale, StaticImageData> = {
-//   en, // US Flag
-//   ja, // Japan Flag
-//   es, // Spain Flag
-// };
+const flagIcons: Record<Locale, StaticImageData> = {
+  en, // US Flag
+  ja, // Japan Flag
+  es, // Spain Flag
+};
 
 const LocaleSelect = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -63,11 +63,11 @@ const LocaleSelect = () => {
         onClick={toggleDropdown}
         className="flex items-center rounded-full border border-gray-500 bg-transparent p-3 text-xs text-white hover:font-bold focus:outline-none lg:border-none lg:p-0"
       >
-        {/* <ExportedImage
+        <ExportedImage
           src={flagIcons[locale]}
           alt={`${locale} flag`}
           className="mr-2 h-5 w-5"
-        /> */}
+        />
         {locale.toUpperCase()}
         <svg
           className="ml-2 h-4 w-4"
@@ -93,11 +93,11 @@ const LocaleSelect = () => {
               onClick={() => handleLocaleChange(localeOption as Locale)}
               className="flex w-full items-center px-2 py-2 text-left text-sm text-white hover:font-bold"
             >
-              {/* <ExportedImage
+              <ExportedImage
                 src={flagIcons[localeOption]}
                 alt={`${localeOption} flag`}
                 className="mr-2 h-5 w-5"
-              /> */}
+              />
               {localeOption.toUpperCase()}
             </button>
           ))}
