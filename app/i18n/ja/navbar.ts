@@ -8,7 +8,7 @@ export const navbar: NavbarType = {
     OurResearch: '出版物',
   },
   coughCheckApp: {
-    section: 'CoughCheckアプリ',
+    section: '咳チェックアプリ',
     covid19: 'COVID-19',
     flu: 'インフルエンザ',
     copd: 'COPD',
@@ -16,7 +16,7 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: '私たちについて',
-    ourStory: '私たちの物語',
+    ourStory: '私たちのストーリー',
     ourPeople: '私たちのメンバー',
     ourSupporters: 'サポーター',
     blog: 'ブログ',
