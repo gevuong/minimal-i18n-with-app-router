@@ -7,10 +7,11 @@ import { useState, useEffect, useRef } from 'react';
 import { USFlagIcon as en } from '@/out/images/navbar';
 import { JapanFlagIcon as ja } from '@/out/images/navbar';
 import { SpainFlagIcon as es } from '@/out/images/navbar';
+import type { StaticImageData } from 'next/image';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 
-const flagIcons: Record<Locale, any> = {
+const flagIcons: Record<Locale, StaticImageData> = {
   en, // US Flag
   ja, // Japan Flag
   es, // Spain Flag
@@ -60,7 +61,7 @@ const LocaleSelect = () => {
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center rounded-full border border-gray-500 bg-transparent p-4 text-xs text-white hover:font-bold focus:outline-none lg:border-none lg:p-0"
+        className="flex items-center rounded-full border border-gray-500 bg-transparent p-3 text-xs text-white hover:font-bold focus:outline-none lg:border-none lg:p-0"
       >
         <ExportedImage
           src={flagIcons[locale]}
