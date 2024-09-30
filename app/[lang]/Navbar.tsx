@@ -313,11 +313,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
-
-                <li className=''>
+                <li>
                   <LocaleSelect />
                 </li>
-
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
