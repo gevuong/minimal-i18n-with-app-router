@@ -66,11 +66,11 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         <Link
                           className="text-blue-500"
                           key={i}
-                          href={`/${lang}/${text.url}`}
+                          href={`/${lang}${text.url}`}
                         >
                           {text.text}
                         </Link>
-                      ),
+                      )
                     )}
                   </p>
                 ))}
