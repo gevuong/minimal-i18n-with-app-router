@@ -31,6 +31,5 @@ interface QuestionsByTopic {
 
 export interface QA {
   question: string;
-  answer: string;
-  link?: string;
+  answer: TypeText[];
 }
