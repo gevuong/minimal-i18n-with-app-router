@@ -1,11 +1,7 @@
 'use client';
 
 import { i18n, type Locale } from '@/i18n-config';
-import {
-  JapanFlagIcon,
-  SpainFlagIcon,
-  USFlagIcon,
-} from '@/public/images/navbar/index';
+import { JapanFlagIcon, USFlagIcon } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 import type { StaticImageData } from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
@@ -16,7 +12,6 @@ const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 const flagIcons: Record<Locale, StaticImageData> = {
   en: USFlagIcon,
   ja: JapanFlagIcon,
-  es: SpainFlagIcon,
 };
 
 const LocaleSelect = () => {
