@@ -43,7 +43,12 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     const remainingQuestions = filteredQuestionsByTopic.filter(
       ({ question, answer }) =>
         question.toLowerCase().indexOf(searchInput) !== -1 ||
-        answer.toLowerCase().indexOf(searchInput) !== -1
+        // filter and concat text values from array of objects
+        answer
+          .map((item) => item.text)
+          .join('')
+          .toLowerCase()
+          .indexOf(searchInput) !== -1
     );
 
     setFilteredQuestions(remainingQuestions);
@@ -153,7 +158,11 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <section>
           {/* Title and Questions Container */}
           <div className="mx-5 flex flex-col items-center justify-center gap-y-4 py-10 md:gap-y-10 md:py-56 md:pt-24">
-            <h2 className="text-lg font-medium md:text-3xl">{selectedTopic}</h2>
+            <h2 className="text-lg font-medium md:text-3xl">
+              {filteredQuestions.length === 0
+                ? 'No results found'
+                : selectedTopic}
+            </h2>
 
             {/* Questions Container */}
             <div className="max-w-md rounded-lg border-b bg-black bg-opacity-[28%] text-xs last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
