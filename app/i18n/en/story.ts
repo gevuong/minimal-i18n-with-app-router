@@ -12,7 +12,7 @@ const story: Story = {
   aboutUsSection: {
     title: 'About Us',
     texts: [
-      'Our innovative approach aims to offer superior COVID pre-screening for patients, clinicians and governments, especially in low-income countries.',
+      'Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
       'We aspire to be the leading nonprofit organization for technology - enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
     ],
   },
@@ -27,11 +27,11 @@ const story: Story = {
         {
           type: 'link',
           url: '/amils-story',
-          text: 'Virufy’s founder, Amil Khanzada',
+          text: 'Virufy founder Amil Khanzada',
         },
         {
           type: 'text',
-          text: ', knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
+          text: ' knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
         },
       ],
       [
@@ -43,7 +43,7 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally.',
+          text: 'Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.',
         },
       ],
     ],
@@ -61,7 +61,7 @@ const story: Story = {
         title: 'Collaboration',
         image: GlobeIcon,
         imageText: 'globe icon',
-        text: 'We commit to making rapid disease detection available to every person in the world, regardless of background.',
+        text: 'We are committed to making rapid disease detection available to every person in the world, regardless of background.',
       },
       {
         title: 'Health',

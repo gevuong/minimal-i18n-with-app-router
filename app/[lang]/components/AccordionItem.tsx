@@ -1,8 +1,9 @@
 import type { QA } from '@/app/i18n/types/faq';
-import { useState } from 'react';
+import Link from 'next/link';
+import { Fragment, useState } from 'react';
 import ArrowIcon from '../faq/ArrowIcon';
 
-const AccordionItem = ({ question, answer, link }: QA) => {
+const AccordionItem = ({ question, answer }: QA) => {
   const [isActive, setIsActive] = useState(false);
   const heightStyle = isActive ? 'max-h-screen' : 'max-h-0';
   const borderTransitionStyle = isActive
@@ -27,13 +28,22 @@ const AccordionItem = ({ question, answer, link }: QA) => {
           className={`overflow-hidden transition-all duration-500 ${heightStyle}`}
         >
           <div className="px-5 py-4 font-normal leading-relaxed text-stone-300">
-            {link ? (
-              <a href={link} className="hover:text-blue-600">
-                {answer}
-              </a>
-            ) : (
-              <p>{answer}</p>
-            )}
+            <p>
+              {answer.map(({ type, text, href }, i) => {
+                return type === 'link' ? (
+                  <Link
+                    key={i}
+                    href={href as string}
+                    target="_blank"
+                    className="hover:text-blue-600"
+                  >
+                    {text}
+                  </Link>
+                ) : (
+                  <Fragment key={i}>{text}</Fragment>
+                );
+              })}
+            </p>
           </div>
         </div>
       </div>
