@@ -63,7 +63,7 @@ const footer: Footer = {
       question: 'Argentina',
       answer: [
         {
-          type: 'text',
+          type: 'link',
           text: 'Política de Privacidad',
           href: 'https://drive.google.com/file/d/1Fef7l77QP3EZboej6mw_q7fBNrayvs03/view',
         },
