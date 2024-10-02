@@ -1,25 +1,27 @@
 'use client';
 
 import { i18n, type Locale } from '@/i18n-config';
+import {
+  JapanFlagIcon,
+  SpainFlagIcon,
+  USFlagIcon,
+} from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
-import { usePathname, useRouter } from 'next/navigation';
-import { useState, useEffect, useRef } from 'react';
-import { USFlagIcon as en } from '@/public/images/navbar/index';
-import { JapanFlagIcon as ja } from '@/public/images/navbar/index';
-import { SpainFlagIcon as es } from '@/public/images/navbar/index';
 import type { StaticImageData } from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 
 const flagIcons: Record<Locale, StaticImageData> = {
-  en, // US Flag
-  ja, // Japan Flag
-  es, // Spain Flag
+  en: USFlagIcon,
+  ja: JapanFlagIcon,
+  es: SpainFlagIcon,
 };
 
 const LocaleSelect = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null); // Add a ref to the dropdown container
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const currPath = usePathname();
 
@@ -32,7 +34,7 @@ const LocaleSelect = () => {
   const handleLocaleChange = (newLocale: Locale) => {
     const newPath = currPath.replace(localeRegex, `/${newLocale}`);
     router.push(newPath);
-    setDropdownOpen(false); // Close the dropdown after selection
+    setDropdownOpen(false);
   };
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
@@ -44,14 +46,12 @@ const LocaleSelect = () => {
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
       ) {
-        setDropdownOpen(false); // Close the dropdown if clicked outside
+        setDropdownOpen(false);
       }
     };
 
-    // Add the event listener
     document.addEventListener('mousedown', handleClickOutside);
 
-    // Cleanup the event listener when the component is unmounted or when the dropdown is closed
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
