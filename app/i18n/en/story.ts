@@ -12,7 +12,7 @@ const story: Story = {
   aboutUsSection: {
     title: 'About Us',
     texts: [
-      'Our innovative approach aims to offer superior COVID pre-screening for patients, clinicians and governments, especially in low-income countries.',
+      'Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
       'We aspire to be the leading nonprofit organization for technology - enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
     ],
   },
@@ -27,11 +27,11 @@ const story: Story = {
         {
           type: 'link',
           url: '/amils-story',
-          text: 'Virufy’s founder, Amil Khanzada',
+          text: 'Virufy founder Amil Khanzada',
         },
         {
           type: 'text',
-          text: ', knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
+          text: ' knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
         },
       ],
       [
@@ -43,7 +43,7 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally.',
+          text: 'Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.',
         },
       ],
     ],
@@ -54,37 +54,37 @@ const story: Story = {
       {
         title: 'Transformation',
         image: RecycleIcon,
-        imageText: '',
+        imageText: 'loop icon',
         text: 'We aim to transform expensive healthcare systems by using technology to drive necessary changes.',
       },
       {
         title: 'Collaboration',
         image: GlobeIcon,
-        imageText: '',
-        text: 'We commit to making rapid disease detection available to every person in the world, regardless of background.',
+        imageText: 'globe icon',
+        text: 'We are committed to making rapid disease detection available to every person in the world, regardless of background.',
       },
       {
         title: 'Health',
         image: HeartRhythmIcon,
-        imageText: '',
+        imageText: 'heart rhythm icon',
         text: 'We commit to always putting the health and well-being of all people across the globe first and foremost.',
       },
       {
         title: 'Affordability',
         image: TeamIcon,
-        imageText: '',
+        imageText: 'group of people icon',
         text: 'We aim to use technology to make disease prevention and detection free for all people around the world.',
       },
       {
         title: 'Efficiency',
         image: FingerSnapIcon,
-        imageText: '',
+        imageText: 'finger snapping icon',
         text: 'We commit to creating intuitive technology that delivers rapid detection, stopping virus spread and saving lives.',
       },
       {
         title: 'Innovation',
         image: PhoneInHandIcon,
-        imageText: '',
+        imageText: 'phone in hand icon',
         text: 'We aim to ensure rapid detection of diseases with just one tap on a mobile device.',
       },
     ],
