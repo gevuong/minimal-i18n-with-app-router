@@ -12,7 +12,7 @@ const ai: Ai = {
         text: 'Virufy',
       },
     ],
-    text: 'Artificial Intelligence (AI) is capable of detecting tiny differences in vocal patterns to detect disease presence.',
+    text: 'Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.',
     url: '/publications',
     linkText: 'Our Research',
   },
