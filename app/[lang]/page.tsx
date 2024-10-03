@@ -12,7 +12,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           src={BgHeader}
           text="Welcome to Virufy"
           text2="Your Digital Health Companion"
-          mainText="Empower yourself with the latest in health technology."
           subText="Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms."
           buttonText="Demo App"
           disclaimer1="*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad)."
