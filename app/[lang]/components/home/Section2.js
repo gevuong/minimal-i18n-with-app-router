@@ -6,7 +6,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import Title from '../Title';
 
-export default function Section3({
+export default function Section2({
   lang,
   text,
   subtext,

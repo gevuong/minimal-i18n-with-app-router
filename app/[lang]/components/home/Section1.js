@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import Title from '../Title';
 
-export default function Section2({
+export default function Section1({
   lang,
   src,
   text,
