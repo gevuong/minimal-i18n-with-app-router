@@ -1,37 +1,43 @@
 import { type Locale } from '@/i18n-config';
 import { BgHeader } from '@/public/images/home';
+import Section1 from './components/home/Section1';
 import Section2 from './components/home/Section2';
-import Section3 from './components/home/Section3';
+import { usei18n } from '../i18n';
 
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+  
+  const {
+    home: {introSection, section2},
+  } = usei18n(lang);
+
   return (
     <div className="-mb-24 flex flex-col items-center justify-center">
       <div className="relative -top-24 w-full overflow-hidden">
-        <Section2
+        <Section1
           lang={lang}
           src={BgHeader}
-          text="Welcome to Virufy"
-          text2="Your Digital Health Companion"
-          mainText="Empower yourself with the latest in health technology."
-          subText="Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms."
-          buttonText="Demo App"
-          disclaimer1="*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad)."
-          disclaimer2="*The app is still under development, support us by contributing your data into our data collection app."
-          mainText2="How It Works"
-          subText2="With just a simple intentional cough into your device's microphone, Virufy harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma."
+          text={introSection[0]}
+          text2={introSection[1]}
+          mainText={introSection[2]}
+          subText={introSection[3]}
+          buttonText={introSection[4]}
+          disclaimer1={introSection[5]}
+          disclaimer2={introSection[6]}
+          mainText2={introSection[7]}
+          subText2={introSection[8]}
         />
-        <Section3
+        <Section2
           lang={lang}
-          text="Your Health, Our Priority"
-          subtext="At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential."
-          title1="Instant Analysis"
-          sub1="Receive immediate prompt feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough*"
-          title2="At-home Anonymity"
-          sub2="Feel secure knowing that your results are only for your eyes."
-          title3="User-Friendly Interface"
-          sub3="Intuitive design for easy navigation and seamless user experience."
-          disclaimer="*The results of the analysis done by the system will not replace the diagnosis by a specialized doctor."
-          buttonText="Our Technology"
+          text={section2[0]}
+          subtext={section2[1]}
+          title1={section2[2]}
+          sub1={section2[3]}
+          title2={section2[4]}
+          sub2={section2[5]}
+          title3={section2[6]}
+          sub3={section2[7]}
+          disclaimer={section2[8]}
+          buttonText={section2[9]}
         />
       </div>
     </div>
