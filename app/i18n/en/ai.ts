@@ -17,7 +17,7 @@ const ai: Ai = {
     linkText: 'Our Research',
   },
   aiSection: {
-    title: 'How does AI Work?',
+    title: 'How does AI work?',
     aiCards: [
       {
         title: '01',

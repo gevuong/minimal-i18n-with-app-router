@@ -79,7 +79,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               </h2>
 
               {/* Cards Container */}
-              <div className="space-y-16 text-sm">
+              <div className="space-y-16 text-base md:text-xl">
                 {aiSection.aiCards.map((card) => (
                   <AiCard key={card.title} {...card} />
                 ))}
