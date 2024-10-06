@@ -121,9 +121,15 @@ export default function Section2({
         }
       }
 
+      @media (min-width: 950px) {
+        .custom-top-margin {
+          margin-top: 8rem;
+        }
+      }
+
       @media (min-width: 1200px) {
         .custom-top-margin {
-          margin-top: 15rem;
+          margin-top: 13rem;
         }
       }
     `;
@@ -146,7 +152,7 @@ export default function Section2({
     <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
       <div className="contrast-1 w-full brightness-100">
         <ExportedImage
-          className="h-full w-screen object-cover"
+          className="h-full w-screen object-cover opacity-65"
           src={src}
           alt=""
           priority
