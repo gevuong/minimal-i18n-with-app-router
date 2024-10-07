@@ -56,12 +56,14 @@ const LocaleSelect = () => {
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className="flex items-center rounded-full border border-gray-500 bg-transparent p-3 text-xs text-white hover:font-bold focus:outline-none lg:border-none lg:p-0"
+        className={`flex w-40 items-center bg-transparent p-3 text-xs text-white hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:p-0 ${
+          dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
+        }`}
       >
         <ExportedImage
           src={flagIcons[locale]}
           alt={`${locale} flag`}
-          className="mr-2 h-5 w-5"
+          className="ml-10 mr-2 h-5 w-5 lg:ml-2"
         />
         {locale.toUpperCase()}
         <svg
@@ -81,17 +83,17 @@ const LocaleSelect = () => {
       </button>
 
       {dropdownOpen && (
-        <div className="absolute z-10 mt-2 w-28 rounded-md bg-black lg:-left-2 lg:bg-transparent">
+        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-black pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-2 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
           {i18n.locales.map((localeOption) => (
             <button
               key={localeOption}
               onClick={() => handleLocaleChange(localeOption as Locale)}
-              className="flex w-full items-center px-2 py-2 text-left text-sm text-white hover:font-bold"
+              className="flex w-full items-center px-3 py-2 text-left text-sm text-white hover:font-bold"
             >
               <ExportedImage
                 src={flagIcons[localeOption]}
                 alt={`${localeOption} flag`}
-                className="mr-2 h-5 w-5"
+                className="ml-10 mr-2 h-5 w-5 lg:ml-1"
               />
               {localeOption.toUpperCase()}
             </button>
