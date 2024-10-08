@@ -23,7 +23,7 @@ export const navbar: NavbarType = {
     oneYoungWorld: 'One Young World',
   },
   faq: 'FAQ',
-  donate: 'DONATE',
+  donate: 'Donate',
 };
 
 export default navbar;
