@@ -56,7 +56,7 @@ const LocaleSelect = () => {
     <div className="relative inline-block" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className={`flex w-40 items-center bg-transparent p-3 text-xs text-white hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:p-0 ${
+        className={`flex w-40 items-center bg-transparent p-3 text-sm text-white hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
           dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
         }`}
       >
