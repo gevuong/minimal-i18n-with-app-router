@@ -13,7 +13,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
 import DonateModal from './components/navbar/DonateModal';
-import { ButtonType } from './themes';
+import { ButtonSize, ButtonType } from './themes';
 import LocaleSelect from './components/LocaleSelect';
 
 export default function Navbar({ lang }: { lang: Locale }) {
@@ -319,7 +319,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
-                    className={`${ButtonType.primary} lg:h-[52px] lg:w-[224px] w-[131px] h-[45px]`}
+                    className={`${ButtonType.primary} ${navbar ? 'w-[131px] h-[45px]' : ButtonSize.medium}`}
                   >
                     <Link href="#">{donate}</Link>
                   </button>
