@@ -29,7 +29,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           sub2="Feel secure knowing that your results are only for your eyes."
           title3="User-Friendly Interface"
           sub3="Intuitive design for easy navigation and seamless user experience."
-          disclaimer="*The results of the analysis done by the system will not replace the diagnosis by a specialized doctor."
+          disclaimer="*Virufy will not take place of a doctor and would like to remind you it is your responsibility to seek medical advice from your doctor."
           buttonText="Our Technology"
         />
       </div>
