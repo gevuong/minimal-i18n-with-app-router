@@ -14,10 +14,11 @@ import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
 import DonateModal from './components/navbar/DonateModal';
 import { ButtonSize, ButtonType } from './themes';
+import LocaleSelect from './components/LocaleSelect';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, coughCheckApp, aboutUs, faq, donate },
+    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -203,7 +204,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
                 {/* coughcheck app link */}
-                <li className="text-white">
+                {/* <li className="text-white">
                   <div>
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
@@ -248,7 +249,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                     </div>
                   </div>
-                </li>
+                </li> */}
 
                 {/* about us link */}
                 <li className="text-white">
@@ -312,10 +313,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
+                <li>
+                  <LocaleSelect />
+                </li>
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
-                    className={`${ButtonType.primary} ${ButtonSize.medium}`}
+                    className={`${ButtonType.primary} ${navbar ? 'w-[131px] h-[45px]' : ButtonSize.medium}`}
                   >
                     <Link href="#">{donate}</Link>
                   </button>

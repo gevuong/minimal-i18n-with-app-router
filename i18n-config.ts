@@ -1,6 +1,6 @@
 export const i18n = {
   defaultLocale: 'en',
-  locales: ['en', 'es', 'ja'],
+  locales: ['en', 'ja'],
 } as const; // properties are readonly
 
 // construct a union type of all elements in 'locales'

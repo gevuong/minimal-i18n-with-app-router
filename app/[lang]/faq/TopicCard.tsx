@@ -19,10 +19,10 @@ const TopicCard = ({
   const bgStyle =
     title === selectedTopic
       ? 'border border-green-400 bg-blue-950'
-      : 'bg-gradient-to-b from-[#3578de] to-[#1c5cbd] border border-transparent';
+      : 'bg-gradient-to-b from-[#3578de] to-[#1c5cbd] border border-transparent hover:border-green-400 hover:border';
 
   const handleTopicClick = (): void => {
-    // deselect selected topic and reset to default topic
+    // deselect selected topic by resetting to default topic
     if (selectedTopic === title) {
       setSelectedTopic(defaultTopic);
       return;

@@ -30,15 +30,15 @@ const Footer = ({ lang }: { lang: Locale }) => {
     () => [
       { label: 'Home', route: [`/${lang}`] },
       { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
-      {
-        label: 'CoughCheck App',
-        route: [
-          `/${lang}/covid19`,
-          `/${lang}/flu`,
-          `/${lang}/copd`,
-          `/${lang}/rsv`,
-        ],
-      },
+      // {
+      //   label: 'CoughCheck App',
+      //   route: [
+      //     `/${lang}/covid19`,
+      //     `/${lang}/flu`,
+      //     `/${lang}/copd`,
+      //     `/${lang}/rsv`,
+      //   ],
+      // },
       {
         label: 'About Us',
         route: [
@@ -92,6 +92,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
     });
   }, [currPath, links1]);
 
+  // allows user to close modal by pressing esc key
   const handleKeyPress = (event: KeyboardEvent) => {
     if (event.key === 'Escape') {
       setShowModalCookiesPolicy(false);
@@ -206,6 +207,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                 </div>
               </div>
             </div>
+
             <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}
@@ -249,6 +251,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                 </div>
               </div>
             </div>
+
             <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}
@@ -729,6 +732,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                 </div>
               </div>
             </div>
+
             <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
           </>
         ) : null}

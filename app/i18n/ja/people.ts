@@ -1,26 +1,29 @@
 import {
-  AnaisRameau,
-  GeorgePegelow,
+  AyomideOwoyemi,
+  FaisalCheema,
+  FumihikoYokota,
+  HiroyukiKunishima,
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
   MansoorAhmed,
   ManujAggarwal,
   MarkHaseltine,
-  MathijsDeVaan,
+  MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  PedroSiena,
+  NobuyoshiOzawa,
   RafiAzimKhan,
-  RichardSwartzbaugh,
-  RichWalcoff,
+  RichardNall,
   RokSosic,
   RonanDunlop,
-  TaisukeFukuno,
+  TetsujiMadarame,
   TsutomuIto,
   VictorWang,
+  YukitoshiNakatani,
 } from '@/public/images/people';
 import { type People } from '../types/people';
 
@@ -61,10 +64,12 @@ const people: People = {
         ],
       },
       {
-        img: AnaisRameau,
-        name: 'アナイス・ラモー医学博士',
-        role: 'エグゼクティブマーケティングアドバイザー',
-        texts: ['コーネル大学耳鼻咽喉科助教授', 'マギル大学医学博士'],
+        img: KutsunaSatoshi,
+        name: 'Kutsuna Satoshi',
+        role: 'Executive Clinical Advisor',
+        texts: [
+          'Infection Control and Prevention Professor - Osaka University',
+        ],
       },
       {
         img: MadhavDatt,
@@ -73,18 +78,18 @@ const people: People = {
         texts: ['Green the Gene創設者', '国連環境計画元青年代表'],
       },
       {
+        img: MayXu,
+        name: 'May Xu',
+        role: 'Data and AI Product Strategy Advisor',
+        texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
+      },
+      {
         img: RafiAzimKhan,
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
         texts: [
           'ピルズベリーローレンスウィンショーLLP欧州データプライバシー部門リーダー、IP/ITパートナー',
         ],
-      },
-      {
-        img: RichardSwartzbaugh,
-        name: 'リチャード・スワーツバウ',
-        role: 'エグゼクティブアドバイザー',
-        texts: ['リスク管理 - Curaesoft', 'アイオワ大学法学博士'],
       },
       {
         img: RonanDunlop,
@@ -111,10 +116,34 @@ const people: People = {
         ],
       },
       {
+        img: FaisalCheema,
+        name: 'Faisal Cheema',
+        role: 'Executive Clinical Advisor',
+        texts: [
+          'Associate Professor of Biomedical & Clinical Sciences',
+          'Tilman J. Fertitta College of Medicine, University of Houston',
+        ],
+      },
+      {
         img: MertPilanci,
         name: 'メルト・ピランチ',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学電気工学AI助教授'],
+      },
+      {
+        img: TetsujiMadarame,
+        name: 'Tetsuji Madarame',
+        role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
+        texts: [
+          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
+          'MBA - Stanford GSB',
+        ],
+      },
+      {
+        img: YukitoshiNakatani,
+        name: 'Yukitoshi Nakatani',
+        role: 'Japan Executive Advisor',
+        texts: ['CEO, IT Value Consulting', 'Former Director, Accenture Japan'],
       },
       {
         img: VictorWang,
@@ -132,18 +161,12 @@ const people: People = {
         texts: ['スタンフォード工学部シニアリサーチエンジニア'],
       },
       {
-        img: MathijsDeVaan,
-        name: 'マタイス・デ・ヴァーン',
-        role: 'UCバークレー助教授',
-        texts: ['コロンビア大学組織管理社会学博士'],
-      },
-      {
-        img: PedroSiena,
-        name: 'ペドロ・シエナ',
-        role: 'ブラジルエグゼクティブアドバイザー',
+        img: RichardNall,
+        name: 'Richard Nall',
+        role: 'Marketing Advisor',
         texts: [
-          'Siena Company創設者兼CEO',
-          'スタンフォードLean Launchpadメンター',
+          'CEO - The Brand Garden',
+          `Master's Organizational Leadership - Henley`,
         ],
       },
       {
@@ -156,22 +179,13 @@ const people: People = {
         ],
       },
       {
-        img: GeorgePegelow,
-        name: 'ジョージ・ペゲロー',
-        role: 'エグゼクティブビジョナリーアドバイザー',
-        texts: ['スタンフォード大学武道・哲学教授'],
-      },
-      {
-        img: RichWalcoff,
-        name: 'リッチ・ウォルコフ',
-        role: 'コミュニケーションアドバイザー',
-        texts: ['KGOラジオスポーツディレクター'],
-      },
-      {
-        img: TaisukeFukuno,
-        name: '福野泰介',
-        role: 'エグゼクティブITアドバイザー',
-        texts: ['Open Data Japan創設者', 'jig.jp会長'],
+        img: AyomideOwoyemi,
+        name: 'Ayomide Owoyemi',
+        role: 'Executive Clinical Advisor',
+        texts: [
+          'PhD Biomedical Sciences - University of Illinois Chicago',
+          'Ambassador - One Young World Nigeria',
+        ],
       },
       {
         img: TsutomuIto,
@@ -193,6 +207,26 @@ const people: People = {
           'ワシントン大学電気・コンピュータ工学教授',
           'スタンフォード大学電気工学博士',
         ],
+      },
+      {
+        img: NobuyoshiOzawa,
+        name: 'Nobuyoshi Ozawa',
+        role: 'Japan Clinical Development Lead',
+        texts: ['Clinical Development Department Group Manager, CRO'],
+      },
+      {
+        img: HiroyukiKunishima,
+        name: 'Hiroyuki Kunishima',
+        role: 'Infectious Diseases Advisor',
+        texts: [
+          'Department of Infectious Diseases, St. Marianna University Hospital',
+        ],
+      },
+      {
+        img: FumihikoYokota,
+        name: 'Fumihiko Yokota',
+        role: 'Public Health Advisor',
+        texts: ['Associate Professor of Epidemiology, Kyushu University'],
       },
     ],
   },
