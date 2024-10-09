@@ -176,7 +176,7 @@ export default function Section2({
                 />
               </div>
             </div>
-            <div className="lg:mt-100 mt-2xl mt-3xl mt-[3.5rem] flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:space-y-8 xl:mt-[10rem]">
+            <div className="lg:mt-[30rem] mt-2xl mt-3xl mt-[3.5rem] flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:space-y-8 xl:mt-[35rem]">
               <div className="w-full max-w-md md:max-w-lg">
                 <p
                   className="text-[0.6rem] font-bold leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem]"
