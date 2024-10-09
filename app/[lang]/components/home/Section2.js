@@ -129,7 +129,7 @@ export default function Section2({
 
       @media (min-width: 1200px) {
         .custom-top-margin {
-          margin-top: 13rem;
+          margin-top: 12rem;
         }
       }
     `;
@@ -152,7 +152,7 @@ export default function Section2({
     <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
       <div className="contrast-1 w-full brightness-100">
         <ExportedImage
-          className="h-full w-screen object-cover opacity-65"
+          className="h-full w-screen object-cover"
           src={src}
           alt=""
           priority
@@ -162,7 +162,7 @@ export default function Section2({
       <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
         <div className="mx-auto flex max-w-screen-xl flex-col">
           <div className="custom-top-margin mt-[0rem] sm:mt-[0rem] md:mt-[12.5rem] lg:mt-[14rem]">
-            <div className="ml-[0rem] mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem] xl:mt-[18rem]">
+            <div className="ml-[0rem] mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem] xl:mt-[6rem]">
               <Title
                 Text={text}
                 H=""
