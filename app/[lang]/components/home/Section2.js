@@ -212,8 +212,8 @@ export default function Section2({
               </div>
             </div>
           </div>
-          <div className="mb-2xl mb-3xl mr-3xl bottom-custom absolute bottom-[3rem] ml-[5.5rem] mt-[1rem] flex max-w-[50rem] flex-col items-center px-[2rem] sm:bottom-[7rem] sm:ml-[8rem] sm:mr-[2rem] sm:mt-[2rem] sm:space-y-2 md:bottom-[8rem] md:space-y-8 lg:ml-[20rem] lg:mr-[5rem] lg:mt-[4rem] xl:bottom-[20rem] xl:mt-[15rem]">
-            <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
+          <div className="mb-2xl mb-3xl mr-3xl bottom-custom absolute bottom-[3rem] ml-[5.5rem] mt-[1rem] flex max-w-[50rem] flex-col items-center px-[2rem] sm:bottom-[7rem] sm:ml-[8rem] sm:mr-[2rem] sm:mt-[2rem] sm:space-y-2 md:bottom-[8rem] md:space-y-8 lg:ml-[20rem] lg:mr-[5rem] lg:mt-[4rem] xl:bottom-[16rem] xl:mt-[15rem]">
+            <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem] ">
               {mainText2}
             </p>
             <p
