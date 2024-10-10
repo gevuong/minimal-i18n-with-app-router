@@ -16,8 +16,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <Section1
           lang={lang}
           src={BgHeader}
-          text={introSection[0]}
-          text2={introSection[1]}
+          text={introSection.welcome}
+          text2={introSection.digital}
           mainText={introSection[2]}
           subText={introSection[3]}
           buttonText={introSection[4]}

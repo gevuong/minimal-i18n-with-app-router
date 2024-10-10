@@ -11,7 +11,6 @@ export default function Section1({
   src,
   text,
   text2,
-  mainText,
   subText,
   buttonText,
   disclaimer1,
@@ -27,6 +26,112 @@ export default function Section1({
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+
+      @media (min-width: 1536px) {
+        .mt-2xl {
+          margin-top: 20rem; 
+        } 
+      }
+
+      @media (min-width: 1660px) {
+        .mb-3xl {
+          bottom: 30rem; 
+        }
+      }
+
+      @media (min-width: 1920px) { 
+        .mt-3xl {
+          margin-top: 40rem;
+        }
+        
+        .mr-3xl {
+          margin-right: 20rem; 
+        }
+      }
+
+      @media (min-width: 400px) and (max-width: 420px) {
+        .bottom-custom {
+          bottom: 2rem;
+        }
+      }
+
+      @media (min-width: 420px) and (max-width: 460px) {
+        .bottom-custom {
+          bottom: 4rem;
+        }
+      }
+
+      @media (min-width: 360px) and (max-width: 399px) {
+        .bottom-custom {
+          bottom: 5.5rem;
+        }
+      }
+
+      @media (min-width: 450px) {
+        .custom-top-margin {
+          margin-top: 2rem;
+        }
+      }
+
+      @media (min-width: 500px) {
+        .custom-top-margin {
+          margin-top: 3rem;
+        }
+      }
+
+      @media (min-width: 550px) {
+        .custom-top-margin {
+          margin-top: 4rem;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .custom-top-margin {
+          margin-top: 5rem;
+        }
+      }
+
+      @media (min-width: 650px) {
+        .custom-top-margin {
+          margin-top: 6rem;
+        }
+      }
+
+      @media (min-width: 700px) {
+        .custom-top-margin {
+          margin-top: 7rem;
+        }
+      }
+
+      @media (min-width: 750px) {
+        .custom-top-margin {
+          margin-top: 8rem;
+        }
+      }
+
+       @media (min-width: 800px) {
+        .custom-top-margin {
+          margin-top: 9rem;
+        }
+      }
+
+      @media (min-width: 850px) {
+        .custom-top-margin {
+          margin-top: 10rem;
+        }
+      }
+
+      @media (min-width: 950px) {
+        .custom-top-margin {
+          margin-top: 8rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .custom-top-margin {
+          margin-top: 12rem;
+        }
+      }
     `;
     document.head.appendChild(style);
 
@@ -36,11 +141,11 @@ export default function Section1({
   }, []);
 
   const applyGradient = (text) => {
-    const gradientText = text.replace(
-      /CoughCheck/g,
-      '<span class="gradient-text">CoughCheck</span>',
-    );
-    return { __html: gradientText };
+    // const gradientText = text.replace(
+    //   /CoughCheck/g,
+    //   '<span class="gradient-text">CoughCheck</span>',
+    // );
+    // return { __html: gradientText };
   };
 
   return (
@@ -56,8 +161,8 @@ export default function Section1({
       </div>
       <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
         <div className="mx-auto flex max-w-screen-xl flex-col">
-          <div className="mt-0 sm:mt-0 md:mt-[12.5rem] lg:mt-[14rem] xl:mt-[18rem]">
-            <div className="ml-0 mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem]">
+          <div className="custom-top-margin mt-[0rem] sm:mt-[0rem] md:mt-[12.5rem] lg:mt-[14rem]">
+            <div className="ml-[0rem] mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem] xl:mt-[6rem]">
               <Title
                 Text={text}
                 H=""
@@ -71,50 +176,48 @@ export default function Section1({
                 />
               </div>
             </div>
-            <div className="mt-[3.5rem] sm:mt-24 md:mt-[6.25rem] xl:mt-[10rem] flex flex-col items-start space-y-2 md:space-y-8">
-              <div className="w-full max-w-xs md:max-w-md">
-                <p className="text-[0.7rem] sm:text-[0.75rem] md:text-[1rem] lg:text-[1.125rem] xl:text-[1.25rem]">
-                  {mainText}
-                </p>
-              </div>
-
+            <div className="lg:mt-100 mt-2xl mt-3xl mt-[3.5rem] flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:space-y-8 xl:mt-[10rem]">
               <div className="w-full max-w-md md:max-w-lg">
                 <p
-                  className="text-[0.6rem] font-bold sm:text-[0.75rem] md:text-[1.125rem] lg:text-[1.25rem] xl:text-[1.5rem]"
-                  dangerouslySetInnerHTML={applyGradient(subText)}
+                  className="text-[0.6rem] font-bold leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem]"
+                  // dangerouslySetInnerHTML={applyGradient(subText)}
                 />
               </div>
 
-              <div className="mt-2 w-full max-w-md md:max-w-lg">
+              <div className="mt-2 w-full max-w-md px-0 md:max-w-lg">
                 <Link href={`/${lang}/ai`}>
                   <button
-                    className="medium primary h-[35px] w-[270px] sm:h-[45px] sm:w-[315px] xl:h-[65px] xl:w-[250px] text-white rounded-full bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
+                    className="medium primary h-[35px] w-[270px] text-white sm:h-[45px] sm:w-[315px] xl:h-[65px] xl:w-[250px]"
+                    style={{
+                      borderRadius: '50px',
+                      background:
+                        'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                    }}
                   >
                     {buttonText}
                   </button>
                 </Link>
               </div>
             </div>
-
-            <div className="mt-[0.2rem] sm:mt-[0.3rem] flex flex-col items-start">
+            <div className="mt-[0.2rem] flex flex-col items-start sm:ml-0 sm:mt-[0.3rem]">
               <div className="w-full max-w-screen-lg">
-                <p className="text-[0.4rem] sm:text-[0.875rem] lg:text-[1rem] xl:text-[1.125rem] text-gray-400">
+                <p className="text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem]">
                   {disclaimer1}
                 </p>
               </div>
               <div className="w-full max-w-screen-lg">
-                <p className="text-[0.4rem] sm:text-[0.875rem] lg:text-[1rem] xl:text-[1.125rem] text-gray-400">
+                <p className="text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem]">
                   {disclaimer2}
                 </p>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[3rem] sm:bottom-[7rem] md:bottom-[8rem] lg:bottom-[20rem] xl:bottom-[20rem] ml-[5.5rem] sm:ml-[8rem] lg:ml-[20rem] flex flex-col items-center px-[2rem]">
-            <p className="text-[0.8rem] sm:text-[0.8rem] md:text-[1.5rem] lg:text-[1.75rem] xl:text-[2rem]">
+          <div className="mb-2xl mb-3xl mr-3xl bottom-custom absolute bottom-[3rem] ml-[5.5rem] mt-[1rem] flex max-w-[50rem] flex-col items-center px-[2rem] sm:bottom-[7rem] sm:ml-[8rem] sm:mr-[2rem] sm:mt-[2rem] sm:space-y-2 md:bottom-[8rem] md:space-y-8 lg:ml-[20rem] lg:mr-[5rem] lg:mt-[4rem] xl:bottom-[20rem] xl:mt-[15rem]">
+            <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
               {mainText2}
             </p>
             <p
-              className="text-center text-[0.4rem] sm:text-[0.5rem] md:text-[1.125rem] lg:text-[1.25rem] xl:text-[1.5rem] font-bold"
+              className="text-center text-[0.4rem] font-bold leading-[0.7rem] sm:text-[0.5rem] sm:leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem]"
               dangerouslySetInnerHTML={applyGradient(subText2)}
             />
           </div>

@@ -1,4 +1,4 @@
 export interface HomeType {
-  introSection: Array<string>;
-  section2: Array<string>;
+  introSection: { [key: string]: string };
+  section2: { [key: string]: string };
 }
