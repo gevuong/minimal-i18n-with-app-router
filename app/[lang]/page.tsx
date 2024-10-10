@@ -16,28 +16,27 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <Section1
           lang={lang}
           src={BgHeader}
-          text={introSection.welcome}
-          text2={introSection.digital}
-          mainText={introSection[2]}
-          subText={introSection[3]}
-          buttonText={introSection[4]}
-          disclaimer1={introSection[5]}
-          disclaimer2={introSection[6]}
-          mainText2={introSection[7]}
-          subText2={introSection[8]}
+          text={introSection.text}
+          text2={introSection.text2}
+          subText={introSection.subText}
+          buttonText={introSection.buttonText}
+          disclaimer1={introSection.disclaimer1}
+          disclaimer2={introSection.disclaimer2}
+          mainText2={introSection.mainText2}
+          subText2={introSection.subText2}
         />
         <Section2
           lang={lang}
-          text={section2[0]}
-          subtext={section2[1]}
-          title1={section2[2]}
-          sub1={section2[3]}
-          title2={section2[4]}
-          sub2={section2[5]}
-          title3={section2[6]}
-          sub3={section2[7]}
-          disclaimer={section2[8]}
-          buttonText={section2[9]}
+          text={section2.text}
+          subtext={section2.subtext}
+          title1={section2.title1}
+          sub1={section2.sub1}
+          title2={section2.title2}
+          sub2={section2.sub2}
+          title3={section2.title3}
+          sub3={section2.sub3}
+          disclaimer={section2.disclaimer}
+          buttonText={section2.buttonText}
         />
       </div>
     </div>
