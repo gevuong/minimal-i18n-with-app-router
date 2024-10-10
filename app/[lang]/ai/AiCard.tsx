@@ -8,7 +8,7 @@ const AiCard = ({ title, text, style }: AiCard) => {
         <h3 className={'text-7xl font-bold ' + `${style}`}>{title}</h3>
       </div>
 
-      <p className="max-w-xl font-medium text-white opacity-95">{text}</p>
+      <p className="max-w-xl text-white opacity-95">{text}</p>
     </div>
   );
 };
