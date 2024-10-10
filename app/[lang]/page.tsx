@@ -1,7 +1,7 @@
 import { type Locale } from '@/i18n-config';
 import { BgHeader } from '@/public/images/home';
-import Section1 from './components/home/Section1';
 import Section2 from './components/home/Section2';
+import Section3 from './components/home/Section3';
 import { usei18n } from '../i18n';
 
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
@@ -13,7 +13,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <div className="-mb-24 flex flex-col items-center justify-center">
       <div className="relative -top-24 w-full overflow-hidden">
-        <Section1
+        <Section2
           lang={lang}
           src={BgHeader}
           text={introSection.text}
@@ -25,7 +25,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           mainText2={introSection.mainText2}
           subText2={introSection.subText2}
         />
-        <Section2
+        <Section3
           lang={lang}
           text={section2.text}
           subtext={section2.subtext}

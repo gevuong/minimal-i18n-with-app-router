@@ -1,29 +1,33 @@
 import { type HomeType } from '../types/home';
 
 const home: HomeType = {
-  introSection: [
-    'Bienvenido a Virufy',
-    'Tu Compañero de Salud Digital',
-    'Empodérate con lo último en tecnología de salud.',
-    'Presentamos Virufy, la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
-    'Demo de la App',
-    '*Cualquier dispositivo con un navegador web y micrófono (por ejemplo, iPhone, Android, portátil, iPad).',
-    '*La aplicación aún está en desarrollo, apóyanos contribuyendo con tus datos en nuestra aplicación de recolección de datos.',
-    'Cómo Funciona',
-    "Con solo una tos intencional hacia el micrófono de tu dispositivo, Virufy aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, tuberculosis, gripe, VSR, EPOC y asma.",
-  ],
-  section2: [
-    'Tu Salud, Nuestra Prioridad',
-    'En Virufy, tu bienestar es el centro de todo lo que hacemos. Priorizamos la privacidad, asegurando que tus datos permanezcan seguros y confidenciales.',
-    'Análisis Instantáneo',
-    'Recibe retroalimentación inmediata sobre las características de tu tos y el perfil de anormalidad basado en el patrón de sonido de tu tos*',
-    'Anonimato en Casa',
-    'Siéntete seguro sabiendo que tus resultados son solo para tus ojos.',
-    'Interfaz Fácil de Usar',
-    'Diseño intuitivo para una fácil navegación y una experiencia de usuario fluida.',
-    '*Los resultados del análisis realizado por el sistema no reemplazarán el diagnóstico de un médico especializado.',
-    'Nuestra Tecnología',
-  ],
+  introSection: {
+    text: 'Welcome to Virufy',
+    text2: 'Your Digital Health Companion',
+    subText: 'Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.',
+    buttonText: 'Demo App',
+    disclaimer1:
+      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
+    disclaimer2:
+      '*The app is still under development, support us by contributing your cough sounds into our data collection app.',
+    mainText2: 'How It Works',
+    subText2:
+      "With just a simple intentional cough into your device's microphone, Virufy harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.",
+  },
+  section2: {
+    text: 'Your Health, Our Priority',
+    subtext:
+      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
+    title1: 'Instant Analysis',
+    sub1: "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
+    title2: 'At-home Anonymity',
+    sub2: 'Feel secure knowing that your results are only for your eyes.',
+    title3: 'User-Friendly Interface',
+    sub3: 'Intuitive design for easy navigation and seamless user experience.',
+    disclaimer:
+      '*Virufy will not take place of a doctor and would like to remind you it is your responsibility to seek medical advice from your doctor.',
+    buttonText: 'Our Technology',
+  },
 };
 
 export default home;

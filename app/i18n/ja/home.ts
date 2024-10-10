@@ -1,29 +1,33 @@
 import { type HomeType } from '../types/home';
 
 const home: HomeType = {
-  introSection: [
-    'Virufyへようこそ',
-    'あなたのデジタルヘルスコンパニオン',
-    '最新のヘルステクノロジーで自分を強化しましょう。',
-    'Virufyは、あなたの呼吸パターンを分析し、感染症の症状に関する洞察を提供するために、先進的な音声解析と生成的AIアルゴリズムを活用した最先端のアプリです。',
-    'デモアプリ',
-    '*Webブラウザとマイクを備えた任意のデバイス（例：iPhone、Android、ノートパソコン、iPad）。',
-    '*アプリはまだ開発中です。データ収集アプリにあなたのデータを提供して私たちをサポートしてください。',
-    '使い方',
-    'デバイスのマイクに向かって意図的に咳をするだけで、Virufyは人工知能の力を利用して、COVID-19、結核、インフルエンザ、RSウイルス、COPD、喘息などの呼吸器疾患に関連する独自の音声パターンを検出します。',
-  ],
-  section2: [
-    'あなたの健康が私たちの優先事項',
-    'Virufyでは、あなたの健康がすべての中心です。私たちはプライバシーを最優先し、あなたのデータが安全で機密性を保つことを保証します。',
-    '即時分析',
-    '咳の音声パターンに基づいて、咳の特徴と異常プロファイルに関する即時のフィードバックを受け取ります*',
-    '自宅での匿名性',
-    '結果はあなただけが確認できるため、安心してください。',
-    'ユーザーフレンドリーなインターフェース',
-    '直感的なデザインで、簡単に操作できるスムーズなユーザー体験を提供します。',
-    '*システムによる分析結果は、専門医による診断の代わりにはなりません。',
-    '私たちの技術',
-  ],
+  introSection: {
+    text: 'Welcome to Virufy',
+    text2: 'Your Digital Health Companion',
+    subText: 'Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.',
+    buttonText: 'Demo App',
+    disclaimer1:
+      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
+    disclaimer2:
+      '*The app is still under development, support us by contributing your cough sounds into our data collection app.',
+    mainText2: 'How It Works',
+    subText2:
+      "With just a simple intentional cough into your device's microphone, Virufy harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.",
+  },
+  section2: {
+    text: 'Your Health, Our Priority',
+    subtext:
+      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
+    title1: 'Instant Analysis',
+    sub1: "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
+    title2: 'At-home Anonymity',
+    sub2: 'Feel secure knowing that your results are only for your eyes.',
+    title3: 'User-Friendly Interface',
+    sub3: 'Intuitive design for easy navigation and seamless user experience.',
+    disclaimer:
+      '*Virufy will not take place of a doctor and would like to remind you it is your responsibility to seek medical advice from your doctor.',
+    buttonText: 'Our Technology',
+  },
 };
 
 export default home;
