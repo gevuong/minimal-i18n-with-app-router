@@ -1,9 +1,9 @@
 'use client';
 
 import { basePath } from '@/next.config.mjs';
-import { VirufyMobilePhone } from '@/public/images/home';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import Title from '../Title';
 
 export default function Section2({

@@ -2,31 +2,31 @@ import { type HomeType } from '../types/home';
 
 const home: HomeType = {
   introSection: {
-    text: 'Welcome to Virufy',
-    text2: 'Your Digital Health Companion',
-    subText: 'Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.',
-    buttonText: 'Demo App',
+    text: 'Virufyへようこそ',
+    text2: 'あなたのデジタルヘルスパートナー',
+    subText: 'Virufyは、先進的な音声および生成AIアルゴリズムを使用して、呼吸パターンを分析し、感染症の可能性を示す症状に関するインサイトを提供する最先端のアプリです。',
+    buttonText: 'デモアプリ',
     disclaimer1:
-      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
+      '*ウェブブラウザとマイクを備えたあらゆるデバイス（例：iPhone、Android、ノートパソコン、iPad）。',
     disclaimer2:
-      '*The app is still under development, support us by contributing your cough sounds into our data collection app.',
-    mainText2: 'How It Works',
+      '*アプリはまだ開発中です。データ収集アプリに咳の音を提供することで私たちをサポートしてください。',
+    mainText2: '仕組み',
     subText2:
-      "With just a simple intentional cough into your device's microphone, Virufy harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.",
+      'デバイスのマイクに簡単な意図的な咳をするだけで、Virufyは人工知能の力を活用して、COVID-19、結核、インフルエンザ、RSV、COPD、喘息などの呼吸器疾患に関連する独自の音声パターンを検出します。',
   },
   section2: {
-    text: 'Your Health, Our Priority',
+    text: 'あなたの健康、私たちの優先事項',
     subtext:
-      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
-    title1: 'Instant Analysis',
-    sub1: "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
-    title2: 'At-home Anonymity',
-    sub2: 'Feel secure knowing that your results are only for your eyes.',
-    title3: 'User-Friendly Interface',
-    sub3: 'Intuitive design for easy navigation and seamless user experience.',
+      'Virufyでは、あなたの健康が私たちの活動の中心です。私たちはプライバシーを最優先し、あなたのデータが安全かつ機密であることを保証します。',
+    title1: '即時分析',
+    sub1: '咳の音パターンに基づいた特徴と異常プロファイルに対する迅速なフィードバック。',
+    title2: '自宅での匿名性',
+    sub2: '結果があなただけのものだという安心感を感じてください。',
+    title3: 'ユーザーフレンドリーなインターフェース',
+    sub3: '簡単にナビゲートできる直感的なデザインとスムーズなユーザーエクスペリエンス。',
     disclaimer:
-      '*Virufy will not take place of a doctor and would like to remind you it is your responsibility to seek medical advice from your doctor.',
-    buttonText: 'Our Technology',
+      '*Virufyは医師の代わりにはなりません。医師から医療アドバイスを受けるのはあなたの責任です。',
+    buttonText: '私たちの技術',
   },
 };
 
