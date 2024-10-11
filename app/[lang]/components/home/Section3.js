@@ -64,7 +64,7 @@ export default function Section3({
                   <Title
                     H="h5spaced"
                     Text={title3}
-                    TitleClassProps="text-white font-bold mb-[1rem] whitespace-nowrap"
+                    TitleClassProps="text-white font-bold mb-[1rem]"
                   />
                   <p className="text-[0.9rem] leading-[0.9rem] text-white md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[18px] xl:leading-[25px]">
                     {sub3}
