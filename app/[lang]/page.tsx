@@ -108,9 +108,9 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <Title
                     Text={section2.text}
                     H=""
-                    TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-[20px] leading-[1rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[48px] xl:leading-[3.5rem]"
+                    TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-xl leading-4 sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
                   />
-                  <p className="mt-4 px-0.5 text-[14px] leading-[1rem] text-white md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:px-40 xl:text-[24px] xl:font-bold xl:leading-[2.5rem]">
+                  <p className="mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
                     {section2.subtext}
                   </p>
                 </div>
@@ -124,33 +124,33 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                         Text={section2.title1}
                         TitleClassProps="text-white font-bold mb-4"
                       />
-                      <p className="text-sm font-thin leading-1 text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-[25px]">
+                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
                         {section2.sub1}
                       </p>
                     </div>
-                    <div className="mb-4 mt-0 xl:mt-4 pt-8 xl:pt-0">
+                    <div className="mb-4 mt-0 pt-8 xl:mt-4 xl:pt-0">
                       <Title
                         H="h5spaced"
                         Text={section2.title2}
                         TitleClassProps="text-white font-bold mb-4"
                       />
-                      <p className="text-sm font-thin leading-1 text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-[25px]">
+                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
                         {section2.sub2}
                       </p>
                     </div>
-                    <div className="mb-0 mt-4 xl:mt-4 pt-8 xl:pt-0">
+                    <div className="mb-0 mt-4 pt-8 xl:mt-4 xl:pt-0">
                       <Title
                         H="h5spaced"
                         Text={section2.title3}
                         TitleClassProps="text-white font-bold mb-4"
                       />
-                      <p className="text-sm font-thin leading-1 text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-[25px]">
+                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
                         {section2.sub3}
                       </p>
                     </div>
                     <div className="mt-8 flex w-full flex-col items-center xl:mt-16 xl:items-start">
                       <div className="w-full">
-                        <p className="px-8 text-center text-[0.7rem] font-thin text-white md:text-xs lg:text-base xl:px-0 xl:text-left">
+                        <p className="px-8 text-center text-xs font-thin text-white lg:text-base xl:px-0 xl:text-left">
                           {section2.disclaimer}
                         </p>
                       </div>
