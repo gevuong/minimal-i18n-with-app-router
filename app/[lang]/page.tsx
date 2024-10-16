@@ -45,9 +45,9 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </div>
                 </div>
                 {/* Introducing Virufy section */}
-                <div className="mt-14 flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
+                <div className="mt-14 flex flex-col items-start space-y-2 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
-                    <p className="text-center text-xs font-normal leading-[1.1rem] sm:text-sm md:text-left md:text-lg md:font-bold md:leading-7 lg:pr-36 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
+                    <p className="text-center text-xs font-normal leading-[1.1rem] sm:text-sm md:text-lg md:font-bold md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
                       {introSection.subText.map((text, i) =>
                         text.type === 'text' ? (
                           <Fragment key={i}>{text.text}</Fragment>
