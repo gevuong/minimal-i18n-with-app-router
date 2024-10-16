@@ -1,3 +1,5 @@
+import type { TypeText } from './baseInterfaces';
+
 export interface HomeType {
   introSection: WelcomeSection;
   section2: Section2;
@@ -6,21 +8,11 @@ export interface HomeType {
 interface WelcomeSection {
   text: string;
   text2: string;
-  subText: subText[];
+  subText: TypeText[];
   buttonText: string;
   disclaimers: Array<string>;
   mainText2: string;
-  subText2: subText2[];
-}
-
-interface subText {
-  type: string;
-  text: string;
-}
-
-interface subText2 {
-  type: string;
-  text: string;
+  subText2: TypeText[];
 }
 
 interface Section2 {
