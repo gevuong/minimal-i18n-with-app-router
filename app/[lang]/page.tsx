@@ -26,7 +26,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               basePath={basePath}
             />
           </div>
-
           {/* Welcome text */}
           <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
             <div className="mx-auto flex max-w-screen-xl flex-col">
@@ -45,19 +44,18 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   </div>
                 </div>
-
                 {/* Introducing Virufy section */}
                 <div className="mt-14 flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
                     <p className="text-center text-xs font-normal leading-[1.1rem] sm:text-sm md:text-left md:text-lg md:font-bold md:leading-7 lg:pr-36 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
-                      {introSection.subText.map((text, i) => 
-                      text.type === 'text' ? (
-                        <Fragment key={i}>{text.text}</Fragment>
-                      ) : (
-                        <span key={i} className='text-green-500'>
-                          {text.text}
-                        </span>
-                      )
+                      {introSection.subText.map((text, i) =>
+                        text.type === 'text' ? (
+                          <Fragment key={i}>{text.text}</Fragment>
+                        ) : (
+                          <span key={i} className="text-green-500">
+                            {text.text}
+                          </span>
+                        )
                       )}
                     </p>
                   </div>
@@ -77,17 +75,14 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     </Link>
                   </div>
                 </div>
-                {/* disclaimers */}
+                {/* Disclaimers */}
                 <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
                   <div className="w-full max-w-screen-lg">
-                    <p className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7">
-                      {introSection.disclaimer1}
-                    </p>
-                  </div>
-                  <div className="w-full max-w-screen-lg">
-                    <p className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7">
-                      {introSection.disclaimer2}
-                    </p>
+                    {introSection.disclaimers.map((disclaimer, i) => (
+                      <p key={i} className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7">
+                        {disclaimer}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -97,14 +92,14 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   {introSection.mainText2}
                 </p>
                 <p className="text-center text-[0.5rem] font-normal leading-[0.7rem] sm:text-[0.6rem] sm:leading-[0.9rem] md:text-lg md:font-bold md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-[3rem]">
-                  {introSection.subText2.map((text, i) => 
-                        text.type === 'text' ? (
-                          <Fragment key={i}>{text.text}</Fragment>
-                        ) : (
-                          <span key={i} className='text-green-500'>
-                            {text.text}
-                          </span>
-                        )
+                  {introSection.subText2.map((text, i) =>
+                    text.type === 'text' ? (
+                      <Fragment key={i}>{text.text}</Fragment>
+                    ) : (
+                      <span key={i} className="text-green-500">
+                        {text.text}
+                      </span>
+                    )
                   )}
                 </p>
               </div>
@@ -131,36 +126,21 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 {/* Text next to phone img */}
                 <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
                   <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
-                    <div className="mb-4 mt-4 xl:mt-8">
-                      <Title
-                        H="h5spaced"
-                        Text={section2.title1}
-                        TitleClassProps="text-white font-bold mb-4"
-                      />
-                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
-                        {section2.sub1}
-                      </p>
-                    </div>
                     <div className="mb-4 mt-0 pt-8 xl:mt-4 xl:pt-0">
-                      <Title
-                        H="h5spaced"
-                        Text={section2.title2}
-                        TitleClassProps="text-white font-bold mb-4"
-                      />
-                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
-                        {section2.sub2}
-                      </p>
+                      {section2.title.map((item, i) => (
+                        <>
+                          <Title
+                            H="h5spaced"
+                            Text={item}
+                            TitleClassProps="text-white font-bold mb-1 mt-8"
+                          />
+                          <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
+                            {section2.sub[i]}
+                          </p>
+                        </>
+                      ))}
                     </div>
-                    <div className="mb-0 mt-4 pt-8 xl:mt-4 xl:pt-0">
-                      <Title
-                        H="h5spaced"
-                        Text={section2.title3}
-                        TitleClassProps="text-white font-bold mb-4"
-                      />
-                      <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
-                        {section2.sub3}
-                      </p>
-                    </div>
+                    {/* Disclaimer */}
                     <div className="mt-8 flex w-full flex-col items-center xl:mt-16 xl:items-start">
                       <div className="w-full">
                         <p className="px-8 text-center text-xs font-thin text-white lg:text-base xl:px-0 xl:text-left">
@@ -182,7 +162,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     </div>
                   </div>
                 </div>
-
                 {/* Our technology button */}
                 <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
                   <Link href={`/${lang}/ai`}>

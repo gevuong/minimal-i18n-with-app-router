@@ -1,6 +1,6 @@
 export interface HomeType {
   introSection: WelcomeSection;
-  section2: { [key: string]: string };
+  section2: Section2;
 }
 
 interface WelcomeSection {
@@ -8,8 +8,7 @@ interface WelcomeSection {
   text2: string;
   subText: subText[];
   buttonText: string;
-  disclaimer1: string;
-  disclaimer2: string;
+  disclaimers: Array<string>;
   mainText2: string;
   subText2: subText2[];
 }
@@ -22,4 +21,13 @@ interface subText {
 interface subText2 {
   type: string;
   text: string;
+}
+
+interface Section2 {
+  text: string;
+  subtext: string;
+  title: Array<string>;
+  sub: Array<string>;
+  disclaimer: string;
+  buttonText: string;
 }
