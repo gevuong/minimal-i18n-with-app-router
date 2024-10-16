@@ -83,7 +83,7 @@ const LocaleSelect = () => {
       </button>
 
       {dropdownOpen && (
-        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-black pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-2 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
+        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-black pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
           {i18n.locales.map((localeOption) => (
             <button
               key={localeOption}

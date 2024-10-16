@@ -3,6 +3,7 @@ import ai from './ai';
 import amilsStory from './amilsStory';
 import faq from './faq';
 import footer from './footer';
+import home from './home';
 import jobDetails from './jobDetails';
 import jobListing from './jobListing';
 import navbar from './navbar';
@@ -21,6 +22,7 @@ const esMetadata: I18nData = {
   footer,
   jobDetails,
   jobListing,
+  home,
   navbar,
   oneYoungWorld,
   people,
