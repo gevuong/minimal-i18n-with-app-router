@@ -130,6 +130,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       {section2.title.map((item, i) => (
                         <>
                           <Title
+                            key={i}
                             H="h5spaced"
                             Text={item}
                             TitleClassProps="text-white font-bold mb-1 mt-8"
