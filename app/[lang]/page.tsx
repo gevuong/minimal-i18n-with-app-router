@@ -134,7 +134,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                             Text={item}
                             TitleClassProps="text-white font-bold mb-1 mt-8"
                           />
-                          <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
+                          <p key={i} className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
                             {section2.sub[i]}
                           </p>
                         </>
