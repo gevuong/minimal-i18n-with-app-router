@@ -5,6 +5,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import Title from './components/Title';
 import Link from 'next/link';
 import { BgHeader, VirufyMobilePhone } from '@/public/images/home';
+import { Fragment } from 'react';
 
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -49,10 +50,17 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <div className="mt-14 flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
                     <p className="text-center text-xs font-normal leading-[1.1rem] sm:text-sm md:text-left md:text-lg md:font-bold md:leading-7 lg:pr-36 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
-                      {introSection.subText}
+                      {introSection.subText.map((text, i) => 
+                      text.type === 'text' ? (
+                        <Fragment key={i}>{text.text}</Fragment>
+                      ) : (
+                        <span key={i} className='text-green-500'>
+                          {text.text}
+                        </span>
+                      )
+                      )}
                     </p>
                   </div>
-
                   {/* Demo app button */}
                   <div className="mt-2 flex w-full max-w-md justify-center px-0 md:block md:max-w-lg">
                     <Link href={`/${lang}/ai`}>
@@ -83,14 +91,21 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </div>
                 </div>
               </div>
-
               {/* How it works section */}
               <div className="absolute bottom-6 ml-24 mt-4 flex max-w-[50rem] flex-col items-center px-8 sm:bottom-12 sm:ml-32 sm:mr-8 sm:mt-8 sm:space-y-2 md:bottom-32 md:ml-48 md:space-y-8 lg:ml-72 lg:mr-20 lg:mt-16 xl:bottom-60 xl:mt-60">
                 <p className="text-xs leading-8 sm:leading-6 md:text-2xl md:leading-8 lg:text-[1.75rem] lg:leading-9 xl:text-[2rem] xl:leading-10">
                   {introSection.mainText2}
                 </p>
                 <p className="text-center text-[0.5rem] font-normal leading-[0.7rem] sm:text-[0.6rem] sm:leading-[0.9rem] md:text-lg md:font-bold md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-[3rem]">
-                  {introSection.subText2}
+                  {introSection.subText2.map((text, i) => 
+                        text.type === 'text' ? (
+                          <Fragment key={i}>{text.text}</Fragment>
+                        ) : (
+                          <span key={i} className='text-green-500'>
+                            {text.text}
+                          </span>
+                        )
+                  )}
                 </p>
               </div>
             </div>
@@ -98,7 +113,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Bottom section of home page */}
-
         <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#0A0A0A] pb-8 xl:min-h-[1273px]">
           <div className="mt-4 flex w-full items-center justify-center sm:px-5 xl:px-12">
             <div className="flex w-full flex-col items-center rounded-3xl bg-[#132D62] pb-8">
@@ -114,7 +128,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     {section2.subtext}
                   </p>
                 </div>
-
                 {/* Text next to phone img */}
                 <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
                   <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
@@ -156,7 +169,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       </div>
                     </div>
                   </div>
-
                   {/* Phone img */}
                   <div className="order-1 mt-8 flex justify-center xl:order-2 xl:mt-0 xl:w-1/2">
                     <div className="relative w-auto">
@@ -171,7 +183,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </div>
                 </div>
 
-                {/* our tech button */}
+                {/* Our technology button */}
                 <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
                   <Link href={`/${lang}/ai`}>
                     <button
