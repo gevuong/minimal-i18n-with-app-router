@@ -12,6 +12,7 @@ export { default as H4RIcon } from '../../icons/icon-h4r.webp';
 export { default as IdimeIcon } from '../../icons/icon-idime.webp';
 export { default as LifeScienceIcon } from '../../icons/icon-life-science.webp';
 export { default as LockedJarIcon } from '../../icons/icon-locked-jar.webp';
+export { default as NexusIcon } from '../../icons/icon-nexus.webp';
 export { default as NuvuIcon } from '../../icons/icon-nuvu.webp';
 export { default as OlarteIcon } from '../../icons/icon-olarte-moure.webp';
 export { default as OneYoungWorldIcon } from '../../icons/icon-one-young-world.webp';
