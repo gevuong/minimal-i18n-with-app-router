@@ -1,11 +1,11 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
-import { usei18n } from '../i18n';
-import ExportedImage from 'next-image-export-optimizer';
-import Title from './components/Title';
-import Link from 'next/link';
 import { BgHeader, VirufyMobilePhone } from '@/public/images/home';
+import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 import { Fragment } from 'react';
+import { usei18n } from '../i18n';
+import Title from './components/Title';
 
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -79,7 +79,10 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
                   <div className="w-full max-w-screen-lg">
                     {introSection.disclaimers.map((disclaimer, i) => (
-                      <p key={i} className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7">
+                      <p
+                        key={i}
+                        className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7"
+                      >
                         {disclaimer}
                       </p>
                     ))}
@@ -128,17 +131,16 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
                     <div className="mb-4 mt-0 pt-8 xl:mt-4 xl:pt-0">
                       {section2.title.map((item, i) => (
-                        <>
+                        <Fragment key={i}>
                           <Title
-                            key={i}
                             H="h5spaced"
                             Text={item}
                             TitleClassProps="text-white font-bold mb-1 mt-8"
                           />
-                          <p key={i} className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
+                          <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
                             {section2.sub[i]}
                           </p>
-                        </>
+                        </Fragment>
                       ))}
                     </div>
                     {/* Disclaimer */}
