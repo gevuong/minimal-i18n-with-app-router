@@ -8,7 +8,7 @@ import Title from '../components/Title';
 
 const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    supporters: { supportersList },
+    supporters: { title, supportersList },
   } = usei18n(lang);
 
   return (
@@ -23,7 +23,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           basePath={basePath}
         />
         <Title
-          Text="Supporters"
+          Text={title}
           H="h1"
           TitleClassProps="
 					absolute top-[50%] 

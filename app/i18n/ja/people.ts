@@ -34,7 +34,7 @@ const people: People = {
     titleAmil: 'アミル・カンザダ',
     textAmil:
       '福井大学工学博士候補。元UCバークレー経営学修士＆工学修士（データサイエンス）共同学位プログラム学生。',
-    button: '続きを読む',
+    button: 'アミルのストーリーを読む',
   },
   sectionAdvisors: {
     title: 'アドバイザー',

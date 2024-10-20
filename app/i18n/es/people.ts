@@ -35,7 +35,7 @@ const people: People = {
     titleAmil: 'Amil Khanzada',
     textAmil:
       'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
-    button: 'LEER MÁS',
+    button: 'Lea la historia de Amil',
   },
   sectionAdvisors: {
     title: 'Asesores',
