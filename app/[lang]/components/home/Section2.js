@@ -11,7 +11,6 @@ export default function Section2({
   src,
   text,
   text2,
-  mainText,
   subText,
   buttonText,
   disclaimer1,
@@ -68,6 +67,12 @@ export default function Section2({
         }
       }
 
+      @media (min-width: 1100px) and (max-width: 1439px) {
+        .bottom-custom {
+          bottom: 10rem;
+        }
+      }
+
       @media (min-width: 450px) {
         .custom-top-margin {
           margin-top: 2rem;
@@ -110,7 +115,7 @@ export default function Section2({
         }
       }
 
-       @media (min-width: 800px) {
+      @media (min-width: 800px) {
         .custom-top-margin {
           margin-top: 9rem;
         }
@@ -122,9 +127,15 @@ export default function Section2({
         }
       }
 
+      @media (min-width: 950px) {
+        .custom-top-margin {
+          margin-top: 8rem;
+        }
+      }
+
       @media (min-width: 1200px) {
         .custom-top-margin {
-          margin-top: 15rem;
+          margin-top: 12rem;
         }
       }
     `;
@@ -138,7 +149,7 @@ export default function Section2({
   const applyGradient = (text) => {
     const gradientText = text.replace(
       /CoughCheck/g,
-      '<span class="gradient-text">CoughCheck</span>',
+      '<span class="gradient-text">CoughCheck</span>'
     );
     return { __html: gradientText };
   };
@@ -157,7 +168,7 @@ export default function Section2({
       <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
         <div className="mx-auto flex max-w-screen-xl flex-col">
           <div className="custom-top-margin mt-[0rem] sm:mt-[0rem] md:mt-[12.5rem] lg:mt-[14rem]">
-            <div className="ml-[0rem] mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem] xl:mt-[18rem]">
+            <div className="ml-[0rem] mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-[6rem] xl:mt-[6rem]">
               <Title
                 Text={text}
                 H=""
@@ -171,13 +182,7 @@ export default function Section2({
                 />
               </div>
             </div>
-            <div className="lg:mt-100 mt-2xl mt-3xl mt-[3.5rem] flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:space-y-8 xl:mt-[10rem]">
-              <div className="w-full max-w-xs md:max-w-md">
-                <p className="text-[0.7rem] leading-[0.7rem] sm:text-[0.75rem] sm:leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
-                  {mainText}
-                </p>
-              </div>
-
+            <div className="mt-2xl mt-3xl mt-[3.5rem] flex flex-col items-start space-y-2 sm:ml-0 sm:mt-24 md:space-y-8 lg:mt-[20rem] xl:mt-[35rem]">
               <div className="w-full max-w-md md:max-w-lg">
                 <p
                   className="text-[0.6rem] font-bold leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem]"
@@ -213,7 +218,7 @@ export default function Section2({
               </div>
             </div>
           </div>
-          <div className="mb-2xl mb-3xl mr-3xl bottom-custom absolute bottom-[3rem] ml-[5.5rem] mt-[1rem] flex max-w-[50rem] flex-col items-center px-[2rem] sm:bottom-[7rem] sm:ml-[8rem] sm:mr-[2rem] sm:mt-[2rem] sm:space-y-2 md:bottom-[8rem] md:space-y-8 lg:ml-[20rem] lg:mr-[5rem] lg:mt-[4rem] xl:bottom-[20rem] xl:mt-[15rem]">
+          <div className="mb-2xl mb-3xl mr-3xl bottom-custom absolute bottom-[3rem] ml-[5.5rem] mt-[1rem] flex max-w-[50rem] flex-col items-center px-[2rem] sm:bottom-[7rem] sm:ml-[8rem] sm:mr-[2rem] sm:mt-[2rem] sm:space-y-2 md:bottom-[8rem] md:space-y-8 lg:bottom-[5rem] lg:ml-[20rem] lg:mr-[5rem] lg:mt-[4rem] xl:bottom-[15rem] xl:mt-[15rem]">
             <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
               {mainText2}
             </p>

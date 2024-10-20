@@ -70,9 +70,9 @@ export default function Section3({
                     {sub3}
                   </p>
                 </div>
-                <div className="mt-[2rem] flex w-full flex-col items-center xl:mt-[4rem] xl:items-start xl:whitespace-nowrap">
+                <div className="mt-[2rem] flex w-full flex-col items-center xl:mt-[4rem] xl:items-start">
                   <div className="w-full">
-                    <p className="px-[3rem] text-center text-[0.4rem] text-white md:text-[0.875rem] lg:text-[1rem] xl:px-[0rem] xl:text-left xl:text-[8px]">
+                    <p className="px-[3rem] text-center text-xs text-white md:text-base xl:px-[0rem] xl:text-left">
                       {disclaimer}
                     </p>
                   </div>
