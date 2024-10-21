@@ -10,6 +10,7 @@ import {
   IdimeIcon,
   LifeScienceIcon,
   LockedJarIcon,
+  NexusIcon,
   NuvuIcon,
   OlarteIcon,
   OneYoungWorldIcon,
@@ -130,6 +131,11 @@ const supporters: Supporters = {
       alt: 'Arkangel Ai',
       link: 'https://www.arkangel.ai/',
     },
+    {
+      img: NexusIcon,
+      alt: 'Nexus Tax Services',
+      link: 'https://nexustaxaccountants.com/',
+    }
   ],
 };
 
