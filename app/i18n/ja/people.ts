@@ -65,11 +65,9 @@ const people: People = {
       },
       {
         img: KutsunaSatoshi,
-        name: 'Kutsuna Satoshi',
-        role: 'Executive Clinical Advisor',
-        texts: [
-          'Infection Control and Prevention Professor - Osaka University',
-        ],
+        name: '忽那賢志',
+        role: 'エグゼクティブ・臨床アドバイザー',
+        texts: ['感染制御医学講座(感染制御学)ー大阪大学'],
       },
       {
         img: MadhavDatt,
@@ -79,9 +77,9 @@ const people: People = {
       },
       {
         img: MayXu,
-        name: 'May Xu',
-        role: 'Data and AI Product Strategy Advisor',
-        texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
+        name: 'メイ・シュウ',
+        role: 'データ・AI製品戦略アドバイザー',
+        texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
       },
       {
         img: RafiAzimKhan,
@@ -117,11 +115,10 @@ const people: People = {
       },
       {
         img: FaisalCheema,
-        name: 'Faisal Cheema',
-        role: 'Executive Clinical Advisor',
+        name: 'ファイサル・チーマ',
+        role: 'エグゼクティブ・臨床アドバイザー',
         texts: [
-          'Associate Professor of Biomedical & Clinical Sciences',
-          'Tilman J. Fertitta College of Medicine, University of Houston',
+          'ヒューストン大学ティルマン・フェルティッタ医科大学　生命医学・臨床科学准教授',
         ],
       },
       {
@@ -132,7 +129,7 @@ const people: People = {
       },
       {
         img: TetsujiMadarame,
-        name: 'Tetsuji Madarame',
+        name: '斑目哲司',
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
@@ -141,9 +138,12 @@ const people: People = {
       },
       {
         img: YukitoshiNakatani,
-        name: 'Yukitoshi Nakatani',
-        role: 'Japan Executive Advisor',
-        texts: ['CEO, IT Value Consulting', 'Former Director, Accenture Japan'],
+        name: '中谷幸俊',
+        role: '日本エグゼクティブ・アドバイザー',
+        texts: [
+          'ITバリューアソシエイツ　CEO',
+          'アクセンチュア日本法人　元ディレクター',
+        ],
       },
       {
         img: VictorWang,
@@ -162,11 +162,11 @@ const people: People = {
       },
       {
         img: RichardNall,
-        name: 'Richard Nall',
-        role: 'Marketing Advisor',
+        name: 'リチャード・ノール',
+        role: 'マーケティイングアドバイザー',
         texts: [
           'CEO - The Brand Garden',
-          `Master's Organizational Leadership - Henley`,
+          'Henleyビジネススクール - 組織リーダーシップ修士号',
         ],
       },
       {
@@ -180,11 +180,11 @@ const people: People = {
       },
       {
         img: AyomideOwoyemi,
-        name: 'Ayomide Owoyemi',
-        role: 'Executive Clinical Advisor',
+        name: 'アヨミデ・オウォイェミ',
+        role: 'エグゼクティブ・臨床アドバイザー',
         texts: [
-          'PhD Biomedical Sciences - University of Illinois Chicago',
-          'Ambassador - One Young World Nigeria',
+          'イリノイシカゴ大学　生命医科学博士号',
+          'One Young World　ナイジェリア大使',
         ],
       },
       {
@@ -210,23 +210,21 @@ const people: People = {
       },
       {
         img: NobuyoshiOzawa,
-        name: 'Nobuyoshi Ozawa',
-        role: 'Japan Clinical Development Lead',
-        texts: ['Clinical Development Department Group Manager, CRO'],
+        name: '小澤信与',
+        role: '日本臨床開発リード',
+        texts: ['臨床開発部グループマネージャー'],
       },
       {
         img: HiroyukiKunishima,
-        name: 'Hiroyuki Kunishima',
-        role: 'Infectious Diseases Advisor',
-        texts: [
-          'Department of Infectious Diseases, St. Marianna University Hospital',
-        ],
+        name: '國島広之',
+        role: '感染症アドバイザー',
+        texts: ['感染症学講座聖マリアンナ医科大学病院'],
       },
       {
         img: FumihikoYokota,
-        name: 'Fumihiko Yokota',
-        role: 'Public Health Advisor',
-        texts: ['Associate Professor of Epidemiology, Kyushu University'],
+        name: '横田文彦',
+        role: '公衆衛生アドバイザー',
+        texts: ['疫学准教授　九州大学'],
       },
     ],
   },
