@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoshiOzawa,
+  NobuyoOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -130,10 +130,10 @@ const people: People = {
       {
         img: TetsujiMadarame,
         name: '斑目哲司',
-        role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
+        role: 'Pプリンシパルフェロー・技術計画・日本郵船',
         texts: [
-          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford GSB',
+          'theDOCK 海事・物流テックVC 投資諮問委員会　取締役',
+          'MBA - スタンフォード経営大学院',
         ],
       },
       {
@@ -141,7 +141,7 @@ const people: People = {
         name: '中谷幸俊',
         role: '日本エグゼクティブ・アドバイザー',
         texts: [
-          'ITバリューアソシエイツ　CEO',
+          'ITバリューコンサルティング社　CEO',
           'アクセンチュア日本法人　元ディレクター',
         ],
       },
@@ -209,7 +209,7 @@ const people: People = {
         ],
       },
       {
-        img: NobuyoshiOzawa,
+        img: NobuyoOzawa,
         name: '小澤信与',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
