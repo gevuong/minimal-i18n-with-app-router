@@ -31,5 +31,10 @@ interface QuestionsByTopic {
 
 export interface QA {
   question: string;
-  answer: TypeText[];
+  answer: Answer[];
+}
+
+interface Answer {
+  type: string;
+  content: TypeText[];
 }

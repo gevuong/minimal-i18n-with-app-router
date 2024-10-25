@@ -32,7 +32,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   useEffect(() => {
     let filteredQuestionsByTopic = allQuestions;
 
-    // filter questions by topic
+    // filter questions by selected topic
     if (selectedTopic !== DEFAULT_TOPIC) {
       filteredQuestionsByTopic = [];
       if (selectedTopic in questionsByTopic) {
@@ -45,7 +45,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         question.toLowerCase().indexOf(searchInput) !== -1 ||
         // filter and concat text values from array of objects
         answer
-          .map((item) => item.text)
+          .flatMap((item) => item.content)
+          .map((content) => content.text)
           .join('')
           .toLowerCase()
           .indexOf(searchInput) !== -1
