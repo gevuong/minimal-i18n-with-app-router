@@ -53,7 +53,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
     [lang, home, ourTechnology.section, aboutUs.section, faq]
   );
 
-  const [showModalCookiesSetting, setShowModalCookiesSetting] = useState(false);
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false);
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
@@ -112,40 +111,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
   return (
     <>
-      <div>
-        {showModalCookiesSetting ? (
-          <>
-            <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
-                {/*content*/}
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
-                  {/*header*/}
-                  <div className="flex w-full rounded-t border-b border-solid border-slate-200">
-                    <Title
-                      H="h5Modals"
-                      Text=""
-                      TitleClassProps={'mt-[30px] mx-auto mb-[30px]'}
-                    />
-                    <div className="absolute flex w-full flex-col items-end p-6">
-                      <button
-                        className="flex h-[35px] w-[35px] justify-center rounded-full bg-gray-300 px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-400"
-                        type="button"
-                        onClick={() => setShowModalCookiesSetting(false)}
-                      >
-                        X
-                      </button>
-                    </div>
-                  </div>
-                  {/*body*/}
-                  {/*footer*/}
-                </div>
-              </div>
-            </div>
-            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
-          </>
-        ) : null}
-      </div>
-      {/* _____________________ */}
       <div>
         {showModalPrivacyPolicy ? (
           <>
