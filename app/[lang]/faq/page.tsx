@@ -56,7 +56,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     );
 
     setFilteredQuestions(remainingQuestions);
-  }, [searchInput, selectedTopic, questionsByTopic, allQuestions]);
+  }, [searchInput, selectedTopic, questionsByTopic, allQuestions, topicTitle]);
 
   // delay setting state and triggering a re-render
   const handleSearchInputChange = useMemo(
