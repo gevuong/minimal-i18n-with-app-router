@@ -27,7 +27,7 @@ import Title from './components/Title';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const {
-    footer: { cookiePolicy, privacyPolicy, personalInfo },
+    footer: { cookiePolicy, privacyPolicy, personalInfo, nonProfitSection },
     navbar: { home, ourTechnology, aboutUs, faq },
   } = usei18n(lang);
 
@@ -336,38 +336,42 @@ const Footer = ({ lang }: { lang: Locale }) => {
           </div>
           <div className="align-center mt-10 flex w-full flex-col gap-7 text-white lg:hidden">
             <div className="align-center m-auto max-w-4xl text-center text-[25px]">
-              <Text Text="Nonprofit Status" Style="" TextClassProps="" />
+              <Text Text={nonProfitSection.title} Style="" TextClassProps="" />
             </div>
             <div className="align-center m-auto mx-12 mt-4 max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
+                Text={nonProfitSection.textOne}
                 Style="normal"
               />
             </div>
             <div className="align-center m-auto mx-12 mt-4 max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text={nonProfitSection.textTwo}
                 Style="normal"
               />
             </div>
           </div>
           <div className="align-center mt-10 hidden w-full flex-col gap-7 text-white lg:flex">
             <div className="align-center m-auto max-w-4xl text-center font-semibold">
-              <Text Text="Nonprofit Status" Style="small" TextClassProps="" />
+              <Text
+                Text={nonProfitSection.title}
+                Style="small"
+                TextClassProps=""
+              />
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
+                Text={nonProfitSection.textOne}
                 Style="normalCardHome"
               />
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text={nonProfitSection.textTwo}
                 Style="normalCardHome"
               />
             </div>

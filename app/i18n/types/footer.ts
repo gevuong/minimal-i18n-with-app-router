@@ -4,6 +4,7 @@ export interface Footer {
   cookiePolicy: CookiePolicy;
   personalInfo: PersonalInfo;
   privacyPolicy: PrivacyPolicy;
+  nonProfitSection: NonProfitSection;
 }
 
 interface CookiePolicy {
@@ -18,4 +19,10 @@ interface PersonalInfo {
 interface PrivacyPolicy {
   title: string;
   body: QA[];
+}
+
+interface NonProfitSection {
+  title: string;
+  textOne: string;
+  textTwo: string;
 }
