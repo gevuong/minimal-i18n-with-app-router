@@ -169,7 +169,11 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <div className="max-w-md rounded-lg border-b bg-black bg-opacity-[28%] text-xs last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
               {filteredQuestions &&
                 filteredQuestions.map((content) => (
-                  <AccordionItem {...content} key={content.question} />
+                  <AccordionItem
+                    {...content}
+                    lang={lang}
+                    key={content.question}
+                  />
                 ))}
             </div>
           </div>

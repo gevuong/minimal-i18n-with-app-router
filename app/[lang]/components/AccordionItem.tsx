@@ -1,9 +1,14 @@
 import type { QA } from '@/app/i18n/types/faq';
+import { type Locale } from '@/i18n-config';
 import { useState } from 'react';
 import ArrowIcon from '../faq/ArrowIcon';
 import AccordionItemParagraph from './AccordionItemParagraph';
 
-const AccordionItem = ({ question, answer }: QA) => {
+interface AccordionItemProps extends QA {
+  lang: Locale;
+}
+
+const AccordionItem = ({ question, answer, lang }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
   const borderTransitionStyle = isActive
     ? 'border-t border-gray-400'
@@ -38,6 +43,7 @@ const AccordionItem = ({ question, answer }: QA) => {
                   return (
                     <AccordionItemParagraph
                       content={content}
+                      lang={lang}
                       isList={false}
                       key={i}
                     />
@@ -46,6 +52,7 @@ const AccordionItem = ({ question, answer }: QA) => {
                   return (
                     <AccordionItemParagraph
                       content={content}
+                      lang={lang}
                       isList={true}
                       key={i}
                     />

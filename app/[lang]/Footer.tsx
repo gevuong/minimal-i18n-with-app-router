@@ -198,7 +198,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                     <div className="w-full px-0">
                       <div>
                         {privacyPolicy.body.map((detail, index) => (
-                          <AccordionItem {...detail} key={index} />
+                          <AccordionItem {...detail} lang={lang} key={index} />
                         ))}
                       </div>
                     </div>
@@ -243,7 +243,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   <div className="flex w-full items-center justify-center">
                     <div className="w-full px-0">
                       {personalInfo.body.map((detail, index) => (
-                        <AccordionItem {...detail} key={index} />
+                        <AccordionItem {...detail} lang={lang} key={index} />
                       ))}
                     </div>
                   </div>
@@ -286,7 +286,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
                   <div className="flex w-full items-center justify-center">
                     <div className="w-full px-0">
                       {cookiePolicy.body.map((detail, index) => (
-                        <AccordionItem {...detail} key={index} />
+                        <AccordionItem {...detail} lang={lang} key={index} />
                       ))}
                     </div>
                   </div>
