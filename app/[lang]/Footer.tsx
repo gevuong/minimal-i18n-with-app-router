@@ -26,12 +26,20 @@ import Text from './components/Text';
 import Title from './components/Title';
 
 const Footer = ({ lang }: { lang: Locale }) => {
-  const links1 = useMemo(
+  const {
+    footer: { cookiePolicy, privacyPolicy, personalInfo },
+    navbar: { home, ourTechnology, aboutUs, faq },
+  } = usei18n(lang);
+
+  const navbarLinks = useMemo(
     () => [
-      { label: 'Home', route: [`/${lang}`] },
-      { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+      { label: home, route: [`/${lang}`] },
       {
-        label: 'About Us',
+        label: ourTechnology.section,
+        route: [`/${lang}/ai`, `/${lang}/publications`],
+      },
+      {
+        label: aboutUs.section,
         route: [
           `/${lang}/story`,
           `/${lang}/people`,
@@ -40,14 +48,10 @@ const Footer = ({ lang }: { lang: Locale }) => {
           `/${lang}/amils-story`,
         ],
       },
-      { label: 'FAQ', route: [`/${lang}/faq`] },
+      { label: faq, route: [`/${lang}/faq`] },
     ],
-    [lang]
+    [lang, home, ourTechnology.section, aboutUs.section, faq]
   );
-
-  const {
-    footer: { cookiePolicy, personalInfo, privacyPolicy },
-  } = usei18n(lang);
 
   const [showModalCookiesSetting, setShowModalCookiesSetting] = useState(false);
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false);
@@ -62,26 +66,26 @@ const Footer = ({ lang }: { lang: Locale }) => {
     showModal: Dispatch<SetStateAction<boolean>>;
   }[] = [
     {
-      label: 'Cookie Policy',
+      label: cookiePolicy.title,
       showModal: setShowModalCookiesPolicy,
     },
     {
-      label: 'Privacy Policy',
+      label: privacyPolicy.title,
       showModal: setShowModalPrivacyPolicy,
     },
     {
-      label: 'Do Not Sell My Personal Info',
+      label: personalInfo.title,
       showModal: setShowModalMyInformation,
     },
   ];
 
   useEffect(() => {
-    links1.forEach((link) => {
+    navbarLinks.forEach((link) => {
       if (link.route.some((r) => r === currPath)) {
         setActiveLink(link.label);
       }
     });
-  }, [currPath, links1]);
+  }, [currPath, navbarLinks]);
 
   // allows user to close modal by pressing esc key
   const handleKeyPress = (event: KeyboardEvent) => {
@@ -287,7 +291,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
           </div>
           <ul className="mb-6 hidden flex-wrap text-white lg:flex">
             <li className="mt-8 flex w-full justify-center space-x-6 align-text-bottom xl:space-x-10">
-              {links1.map((link, index) => {
+              {navbarLinks.map((link, index) => {
                 return (
                   // footer links
                   <Link
