@@ -30,15 +30,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
     () => [
       { label: 'Home', route: [`/${lang}`] },
       { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
-      // {
-      //   label: 'CoughCheck App',
-      //   route: [
-      //     `/${lang}/covid19`,
-      //     `/${lang}/flu`,
-      //     `/${lang}/copd`,
-      //     `/${lang}/rsv`,
-      //   ],
-      // },
       {
         label: 'About Us',
         route: [
@@ -114,23 +105,6 @@ const Footer = ({ lang }: { lang: Locale }) => {
       window.removeEventListener('keydown', handleKeyPress);
     };
   }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
-
-  // const [isOpen, setIsOpen] = useState([
-  //   false,
-  //   false,
-  //   false,
-  //   false,
-  //   false,
-  //   false,
-  // ]);
-
-  // const handleToggle = (index: number) => {
-  //   setIsOpen((prev) => {
-  //     const newState = [...prev];
-  //     newState[index] = !newState[index];
-  //     return newState;
-  //   });
-  // };
 
   return (
     <>

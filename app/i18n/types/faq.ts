@@ -3,7 +3,7 @@ import type { ImageText, TypeText } from './baseInterfaces';
 export interface FAQ {
   headerSection: FAQHeader;
   topicsSection: FAQTopics;
-  questionsByTopic: QuestionsByTopic;
+  questionsSection: FAQQuestions;
 }
 
 interface FAQHeader extends ImageText {
@@ -23,6 +23,12 @@ interface FAQTopics {
 
 export interface FAQTopicCard extends ImageText {
   title: string;
+}
+
+interface FAQQuestions {
+  topicTitle: string;
+  noResultsTitle: string;
+  questionsByTopic: QuestionsByTopic;
 }
 
 interface QuestionsByTopic {

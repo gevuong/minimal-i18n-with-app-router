@@ -10,12 +10,15 @@ import { usei18n } from '../../i18n';
 import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
 
-const DEFAULT_TOPIC = 'Common Questions';
 const DEBOUNCE_TIME_MS = 300;
 
 const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    faq: { headerSection, topicsSection, questionsByTopic },
+    faq: {
+      headerSection,
+      topicsSection,
+      questionsSection: { topicTitle, noResultsTitle, questionsByTopic },
+    },
   } = usei18n(lang);
 
   // prevent recomputation after every re-render
@@ -25,7 +28,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   );
 
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions);
-  const [selectedTopic, setSelectedTopic] = useState(DEFAULT_TOPIC);
+  const [selectedTopic, setSelectedTopic] = useState(topicTitle);
   const [searchInput, setSearchInput] = useState('');
 
   // filter questions by search input
@@ -33,7 +36,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     let filteredQuestionsByTopic = allQuestions;
 
     // filter questions by selected topic
-    if (selectedTopic !== DEFAULT_TOPIC) {
+    if (selectedTopic !== topicTitle) {
       filteredQuestionsByTopic = [];
       if (selectedTopic in questionsByTopic) {
         filteredQuestionsByTopic = questionsByTopic[selectedTopic];
@@ -145,7 +148,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {topicsSection.cards.map((card) => (
                 <TopicCard
                   key={card.title}
-                  defaultTopic={DEFAULT_TOPIC}
+                  defaultTopic={topicTitle}
                   selectedTopic={selectedTopic}
                   setSelectedTopic={setSelectedTopic}
                   {...card}
@@ -160,9 +163,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           {/* Title and Questions Container */}
           <div className="mx-5 flex flex-col items-center justify-center gap-y-4 py-10 md:gap-y-10 md:py-56 md:pt-24">
             <h2 className="text-lg font-medium md:text-3xl">
-              {filteredQuestions.length === 0
-                ? 'No results found'
-                : selectedTopic}
+              {filteredQuestions.length === 0 ? noResultsTitle : selectedTopic}
             </h2>
 
             {/* Questions Container */}
