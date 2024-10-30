@@ -46,7 +46,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             TitleLabel1={sectionMeetOurFounder.titleMeetOurFounder}
             TitleLabel2={sectionMeetOurFounder.titleAmil}
             TextLabel={sectionMeetOurFounder.textAmil}
-            labelButton="Read Amil's Story"
+            labelButton={sectionMeetOurFounder.button}
             buttonRoute={`/${lang}/amils-story`}
             ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
             ContainerTextProps={{ style: { paddingLeft: '20px' } }}

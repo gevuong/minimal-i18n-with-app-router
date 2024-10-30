@@ -25,6 +25,7 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
+  title: 'Supporters',
   supportersList: [
     {
       img: H4RLogo,

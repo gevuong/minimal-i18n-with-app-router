@@ -2,12 +2,12 @@ import { type JobListing } from '../types/jobListing';
 
 const jobListing: JobListing = {
   titleImage:
-    'Virufy está gestionado íntegramente por voluntarios y empresas asociadas pro bono.',
-  title: 'Nuestra misión',
-  text: 'Virufy, un consorcio de investigación sin fines de lucro formado por investigadores, innovadores y científicos, ha unido a voluntarios de más de 25 países para desarrollar una aplicación para teléfonos inteligentes para la detección de COVID-19. Desarrollada inicialmente como un proyecto del Laboratorio de Innovación de Respuesta al COVID-19 de la Universidad de Stanford, la solución de diagnóstico de COVID-19 con inteligencia artificial (IA) de Virufy lucha contra la pandemia mediante pruebas generalizadas, accesibles y gratuitas.',
+    'Virufy es operado completamente por voluntarios y empresas asociadas pro bono.',
+  title: 'Nuestra Misión',
+  text: '¡Únete a Virufy y sé parte de un esfuerzo global innovador para combatir el COVID-19! Como un consorcio sin fines de lucro innovador, hemos reunido a expertos de más de 25 países para desarrollar una aplicación de vanguardia para teléfonos inteligentes que detecta el virus. Originalmente un proyecto del Laboratorio de Innovación de Respuesta al COVID-19 de la Universidad de Stanford, nuestra solución de diagnóstico impulsada por IA está estableciendo nuevos estándares para pruebas accesibles y gratuitas. Al ofrecer tu voluntariado en Virufy, obtendrás experiencia práctica con herramientas de IA de última generación, ampliarás tu red profesional y contribuirás significativamente a una causa vital. ¡Aprovecha esta oportunidad para estar a la vanguardia de la innovación y ayudar a moldear el futuro de la respuesta pandémica!',
   modal: {
-    text: '¿Entiende que todos estos son puestos voluntarios no remunerados?',
-    yes: 'Si',
+    text: '¿Entiendes que todos estos son puestos no remunerados y de voluntariado?',
+    yes: 'Sí',
     no: 'No',
   },
   jobList: [
@@ -19,11 +19,11 @@ const jobListing: JobListing = {
           id: 1,
         },
         {
-          title: 'Ingeniero de Aprendizaje Automático',
+          title: 'Ingeniero de Machine Learning',
           id: 2,
         },
         {
-          title: 'Ingeniero de Aprendizaje Automático (Modelado)',
+          title: 'Ingeniero de Machine Learning (Modelado)',
           id: 3,
         },
         {
@@ -44,7 +44,7 @@ const jobListing: JobListing = {
       category: 'Datos',
       positions: [
         {
-          title: 'Pasante de Privacidad de Datos',
+          title: 'Pasante en Privacidad de Datos',
           id: 7,
         },
         {
@@ -74,8 +74,16 @@ const jobListing: JobListing = {
       category: 'Recursos Humanos',
       positions: [
         {
-          title: 'Socio de Negocios de RRHH',
+          title: 'Socio de Recursos Humanos',
           id: 12,
+        },
+        {
+          title: 'Asistente Administrativo de Recursos Humanos',
+          id: 13,
+        },
+        {
+          title: 'Reclutador Técnico',
+          id: 14,
         },
       ],
     },
@@ -84,11 +92,11 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'Abogado Corporativo (Orientado a TI)',
-          id: 13,
+          id: 15,
         },
         {
-          title: 'Paralegal',
-          id: 14,
+          title: 'Asistente Legal',
+          id: 16,
         },
       ],
     },
@@ -97,39 +105,39 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'Analista de Negocios',
-          id: 15,
-        },
-        {
-          title: 'Programador de Python',
-          id: 16,
-        },
-        {
-          title: 'Redactor Técnico',
           id: 17,
         },
         {
-          title: 'Ingeniero de Garantía de Calidad',
+          title: 'Programador Python',
           id: 18,
         },
         {
-          title: 'Desarrollador de AWS',
+          title: 'Redactor Técnico',
           id: 19,
         },
         {
-          title: 'Arquitecto de AWS',
+          title: 'Ingeniero de Aseguramiento de Calidad',
           id: 20,
         },
         {
-          title: 'Ingeniero de AWS',
+          title: 'Desarrollador AWS',
           id: 21,
         },
         {
-          title: 'Ingeniero de Nube',
+          title: 'Arquitecto AWS',
           id: 22,
         },
         {
-          title: 'Administrador de Unix',
+          title: 'Ingeniero AWS',
           id: 23,
+        },
+        {
+          title: 'Ingeniero de la Nube',
+          id: 24,
+        },
+        {
+          title: 'Administrador Unix',
+          id: 25,
         },
       ],
     },

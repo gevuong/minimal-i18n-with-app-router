@@ -1,6 +1,7 @@
 import { type StaticImageData } from 'next/image';
 
 export type Supporters = {
+  title: string;
   supportersList: SupporterImg[];
 };
 

@@ -18,7 +18,7 @@ export { default as MarkHaseltine } from './mark-haseltine.webp';
 export { default as MayXu } from './may-xu.webp';
 export { default as MelissaDyrdahl } from './melissa-dyrdahl.webp';
 export { default as MertPilanci } from './mert-pilanci.webp';
-export { default as NobuyoshiOzawa } from './nobuyoshi-ozawa.webp';
+export { default as NobuyoOzawa } from './nobuyo-ozawa.webp';
 export { default as RafiAzimKhan } from './rafi-azim-khan.webp';
 export { default as RichardNall } from './richard-nall.webp';
 export { default as RokSosic } from './rok-sosic.webp';

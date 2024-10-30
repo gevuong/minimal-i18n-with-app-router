@@ -88,8 +88,8 @@ const JobList = ({
       <div className="mx-auto mb-12 w-11/12">
         {!jobList ? <p>No data</p> : null}
 
-        {jobList.map(({ category, positions }, id) => (
-          <div key={id} className="w-[100%] text-left">
+        {jobList.map(({ category, positions }) => (
+          <div key={category} className="w-[100%] text-left">
             <h2 className="mb-6 ml-8 mt-10 text-sm font-semibold leading-[0rem] text-white md:ml-14 md:text-lg lg:ml-20">
               {category}
             </h2>

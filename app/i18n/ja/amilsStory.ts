@@ -2,23 +2,23 @@ import { type AmilsStory } from '../types/amilsStory';
 
 const amilsStory: AmilsStory = {
   sectionAmil: {
-    titleAmil: 'Historia de Amil',
+    titleAmil: 'アミルのストーリー',
     textAmil: [
-      'Nacido y criado en Silicon Valley, Amil ha trabajado desde el prematuro fallecimiento de su padre cuando tenía 18 años en su primer trabajo como consultor de software desarrollando software de reconocimiento óptico de marcas (OMR) para la calificación automatizada de exámenes en escuelas K-12.',
-      'Después de recibir su Licenciatura en Ciencias de la Computación de la Universidad de California, Berkeley en 2012, Amil se unió a Hewlett-Packard (HP) en Silicon Valley para trabajar a tiempo completo como ingeniero de software desarrollando software de estandarización de registros de seguridad para ArcSight, Información de Seguridad y Gestión de Eventos. Sistema (SIEM).',
-      'En 2014, Amil se trasladó a la sede de HP en Tokio para asumir un puesto como consultor de ciberseguridad, en el que viajó por Hong Kong, Tokio y Australia para implementar soluciones SIEM en las instalaciones de los clientes del sector bancario.',
-      'En 2016, Amil regresó a Silicon Valley para unirse a Pivotal Software como ingeniero de software y trabajó principalmente en la base de datos Greenplum OLAP de código abierto basada en Postgres. En el entorno de programación extrema (XP) de Pivotal, Amil practicó varias prácticas de desarrollo de software, incluida la programación en pares diaria, el desarrollo basado en pruebas (TDD) y reuniones retroactivas semanales, mientras rotaba entre varios equipos, incluidos DevOps, backend de bases de datos y herramientas de administración de cargas de trabajo.',
-      'En 2018, Amil tomó una licencia del trabajo para mudarse al campo de Japón. Al vivir en la ciudad de Eiheiji, el lugar de nacimiento del Soto Zen, Amil meditaba a diario y aprendía filosofía Zen, mientras enseñaba programación ágil a adultos jóvenes y niños. Pronto, Amil fue nombrado Embajador de Evolución de la ciudad y enviado a la conferencia One Young World en los Países Bajos para representar a Japón, entre otros jóvenes líderes de impacto social, jefes de país y premios Nobel de 195 países.',
-      'A principios de 2020, Amil dejó su trabajo para realizar estudios de posgrado en Inteligencia Artificial en la Universidad de Stanford y tomó sus primeros cursos con el fundador de Coursera, el Dr. Andrew Ng, y el creador de ImageNet, el Dr. Fei-Fei Li. Cuando llegó la pandemia, Amil se comprometió con los esfuerzos de ayuda a la pandemia y pronto fundó Virufy.',
-      'Virufy es una organización sin fines de lucro que desarrolla una aplicación para teléfonos inteligentes para realizar una detección previa de COVID-19 instantáneamente a través del análisis de grabaciones de voz y tos impulsado por inteligencia artificial. En febrero de 2022, la organización opera en una docena de países con más de 200 voluntarios y 30 organizaciones asociadas, incluidos Amazon Web Services, Stanford COVID-19 Response Innovation Lab y Pillsbury Winthrop Shaw Pittman Law.',
+      '移民家庭でシリコンバレーに生まれ育ったアミルは、ホームスクーリングを受け、14歳でコミュニティカレッジでの学びを始めました。アミルの父は社会奉仕に尽力しており、彼はホームレスに食事を提供するスープキッチンでのボランティア活動などに参加しながら育ちました。ほどなくして、アミルの父は飲酒運転の車との交通事故で亡くなりました。英雄を失った悲しみを乗り越えながら、アミルはK-12の学校でテストの自動採点技術を開発するソフトウェアコンサルタントとして初めての仕事を手にしました。',
+      'カリフォルニア大学バークレー校でコンピュータサイエンスの学士号を取得後、アミルはシリコンバレーのヒューレット・パッカード（HP）にフルタイムのソフトウェアエンジニアとして入社し、ArcSight（セキュリティ情報とイベント管理システム：SIEM）のためのセキュリティログ標準化ソフトウェアを開発しました。',
+      '新たな拠点を求めて、アミルはHPの東京本社に転勤し、サイバーセキュリティコンサルタントとして銀行業界の顧客サイトにSIEMソリューションを展開するため、香港、東京、オーストラリアを飛び回りました。',
+      'その後、アミルはシリコンバレーに戻り、主にPostgresベースのオープンソースOLAPデータベースであるGreenplumに携わるソフトウェアエンジニアとしてPivotal Softwareに参加しました。Pivotalのエクストリームプログラミング（XP）環境では、アミルは日々のペアプログラミング、テスト駆動開発（TDD）、毎週の振り返りミーティングなど、さまざまなソフトウェア開発の実践を行い、DevOps、データベースバックエンド、ワークロード管理ツールを含む複数のチームをローテーションしました。',
+      '2018年、アミルは日本の田舎に移住するために仕事を休みました。曹洞宗の発祥地である永平寺町に住み、毎日瞑想を行い禅哲学を学びながら、若者や子供たちにアジャイルプログラミングを教えて社会貢献しました。やがてアミルは町のエボリューションアンバサダーに任命され、オランダで開催されたOne Young Worldカンファレンスに、日本を代表して他の若い社会的影響力を持つリーダーや195カ国の国の代表、ノーベル賞受賞者たちとともに参加しました。',
+      '2019年末、アミルはスタンフォード大学で人工知能の大学院研究を追求するために仕事を辞め、Courseraの創設者アンドリュー・ン博士やImageNetの創設者であるフェイフェイ・リー博士の下で最初の授業を受けました。パンデミックが発生すると、アミルはパンデミック救済活動に専念し、間もなくVirufyを設立しました。',
+      'Virufyは、声や咳の録音をAIで分析し、COVID-19を即座にスクリーニングするスマートフォンアプリを開発している非営利団体です。2024年7月現在、この団体は3つの大陸で運営されており、250人以上のボランティアと60のパートナー組織が関与しています。',
     ],
-    titlePublications: 'Publicaciones de Amil',
+    titlePublications: 'アミルの出版物',
     listPublications: [
-      '2022. Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough. arXiv: 2201.01669',
-      '2021. Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML). arXiv: 2201.11109',
-      '2020. Virufy: Global Applicability of AI Detection for COVID-19 from Cough Recordings. arXiv: 2011.13320',
-      '2020. Fusical: Multimodal Fusion for Video Sentiment. ACM ICMI; DOI: 3382507.3417966',
-      '2020. Facial Expression Recognition with Deep Learning. arXiv: 2004.11823',
+      '2022年. COVID-19の分類における大規模集約データセットを使用したディープラーニングの利用. arXiv: 2201.01669',
+      '2021年. 新しいCOVID-19計算機を使用した、COVID-19事前スクリーニングソリューション（AI/ML）の米国の社会経済的影響の測定. arXiv: 2201.11109',
+      '2020年. Virufy: 咳の録音からCOVID-19を検出するAIのグローバルな適用性. arXiv: 2011.13320',
+      '2020年. Fusical: マルチモーダル融合によるビデオ感情分析. ACM ICMI; DOI: 3382507.3417966',
+      '2020年. ディープラーニングによる表情認識. arXiv: 2004.11823',
     ],
   },
 };

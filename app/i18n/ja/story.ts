@@ -10,89 +10,89 @@ import { type Story } from '../types/story';
 
 const story: Story = {
   aboutUsSection: {
-    title: 'Sobre Nosotros',
+    title: '私たちについて',
     texts: [
-      'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa de COVID superior para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
-      'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades habilitada por la tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.',
+      '私たちの革新的な取り組みは、医療従事者、政府、特に低所得国の患者を対象に、呼吸器疾患のより正確な事前スクリーニングを提供することを目的としています。',
+      'テクノロジーで病気を早期発見し、世界の医療を革新する。私たちは、このミッションを達成するため、人々の支援と投資を募り、世界をリードする非営利団体を目指しています。',
     ],
   },
   storySection: {
-    title: 'Historia',
+    title: 'ストーリー',
     texts: [
       [
         {
           type: 'text',
-          text: 'Cuando llegó la pandemia, ',
+          text: 'パンデミックが起きた時、',
         },
         {
           type: 'link',
           url: '/amils-story',
-          text: 'el fundador de Virufy, Amil Khanzada',
+          text: 'Virufy創設者のアミル・カンザダ',
         },
         {
           type: 'text',
-          text: ', sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba la nariz, la garganta y los pulmones.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Planteó la hipótesis de que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID.',
+          text: 'は、スマートフォンが広く普及していること、そして、コロナが鼻、喉、肺に影響を与えることを認識していました。',
         },
       ],
       [
         {
           type: 'text',
-          text: 'Con el deseo de generar un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que comenzó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo.',
+          text: 'そこで、呼吸音や咳の音を機械学習で分析することでコロナの規則性を検出できる、という仮定を立てました。',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'ポジティブな影響を与えたいという思いから、名門大学病院で362人の患者を対象にした臨床研究を主導しました。スタンフォード大学のAIを研究する大学院生から始まったVirufyの最初のチームは、世界中の大学から集まったボランティアチームにまで拡大しています。',
         },
       ],
     ],
   },
   valuesSection: {
-    title: 'Valores',
+    title: '価値観',
     cards: [
       {
-        title: 'Transformación',
+        title: '変革',
         image: RecycleIcon,
-        imageText: 'icono de bucle',
-        text: 'Nuestro objetivo es transformar los costosos sistemas de salud mediante el uso de la tecnología para impulsar los cambios necesarios.',
+        imageText: '',
+        text: '私たちは、技術を活用して、必要な変化を促進し、高額な医療システムを変革することを目指しています。',
       },
       {
-        title: 'Colaboración',
+        title: '協力',
         image: GlobeIcon,
-        imageText: 'icono de globo',
-        text: 'Nos comprometemos a hacer que la detección rápida de enfermedades esté disponible para todas las personas en el mundo, independientemente de sus antecedentes.',
+        imageText: '',
+        text: '私たちは、バックグラウンドに関係なく、すべての人に迅速な病気の検出を提供することを約束します。',
       },
       {
-        title: 'Salud',
+        title: '健康',
         image: HeartRhythmIcon,
-        imageText: 'icono de ritmo cardíaco',
-        text: 'Nos comprometemos a anteponer siempre la salud y el bienestar de todas las personas en todo el mundo.',
+        imageText: '',
+        text: '私たちは、世界中のすべての人々の健康と福祉を最優先にすることを常に約束します。',
       },
       {
-        title: 'Asequibilidad',
+        title: '利用のしやすさ',
         image: TeamIcon,
-        imageText: 'icono de grupo de personas',
-        text: 'Nuestro objetivo es utilizar la tecnología para que la prevención y detección de enfermedades sea gratuita para todas las personas en todo el mundo.',
+        imageText: '',
+        text: '私たちは、技術を活用して、世界中のすべての人々に病気の予防と検出を無料で提供することを目指しています。',
       },
       {
-        title: 'Eficiencia',
+        title: '効率',
         image: FingerSnapIcon,
-        imageText: 'icono de chasquear los dedos',
-        text: 'Nos comprometemos a crear tecnología intuitiva que brinde una detección rápida, detenga la propagación del virus y salve vidas.',
+        imageText: '',
+        text: '私たちは、簡単に使える技術を作り出し、迅速な検出を提供してウイルスの拡散を止め、命を救うことを約束します。',
       },
       {
-        title: 'Innovación',
+        title: '革新',
         image: PhoneInHandIcon,
-        imageText: 'icono de teléfono en mano',
-        text: 'Nuestro objetivo es garantizar la detección rápida de enfermedades con solo un toque en un dispositivo móvil.',
+        imageText: '',
+        text: '私たちは、モバイルデバイスのワンタップで病気の迅速な検出を実現することを目指しています。',
       },
     ],
   },
   privacySection: {
-    title: 'Nuestro Compromiso con la Privacidad',
+    title: 'プライバシーへの取り組み',
     texts: [
-      'Virufy se toma en serio la privacidad y protección de su información personal. Nuestro equipo legal ha preparado una Política de Privacidad y una Política de Cookies detalladas para proteger la información personal que comparte con nosotros a través del uso de nuestro sitio web.',
+      'Virufyは、個人情報のプライバシーと保護を真剣に考えています。私たちの法務チームは、ウェブサイトを通じて共有された個人情報を保護するため、詳細なプライバシーポリシーとクッキーポリシーを作成しました。',
     ],
   },
 };

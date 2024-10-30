@@ -4,10 +4,10 @@ import { type ShareYourCough } from '../types/shareYourCough';
 const shareYourCough: ShareYourCough = {
   // type cast to remove unsafe assignment error when importing svg
   image: VirufyLogo as string,
-  title: 'Estudio de recopilación de datos sobre la tos de Covid-19',
-  text: 'Una organización de investigación independiente sin fines de lucro',
+  title: 'Covid-19咳データ収集調査',
+  text: '独立非営利研究機関',
   linkUrl: 'https://virufy.org/study/welcome',
-  linkText: '¡Empecemos!',
+  linkText: 'さあ、始めましょう！',
 };
 
 export default shareYourCough;

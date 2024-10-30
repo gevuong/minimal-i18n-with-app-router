@@ -18,374 +18,501 @@ const faq: FAQ = {
     title: [
       {
         type: 'text',
-        text: 'How can we ',
+        text: 'どのように',
       },
       {
         type: 'span',
-        text: 'help ',
+        text: 'お手伝い',
       },
       {
         type: 'text',
-        text: 'you?',
+        text: 'できますか？',
       },
     ],
     input: {
-      placeholder: 'Start typing your search...',
+      placeholder: '検索ワードを入力...',
       img: SearchIcon,
-      altText: 'search icon',
+      altText: '検索アイコン',
     },
     texts: [
       {
         type: 'text',
-        text: 'Or ',
+        text: 'または',
       },
       {
         type: 'span',
-        text: 'choose ',
+        text: '以下のオプションを選択',
       },
       {
         type: 'text',
-        text: 'an option below to help find what you are looking for.',
+        text: 'して、お探しの情報を見つけることができます。',
       },
     ],
   },
   topicsSection: {
-    title: 'FAQ Topics',
+    title: 'FAQトピック',
     cards: [
       {
-        title: 'Virufy App',
+        title: 'Virufyアプリ',
         img: PhoneInHandIcon,
-        altText: 'phone in hand icon',
+        altText: '',
       },
       {
-        title: 'About Virufy',
+        title: 'Virufyについて',
         img: GlobeIcon,
-        altText: 'globe icon',
+        altText: '',
       },
       {
-        title: 'About AI',
+        title: 'AIについて',
         img: RecycleIcon,
-        altText: 'recycle icon',
+        altText: '',
       },
       {
-        title: 'Finances',
+        title: '財務',
         img: MonitorIcon,
-        altText: 'monitor icon',
+        altText: '',
       },
       {
-        title: 'Privacy',
+        title: 'プライバシー',
         img: PrivacyIcon,
-        altText: 'privacy icon',
+        altText: '',
       },
       {
-        title: 'Other',
+        title: 'その他',
         img: QuestionMarkIcon,
-        altText: 'question mark icon',
+        altText: '',
       },
     ],
   },
-  questionsByTopic: {
-    'Virufy App': [
-      {
-        question: 'When and how will the app give COVID-19 prediction results?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.',
-          },
-        ],
-      },
-      {
-        question:
-          'Where can I download the app? Will it be available for iOS and Android?',
-        answer: [
-          {
-            type: 'text',
-            text: 'The app will be available for usage on our mobile friendly website as we need government or medical approval in some countries to put our app into the official app stores. The app can be connected to and from a smartphone. Thus, it is compatible with any operating system including iOS or Android.',
-          },
-        ],
-      },
-      {
-        question: 'Will the application be available for free and worldwide?',
-        answer: [
-          {
-            type: 'text',
-            text: 'As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.',
-          },
-        ],
-      },
-      {
-        question: 'Do you plan to extend this app in a for-profit startup?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
-          },
-        ],
-      },
-    ],
-    'About Virufy': [
-      {
-        question: 'How was the initiative created?',
-        answer: [
-          {
-            type: 'text',
-            text: 'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
-          },
-        ],
-      },
-      {
-        question:
-          'How is Virufy different from other groups working on similar projects?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.',
-          },
-        ],
-      },
-      {
-        question:
-          'What phase of the investigation are you at? Is there a deadline to participate?',
-        answer: [
-          {
-            type: 'text',
-            text: 'We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.',
-          },
-        ],
-      },
-      {
-        question: 'What is unique about Virufy from other projects?',
-        answer: [
-          {
-            type: 'text',
-            text: 'As a young organization with a diverse and global team including alumni from more than 25 universities, we are guided by top-level industry professionals. Our multidisciplinary team has expertise in law, machine learning, medicine, information security, and mobile app development. Our One Young World network allows us to connect with trusted partners in every country. We welcome all, and being a 501(c)(3) non-profit allows for volunteers to join. As a volunteer run non-profit, we are independent and have less red tape.',
-          },
-        ],
-      },
-      {
-        question:
-          'How much investment was made to make the Virufy project possible?',
-        answer: [
-          {
-            type: 'text',
-            text: 'More than 1,000 volunteers have put thousands of hours into making the project possible. Several companies have supported us with free software, including email, storage, and messaging platforms, along with cloud compute. Certain softwares such as video conferencing and project management tools have not been free, so unfortunately have to be paid from founder Amil’s limited savings. We believe that if we are successful, our cloud compute costs will increase, but we will be able to attract ample grant funding and private donations, along with government support to keep our system running.',
-          },
-        ],
-      },
-    ],
-    'About AI': [
-      {
-        question: 'Why are COVID-19 coughs distinguishable?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Similar to other respiratory diseases, COVID-19 damages the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect COVID-19​. and other upper respiratory diseases. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example,research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.',
-          },
-        ],
-      },
-      {
-        question:
-          'What was the main difficulty in collecting and processing data? Was there any region where artificial intelligence was less accurate, for example?',
-        answer: [
-          {
-            type: 'text',
-            text: 'The process is slow and cumbersome when collecting from hospitals, requiring clinical study forms and IRB approvals. With supervision from various medical advisors, including from Harvard and Stanford, we have enrolled more than 250,000 patients in our clinical studies across 5 countries. For collecting directly from users, we spent significant efforts with pro bono expert lawyers to ensure compliance with data privacy laws, including LGPD, GDPR, and CCPA. As described in our research paper, some of the difficulties we found in processing data included excessive background noises and incorrect cough recordings submitted by users, which required the AI developers to manually clean the audio samples before training AI models.',
-          },
-        ],
-      },
-      {
-        question: 'Can asymptomatic cases be detected?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Yes, asymptomatic detection has been shown in research by MIT and other groups. It is especially important for people in their 20s and 30s who are more likely to be asymptomatic.',
-          },
-        ],
-      },
-      {
-        question:
-          'Will the application use AI developed by third parties or created just for this purpose?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Virufy has its own AI research team with patented technology. We are open to collaboration, co-development, and integration of AI algorithms from other research groups.',
-          },
-        ],
-      },
-    ],
-    Finances: [
-      {
-        question:
-          'Do I need to make any financial contribution to donate my cough?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
-          },
-          {
-            type: 'link',
-            text: 'https://virufy.org/study',
-            href: 'https://virufy.org/study',
-          },
-          {
-            type: 'text',
-            text: '.',
-          },
-        ],
-      },
-      {
-        question: 'Do I need to have coughing symptoms to donate my cough?',
-        answer: [
-          {
-            type: 'text',
-            text: 'No, the app is also compatible with a forced cough.',
-          },
-        ],
-      },
-      {
-        question: 'How many donors have you had in total?',
-        answer: [
-          {
-            type: 'text',
-            text: 'We have more than 5,000 cough recordings from over 10 countries, mostly in South America and South Asia. Some of these are clinical, and others are contributed directly by individuals in our app.',
-          },
-        ],
-      },
-      {
-        question: 'What are the operational expenses for the organization?',
-        answer: [
-          {
-            type: 'text',
-            text: 'We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.',
-          },
-        ],
-      },
-      {
-        question:
-          'Does the team get funding? If so, where and how much? What is it used on?',
-        answer: [
-          {
-            type: 'text',
-            text: 'We partner with several universities to apply for R&D grants leveraging our 501(c)(3) status.',
-          },
-        ],
-      },
-    ],
-    Privacy: [
-      {
-        question: 'How will Virufy securely store my data?',
-        answer: [
-          {
-            type: 'text',
-            text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
-          },
-          {
-            type: 'link',
-            text: 'https://aws.amazon.com/en/privacy',
-            href: 'https://aws.amazon.com/en/privacy',
-          },
-          {
-            type: 'text',
-            text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
-          },
-        ],
-      },
-      {
-        question:
-          'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
-          },
-        ],
-      },
-      {
-        question: 'Does Virufy have a privacy policy and cookie policy?',
-        answer: [
-          {
-            type: 'text',
-            text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications.',
-          },
-        ],
-      },
-      {
-        question: 'Will my data be shared with third parties?',
-        answer: [
-          {
-            type: 'text',
-            text: 'If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. However, we may share your anonymized information, such as your cough sounds, with third parties in order to accelerate global research efforts to stop the COVID-19 pandemic and other future spreads of disease. More details can be found in our Privacy Policy and the data collection study Consent Form.',
-          },
-        ],
-      },
-    ],
-    Other: [
-      {
-        question: 'How can I support Virufy more?',
-        answer: [
-          {
-            type: 'text',
-            text: 'You can join our team today and look at the ',
-          },
-          {
-            type: 'link',
-            text: 'Job Listing page ',
-            href: 'https://virufy.org/job-listing',
-          },
-          {
-            type: 'text',
-            text: 'for more information. You can also support us at GoFundMe. You can also contact us for partnership.',
-          },
-        ],
-      },
-      {
-        question:
-          'How does distribution work, and how will Virufy become more widespread?',
-        answer: [
-          {
-            type: 'text',
-            text: 'The app will be offered for the benefit of people in low-income countries and will likely market itself and spread quickly.',
-          },
-        ],
-      },
-      {
-        question: 'What if I have more questions?',
-        answer: [
-          {
-            type: 'text',
-            text: 'More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at ',
-          },
-          {
-            type: 'link',
-            text: 'study@virufy.org',
-            href: 'mailto:study@virufy.org',
-          },
-          {
-            type: 'text',
-            text: '. For data related queries, we can be contacted at ',
-          },
-          {
-            type: 'link',
-            text: 'open-data@virufy.org',
-            href: 'mailto:open-data@virufy.org',
-          },
-          {
-            type: 'text',
-            text: '. For all other inquiries, you may reach us at ',
-          },
-          {
-            type: 'link',
-            text: 'info@virufy.org',
-            href: 'mailto:info@virufy.org',
-          },
-          {
-            type: 'text',
-            text: '.',
-          },
-        ],
-      },
-    ],
+  questionsSection: {
+    topicTitle: 'よくある質問',
+    noResultsTitle: '結果が見つかりませんでした',
+    questionsByTopic: {
+      Virufyアプリ: [
+        {
+          question:
+            'アプリはいつ、どのようにしてCOVID-19の予測結果を出しますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '当アプリは現在、データ収集のみの目的で使用されています。各国の公衆衛生当局の承認や、AI技術の臨床的検証が完了するまではCOVID-19予測アプリをリリースすることはできません。このプロセスは、各政府の対応の迅速さに応じて数週間から数か月かかる場合があります。Virufyは、この技術を人々に無償で提供し、高価なPCR検査の使用を必要な場合に最適化するため、保健当局や病院とのパートナーシップを歓迎します。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'アプリはどこでダウンロードできますか？iOSとAndroidに対応していますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'アプリは、モバイル対応のウェブサイト上で利用可能となります。一部の国では公式アプリストアでの公開に政府や医療機関の承認が必要であるためです。アプリはスマートフォンと接続できるため、iOSやAndroidを含むあらゆるオペレーティングシステムに対応しています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: 'アプリは無料で提供され、世界中で利用可能ですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '501(c)(3)非営利団体として、低所得国に利益を提供するため、アプリを無料で提供することを目指しています。ただし、十分な資金を調達できない場合は、運営費をサポートするために名目上、料金を請求する場合がございます。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'このアプリを営利目的のスタートアップに拡張する予定はありますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufyは非営利団体です。必要に応じて、アプリ展開を迅速にするために企業と提携する可能性はあります。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      Virufyについて: [
+        {
+          question: 'どのようにしてこのイニシエティブが作られたのですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'パンデミックが発生した際、Virufyの創設者であるアミルは、スマートフォンが広く普及していること、そして、COVIDが鼻、喉、肺に影響を与えることを認識していました。そこで、呼吸音や咳の音を機械学習で分析することで、COVIDの規則性を検出できる、という仮定を立てました。社会に貢献したいという思いから、彼は名門大学病院で362人の患者を対象にした臨床研究を主導しました。スタンフォード大学のAIを研究する大学院生から始まったVirufyの最初のチームは、世界中の大学から集まったボランティアチームにまで拡大しています。25カ国以上を訪問した経験を持つOne Young World Japanの大使として、アミルはグローバルな視点を理解しており、スマートフォンベースのソリューションが世界中の人々に活用できることを知っています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'Virufyは同様のプロジェクトに取り組んでいる他の組織とはどう異なりますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufyは501(c)(3)非営利団体であるため、優秀な専門家をボランティアとして採用することができます。私たちのチームは5つの大陸にまたがり、グローバルな感性を持っています。利益を追求することがないため、発展途上国での活動が可能です。また、各国のトップレベルの人材にアクセスできる大学のネットワークやプロフェッショナルネットワークを活用しています。私たちの組織では、若い専門家が経験豊富な業界の専門家から助言を受け、迅速で創造的な活動が正しい方向に向かうようにしています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            '調査はどの段階にありますか？また、参加するための期限はありますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '私たちはパートナーシップの形成、モバイルアプリの開発、カリフォルニアの非営利法人登録、数十か国のデータプライバシー法に準拠するためのポリシーの構築に多大な努力を注いできました。私たちのデータ収集アプリは、技術的懸念の大部分に対処し、データプライバシーと情報セキュリティの準備が整い、大きな進展の段階に達しています。すでに25万人以上の患者のデータを収集し、AIを活用して解決策を構築しています。期限はなく、資金提供、ボランティアサービス、臨床データ収集を提供できるパートナーを常に歓迎しています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '他のプロジェクトと比べて、Virufyの特長は何ですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '若い組織であり、多様でグローバルなチームは25以上の大学の卒業生で構成されており、業界トップレベルの専門家に導かれています。私たちの多分野にわたるチームは、法律、機械学習、医学、情報セキュリティ、モバイルアプリ開発の専門知識を持っています。また、One Young Worldネットワークを活用して、各国の信頼できるパートナーと連携しています。誰もが参加を歓迎し、501(c)(3)非営利団体として、ボランティアを受け入れることができます。ボランティアによって運営されているため、独立しており、官僚的な制約が少ないのです。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'Virufyプロジェクトの実現のためにどのくらいの投資が行われましたか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '1,000人以上のボランティアが、数千時間をかけてこのプロジェクトを可能にしました。電子メール、ストレージ、メッセージングプラットフォームなど、いくつかの企業が無料でソフトウェアを提供してくれましたが、ビデオ会議やプロジェクト管理ツールの一部は無料ではなく、創設者アミルの限られた貯蓄から支払われています。私たちが成功すれば、クラウドコンピュートコストが増加する可能性がありますが、助成金や寄付、政府支援を得てシステムを運営し続けることができると信じています。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      AIについて: [
+        {
+          question: 'COVID-19の咳はなぜ識別可能なのですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '他の呼吸器疾患と同様に、COVID-19は喉や肺を損傷し、咳のパターンに検出可能な違いを生じさせます。そのため、咳音を分析してCOVID-19やその他の上気道疾患を検出することができます。このアイデアは、カーネギーメロン大学（CMU）、MIT、ケンブリッジ大学を含むいくつかの著名な機関によって積極的に研究されています。たとえば、ケンブリッジ大学の研究では、単純なバイナリ機械学習分類器が呼吸音と咳音を用いて高い精度でCOVID-19陽性患者を分類できることが示されました。同様に、CMUの研究者たちは、COVID-19陽性患者を区別する18の声の特徴を特定し、高精度でCOVID-19を検出する学術モデルを訓練しました。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'データの収集と処理における主な困難は何でしたか？たとえば、ある地域ではAIの精度が低かったことはありますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '病院からデータを収集する場合、臨床研究フォームやIRBの承認が必要であり、そのプロセスは遅くて煩雑です。ハーバード大学やスタンフォード大学の医療顧問を含むさまざまな医療専門家の監督のもと、5か国で25万人以上の患者を臨床研究に登録しました。ユーザーから直接データを収集する際には、プロボノの専門弁護士と協力して、LGPD、GDPR、CCPAなどのデータプライバシー法に準拠するために多大な努力を払いました。私たちの研究論文で説明されているように、データ処理において見つかった困難の一部には、過度の背景雑音やユーザーによって提出された不正確な咳音録音が含まれており、これによりAI開発者がオーディオサンプルを手動でクリーニングする必要がありました。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '無症候性感染は検出可能ですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'はい、MITや他のグループの研究により、無症候性感染の検出が確認されています。特に20代や30代の人々にとって重要です。彼らは無症状である可能性が高いからです。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'アプリは第三者によって開発されたAIを使用しますか？それとも、この目的のために作成されたものですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufyは独自のAI研究チームと特許技術を有しています。また、他の研究グループからのAIアルゴリズムの共同開発や統合、コラボレーションに対しても積極的に取り組んでいます。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      財務: [
+        {
+          question: '咳の寄付には金銭的な負担は必要ですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufyは現在、特定の国でのみ咳を収集しており、該当国はアプリで確認できます： ',
+                },
+                {
+                  type: 'link',
+                  text: 'https://virufy.org/app',
+                  href: 'https://virufy.org/app',
+                },
+                {
+                  type: 'text',
+                  text: '。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '咳の症状がない場合でも咳を寄付できますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'はい、意図的な咳にもアプリは対応しています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: 'これまでに何人のドナーがいましたか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '南米や南アジアを中心に、10か国以上から5,000件以上の咳音録音があります。その一部は臨床的なものであり、他のものはアプリを通じて個人が直接提供したものです。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '組織の運営費はどのくらいですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '現在、私たちは完全にボランティアによって運営されています。主な予算の必要項目は、咳データ収集のためのマーケティングと臨床研究です。また、将来的にユーザー基盤が大規模になった際には、計算処理のための資金も必要となります。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'チームは資金提供を受けていますか？もし受けている場合、それはどのくらいで、どのように使われますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '私たちは、501(c)(3)のステータスを活用して、R&D助成金を申請するために複数の大学と提携しています。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      プライバシー: [
+        {
+          question: 'Virufyはどのようにして私のデータを安全に保管しますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '研究データ収集のためにAmazon Web Services（AWS）を使用しています。AWSはデータを安全なアプリケーション内に保存し、アクセスを制限します。データは私たちがダウンロードするまでAWSに保存されます。その後、制限されたアクセスを持つデータベースに保存されます。AWSがあなたのデータをどのように保護しているかについて詳しく知りたい場合は、AWSのプライバシーポリシーを参照してください： ',
+                },
+                {
+                  type: 'link',
+                  text: 'https://aws.amazon.com/en/privacy',
+                  href: 'https://aws.amazon.com/en/privacy',
+                },
+                {
+                  type: 'text',
+                  text: '。詳細については、Virufyのプライバシーポリシーをご参照ください。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'Virufyに咳を寄付したときにプライバシーが侵害されるリスクはありますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '私たちの誇れる法務および情報セキュリティチームは、あなたのプライバシーに関する潜在的なリスクや脅威に対処するため、DPIA（データ保護影響評価）を開発しました。あなたの個人データは、識別できない形式で匿名化され、制限されたアクセスを持つ安全なデータベースに保存されます。詳細については、Virufyのプライバシーポリシーを参照してください。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'Virufyにはプライバシーポリシーとクッキーポリシーがありますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufyはあなたの個人情報のプライバシーと保護を真剣に考えています。私たちの法務チームは、ウェブサイトの利用、咳の寄付研究への参加、問い合わせ、ボランティア申請を通じて提供された個人情報を保護するための詳細なプライバシーポリシーとクッキーポリシーを作成しました。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '私のデータは第三者と共有されますか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'あなたが連絡先情報（メールアドレスや電話番号）を私たちと共有することを選択した場合、これらの個人を特定できる情報を第三者と共有することはありません。ただし、COVID-19パンデミックや将来の感染症の拡散を止めるためのグローバルな研究活動を促進させるために、咳音などの匿名化された情報を第三者と共有することがあります。詳細は、私たちのプライバシーポリシーやデータ収集研究の同意書に記載されています。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      その他: [
+        {
+          question: 'Virufyをさらに支援するにはどうすればいいですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'relative-link',
+                  text: '採用',
+                  href: '/job-listing',
+                },
+                {
+                  type: 'text',
+                  text: 'ページで詳細を確認し、私たちのチームに参加することが可能です。また、GoFundMeでの支援も可能です。パートナーシップについてのお問い合わせも受け付けています。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'アプリの配布はどのように行われ、Virufyはどのように広がる予定ですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'アプリは低所得国の人々の利益のために提供され、急速に広がる可能性があります。',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: '他に質問がある場合はどうすればよいですか？',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: '詳細については、プライバシーポリシー、クッキーポリシー、およびデータ収集アプリに組み込まれている同意書をご覧ください。データ収集研究に関連する質問については、 ',
+                },
+                {
+                  type: 'link',
+                  text: 'study@virufy.org',
+                  href: 'mailto:study@virufy.org',
+                },
+                {
+                  type: 'text',
+                  text: 'にメールでお問い合わせください。データ関連の質問は、 ',
+                },
+                {
+                  type: 'link',
+                  text: 'open-data@virufy.org',
+                  href: 'mailto:open-data@virufy.org',
+                },
+                {
+                  type: 'text',
+                  text: 'までご連絡ください。その他の問い合わせについては、 ',
+                },
+                {
+                  type: 'link',
+                  text: 'info@virufy.org',
+                  href: 'mailto:info@virufy.org',
+                },
+                {
+                  type: 'text',
+                  text: 'にお問い合わせください。',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   },
 };
 

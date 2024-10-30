@@ -1,29 +1,29 @@
 import { type NavbarType } from '../types/navbar';
 
 export const navbar: NavbarType = {
-  home: 'Inicio',
+  home: 'ホーム',
   ourTechnology: {
-    section: 'Tecnología',
-    howItWorks: 'AI',
-    OurResearch: 'Publicaciones',
+    section: '技術',
+    howItWorks: 'AIの仕組み',
+    OurResearch: '出版物',
   },
   coughCheckApp: {
-    section: 'CoughCheck App',
-    covid19: 'Covid-19',
-    flu: 'Gripe',
+    section: '咳チェックアプリ',
+    covid19: 'COVID-19',
+    flu: 'インフルエンザ',
     copd: 'COPD',
     rsv: 'RSV',
   },
   aboutUs: {
-    section: 'Sobre Nosotros',
-    ourStory: 'Nuestra Historia',
-    ourPeople: 'Nuestra Gente',
-    ourSupporters: 'Nuestros Apoyantes',
-    blog: 'Blog',
-    oneYoungWorld: 'Un Mundo Joven',
+    section: '私たちについて',
+    ourStory: '私たちのストーリー',
+    ourPeople: '私たちのメンバー',
+    ourSupporters: 'サポーター',
+    blog: 'ブログ',
+    oneYoungWorld: 'One Young World',
   },
-  faq: 'Preguntas Frecuentes',
-  donate: 'Donar',
+  faq: 'FAQ',
+  donate: '寄付',
 };
 
 export default navbar;

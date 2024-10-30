@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoshiOzawa,
+  NobuyoOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -35,7 +35,7 @@ const people: People = {
     titleAmil: 'Amil Khanzada',
     textAmil:
       'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
-    button: 'READ MORE',
+    button: `Read Amil's Story`,
   },
   sectionAdvisors: {
     title: 'Advisors',
@@ -213,8 +213,8 @@ const people: People = {
         ],
       },
       {
-        img: NobuyoshiOzawa,
-        name: 'Nobuyoshi Ozawa',
+        img: NobuyoOzawa,
+        name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
       },

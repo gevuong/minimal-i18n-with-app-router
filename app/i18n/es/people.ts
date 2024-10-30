@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoshiOzawa,
+  NobuyoOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -35,7 +35,7 @@ const people: People = {
     titleAmil: 'Amil Khanzada',
     textAmil:
       'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
-    button: 'LEER MÁS',
+    button: 'Lea la historia de Amil',
   },
   sectionAdvisors: {
     title: 'Asesores',
@@ -214,8 +214,8 @@ const people: People = {
         ],
       },
       {
-        img: NobuyoshiOzawa,
-        name: 'Nobuyoshi Ozawa',
+        img: NobuyoOzawa,
+        name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
       },
