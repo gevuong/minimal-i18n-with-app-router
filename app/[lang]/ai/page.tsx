@@ -46,7 +46,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
                   <Link
-                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-sm font-medium lg:px-8 lg:py-4 lg:text-lg"
+                    className="rounded-full bg-white text-black px-10 py-6 text-sm font-medium lg:px-8 lg:py-4 lg:text-lg"
                     href={`/${lang}/${heroSection.url}`}
                   >
                     {heroSection.linkText}

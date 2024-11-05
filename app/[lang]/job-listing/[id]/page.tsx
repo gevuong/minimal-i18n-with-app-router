@@ -239,11 +239,10 @@ const JobDetailPage = ({
             )}
             <div className="mb-16 flex w-full px-12">
               <Link
-                className="px-10 py-4 text-white sm:px-14"
+                className="px-10 py-4 text-black sm:px-14"
                 style={{
                   borderRadius: '50px',
-                  background:
-                    'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                  background: 'white',
                 }}
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform"

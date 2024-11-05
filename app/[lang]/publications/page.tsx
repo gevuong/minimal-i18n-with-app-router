@@ -85,7 +85,7 @@ const PublicationsPage = ({
               {collaborateSection.title}
             </h2>
             <button
-              className="rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] p-6 text-xl font-medium sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
+              className="rounded-full bg-white text-black p-6 text-xl font-medium sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
               onClick={() => router.push(`/${lang}/job-listing`)}
             >
               {collaborateSection.linkText}

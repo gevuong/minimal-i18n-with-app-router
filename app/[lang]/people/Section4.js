@@ -61,7 +61,7 @@ export default function Section4({
           label={labelButton}
           style={{}}
           radius="50px"
-          gradientBackground="linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)"
+          gradientBackground="white"
           width="250px"
           height="65px"
         />
@@ -113,7 +113,7 @@ export default function Section4({
                 label={labelButton}
                 style={{}}
                 radius="50px"
-                gradientBackground="linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)"
+                gradientBackground="white"
                 width="250px"
                 height="65px"
               />

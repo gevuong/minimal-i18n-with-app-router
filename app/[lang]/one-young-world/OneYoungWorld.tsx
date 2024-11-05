@@ -108,7 +108,7 @@ const OneYoungWorld = ({
             {/* Slider Container */}
             <TestimonialSlider testimonials={testimonials} />
             <Link
-              className="w-auto rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] px-6 py-4 text-sm font-medium md:px-12 md:py-4 md:text-base"
+              className="w-auto rounded-full bg-white text-black px-6 py-4 text-sm font-medium md:px-12 md:py-4 md:text-base"
               href={`/${lang}/job-listing`}
             >
               Join our Team
