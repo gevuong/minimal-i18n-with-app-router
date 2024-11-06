@@ -78,7 +78,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <div className="">
                   <h2 className="pt-4 text-xs md:text-2xl">{name}</h2>
                   {/* Role Container */}
-                  <div className="py-2 text-xs font-bold text-white md:text-2xl">
+                  <div className="py-2 text-xs font-bold text-white md:text-xl">
                     {role}
                   </div>
                   {texts.map((text, i) => (
