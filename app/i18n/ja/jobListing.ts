@@ -10,6 +10,15 @@ const jobListing: JobListing = {
     yes: 'はい',
     no: 'いいえ',
   },
+  applyButtonText: '応募する',
+  jobDetailSectionTitles: {
+    responsibilities: '職務内容',
+    desiredSkills: '望ましいスキル',
+    minQualifications: '最低限の資格',
+    hours: '勤務時間',
+    questions: 'ご質問',
+    applyButtonText: 'この役職に応募する',
+  },
   jobList: [
     {
       category: 'エンジニアリング',

@@ -23,7 +23,10 @@ const JobDetailPage = ({
 }: {
   params: { lang: Locale; id: string };
 }) => {
-  const { jobDetails } = usei18n(lang);
+  const {
+    jobDetails,
+    jobListing: { jobDetailSectionTitles },
+  } = usei18n(lang);
   const {
     title,
     description,
@@ -118,7 +121,7 @@ const JobDetailPage = ({
                 <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-10">
                   <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                     <Title
-                      Text={'Responsibilities'}
+                      Text={jobDetailSectionTitles.responsibilities}
                       H={'h4'}
                       TitleClassProps={'w-[97%] lg:mb-3 text-start '}
                     />
@@ -145,7 +148,7 @@ const JobDetailPage = ({
                 <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-10">
                   <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                     <Title
-                      Text={'Minimum Qualifications'}
+                      Text={jobDetailSectionTitles.minQualifications}
                       H={'h4'}
                       TitleClassProps={'w-[97%] lg:mb-3 text-start '}
                     />
@@ -172,7 +175,7 @@ const JobDetailPage = ({
                 <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-10">
                   <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                     <Title
-                      Text={'Desired Skills'}
+                      Text={jobDetailSectionTitles.desiredSkills}
                       H={'h4'}
                       TitleClassProps={'w-[97%] lg:mb-3 text-start '}
                     />
@@ -199,7 +202,7 @@ const JobDetailPage = ({
                 <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-10">
                   <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                     <Title
-                      Text={'Hours'}
+                      Text={jobDetailSectionTitles.hours}
                       H={'h4'}
                       TitleClassProps={'w-[97%] lg:mb-3 text-start '}
                     />
@@ -226,7 +229,7 @@ const JobDetailPage = ({
                 <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-10">
                   <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                     <Title
-                      Text={'Questions?'}
+                      Text={jobDetailSectionTitles.questions}
                       H={'h4'}
                       TitleClassProps={'w-[97%] lg:mb-3 text-start '}
                     />
@@ -247,7 +250,7 @@ const JobDetailPage = ({
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform"
               >
-                Apply to this Role
+                {jobDetailSectionTitles.applyButtonText}
               </Link>
             </div>
           </div>

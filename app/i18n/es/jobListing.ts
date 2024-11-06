@@ -10,6 +10,15 @@ const jobListing: JobListing = {
     yes: 'Sí',
     no: 'No',
   },
+  applyButtonText: 'Apply',
+  jobDetailSectionTitles: {
+    responsibilities: 'Responsibilities',
+    desiredSkills: 'Desired Skills',
+    minQualifications: 'Minimum Qualifications',
+    hours: 'Hours',
+    questions: 'Questions?',
+    applyButtonText: 'Apply to this Role',
+  },
   jobList: [
     {
       category: 'Ingeniería',

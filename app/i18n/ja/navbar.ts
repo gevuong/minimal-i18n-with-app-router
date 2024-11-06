@@ -25,7 +25,7 @@ export const navbar: NavbarType = {
   faq: 'FAQ',
   donate: {
     buttonText: '寄付',
-    optionsTitle: 'お支払い方法',
+    optionsTitle: '寄付オプション',
   },
 };
 
