@@ -119,7 +119,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <Title
                     Text={section2.text}
                     H=""
-                    TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-xl leading-4 sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
+                    TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-xl sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
                   />
                   <p className="mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
                     {section2.subtext}
