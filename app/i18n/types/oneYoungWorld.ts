@@ -53,6 +53,7 @@ interface VolunteerStoriesSection {
   title: string;
   text: string;
   testimonials: Testimonial[];
+  buttonText: string;
 }
 
 export interface Testimonial {

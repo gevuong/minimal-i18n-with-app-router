@@ -15,7 +15,7 @@ const OneYoungWorld = ({
   oywSection: {
     virufyAndOyw: { title: oywTitle, subTitle, texts, videoUrl, videoTitle },
     whyOyw: { title: whyOywTitle, cards },
-    volunteerStories: { title: volunteerTitle, text, testimonials },
+    volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
   },
 }: OywProps) => {
   return (
@@ -111,7 +111,7 @@ const OneYoungWorld = ({
               className="w-auto rounded-full bg-white text-black px-6 py-4 text-sm font-medium md:px-12 md:py-4 md:text-base"
               href={`/${lang}/job-listing`}
             >
-              Join our Team
+              {buttonText}
             </Link>
           </div>
         </section>

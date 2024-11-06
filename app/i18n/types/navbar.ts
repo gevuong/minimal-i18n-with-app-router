@@ -4,7 +4,7 @@ export interface NavbarType {
   coughCheckApp: CoughCheckApp;
   aboutUs: AboutUs;
   faq: string;
-  donate: string;
+  donate: DonateSection;
 }
 
 export interface OurTechnology {
@@ -28,4 +28,9 @@ export interface AboutUs {
   ourSupporters: string;
   blog: string;
   oneYoungWorld: string;
+}
+
+interface DonateSection {
+  buttonText: string;
+  optionsTitle: string;
 }

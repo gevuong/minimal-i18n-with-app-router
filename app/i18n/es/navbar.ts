@@ -23,7 +23,10 @@ export const navbar: NavbarType = {
     oneYoungWorld: 'Un Mundo Joven',
   },
   faq: 'Preguntas Frecuentes',
-  donate: 'Donar',
+  donate: {
+    buttonText: 'Donar',
+    optionsTitle: 'Donate Options',
+  },
 };
 
 export default navbar;
