@@ -66,10 +66,10 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {sectionAdvisors.advisors.map(({ img, name, role, texts }) => (
               <div
                 key={name}
-                className="relative w-[158px] text-center md:w-[22rem]"
+                className="relative text-center w-36 md:w-[22rem]"
               >
                 <ExportedImage
-                  className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[22rem]"
+                  className="h-[225px] w-36 object-cover md:h-[450px] md:w-[22rem]"
                   src={img}
                   alt={name}
                   basePath={basePath}
