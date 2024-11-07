@@ -14,7 +14,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <>
       <div className="w-full overflow-hidden">
-        <div className="over relative flex justify-center overflow-hidden">
+        <div className="relative flex justify-center overflow-hidden">
           <div className="contrast-1 brightness-100">
             <ExportedImage
               className="h-full w-screen object-cover"
@@ -39,7 +39,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)',
         }}
       >
-        <div className="flex max-w-[1440px] flex-col items-center justify-center">
+        <div className="flex max-w-[1440px] w-full flex-col items-center justify-center">
           <Section4
             TitleSize1="h1"
             TitleSize2="h3"
@@ -66,10 +66,10 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {sectionAdvisors.advisors.map(({ img, name, role, texts }) => (
               <div
                 key={name}
-                className="relative text-center w-36 md:w-[22rem]"
+                className="relative text-center md:w-[22rem]"
               >
                 <ExportedImage
-                  className="h-[225px] w-36 object-cover md:h-[450px] md:w-[22rem]"
+                  className="h-[225px] object-cover md:h-[450px] md:w-[22rem]"
                   src={img}
                   alt={name}
                   basePath={basePath}
