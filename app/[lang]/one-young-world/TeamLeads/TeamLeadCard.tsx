@@ -4,9 +4,9 @@ import ExportedImage from 'next-image-export-optimizer';
 
 const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
   return (
-    <div className="relative text-center text-gray-300">
+    <div className="relative max-w-40 text-center text-gray-300 md:w-[22rem] md:max-w-[22rem]">
       <ExportedImage
-        className="h-[225px] object-cover md:h-[450px] md:w-[22rem]"
+        className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
         src={image}
         alt={altText}
         basePath={basePath}
