@@ -40,7 +40,7 @@ const JobList = ({
 
                   <div className="flex justify-center px-4 pt-4 md:justify-between">
                     <ExportedImage
-                      className="h-[27px] w-16 w-[110px] md:w-12 md:pl-1"
+                      className="h-[27px] w-16 md:w-12 md:pl-1"
                       src={VirufyLogo}
                       alt="Virufy logo"
                       priority
@@ -63,7 +63,7 @@ const JobList = ({
 
                   <div className="mb-14 h-[100px] flex-col items-center justify-center">
                     <Link
-                      className="mx-auto flex w-[260px] justify-center rounded-3xl bg-gradient-to-b from-green-500 to-blue-500 px-6 py-2 font-bold text-white outline-none transition-all duration-150 ease-linear md:w-[320px] md:font-medium"
+                      className="mx-auto flex w-[260px] justify-center rounded-3xl bg-white px-6 py-2 font-bold text-black outline-none transition-all duration-150 ease-linear md:w-[320px] md:font-medium"
                       type="button"
                       href="#"
                       onClick={() => setShowModalConfirmation(false)}

@@ -1,6 +1,6 @@
 //BUTTON THEMES
 export const ButtonType = {
-    primary: "bg-gradient-to-b from-green-500 to-blue-500 border-none border-2 border-[#3074DC] text-base text-white font-medium rounded-full hover:bg-[#265db0] hover:border-[#265db0]",
+    primary: "bg-white border-none border-2 border-[#3074DC] text-base text-black font-medium rounded-full hover:border-[#265db0]",
     secondary: "bg-[#ffffff] border-solid border-2 border-[#3074DC] text-base text-[#3074DC] font-bold rounded hover:bg-[#D7E4F8]"
 };
 

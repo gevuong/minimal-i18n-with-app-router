@@ -63,11 +63,10 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <div className="mt-2 flex w-full max-w-md justify-center px-0 md:block md:max-w-lg">
                     <Link href={`/${lang}/ai`}>
                       <button
-                        className="medium primary h-9 w-64 text-white sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
                         style={{
                           borderRadius: '50px',
-                          background:
-                            'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                          background: 'white',
                         }}
                       >
                         {introSection.buttonText}
@@ -169,11 +168,10 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
                   <Link href={`/${lang}/ai`}>
                     <button
-                      className="medium primary h-[45px] w-[315px] text-white xl:h-[65px] xl:w-[250px]"
+                      className="medium primary h-[45px] w-[315px] text-black xl:h-[65px] xl:w-[250px]"
                       style={{
                         borderRadius: '50px',
-                        background:
-                          'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                        background: 'white',
                       }}
                     >
                       {section2.buttonText}
