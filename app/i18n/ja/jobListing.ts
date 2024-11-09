@@ -14,7 +14,7 @@ const jobListing: JobListing = {
   jobDetailSectionTitles: {
     responsibilities: '職務内容',
     desiredSkills: '望ましいスキル',
-    minQualifications: '最低限の資格',
+    minQualifications: '基本条件',
     hours: '勤務時間',
     questions: 'ご質問',
     applyButtonText: 'この役職に応募する',
