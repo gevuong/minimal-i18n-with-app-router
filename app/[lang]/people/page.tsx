@@ -62,7 +62,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           />
 
           {/* Cards Container */}
-          <div className="grid grid-cols-2 gap-4 px-6 pb-24 text-white sm:gap-6 lg:gap-12 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 px-4 pb-8 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
             {sectionAdvisors.advisors.map(({ img, name, role, texts }) => (
               <div
                 key={name}
@@ -75,14 +75,14 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   basePath={basePath}
                 />
                 {/* Text Container */}
-                <div className="">
-                  <h2 className="pt-4 text-xs md:text-2xl">{name}</h2>
+                <div className="pb-2 md:pb-4">
+                  <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
                   {/* Role Container */}
-                  <div className="py-2 text-xs font-bold text-white md:text-xl">
+                  <div className="py-1 text-[10px] font-bold text-white md:text-xl">
                     {role}
                   </div>
                   {texts.map((text, i) => (
-                    <div key={i} className="text-[8px] font-thin md:text-lg">
+                    <div key={i} className="text-[9px] font-thin md:text-lg">
                       {text}
                     </div>
                   ))}
