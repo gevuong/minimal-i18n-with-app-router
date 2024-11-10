@@ -110,7 +110,7 @@ const supporters: Supporters = {
     {
       img: ResponseInnovationLabLogo,
       alt: 'Response Innovation Lab',
-      link: 'https://www.lockedjar.com/',
+      link: 'https://www.responseinnovationlab.com/',
     },
     {
       img: TakemotoLabLogo,
