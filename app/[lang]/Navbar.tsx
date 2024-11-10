@@ -12,9 +12,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
+import LocaleSelect from './components/LocaleSelect';
 import DonateModal from './components/navbar/DonateModal';
 import { ButtonSize, ButtonType } from './themes';
-import LocaleSelect from './components/LocaleSelect';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
@@ -96,7 +96,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         {/* donate modal */}
         {showModal ? (
           <div onClick={() => setShowModal(false)}>
-            <DonateModal close={closeModal} />
+            <DonateModal close={closeModal} title={donate.optionsTitle} />
           </div>
         ) : null}
 
@@ -319,9 +319,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
-                    className={`${ButtonType.primary} ${navbar ? 'w-[131px] h-[45px]' : ButtonSize.medium}`}
+                    className={`${ButtonType.primary} ${navbar ? 'h-[45px] w-[131px]' : ButtonSize.medium}`}
                   >
-                    <Link href="#">{donate}</Link>
+                    <Link href="#">{donate.buttonText}</Link>
                   </button>
                 </li>
               </ul>

@@ -14,10 +14,12 @@ const JobList = ({
   lang,
   jobList,
   modal,
+  applyButtonText,
 }: {
   lang: Locale;
   jobList: Job[];
   modal: JobModal;
+  applyButtonText: string;
 }) => {
   const [showModalConfirmation, setShowModalConfirmation] = useState(true);
   const router = useRouter();
@@ -114,7 +116,7 @@ const JobList = ({
                     <div className="my-auto mr-4">
                       <Link href={`/${lang}/job-listing/${id}`}>
                         <button className="h-8 w-32 rounded-3xl bg-white font-medium text-black">
-                          Apply
+                          {applyButtonText}
                         </button>
                       </Link>
                     </div>

@@ -13,7 +13,7 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {
-    text: '企業や組織は、その豊富な知識で私たちを支え、私たちの活動において安心と確実性を提供してくれています。',
+    text: '企業や組織は、その豊富な知識を活かして私たちを支え、私たちの活動に安心感と確実性を提供してくれています。',
     image: BgHeader,
     altText: '',
   },
@@ -89,6 +89,7 @@ const oneYoungWorld: OneYoungWorld = {
           testimonial: `「Virufyは非常に正確なソリューションを開発し、これはすべての業界で役立つものになるでしょう。皆さんも少しの時間を割いて、私たちと一緒に貢献してほしいです。」`,
         },
       ],
+      buttonText: '参加する',
     },
   },
 };

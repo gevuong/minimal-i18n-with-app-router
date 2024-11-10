@@ -208,7 +208,7 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Cookieの使用方法について?',
+        question: 'Cookieの使用方法について',
         answer: [
           {
             type: 'paragraph',
@@ -411,7 +411,7 @@ const footer: Footer = {
         ],
       },
       {
-        question: '質問がある場合の連絡先?',
+        question: 'ご質問・お問い合わせ先',
         answer: [
           {
             type: 'paragraph',
@@ -606,7 +606,7 @@ const footer: Footer = {
     ],
   },
   personalInfo: {
-    title: '個人情報を販売しない',
+    title: '個人情報の保護',
     body: [
       {
         question: 'カリフォルニア州消費者プライバシー法の権利',

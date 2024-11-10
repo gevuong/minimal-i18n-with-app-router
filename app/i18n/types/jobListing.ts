@@ -4,6 +4,8 @@ export interface JobListing {
   title: string;
   text: string;
   modal: JobModal;
+  applyButtonText: string;
+  jobDetailSectionTitles: JobDetailSectionTitles;
 }
 
 export interface Job {
@@ -20,4 +22,13 @@ export interface JobModal {
 interface JobPosition {
   title: string;
   id: number;
+}
+
+interface JobDetailSectionTitles {
+  responsibilities: string;
+  desiredSkills: string;
+  minQualifications: string;
+  hours: string;
+  questions: string;
+  applyButtonText: string;
 }

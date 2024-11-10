@@ -89,6 +89,7 @@ const oneYoungWorld: OneYoungWorld = {
           testimonial: `“I think that Virufy will develop a very accurate solution and this will be useful for the entire world in every industry. So I encourage everyone to take some minutes and contribute with us.”`,
         },
       ],
+      buttonText: 'Join our Team',
     },
   },
 };

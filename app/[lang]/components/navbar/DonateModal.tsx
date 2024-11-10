@@ -6,7 +6,13 @@ import {
 } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 
-export default function DonateModal({ close }) {
+export default function DonateModal({
+  close,
+  title,
+}: {
+  close: () => void;
+  title: string;
+}) {
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
@@ -38,7 +44,7 @@ export default function DonateModal({ close }) {
             <div className="relative flex flex-col items-center rounded-b-2xl bg-gradient-to-b from-[#273F6A] to-[#4167AD] p-6">
               <p className="mb-6 mt-2 text-lg leading-relaxed">
                 <span className="color-black text-center text-gray-200">
-                  Donate Options
+                  {title}
                 </span>
               </p>
               <a
