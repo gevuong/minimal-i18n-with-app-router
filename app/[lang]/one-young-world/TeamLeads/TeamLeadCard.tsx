@@ -4,26 +4,20 @@ import ExportedImage from 'next-image-export-optimizer';
 
 const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
   return (
-    <div className="relative">
+    <div className="relative max-w-40 pb-2 text-center text-gray-300 md:w-[22rem] md:max-w-[22rem]">
       <ExportedImage
         className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
         src={image}
         alt={altText}
         basePath={basePath}
       />
-
-      {/* apply opaque background to dim card */}
-      <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
-
       {/* Text Container */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-black bg-opacity-50 px-2 py-2 text-center md:h-40">
-        <h2 className="pb-1 text-xs font-bold md:text-2xl">{name}</h2>
-        {texts.map((text, i) => (
-          <div key={i} className="text-[9px] md:text-lg">
-            {text}
-          </div>
-        ))}
-      </div>
+      <h2 className="pt-2 text-xs md:text-2xl">{name}</h2>
+      {texts.map((text, i) => (
+        <div key={i} className="text-[9px] font-thin md:text-lg">
+          {text}
+        </div>
+      ))}
     </div>
   );
 };
