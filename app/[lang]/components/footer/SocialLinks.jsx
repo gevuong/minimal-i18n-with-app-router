@@ -6,9 +6,11 @@ import {
   InstagramIconWhite,
   LinkedInIconDarkTurquoise,
   LinkedInIconWhite,
+  XIconDarkGradient,
+  XIconWhite,
 } from '@/public/images/footer/index';
 
-export default function SocialLinks({}) {
+export default function SocialLinks({ lang }) {
   return (
     <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
       <Link href="https://www.instagram.com/virufy/" className="lg:hidden">
@@ -30,6 +32,18 @@ export default function SocialLinks({}) {
           basePath={basePath}
         />
       </Link>
+      <Link
+        href="https://x.com/virufy_japan"
+        className={lang === 'ja' ? 'lg:hidden' : 'hidden'}
+      >
+        <ExportedImage
+          src={XIconWhite}
+          alt="X icon"
+          className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+      </Link>
+
       <Link href="https://www.instagram.com/virufy/" className="hidden lg:flex">
         <ExportedImage
           src={InstagramIconDarkTurquoise}
@@ -45,6 +59,17 @@ export default function SocialLinks({}) {
         <ExportedImage
           src={LinkedInIconDarkTurquoise}
           alt="LinkedIn icon"
+          className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+      </Link>
+      <Link
+        href="https://x.com/virufy_japan"
+        className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
+      >
+        <ExportedImage
+          src={XIconDarkGradient}
+          alt="X icon"
           className="h-[40px] w-[30px]"
           basePath={basePath}
         />

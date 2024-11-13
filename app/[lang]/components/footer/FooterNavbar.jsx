@@ -54,7 +54,7 @@ export default function FooterNavbar({lang, navbarLinks, nonProfitSection, setAc
             </Fragment>
           ))}
         </li>
-        <SocialLinks />
+        <SocialLinks lang={lang}/>
         <NonProfitDisclaimers nonProfitSection={nonProfitSection} />
       </div>
     </footer>
