@@ -2,9 +2,9 @@ import { basePath } from '@/next.config.mjs';
 import Link from 'next/link';
 import ExportedImage from 'next-image-export-optimizer';
 import {
-  InstagramIconDarkTurquoise,
+  InstagramIconDarkGradient,
   InstagramIconWhite,
-  LinkedInIconDarkTurquoise,
+  LinkedInIconDarkGradient,
   LinkedInIconWhite,
   XIconDarkGradient,
   XIconWhite,
@@ -46,7 +46,7 @@ export default function SocialLinks({ lang }) {
 
       <Link href="https://www.instagram.com/virufy/" className="hidden lg:flex">
         <ExportedImage
-          src={InstagramIconDarkTurquoise}
+          src={InstagramIconDarkGradient}
           alt="Instagram icon"
           className="h-[40px] w-[30px]"
           basePath={basePath}
@@ -57,7 +57,7 @@ export default function SocialLinks({ lang }) {
         className="hidden lg:flex"
       >
         <ExportedImage
-          src={LinkedInIconDarkTurquoise}
+          src={LinkedInIconDarkGradient}
           alt="LinkedIn icon"
           className="h-[40px] w-[30px]"
           basePath={basePath}
