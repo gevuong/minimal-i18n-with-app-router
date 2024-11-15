@@ -1,6 +1,4 @@
 import { basePath } from '@/next.config.mjs';
-import Link from 'next/link';
-import ExportedImage from 'next-image-export-optimizer';
 import {
   InstagramIconDarkGradient,
   InstagramIconWhite,
@@ -9,11 +7,17 @@ import {
   XIconDarkGradient,
   XIconWhite,
 } from '@/public/images/footer/index';
+import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 
 export default function SocialLinks({ lang }) {
   return (
     <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
-      <Link href="https://www.instagram.com/virufy/" className="lg:hidden">
+      <Link
+        target="_blank"
+        href="https://www.instagram.com/virufy/"
+        className="lg:hidden"
+      >
         <ExportedImage
           src={InstagramIconWhite}
           alt="Instagram icon"
@@ -22,6 +26,7 @@ export default function SocialLinks({ lang }) {
         />
       </Link>
       <Link
+        target="_blank"
         href="https://www.linkedin.com/company/virufy/"
         className="lg:hidden"
       >
@@ -33,6 +38,7 @@ export default function SocialLinks({ lang }) {
         />
       </Link>
       <Link
+        target="_blank"
         href="https://x.com/virufy_japan"
         className={lang === 'ja' ? 'lg:hidden' : 'hidden'}
       >
@@ -44,7 +50,11 @@ export default function SocialLinks({ lang }) {
         />
       </Link>
 
-      <Link href="https://www.instagram.com/virufy/" className="hidden lg:flex">
+      <Link
+        target="_blank"
+        href="https://www.instagram.com/virufy/"
+        className="hidden lg:flex"
+      >
         <ExportedImage
           src={InstagramIconDarkGradient}
           alt="Instagram icon"
@@ -53,6 +63,7 @@ export default function SocialLinks({ lang }) {
         />
       </Link>
       <Link
+        target="_blank"
         href="https://www.linkedin.com/company/virufy/"
         className="hidden lg:flex"
       >
@@ -64,6 +75,7 @@ export default function SocialLinks({ lang }) {
         />
       </Link>
       <Link
+        target="_blank"
         href="https://x.com/virufy_japan"
         className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
       >
