@@ -64,7 +64,7 @@ const BetaAppRelease2023 = () => {
             <div>Gabriela Sonsino</div>
             <div>Virufy Marketing Director</div>
             <a
-              className="text-blue-600"
+              className="text-blue-500"
               href="mailto:gabriela.sonsino@virufy.org"
             >
               gabriela.sonsino@virufy.org
