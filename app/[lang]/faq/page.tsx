@@ -107,7 +107,9 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   maxLength={64}
                   aria-label="Search"
                 />
-                <span className="absolute right-0 pr-4 sm:pr-6">
+                <span
+                  className={`absolute right-0 pr-4 sm:pr-6 ${lang === 'ja' ? 'md:pr-14 lg:pr-16' : ''}`}
+                >
                   <ExportedImage
                     src={headerSection.input.img}
                     alt={headerSection.input.altText}
