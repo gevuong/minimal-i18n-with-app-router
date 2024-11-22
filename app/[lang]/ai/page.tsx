@@ -16,7 +16,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative -top-24">
       {/* Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
+        <div className="relative bg-[#4883e3]">
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-60"
             src={SplashBackground}
@@ -59,7 +59,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+      <div className="relative -mb-24 bg-[#255292]">
         <ExportedImage
           src={WaveBackground}
           alt=""
