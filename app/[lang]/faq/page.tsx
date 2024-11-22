@@ -71,7 +71,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative -top-24">
       {/* Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
+        <div className="relative bg-[#255292]">
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-50"
             src={headerSection.img}
@@ -136,7 +136,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="-mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2] text-white">
+      <div className="-mb-24 bg-[#3468b2] text-white">
         {/* Topics Section */}
         <section>
           {/* Title and Topic Cards Container */}
