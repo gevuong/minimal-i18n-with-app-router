@@ -1,6 +1,6 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
-import { BgHeader } from '@/public/images/people';
+import { BgHeader } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
