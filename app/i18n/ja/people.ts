@@ -24,7 +24,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
-} from '@/public/images/people';
+} from '@/public/images/advisors';
 import { type People } from '../types/people';
 
 const people: People = {
