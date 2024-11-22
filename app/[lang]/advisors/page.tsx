@@ -1,12 +1,12 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
-import { BgHeader } from '@/public/images/people';
+import { BgHeader } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import Section4 from './Section4';
 
-const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = usei18n(lang);
@@ -96,4 +96,4 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   );
 };
 
-export default PeoplePage;
+export default AdvisorsPage;

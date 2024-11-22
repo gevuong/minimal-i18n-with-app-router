@@ -17,7 +17,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: '私たちについて',
     ourStory: '私たちのストーリー',
-    ourPeople: '私たちのメンバー',
+    advisors: 'アドバイザー',
     ourSupporters: 'サポーター',
     blog: 'ブログ',
     oneYoungWorld: 'One Young World',
