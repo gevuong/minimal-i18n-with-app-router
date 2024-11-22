@@ -282,7 +282,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className="py-3 text-white hover:font-bold"
                         href={`/${lang}/people`}
                       >
-                        {aboutUs?.ourPeople}
+                        {aboutUs?.advisors}
                       </Link>
                       <Link
                         className="py-3 text-white hover:font-bold"
