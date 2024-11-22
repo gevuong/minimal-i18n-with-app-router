@@ -32,13 +32,7 @@ const PeoplePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
       </div>
 
-      <div
-        className="flex flex-col items-center justify-center"
-        style={{
-          background:
-            'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)',
-        }}
-      >
+      <div className="flex flex-col items-center justify-center bg-[#3468B2]">
         <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
           <Section4
             TitleSize1="h1"
