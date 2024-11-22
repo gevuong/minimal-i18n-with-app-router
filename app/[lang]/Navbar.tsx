@@ -44,7 +44,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         label: 'About Us',
         route: [
           `/${lang}/story`,
-          `/${lang}/people`,
+          `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
@@ -280,7 +280,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                       <Link
                         className="py-3 text-white hover:font-bold"
-                        href={`/${lang}/people`}
+                        href={`/${lang}/advisors`}
                       >
                         {aboutUs?.advisors}
                       </Link>
