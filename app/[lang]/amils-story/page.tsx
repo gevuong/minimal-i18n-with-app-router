@@ -19,8 +19,8 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <>
-      <div className="flex hidden flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:hidden xl:block">
-        <div className="mx-auto my-[3.5vw] flex h-[100%] max-w-[1650px] flex-col items-center justify-center">
+      <div className="relative -top-24 -mb-24 hidden items-center justify-center overflow-hidden bg-[#255292] sm:hidden md:hidden xl:block">
+        <div className="mx-auto mt-52 flex h-[100%] max-w-[1650px] flex-col items-center justify-center">
           <div className="m-10 mt-[40px]">
             <Video
               width={`1200px`}
@@ -145,10 +145,10 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Desktop */}
-      <div className="grid hidden items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:hidden lg:block xl:hidden">
+      <div className="relative -top-24 -mb-24 hidden items-center justify-center bg-[#255292] sm:hidden md:hidden lg:block xl:hidden">
         {/* First row */}
         <div className="flex items-center justify-center">
-          <div className="mb-[20px] mt-[80px]">
+          <div className="mb-[20px] mt-52">
             <Video
               width={`800px`}
               height={`450px`}
@@ -265,10 +265,10 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Tablet */}
-      <div className="grid hidden items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] sm:hidden md:block lg:hidden xl:hidden">
+      <div className="relative -top-24 -mb-24 hidden items-center justify-center bg-[#255292] sm:hidden md:block lg:hidden xl:hidden">
         {/* First row */}
         <div className="flex items-center justify-center">
-          <div className="mb-[20px] mt-[80px]">
+          <div className="mb-[20px] mt-52">
             <Video
               width={`650px`}
               height={`350px`}
@@ -386,9 +386,9 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* Mobile */}
-      <div className="grid items-center justify-center bg-gradient-to-b from-[#000] to-[#2D5987] md:hidden lg:hidden">
+      <div className="relative -top-24 -mb-24 grid items-center justify-center bg-[#255292] md:hidden lg:hidden">
         {/* First row */}
-        <div className="mb-[20px] mt-[80px]">
+        <div className="mb-[20px] mt-48">
           {/* First grid item */}
           <div className="flex items-center justify-center">
             <Video
@@ -400,7 +400,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         {/* Second row */}
         <div className="mt-[20px]">
-          <div className="flex grid items-center justify-center">
+          <div className="grid items-center justify-center">
             <div className="m-10 flex items-center justify-center text-white">
               <Title H="h2" Text={sectionAmil.titleAmil} TitleClassProps="" />
             </div>
@@ -412,7 +412,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               basePath={basePath}
             />
           </div>
-          <div className="mx-10 my-8 mt-[20px] flex grid items-center justify-center text-xl text-white">
+          <div className="mx-10 my-8 mt-[20px] grid items-center justify-center text-xl text-white">
             <Text
               Style="subtitle"
               Text={sectionAmil.textAmil[0]}
@@ -432,7 +432,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Third row */}
-        <div className="flex grid items-center justify-center">
+        <div className="grid items-center justify-center">
           <div className="flex items-center justify-center">
             <ExportedImage
               className="h-[250px] w-[325px]"
@@ -452,7 +452,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fourth row */}
-        <div className="flex grid items-center justify-center">
+        <div className="grid items-center justify-center">
           <div className="flex items-center justify-center">
             <ExportedImage
               className="h-[250px] w-[325px]"
@@ -472,7 +472,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
 
         {/* Fifth row */}
-        <div className="flex grid items-center justify-center">
+        <div className="grid items-center justify-center">
           <div className="flex items-center justify-center">
             <ExportedImage
               className="h-[275px] w-[325px]"
