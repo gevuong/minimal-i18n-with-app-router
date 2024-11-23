@@ -6,7 +6,6 @@ import ExportedImage from 'next-image-export-optimizer';
 import type { StaticImageData } from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import ArrowIcon from '../faq/ArrowIcon';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 
@@ -66,7 +65,7 @@ const LocaleSelect = () => {
           alt={`${locale} flag`}
           className="ml-10 mr-2 h-5 w-5 lg:ml-2"
         />
-        {locale.toUpperCase()} <ArrowIcon isActive={false}/> 
+        {locale.toUpperCase()} 
         <svg
           className="ml-2 h-4 w-4"
           fill="none"
