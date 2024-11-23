@@ -20,7 +20,7 @@ const OneYoungWorldPage = ({
     <div className="relative -top-24">
       {/* Header/Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
+        <div className="relative bg-[#255292]">
           <ExportedImage
             className="absolute object-cover opacity-30"
             src={header.image}
@@ -44,7 +44,7 @@ const OneYoungWorldPage = ({
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+      <div className="relative -mb-24 bg-[#255292]">
         <MainContent
           lang={lang}
           teamLeads={teamLeads}

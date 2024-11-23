@@ -16,7 +16,7 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative -top-24">
       {/* About Us/Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
+        <div className="relative bg-gradient-to-b from-[#1b3f6f] to-[#1b3b6f]">
           <ExportedImage
             className="absolute h-full w-full object-cover opacity-40"
             src={BgHeader}
@@ -39,7 +39,7 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+      <div className="relative bg-[#3468b2]">
         <ExportedImage
           src={BgBody}
           alt=""
