@@ -89,7 +89,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   return (
     <div className="bg-[#000]">
       <nav
-        className={`sticky z-[100] w-full shadow ${
+        className={`sticky z-[100] w-full ${
           navbar ? 'bg-black' : 'bg-transparent'
         }`}
       >
