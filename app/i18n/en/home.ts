@@ -49,7 +49,7 @@ const home: HomeType = {
       'Intuitive design for easy navigation and seamless user experience.',
     ],
     disclaimer:
-      '*Virufy will not take place of a doctor and would like to remind you it is your responsibility to seek medical advice from your doctor.',
+      '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.',
     buttonText: 'Our Technology',
   },
 };
