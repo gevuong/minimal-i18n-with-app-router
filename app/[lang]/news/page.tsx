@@ -1,0 +1,6 @@
+const JobListingPage = () => {
+    return (
+        <>
+        </>
+    )
+}
