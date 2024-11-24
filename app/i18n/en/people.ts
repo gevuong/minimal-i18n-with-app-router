@@ -140,7 +140,7 @@ const people: People = {
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
         texts: [
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford GSB',
+          'MBA - Stanford Graduate School of Business',
         ],
       },
       {

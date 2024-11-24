@@ -44,7 +44,7 @@ const publications: Publications = {
     },
   ],
   collaborateSection: {
-    title: 'Interested to collaborate on our research?',
+    title: 'Interested for research collaboration?',
     linkText: 'Join Our Team',
   },
 };
