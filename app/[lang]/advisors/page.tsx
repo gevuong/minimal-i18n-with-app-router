@@ -5,6 +5,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import Section4 from './Section4';
+import Link from 'next/link';
 
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -57,32 +58,36 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
           {/* Cards Container */}
           <div className="grid grid-cols-2 gap-4 px-4 pb-8 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
-            {sectionAdvisors.advisors.map(({ img, name, role, texts }) => (
-              <div
-                key={name}
-                className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
-              >
-                <ExportedImage
-                  className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
-                  src={img}
-                  alt={name}
-                  basePath={basePath}
-                />
-                {/* Text Container */}
-                <div className="pb-2 md:pb-4">
-                  <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
-                  {/* Role Container */}
-                  <div className="py-1 text-[10px] font-bold text-white md:text-xl">
-                    {role}
-                  </div>
-                  {texts.map((text, i) => (
-                    <div key={i} className="text-[9px] font-thin md:text-lg">
-                      {text}
+            {sectionAdvisors.advisors.map(
+              ({ img, name, role, texts, link }) => (
+                <div
+                  key={name}
+                  className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
+                >
+                  <Link href={link}>
+                    <ExportedImage
+                      className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
+                      src={img}
+                      alt={name}
+                      basePath={basePath}
+                    />
+                  </Link>
+                  {/* Text Container */}
+                  <div className="pb-2 md:pb-4">
+                    <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
+                    {/* Role Container */}
+                    <div className="py-1 text-[10px] font-bold text-white md:text-xl">
+                      {role}
                     </div>
-                  ))}
+                    {texts.map((text, i) => (
+                      <div key={i} className="text-[9px] font-thin md:text-lg">
+                        {text}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>
