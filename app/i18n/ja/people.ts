@@ -20,6 +20,7 @@ import {
   RichardNall,
   RokSosic,
   RonanDunlop,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -225,6 +226,14 @@ const people: People = {
         name: '横田文彦',
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
+      },
+      {
+        img: TamerFahmy,
+        name: 'タマー・ファーミー',
+        role: '中東・アフリカ市場アドバイザー',
+        texts: [
+          '元ドレーゲル/フィリップス メドテック - 睡眠＆呼吸ケア、MBA S P ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
+        ],
       },
     ],
   },
