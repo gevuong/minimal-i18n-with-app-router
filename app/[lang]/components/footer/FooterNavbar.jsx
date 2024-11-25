@@ -1,25 +1,11 @@
-import Link from 'next/link';
-import { basePath } from '@/next.config.mjs';
-import ExportedImage from 'next-image-export-optimizer';
 import SocialLinks from './SocialLinks';
 import NonProfitDisclaimers from './NonProfitDisclaimers';
-import VirufyLogo from '@/public/logos/virufy.svg';
 import { Fragment } from 'react';
 
 export default function FooterNavbar({lang, nonProfitSection, footerPrivacyLinks}) {
   return (
     <footer className="bg-black">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
-        <div className="absolute mx-12 mt-9 hidden w-56 justify-start lg:flex">
-          <Link href={`/${lang}`} >
-            <ExportedImage
-              src={VirufyLogo}
-              alt="Virufy logo"
-              className="h-[48px] w-[160px]"
-              basePath={basePath}
-            />
-          </Link>
-        </div>
         <div className="flex w-full">
           <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
         </div>
