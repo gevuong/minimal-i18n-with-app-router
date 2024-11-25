@@ -238,7 +238,7 @@ const people: People = {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
-        texts: ['Former Dräger/Philips MedTech - Sleep & Respiratory Care, MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University'],
+        texts: ['Former Dräger/Philips MedTech, MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University'],
       },
     ],
   },
