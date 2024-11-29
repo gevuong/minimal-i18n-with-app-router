@@ -20,6 +20,7 @@ import {
   RichardNall,
   RokSosic,
   RonanDunlop,
+  ShirinHasan,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -226,6 +227,12 @@ const people: People = {
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
       },
+      {
+        img: ShirinHasan,
+        name: 'シリン・ハサン',
+        role: '規制業務アドバイザー',
+        texts: ['元メドトロニック臨床業務ディレクター', '理学修士（生化学）、ムンバイ大学'],
+    }    
     ],
   },
 };

@@ -23,6 +23,7 @@ export { default as RafiAzimKhan } from './rafi-azim-khan.webp';
 export { default as RichardNall } from './richard-nall.webp';
 export { default as RokSosic } from './rok-sosic.webp';
 export { default as RonanDunlop } from './ronan-dunlop.webp';
+export { default as ShirinHasan } from './shirin-hasan.webp';
 export { default as TetsujiMadarame } from './tetsuji-madarame.webp';
 export { default as TsutomuIto } from './tsutomu-ito.webp';
 export { default as VictorWang } from './victor-wang.webp';
