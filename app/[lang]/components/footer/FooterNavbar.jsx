@@ -1,8 +1,12 @@
-import SocialLinks from './SocialLinks';
-import NonProfitDisclaimers from './NonProfitDisclaimers';
 import { Fragment } from 'react';
+import NonProfitDisclaimers from './NonProfitDisclaimers';
+import SocialLinks from './SocialLinks';
 
-export default function FooterNavbar({lang, nonProfitSection, footerPrivacyLinks}) {
+export default function FooterNavbar({
+  lang,
+  nonProfitSection,
+  footerPrivacyLinks,
+}) {
   return (
     <footer className="bg-black">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
@@ -19,7 +23,7 @@ export default function FooterNavbar({lang, nonProfitSection, footerPrivacyLinks
             </Fragment>
           ))}
         </li>
-        <SocialLinks lang={lang}/>
+        <SocialLinks lang={lang} />
         <NonProfitDisclaimers nonProfitSection={nonProfitSection} />
       </div>
     </footer>

@@ -1,21 +1,16 @@
 'use client';
 
 import { type Locale } from '@/i18n-config';
-import {
-  type Dispatch,
-  type SetStateAction,
-  useEffect,
-  useState,
-} from 'react';
+import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
-import PrivacyPolicyModal from './components/footer/PrivacyPolicyModal';
-import SellMyInformationModal from './components/footer/SellMyInformationModal';
 import CookiePolicyModal from './components/footer/CookiesPolicyModal';
 import FooterNavbar from './components/footer/FooterNavbar';
+import PrivacyPolicyModal from './components/footer/PrivacyPolicyModal';
+import SellMyInformationModal from './components/footer/SellMyInformationModal';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const {
-    footer: { cookiePolicy, privacyPolicy, personalInfo, nonProfitSection }
+    footer: { cookiePolicy, privacyPolicy, personalInfo, nonProfitSection },
   } = usei18n(lang);
 
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false);
