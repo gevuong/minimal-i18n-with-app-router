@@ -21,6 +21,7 @@ import {
   RokSosic,
   RonanDunlop,
   ShirinHasan,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -234,10 +235,22 @@ const people: People = {
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
       },
       {
+        img: TamerFahmy,
+        name: 'Tamer Fahmy',
+        role: 'Middle East & Africa Market Advisor',
+        texts: [
+          'Former Dräger/Philips MedTech',
+          'MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University',
+        ],
+      },
+      {
         img: ShirinHasan,
         name: 'Shirin Hasan',
         role: 'Regulatory Affairs Advisor',
-        texts: ['Former Director of Clinical Affairs, Medtronic', 'M.S., Biochemistry University of Mumbai'],
+        texts: [
+          'Former Director of Clinical Affairs, Medtronic',
+          'M.S., Biochemistry University of Mumbai',
+        ],
       },
     ],
   },

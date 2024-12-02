@@ -21,6 +21,7 @@ import {
   RokSosic,
   RonanDunlop,
   ShirinHasan,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -228,11 +229,22 @@ const people: People = {
         texts: ['疫学准教授　九州大学'],
       },
       {
+        img: TamerFahmy,
+        name: 'タマー・ファーミー',
+        role: '中東・アフリカ市場アドバイザー',
+        texts: [
+          '元ドレーゲル/フィリップス メドテック、MBA SP ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
+        ],
+      },
+      {
         img: ShirinHasan,
         name: 'シリン・ハサン',
         role: '規制業務アドバイザー',
-        texts: ['元メドトロニック臨床業務ディレクター', '理学修士（生化学）、ムンバイ大学'],
-    }    
+        texts: [
+          '元メドトロニック臨床業務ディレクター',
+          '理学修士（生化学）、ムンバイ大学',
+        ],
+      },
     ],
   },
 };
