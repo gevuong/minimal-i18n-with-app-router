@@ -20,6 +20,7 @@ import {
   RichardNall,
   RokSosic,
   RonanDunlop,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -231,6 +232,15 @@ const people: People = {
         name: 'Fumihiko Yokota',
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
+      },
+      {
+        img: TamerFahmy,
+        name: 'Tamer Fahmy',
+        role: 'Middle East & Africa Market Advisor',
+        texts: [
+          'Former Dräger/Philips MedTech',
+          'MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University',
+        ],
       },
     ],
   },
