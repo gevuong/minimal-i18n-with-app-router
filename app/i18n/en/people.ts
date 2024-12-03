@@ -240,7 +240,7 @@ const people: People = {
         name: 'Nobuyoshi Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
-        link: 'https://virufy.org/',
+        link: '#',
       },
       {
         img: HiroyukiKunishima,
