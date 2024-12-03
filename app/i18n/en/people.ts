@@ -20,6 +20,7 @@ import {
   RichardNall,
   RokSosic,
   RonanDunlop,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -256,6 +257,15 @@ const people: People = {
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+      },
+      {
+        img: TamerFahmy,
+        name: 'Tamer Fahmy',
+        role: 'Middle East & Africa Market Advisor',
+        texts: [
+          'Former Dräger/Philips MedTech',
+          'MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University',
+        ],
       },
     ],
   },

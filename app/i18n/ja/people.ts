@@ -20,6 +20,7 @@ import {
   RichardNall,
   RokSosic,
   RonanDunlop,
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -250,6 +251,14 @@ const people: People = {
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+      },
+      {
+        img: TamerFahmy,
+        name: 'タマー・ファーミー',
+        role: '中東・アフリカ市場アドバイザー',
+        texts: [
+          '元ドレーゲル/フィリップス メドテック、MBA SP ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
+        ],
       },
     ],
   },
