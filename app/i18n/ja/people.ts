@@ -236,7 +236,7 @@ const people: People = {
         name: '小澤信与',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
-        link: 'https://virufy.org/en/our-org',
+        link: 'https://virufy.org/',
       },
       {
         img: HiroyukiKunishima,
@@ -257,7 +257,8 @@ const people: People = {
         name: 'タマー・ファーミー',
         role: '中東・アフリカ市場アドバイザー',
         texts: [
-          '元ドレーゲル/フィリップス メドテック、MBA SP ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
+          '元ドレーゲル/フィリップス メドテック - 睡眠と呼吸器ケア',
+          'MBA SP ジェイン グローバル マネジメントスクール、BSc 生物医学工学 カイロ大学',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },

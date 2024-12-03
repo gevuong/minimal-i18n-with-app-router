@@ -240,7 +240,7 @@ const people: People = {
         name: 'Nobuyoshi Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
-        link: 'https://virufy.org/en/our-org',
+        link: 'https://virufy.org/',
       },
       {
         img: HiroyukiKunishima,
@@ -262,7 +262,10 @@ const people: People = {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
-        texts: ['Former Dräger/Philips MedTech, MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University'],
+        texts: [
+          'Former Dräger/Philips MedTech - Sleep & Respiratory Care',
+          'MBA, SP Jain School of Global Management, BSc Biomedical Engineering, Cairo University',
+        ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
