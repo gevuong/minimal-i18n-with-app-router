@@ -2,10 +2,10 @@ import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
 import { BgHeader } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import Section4 from './Section4';
-import Link from 'next/link';
 
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -64,7 +64,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   key={name}
                   className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
                 >
-                  <Link target='_blank' href={link}>
+                  <Link target="_blank" href={link}>
                     <ExportedImage
                       className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
                       src={img}
