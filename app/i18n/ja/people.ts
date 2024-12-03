@@ -45,6 +45,7 @@ const people: People = {
         name: 'カラ・マイスター医学博士',
         role: '臨床アドバイザー',
         texts: ['スタンフォード医科大学耳鼻咽喉科臨床助教授'],
+        link: 'https://www.linkedin.com/in/kara-meister-200335110/',
       },
       {
         img: JureLeskovec,
@@ -54,6 +55,7 @@ const people: People = {
           'Pinterestチーフサイエンティスト',
           'スタンフォード大学AI准教授',
         ],
+        link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
         img: MelissaDyrdahl,
@@ -63,24 +65,28 @@ const people: People = {
           '元Adobe最高マーケティング責任者',
           'CommonSpirit Health理事会メンバー',
         ],
+        link: 'https://dci.stanford.edu/melissa-dyrdahl/',
       },
       {
         img: KutsunaSatoshi,
         name: '忽那賢志',
         role: 'エグゼクティブ・臨床アドバイザー',
         texts: ['感染制御医学講座(感染制御学)ー大阪大学'],
+        link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
         texts: ['Green the Gene創設者', '国連環境計画元青年代表'],
+        link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       {
         img: MayXu,
         name: 'メイ・シュウ',
         role: 'データ・AI製品戦略アドバイザー',
         texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
+        link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       {
         img: RafiAzimKhan,
@@ -89,6 +95,7 @@ const people: People = {
         texts: [
           'ピルズベリーローレンスウィンショーLLP欧州データプライバシー部門リーダー、IP/ITパートナー',
         ],
+        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
       {
         img: RonanDunlop,
@@ -98,12 +105,14 @@ const people: People = {
           '元Pivotal/VMWareマーケティング責任者',
           'Cohumanマーケティング副社長',
         ],
+        link: 'https://www.linkedin.com/in/rdunlop/',
       },
       {
         img: MarkHaseltine,
         name: 'マーク・ハセルトン',
         role: 'エグゼクティブアドバイザー',
         texts: ['元edX CTO/CPO', 'MITコンピュータサイエンス卒業生'],
+        link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
         img: MansoorAhmed,
@@ -113,6 +122,7 @@ const people: People = {
           'Cleveland Sleep Research Center創設者兼CEO',
           'キングエドワード医科大学MBBS',
         ],
+        link: 'https://www.linkedin.com/in/mansoor-ahmed-31a86452/',
       },
       {
         img: FaisalCheema,
@@ -121,12 +131,14 @@ const people: People = {
         texts: [
           'ヒューストン大学ティルマン・フェルティッタ医科大学　生命医学・臨床科学准教授',
         ],
+        link: 'https://www.linkedin.com/in/doccheema/',
       },
       {
         img: MertPilanci,
         name: 'メルト・ピランチ',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学電気工学AI助教授'],
+        link: 'https://stanford.edu/~pilanci/',
       },
       {
         img: TetsujiMadarame,
@@ -136,6 +148,7 @@ const people: People = {
           'theDOCK 海事・物流テックVC 投資諮問委員会　取締役',
           'MBA - スタンフォード経営大学院',
         ],
+        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       {
         img: YukitoshiNakatani,
@@ -145,6 +158,7 @@ const people: People = {
           'ITバリューコンサルティング社　CEO',
           'アクセンチュア日本法人　元ディレクター',
         ],
+        link: 'https://www.facebook.com/nakatani.yukitoshi',
       },
       {
         img: VictorWang,
@@ -154,12 +168,14 @@ const people: People = {
           'China Silicon Valley創設者兼会長',
           'スタンフォード経営大学院MBA',
         ],
+        link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
         img: RokSosic,
         name: 'ロック・ソシック',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード工学部シニアリサーチエンジニア'],
+        link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
       },
       {
         img: RichardNall,
@@ -169,6 +185,7 @@ const people: People = {
           'CEO - The Brand Garden',
           'Henleyビジネススクール - 組織リーダーシップ修士号',
         ],
+        link: 'https://www.linkedin.com/in/richardnall/',
       },
       {
         img: KhwajaShaik,
@@ -178,6 +195,7 @@ const people: People = {
           'MOSH副会長、取締役会メンバー',
           'ノースフロリダ大学コンピューティング理事会メンバー',
         ],
+        link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       {
         img: AyomideOwoyemi,
@@ -187,18 +205,21 @@ const people: People = {
           'イリノイシカゴ大学　生命医科学博士号',
           'One Young World　ナイジェリア大使',
         ],
+        link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
       },
       {
         img: TsutomuIto,
         name: '伊藤勉',
         role: 'エグゼクティブビジョナリーアドバイザー',
         texts: ['Tannan FMラジオ創設者', '新幹線主任設計者'],
+        link: 'http://tannan.fm/contents/about-us.html',
       },
       {
         img: ManujAggarwal,
         name: 'マヌージ・アッガルワル',
         role: 'エグゼクティブAI、戦略およびマーケティングアドバイザー',
         texts: ['TetraNoodle Technologies最高イノベーション責任者'],
+        link: 'https://www.linkedin.com/in/manujaggarwal/',
       },
       {
         img: LesAtlas,
@@ -208,32 +229,39 @@ const people: People = {
           'ワシントン大学電気・コンピュータ工学教授',
           'スタンフォード大学電気工学博士',
         ],
+        link: 'https://people.ece.uw.edu/atlas/',
       },
       {
         img: NobuyoOzawa,
-        name: '小澤信与',
+        name: '小澤信代',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
+        link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       {
         img: HiroyukiKunishima,
         name: '國島広之',
         role: '感染症アドバイザー',
         texts: ['感染症学講座聖マリアンナ医科大学病院'],
+        link: 'http://www.k-icnet.org/profile.html',
       },
       {
         img: FumihikoYokota,
         name: '横田文彦',
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
+        link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       {
         img: TamerFahmy,
         name: 'タマー・ファーミー',
         role: '中東・アフリカ市場アドバイザー',
         texts: [
-          '元ドレーゲル/フィリップス メドテック、MBA SP ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
+          '元ドレーゲル/フィリップス メドテック - 睡眠と呼吸器ケア',
+          'MBA SP ジェイン グローバル マネジメントスクール',
+          'BSc 生物医学工学 カイロ大学',
         ],
+        link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
   },

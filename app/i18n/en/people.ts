@@ -48,6 +48,7 @@ const people: People = {
         texts: [
           'Clinical Assistant Professor of ENT Stanford School of Medicine',
         ],
+        link: 'https://www.linkedin.com/in/kara-meister-200335110/',
       },
       {
         img: JureLeskovec,
@@ -57,12 +58,14 @@ const people: People = {
           'Chief Scientist - Pinterest',
           'Associate Professor of AI - Stanford',
         ],
+        link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
         img: MelissaDyrdahl,
         name: 'Melissa Dyrdahl',
         role: 'Executive Marketing Advisor',
         texts: ['Former CMO - Adobe', 'Board Member - CommonSpirit Health'],
+        link: 'https://dci.stanford.edu/melissa-dyrdahl/',
       },
       {
         img: KutsunaSatoshi,
@@ -71,6 +74,7 @@ const people: People = {
         texts: [
           'Infection Control and Prevention Professor - Osaka University',
         ],
+        link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
         img: MadhavDatt,
@@ -80,12 +84,14 @@ const people: People = {
           'Founder - Green the Gene',
           'Former Global Representative for Youth - UN EP',
         ],
+        link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       {
         img: MayXu,
         name: 'May Xu',
         role: 'Data and AI Product Strategy Advisor',
         texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
+        link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       {
         img: RafiAzimKhan,
@@ -94,6 +100,7 @@ const people: People = {
         texts: [
           'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
         ],
+        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
       {
         img: RonanDunlop,
@@ -103,12 +110,14 @@ const people: People = {
           'Former Head of Marketing - Pivotal/VMWare',
           'VP of Marketing - Cohuman',
         ],
+        link: 'https://www.linkedin.com/in/rdunlop/',
       },
       {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
         texts: ['Former CTO/CPO - edX', 'Computer Science alumnus - MIT'],
+        link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
         img: MansoorAhmed,
@@ -118,6 +127,7 @@ const people: People = {
           'Founder & CEO - Cleveland Sleep Research Center',
           'MBBS - King Edward Medical University',
         ],
+        link: 'https://www.linkedin.com/in/mansoor-ahmed-31a86452/',
       },
       {
         img: FaisalCheema,
@@ -126,6 +136,7 @@ const people: People = {
         texts: [
           'Associate Professor of Biomedical & Clinical Sciences, Tilman J. Fertitta College of Medicine, University of Houston',
         ],
+        link: 'https://www.linkedin.com/in/doccheema/',
       },
       {
         img: MertPilanci,
@@ -134,6 +145,7 @@ const people: People = {
         texts: [
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
+        link: 'https://stanford.edu/~pilanci/',
       },
       {
         img: TetsujiMadarame,
@@ -143,12 +155,14 @@ const people: People = {
           'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
           'MBA - Stanford Graduate School of Business',
         ],
+        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       {
         img: YukitoshiNakatani,
         name: 'Yukitoshi Nakatani',
         role: 'Japan Executive Advisor',
         texts: ['CEO, IT Value Consulting', 'Former Director, Accenture Japan'],
+        link: 'https://www.facebook.com/nakatani.yukitoshi',
       },
       {
         img: VictorWang,
@@ -158,12 +172,14 @@ const people: People = {
           'Founder & Chairman - China Silicon Valley',
           'MBA - Stanford Graduate School of Business',
         ],
+        link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
         img: RokSosic,
         name: 'Rok Sosic',
         role: 'Artificial Intelligence Advisor',
         texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
+        link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
       },
       {
         img: RichardNall,
@@ -173,6 +189,7 @@ const people: People = {
           'CEO - The Brand Garden',
           `Master's Organizational Leadership - Henley`,
         ],
+        link: 'https://www.linkedin.com/in/richardnall/',
       },
       {
         img: KhwajaShaik,
@@ -182,6 +199,7 @@ const people: People = {
           'MOSH, Vice Chair, Board Member',
           'Board Member - University of North Florida Computing',
         ],
+        link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       {
         img: AyomideOwoyemi,
@@ -191,18 +209,21 @@ const people: People = {
           'PhD Biomedical Sciences - University of Illinois Chicago',
           'Ambassador - One Young World Nigeria',
         ],
+        link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
       },
       {
         img: TsutomuIto,
         name: 'Tsutomu Ito',
         role: 'Executive Visionary Advisor',
         texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
+        link: 'http://tannan.fm/contents/about-us.html',
       },
       {
         img: ManujAggarwal,
         name: 'Manuj Aggarwal',
         role: 'Executive AI, Strategy And Marketing Advisor',
         texts: ['Chief Innovation Officer - TetraNoodle Technologies'],
+        link: 'https://www.linkedin.com/in/manujaggarwal/',
       },
       {
         img: LesAtlas,
@@ -212,12 +233,14 @@ const people: People = {
           'Professor of Electrical and Computer Engineering - University of Washington',
           'Ph.D. Electrical Engineering, Stanford',
         ],
+        link: 'https://people.ece.uw.edu/atlas/',
       },
       {
         img: NobuyoOzawa,
         name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
+        link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       {
         img: HiroyukiKunishima,
@@ -226,21 +249,25 @@ const people: People = {
         texts: [
           'Department of Infectious Diseases, St. Marianna University Hospital',
         ],
+        link: 'http://www.k-icnet.org/profile.html',
       },
       {
         img: FumihikoYokota,
         name: 'Fumihiko Yokota',
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
+        link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
         texts: [
-          'Former Dräger/Philips MedTech',
-          'MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University',
+          'Former Dräger/Philips MedTech - Sleep & Respiratory Care',
+          'MBA, SP Jain School of Global Management',
+          'BSc Biomedical Engineering, Cairo University',
         ],
+        link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
   },
