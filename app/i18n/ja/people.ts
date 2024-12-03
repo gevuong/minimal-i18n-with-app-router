@@ -272,6 +272,7 @@ const people: People = {
           '元メドトロニック臨床業務ディレクター',
           '理学修士（生化学）、ムンバイ大学',
         ],
+        link: 'https://www.linkedin.com/in/shirinhasan/',
       },
     ],
   },

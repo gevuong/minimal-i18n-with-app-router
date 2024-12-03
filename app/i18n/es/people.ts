@@ -274,7 +274,11 @@ const people: People = {
         img: ShirinHasan,
         name: 'Shirin Hasan',
         role: 'Regulatory Affairs Advisor',
-        texts: ['Former Director of Clinical Affairs, Medtronic', 'M.S., Biochemistry University of Mumbai'],
+        texts: [
+          'Former Director of Clinical Affairs, Medtronic',
+          'M.S., Biochemistry University of Mumbai',
+        ],
+        link: 'https://www.linkedin.com/in/shirinhasan/',
       },
     ],
   },
