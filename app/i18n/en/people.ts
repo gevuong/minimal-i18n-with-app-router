@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoshiOzawa,
+  NobuyoOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -236,11 +236,11 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       {
-        img: NobuyoshiOzawa,
-        name: 'Nobuyoshi Ozawa',
+        img: NobuyoOzawa,
+        name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
-        link: '#',
+        link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       {
         img: HiroyukiKunishima,
@@ -264,7 +264,8 @@ const people: People = {
         role: 'Middle East & Africa Market Advisor',
         texts: [
           'Former Dräger/Philips MedTech - Sleep & Respiratory Care',
-          'MBA, SP Jain School of Global Management, BSc Biomedical Engineering, Cairo University',
+          'MBA, SP Jain School of Global Management',
+          'BSc Biomedical Engineering, Cairo University',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },

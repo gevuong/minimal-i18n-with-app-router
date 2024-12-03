@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoshiOzawa,
+  NobuyoOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -232,11 +232,11 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       {
-        img: NobuyoshiOzawa,
-        name: '小澤信与',
+        img: NobuyoOzawa,
+        name: '小澤信代',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
-        link: 'https://virufy.org/',
+        link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       {
         img: HiroyukiKunishima,
@@ -258,7 +258,8 @@ const people: People = {
         role: '中東・アフリカ市場アドバイザー',
         texts: [
           '元ドレーゲル/フィリップス メドテック - 睡眠と呼吸器ケア',
-          'MBA SP ジェイン グローバル マネジメントスクール、BSc 生物医学工学 カイロ大学',
+          'MBA SP ジェイン グローバル マネジメントスクール',
+          'BSc 生物医学工学 カイロ大学',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
