@@ -263,6 +263,7 @@ const people: People = {
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
         texts: ['Former Dräger/Philips MedTech, MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University'],
+        link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
   },

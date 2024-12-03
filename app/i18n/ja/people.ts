@@ -259,6 +259,7 @@ const people: People = {
         texts: [
           '元ドレーゲル/フィリップス メドテック、MBA SP ジェイン グローバル マネジメントスクール、BCS 生物医学工学 カイロ大学',
         ],
+        link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
   },

@@ -266,6 +266,7 @@ const people: People = {
           'Former Dräger/Philips MedTech',
           'MBA, SP Jain School of Global Management, BCS Biomedical Engineering, Cairo University',
         ],
+        link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
     ],
   },
