@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoOzawa,
+  NobuyoshiOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -184,7 +184,7 @@ const people: People = {
           'CEO - The Brand Garden',
           'Henleyビジネススクール - 組織リーダーシップ修士号',
         ],
-        link: 'https://www.linkedin.com/in/richardnall/?originalSubdomain=uk',
+        link: 'https://www.linkedin.com/in/richardnall/',
       },
       {
         img: KhwajaShaik,
@@ -194,7 +194,7 @@ const people: People = {
           'MOSH副会長、取締役会メンバー',
           'ノースフロリダ大学コンピューティング理事会メンバー',
         ],
-        link: 'https://www.linkedin.com/in/richardnall/?originalSubdomain=uk',
+        link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       {
         img: AyomideOwoyemi,
@@ -231,7 +231,7 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       {
-        img: NobuyoOzawa,
+        img: NobuyoshiOzawa,
         name: '小澤信与',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],

@@ -64,7 +64,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   key={name}
                   className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
                 >
-                  <Link href={link}>
+                  <Link target='_blank' href={link}>
                     <ExportedImage
                       className="h-[225px] w-[158px] object-cover md:h-[450px] md:w-[375px]"
                       src={img}

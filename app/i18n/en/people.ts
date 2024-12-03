@@ -15,7 +15,7 @@ import {
   MayXu,
   MelissaDyrdahl,
   MertPilanci,
-  NobuyoOzawa,
+  NobuyoshiOzawa,
   RafiAzimKhan,
   RichardNall,
   RokSosic,
@@ -188,7 +188,7 @@ const people: People = {
           'CEO - The Brand Garden',
           `Master's Organizational Leadership - Henley`,
         ],
-        link: 'https://www.linkedin.com/in/richardnall/?originalSubdomain=uk',
+        link: 'https://www.linkedin.com/in/richardnall/',
       },
       {
         img: KhwajaShaik,
@@ -198,7 +198,7 @@ const people: People = {
           'MOSH, Vice Chair, Board Member',
           'Board Member - University of North Florida Computing',
         ],
-        link: 'https://www.linkedin.com/in/richardnall/?originalSubdomain=uk',
+        link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       {
         img: AyomideOwoyemi,
@@ -235,8 +235,8 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       {
-        img: NobuyoOzawa,
-        name: 'Nobuyo Ozawa',
+        img: NobuyoshiOzawa,
+        name: 'Nobuyoshi Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
         link: 'https://virufy.org/en/our-org',
