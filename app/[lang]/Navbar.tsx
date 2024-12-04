@@ -18,7 +18,7 @@ import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed
+    navbar: { home, ourTechnology, aboutUs, media, faq, donate }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   useEffect(() => {
     const links = [
       { label: 'Home', route: [`/${lang}`] },
-      { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+      { label: 'Technology', route: [`/${lang}/ai`] },
       {
         label: 'CoughCheck App',
         route: [
@@ -50,6 +50,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           `/${lang}/amils-story`,
         ],
       },
+      { label: 'Media', route: [`/${lang}/`, `/${lang}/publications`] },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
 
@@ -299,6 +300,23 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </div>
                 </li>
+                
+                {/* media link */}
+                <li>
+                  <div>
+                    <Link
+                      className={`${navbar ? 'font-bold' : ''} ${
+                        activeLink === 'Media'
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                      }`}
+                      href={'#'}
+                    >
+                      {media?.section}
+                    </Link>
+                  </div>
+                </li>
+
                 <li className="text-white">
                   <div>
                     <Link
