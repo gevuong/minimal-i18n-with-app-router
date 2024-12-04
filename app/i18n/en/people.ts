@@ -276,7 +276,7 @@ const people: People = {
         role: 'Regulatory Affairs Advisor',
         texts: [
           'Former Director of Clinical Affairs, Medtronic',
-          'M.S., Biochemistry University of Mumbai',
+          'M.S., Biochemistry, University of Mumbai',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
