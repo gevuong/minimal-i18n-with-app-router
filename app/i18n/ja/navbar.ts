@@ -22,6 +22,11 @@ export const navbar: NavbarType = {
     blog: 'ブログ',
     oneYoungWorld: 'One Young World',
   },
+  media: {
+    section: 'メディア',
+    pressReleases: 'プレスリリース',
+    ourResearch: '出版物',
+  },
   faq: 'FAQ',
   donate: {
     buttonText: '寄付',

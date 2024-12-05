@@ -22,6 +22,11 @@ export const navbar: NavbarType = {
     blog: 'Blog',
     oneYoungWorld: 'Un Mundo Joven',
   },
+  media: {
+    section: 'Medios',
+    pressReleases: 'Comunicados de prensa',
+    ourResearch: 'Publicaciones',
+  },
   faq: 'Preguntas Frecuentes',
   donate: {
     buttonText: 'Donar',

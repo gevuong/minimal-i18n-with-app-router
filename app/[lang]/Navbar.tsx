@@ -50,7 +50,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           `/${lang}/amils-story`,
         ],
       },
-      { label: 'Media', route: [`/${lang}/`, `/${lang}/publications`] },
+      { label: 'Media', route: [`/${lang}/news`, `/${lang}/press-releases`] },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
 
@@ -300,7 +300,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </div>
                 </li>
-                
+
                 {/* media link */}
                 <li>
                   <div>
@@ -310,7 +310,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                       }`}
-                      href={'#'}
+                      href={`/${lang}/press-releases`}
                     >
                       {media?.section}
                     </Link>
