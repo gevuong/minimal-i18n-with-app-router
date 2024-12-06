@@ -50,7 +50,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
           `/${lang}/amils-story`,
         ],
       },
-      { label: 'Media', route: [`/${lang}/news`, `/${lang}/press-releases`] },
+      {
+        label: 'Media',
+        route: [
+          `/${lang}/news`,
+          `/${lang}/press-releases`,
+          `/${lang}/press`,
+          `/${lang}/publications`,
+        ],
+      },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
 
@@ -195,12 +203,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       >
                         {ourTechnology?.howItWorks}
                       </Link>
-                      <Link
-                        className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/publications`}
-                      >
-                        {ourTechnology?.OurResearch}
-                      </Link>
                     </div>
                   </div>
                 </li>
@@ -270,8 +272,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
                           ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                          : 'ml-[-60px] hidden'
-                      } hover:flex peer-hover:flex`}
+                          : 'hidden'
+                      } hover:flex peer-hover:flex ${lang === 'ja' ? 'ml-[-50px]' : 'ml-[-60px]'}`}
                     >
                       <Link
                         className="pb-3 pt-6 text-white hover:font-bold"
@@ -301,19 +303,39 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
 
-                {/* media link */}
-                <li>
+                {/* Media link */}
+                <li className="text-white">
                   <div>
                     <Link
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'Media'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
-                      }`}
+                      } `}
                       href={`/${lang}/press-releases`}
                     >
                       {media?.section}
                     </Link>
+                    <div
+                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
+                        navbar
+                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                          : 'ml-[-70px] hidden'
+                      } hover:flex peer-hover:flex`}
+                    >
+                      <Link
+                        className="pb-3 pt-6 text-white hover:font-bold"
+                        href={`/${lang}/press-releases`}
+                      >
+                        {media?.pressReleases}
+                      </Link>
+                      <Link
+                        className="py-3 text-white hover:font-bold"
+                        href={`/${lang}/publications`}
+                      >
+                        {media?.ourResearch}
+                      </Link>
+                    </div>
                   </div>
                 </li>
 
