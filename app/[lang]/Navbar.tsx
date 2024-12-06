@@ -272,8 +272,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
                           ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                          : 'hidden'
-                      } hover:flex peer-hover:flex ${lang === 'ja' ? 'ml-[-50px]' : 'ml-[-60px]'}`}
+                          : 'ml-[-60px] hidden'
+                      } hover:flex peer-hover:flex`}
                     >
                       <Link
                         className="pb-3 pt-6 text-white hover:font-bold"
