@@ -5,7 +5,6 @@ export const navbar: NavbarType = {
   ourTechnology: {
     section: 'Technology',
     howItWorks: 'AI',
-    OurResearch: 'Publications',
   },
   coughCheckApp: {
     section: 'CoughCheck App',
@@ -21,6 +20,11 @@ export const navbar: NavbarType = {
     ourSupporters: 'Our Supporters',
     blog: 'Blog',
     oneYoungWorld: 'One Young World',
+  },
+  media: {
+    section: 'Media',
+    pressReleases: 'Press Releases',
+    ourResearch: 'Publications',
   },
   faq: 'FAQ',
   donate: {
