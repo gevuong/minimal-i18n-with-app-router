@@ -6,6 +6,7 @@ export { default as BrazilFlagIcon } from '../../icons/icon-flag-brazil.png';
 export { default as JapanFlagIcon } from '../../icons/icon-flag-japan.png';
 export { default as SpainFlagIcon } from '../../icons/icon-flag-spain.png';
 export { default as USFlagIcon } from '../../icons/icon-flag-us.png';
+export { default as ArabFlagIcon } from '../../icons/icon-flag-arab.webp';
 
 // Modal Icons
 export { default as GoFundMeIcon } from '../../icons/icon-gofundme.png';
