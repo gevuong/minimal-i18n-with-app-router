@@ -33,7 +33,7 @@ const PublicationsPage = ({
         <div className="relative bg-[#255292]">
           <ExportedImage
             src={PhoneHeader}
-            className="absolute h-full w-full object-cover opacity-40"
+            className="absolute h-full w-full object-cover opacity-60"
             alt=""
             priority
             basePath={basePath}
@@ -85,7 +85,7 @@ const PublicationsPage = ({
               {collaborateSection.title}
             </h2>
             <button
-              className="rounded-full bg-white text-black p-6 text-xl font-medium sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
+              className="rounded-full bg-white p-6 text-xl font-medium text-black sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
               onClick={() => router.push(`/${lang}/job-listing`)}
             >
               {collaborateSection.linkText}
