@@ -5,7 +5,6 @@ export const navbar: NavbarType = {
   ourTechnology: {
     section: 'التكنولوجيا',
     howItWorks: 'الذكاء الاصطناعي',
-    OurResearch: 'المنشورات',
   },
   coughCheckApp: {
     section: 'تطبيق كوف تشيك',
@@ -21,6 +20,11 @@ export const navbar: NavbarType = {
     ourSupporters: 'داعمونا',
     blog: 'المدونة',
     oneYoungWorld: 'وان يونغ وورلد',
+  },
+  media: {
+    section: 'وسائل الإعلام',
+    pressReleases: 'البيانات الصحفية',
+    ourResearch: 'المنشورات',
   },
   faq: 'الأسئلة الشائعة',
   donate: {
