@@ -53,9 +53,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'Media',
         route: [
-          `/${lang}/news`,
           `/${lang}/press-releases`,
-          `/${lang}/press`,
           `/${lang}/publications`,
         ],
       },
