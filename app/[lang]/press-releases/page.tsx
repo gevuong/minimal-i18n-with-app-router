@@ -1,9 +1,9 @@
 'use client';
 
 import { type Locale } from '@/i18n-config';
-import ExportedImage from 'next-image-export-optimizer';
-import { PressReleasesBackground } from '@/public/images/pressReleases';
 import { basePath } from '@/next.config.mjs';
+import { PressReleasesBackground } from '@/public/images/pressReleases';
+import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import PublicationCard from '../publications/PublicationCard';
 
@@ -31,7 +31,7 @@ const PressReleasesPage = ({
             />
 
             <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 py-64 text-center font-medium opacity-95">
-              <h1 className="text-4xl font-light text-green-500 sm:text-5xl">
+              <h1 className="text-4xl text-green-500 sm:text-5xl">
                 {pressReleaseSection.title}
               </h1>
             </div>
