@@ -4,12 +4,12 @@ const ai: Ai = {
   heroSection: {
     title: [
       {
-        type: 'text',
-        text: 'العلم وراء ',
+        type: 'span',
+        text: 'Virufy ',
       },
       {
-        type: 'span',
-        text: 'Virufy',
+        type: 'text',
+        text: 'العلم وراء ',
       },
     ],
     text: 'الذكاء الاصطناعي قادر على اكتشاف الفروقات الدقيقة في أنماط الصوت للكشف عن وجود الأمراض.',

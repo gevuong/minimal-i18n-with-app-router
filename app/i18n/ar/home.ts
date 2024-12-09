@@ -2,7 +2,7 @@ import { type HomeType } from '../types/home';
 
 const home: HomeType = {
   introSection: {
-    text: 'مرحبًا بك في فيروفي',
+    text: 'Virufy رحبًا بك في',
     text2: 'رفيقك الرقمي للصحة',
     subText: [
       {
@@ -11,7 +11,7 @@ const home: HomeType = {
       },
       {
         type: 'span',
-        text: 'فيروفي',
+        text: 'Virufy',
       },
       {
         type: 'text',
@@ -31,7 +31,7 @@ const home: HomeType = {
       },
       {
         type: 'span',
-        text: 'فيروفي',
+        text: 'Virufy',
       },
       {
         type: 'text',
@@ -46,7 +46,7 @@ const home: HomeType = {
     title: ['تحليل فوري', 'خصوصية في المنزل', 'واجهة مستخدم سهلة'],
     sub: [
       'استجابة سريعة لخصائص السعال الخاصة بك ونمط الشذوذ بناءً على نمط صوت السعال',
-      'اشعر بالأمان knowing أن نتائجك ستكون فقط لعيونك.',
+      'اشعر بالأمان عندما تعلم أن نتائجك مخصصة لعينيك فقط.',
       'تصميم بديهي لسهولة التنقل وتجربة مستخدم سلسة.',
     ],
     disclaimer:
