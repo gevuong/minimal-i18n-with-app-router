@@ -3,6 +3,7 @@ export interface NavbarType {
   ourTechnology: OurTechnology;
   coughCheckApp: CoughCheckApp;
   aboutUs: AboutUs;
+  media: Media;
   faq: string;
   donate: DonateSection;
 }
@@ -10,7 +11,6 @@ export interface NavbarType {
 export interface OurTechnology {
   section: string;
   howItWorks: string;
-  OurResearch: string;
 }
 
 export interface CoughCheckApp {
@@ -28,6 +28,12 @@ export interface AboutUs {
   ourSupporters: string;
   blog: string;
   oneYoungWorld: string;
+}
+
+export interface Media {
+  section: string;
+  pressReleases: string;
+  ourResearch: string;
 }
 
 interface DonateSection {
