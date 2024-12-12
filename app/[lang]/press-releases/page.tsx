@@ -21,9 +21,9 @@ const PressReleasesPage = ({
       <div className="relative -top-24">
         {/* Hero Section */}
         <section>
-          <div className="relative bg-[#2b5290]">
+          <div className="relative bg-[#4883e3]">
             <ExportedImage
-              className="absolute h-full w-full object-cover opacity-40"
+              className="absolute h-full w-full object-cover opacity-60"
               src={PressReleasesBackground}
               alt=""
               priority
