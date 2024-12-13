@@ -5,7 +5,6 @@ export const navbar: NavbarType = {
   ourTechnology: {
     section: '技術',
     howItWorks: 'AIの仕組み',
-    OurResearch: '出版物',
   },
   coughCheckApp: {
     section: '咳チェックアプリ',
@@ -21,6 +20,11 @@ export const navbar: NavbarType = {
     ourSupporters: 'サポーター',
     blog: 'ブログ',
     oneYoungWorld: 'One Young World',
+  },
+  media: {
+    section: 'メディア',
+    pressReleases: 'プレスリリース',
+    ourResearch: '出版物',
   },
   faq: 'FAQ',
   donate: {

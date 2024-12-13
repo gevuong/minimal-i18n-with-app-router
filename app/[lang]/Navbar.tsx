@@ -18,7 +18,7 @@ import { ButtonSize, ButtonType } from './themes';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, aboutUs, faq, donate }, // re add coughcheck here when needed
+    navbar: { home, ourTechnology, aboutUs, media, faq, donate }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   useEffect(() => {
     const links = [
       { label: 'Home', route: [`/${lang}`] },
-      { label: 'Technology', route: [`/${lang}/ai`, `/${lang}/publications`] },
+      { label: 'Technology', route: [`/${lang}/ai`] },
       {
         label: 'CoughCheck App',
         route: [
@@ -48,6 +48,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
+        ],
+      },
+      {
+        label: 'Media',
+        route: [
+          `/${lang}/press-releases`,
+          `/${lang}/publications`,
         ],
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
@@ -194,12 +201,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       >
                         {ourTechnology?.howItWorks}
                       </Link>
-                      <Link
-                        className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/publications`}
-                      >
-                        {ourTechnology?.OurResearch}
-                      </Link>
                     </div>
                   </div>
                 </li>
@@ -299,6 +300,43 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </div>
                 </li>
+
+                {/* Media link */}
+                <li className="text-white">
+                  <div>
+                    <Link
+                      className={`${navbar ? 'font-bold' : ''} ${
+                        activeLink === 'Media'
+                          ? 'solid peer border-b-2 py-2 text-white'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                      } `}
+                      href={`/${lang}/press-releases`}
+                    >
+                      {media?.section}
+                    </Link>
+                    <div
+                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
+                        navbar
+                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                          : 'ml-[-70px] hidden'
+                      } hover:flex peer-hover:flex`}
+                    >
+                      <Link
+                        className="pb-3 pt-6 text-white hover:font-bold"
+                        href={`/${lang}/press-releases`}
+                      >
+                        {media?.pressReleases}
+                      </Link>
+                      <Link
+                        className="py-3 text-white hover:font-bold"
+                        href={`/${lang}/publications`}
+                      >
+                        {media?.ourResearch}
+                      </Link>
+                    </div>
+                  </div>
+                </li>
+
                 <li className="text-white">
                   <div>
                     <Link

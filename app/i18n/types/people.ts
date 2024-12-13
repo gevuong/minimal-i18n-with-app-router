@@ -23,4 +23,5 @@ type CardData = {
   name: string;
   role: string;
   texts: string[];
+  link: string;
 };

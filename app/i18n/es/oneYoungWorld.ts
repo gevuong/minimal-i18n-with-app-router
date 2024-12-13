@@ -69,7 +69,7 @@ const oneYoungWorld: OneYoungWorld = {
       testimonials: [
         {
           name: 'Sebastian Pedraza',
-          origin: 'Columbia',
+          origin: 'Colombia',
           image: SebastianTestimonial,
           altText: 'image of Sebastian Pedraza',
           testimonial: `“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”`,
