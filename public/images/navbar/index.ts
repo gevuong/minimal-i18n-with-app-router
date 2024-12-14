@@ -15,3 +15,5 @@ export { default as PaypalIcon } from '../../icons/icon-paypal.png';
 // Menu Icons
 export { default as CloseMenuIcon } from '../../icons/icon-close-menu-white.svg';
 export { default as HamburgerMenuIcon } from '../../icons/icon-hamburger-menu-white.svg';
+
+export { default as SearchIconWhite } from '../../icons/icon-search-white.png';

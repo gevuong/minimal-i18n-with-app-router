@@ -7,6 +7,7 @@ import {
   HamburgerMenuIcon,
   VirufyLogo,
 } from '@/public/images/navbar/index';
+import { SearchIconWhite } from '@/public/images/navbar';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -24,6 +25,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [navbar, setNavbar] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [activeLink, setActiveLink] = useState('');
+  const [searchActive, setSearchActive] = useState(false);
+  // const [searchItem, setSearchItem] = useState('');
 
   const currPathname = usePathname();
 
@@ -52,10 +55,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       },
       {
         label: 'Media',
-        route: [
-          `/${lang}/press-releases`,
-          `/${lang}/publications`,
-        ],
+        route: [`/${lang}/press-releases`, `/${lang}/publications`],
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
@@ -163,7 +163,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${searchActive ? 'hidden' : ''} ${navbar ? 'font-bold' : ''} ${
                         activeLink === 'Home'
                           ? 'solid border-b-2 py-2'
                           : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -178,7 +178,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${searchActive ? 'hidden' : ''} ${navbar ? 'font-bold' : ''} ${
                         activeLink === 'Technology'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -256,7 +256,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${searchActive ? 'hidden' : ''} ${navbar ? 'font-bold' : ''} ${
                         activeLink === 'About Us'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -305,7 +305,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${searchActive ? 'hidden' : ''} ${navbar ? 'font-bold' : ''} ${
                         activeLink === 'Media'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -340,7 +340,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
+                      className={`${searchActive ? 'hidden' : ''} ${navbar ? 'font-bold' : ''} ${
                         activeLink === 'FAQ'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -351,6 +351,26 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
+
+                <li>
+                  <input
+                    type="search"
+                    className={`${navbar ? 'hidden' : ''} rounded-3xl border border-gray-100 border-opacity-50 bg-transparent p-2 text-white transition-all duration-300 focus:w-[35rem] focus:translate-x-0 md:w-20 lg:w-28 xl:w-32`}
+                    onFocus={() => setSearchActive(true)} // Set to active on focus
+                    onBlur={() => setSearchActive(false)}
+                    placeholder='Search'
+                  />
+                  <span
+                    className={`absolute -ml-7 pt-3 opacity-40 sm:pr-6 ${lang === 'ja' ? 'md:pr-14 lg:pr-16' : ''}`}
+                  >
+                    <ExportedImage
+                      src={SearchIconWhite}
+                      alt="search icon"
+                      basePath={basePath}
+                    />
+                  </span>
+                </li>
+
                 <li>
                   <LocaleSelect />
                 </li>
