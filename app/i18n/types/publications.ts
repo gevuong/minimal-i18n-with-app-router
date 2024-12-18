@@ -9,6 +9,7 @@ export interface Publications {
 export interface PublicationCard {
   title: string;
   date: string;
+  subtext?:string;
   url: string;
   linkText: string;
 }
