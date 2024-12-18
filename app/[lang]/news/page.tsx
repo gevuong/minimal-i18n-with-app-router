@@ -41,7 +41,7 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {pressReleaseCards.map((pressRelease, i) => (
               <div
                 key={i}
-                className="space-y-4 rounded-xl bg-[#00000060] px-10 py-8 text-left text-white sm:px-16 lg:basis-1/3"
+                className="w-4/5 space-y-4 rounded-xl bg-[#00000060] px-10 py-8 text-left text-white sm:px-16 lg:basis-1/3"
               >
                 <PublicationCard {...pressRelease} />
               </div>
