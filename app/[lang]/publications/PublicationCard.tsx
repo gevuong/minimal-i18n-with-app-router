@@ -13,7 +13,7 @@ const PublicationCard = ({
       <h3 className="max-w-lg text-xl font-medium md:max-w-md">{title}</h3>
       <p className={`${!subtext ? 'hidden' : ''}`}>{subtext}</p>
       <div className="items-center space-y-6 md:flex md:justify-between md:space-y-0">
-        <ul className="list-inside list-disc pb-6">
+        <ul className="list-inside lg:list-outside xl:list-inside list-disc pb-6">
           <li>{date}</li>
         </ul>
         <Link
