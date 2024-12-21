@@ -23,7 +23,7 @@ export const navbar: NavbarType = {
   },
   media: {
     section: 'Media',
-    pressReleases: 'Press Releases',
+    pressReleases: 'News',
     ourResearch: 'Publications',
   },
   faq: 'FAQ',

@@ -9,7 +9,7 @@ import jobListing from './jobListing';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
 import people from './people';
-import pressReleases from './pressReleases';
+import pressReleases from './news';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
 import story from './story';

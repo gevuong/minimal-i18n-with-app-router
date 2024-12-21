@@ -53,7 +53,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'Media',
         route: [
-          `/${lang}/press-releases`,
+          `/${lang}/news`,
           `/${lang}/publications`,
         ],
       },
@@ -310,7 +310,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                       } `}
-                      href={`/${lang}/press-releases`}
+                      href={`/${lang}/news`}
                     >
                       {media?.section}
                     </Link>
@@ -318,12 +318,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
                         navbar
                           ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                          : 'ml-[-70px] hidden'
+                          : 'ml-[-75px] hidden'
                       } hover:flex peer-hover:flex`}
                     >
                       <Link
                         className="pb-3 pt-6 text-white hover:font-bold"
-                        href={`/${lang}/press-releases`}
+                        href={`/${lang}/news`}
                       >
                         {media?.pressReleases}
                       </Link>
