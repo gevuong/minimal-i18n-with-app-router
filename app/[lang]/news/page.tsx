@@ -5,7 +5,7 @@ import { basePath } from '@/next.config.mjs';
 import { PressReleasesBackground } from '@/public/images/pressReleases';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
-import PublicationCard from '../publications/PublicationCard';
+import NewsCard from './NewsCard';
 
 const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -35,19 +35,21 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
 
         {/* Press Releases Section */}
-        <section>
-          {/* Cards Container */}
-          <div className="relative -mb-24 flex flex-wrap justify-center gap-8 bg-[#285ba1] px-8 pb-60 pt-28">
-            {pressReleaseCards.map((pressRelease, i) => (
-              <div
-                key={i}
-                className="w-4/5 space-y-4 rounded-xl bg-[#00000060] px-10 py-8 text-left text-white sm:px-16 lg:basis-1/3"
-              >
-                <PublicationCard {...pressRelease} />
-              </div>
-            ))}
-          </div>
-        </section>
+        <div className="relative -mb-24 bg-[#255292] pb-24">
+          <section className="flex justify-center">
+            {/* Cards Container */}
+            <div className="grid gap-8 px-10 pt-28 lg:grid-cols-2 lg:px-16">
+              {pressReleaseCards.map((pressRelease, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl bg-[#00000060] px-10 py-8 text-left text-white"
+                >
+                  <NewsCard {...pressRelease} />
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </>
   );
