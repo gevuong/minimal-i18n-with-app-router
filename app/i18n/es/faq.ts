@@ -413,7 +413,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications.',
+                  text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.',
                 },
               ],
             },

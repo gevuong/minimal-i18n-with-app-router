@@ -26,7 +26,7 @@ const ai: Ai = {
       },
       {
         title: '02',
-        text: 'El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, Al compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.',
+        text: 'El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, AI compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.',
         style: 'text-[2.5rem] sm:text-6xl',
       },
     ],

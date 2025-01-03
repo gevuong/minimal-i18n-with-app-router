@@ -1,10 +1,11 @@
-import { type PublicationCard } from '@/app/i18n/types/publications';
+import { type NewsCard } from '@/app/i18n/types/news';
 import Link from 'next/link';
 
-const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {
+const NewsCard = ({ title, date, subText, url, linkText }: NewsCard) => {
   return (
     <>
-      <h3 className="max-w-lg text-xl font-medium">{title}</h3>
+      <h3 className="max-w-lg text-xl font-medium lg:h-28 xl:h-20">{title}</h3>
+      <div className="py-4">{subText}</div>
       <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
         <ul className="list-inside list-disc pb-6">
           <li>{date}</li>
@@ -21,4 +22,4 @@ const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {
   );
 };
 
-export default PublicationCard;
+export default NewsCard;
