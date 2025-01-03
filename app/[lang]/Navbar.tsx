@@ -26,7 +26,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [showModal, setShowModal] = useState(false);
   const [activeLink, setActiveLink] = useState('');
   const [searchActive, setSearchActive] = useState(false);
-  // const [searchItem, setSearchItem] = useState('');
 
   const currPathname = usePathname();
 
@@ -55,10 +54,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       },
       {
         label: 'Media',
-        route: [
-          `/${lang}/news`,
-          `/${lang}/publications`,
-        ],
+        route: [`/${lang}/news`, `/${lang}/publications`],
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
@@ -130,6 +126,32 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </Link>
             {/* // hamburger and x button */}
             <div className="lg:hidden">
+              <input
+                type="search"
+                className={`${
+                  searchActive ? 'w-[50%] opacity-100' : 'w-0 opacity-0'
+                } absolute right-12 rounded-3xl border border-gray-100 border-opacity-50 bg-transparent p-2 text-white transition-all duration-300 focus:outline-none`}
+                onFocus={() => setSearchActive(true)}
+                onBlur={() => setSearchActive(false)}
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                className="text-gray-700 outline-none focus:border focus:border-gray-400"
+                onClick={() => setSearchActive((prev) => !prev)}
+                onBlur={() => setSearchActive(false)}
+              >
+                {navbar ? (
+                  ''
+                ) : (
+                  <ExportedImage
+                    className="h-[18px]"
+                    src={SearchIconWhite}
+                    alt=""
+                    basePath={basePath}
+                  />
+                )}
+              </button>
               <button
                 className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                 onClick={() => setNavbar(!navbar)}
@@ -354,19 +376,20 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
-
+                {/* search input */}
                 <li>
                   <input
                     type="search"
                     className={`${navbar ? 'hidden' : ''} rounded-3xl border border-gray-100 border-opacity-50 bg-transparent p-2 text-white transition-all duration-300 focus:w-[35rem] focus:translate-x-0 md:w-20 lg:w-28 xl:w-32`}
                     onFocus={() => setSearchActive(true)} // Set to active on focus
                     onBlur={() => setSearchActive(false)}
-                    placeholder='Search'
+                    placeholder="Search"
                   />
                   <span
-                    className={`absolute -ml-7 pt-3 opacity-40 sm:pr-6 ${lang === 'ja' ? 'md:pr-14 lg:pr-16' : ''}`}
+                    className={`absolute -ml-8 h-1 pt-3 opacity-40 sm:pr-6 ${lang === 'ja' ? 'md:pr-14 lg:pr-16' : ''}`}
                   >
                     <ExportedImage
+                      className={navbar ? 'hidden' : ''}
                       src={SearchIconWhite}
                       alt="search icon"
                       basePath={basePath}
