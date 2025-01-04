@@ -29,7 +29,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           {/* Welcome text */}
           <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
             <div className="mx-auto flex max-w-screen-xl flex-col">
-              <div className="mt-0 sm:mt-0 md:mt-32 lg:mt-44">
+              <div className="mt-2 sm:mt-5 md:mt-32 lg:mt-44">
                 <div className="ml-0 mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-24 xl:mt-24">
                   <Title
                     Text={introSection.text}
@@ -89,7 +89,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </div>
               </div>
               {/* How it works section */}
-              <div className="absolute bottom-6 ml-24 mt-4 flex max-w-[50rem] flex-col items-center px-8 sm:bottom-12 sm:ml-32 sm:mr-8 sm:mt-8 sm:space-y-2 md:bottom-32 md:ml-48 md:space-y-8 lg:ml-72 lg:mr-20 lg:mt-16 xl:bottom-60 xl:mt-60">
+              <div className="absolute bottom-7 ml-24 flex max-w-[50rem] flex-col items-center px-6 sm:bottom-9 sm:ml-32 sm:mr-8 sm:mt-8 sm:px-1 sm:space-y-2 md:bottom-32 md:ml-48 md:space-y-8 md:px-8 lg:ml-72 lg:mr-20 lg:mt-16 xl:bottom-60 xl:mt-60">
                 <p className="text-xs leading-8 sm:leading-6 md:text-2xl md:leading-8 lg:text-[1.75rem] lg:leading-9 xl:text-[2rem] xl:leading-10">
                   {introSection.mainText2}
                 </p>
