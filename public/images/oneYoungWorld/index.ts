@@ -33,3 +33,5 @@ export { default as Sebastian } from './teamLeads/sebastian.webp';
 export { default as Shreya } from './teamLeads/shreya.webp';
 export { default as Veronica } from './teamLeads/veronica.webp';
 export { default as Yulie } from './teamLeads/yulie.webp';
+
+

@@ -1,4 +1,5 @@
 import {
+  AdamLeipzig,
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
@@ -6,6 +7,7 @@ import {
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KoheiWakamiya,
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
@@ -282,6 +284,27 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
+      {
+          img: AdamLeipzig,
+          name: "آدم لايبزيغ",
+          role: "المستشار التنفيذي",
+          texts: [
+            "الرئيس التنفيذي لشركة Entertainment Media Partners",
+            "الرئيس السابق لشركة National Geographic Films",
+            "عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس"
+          ],
+          "link": "https://www.linkedin.com/in/adamleipzig/"
+        },
+        {
+          img: KoheiWakamiya,
+          name: "كوهي واكاميا",
+          role: "مستشار الذكاء الاصطناعي الصوتي",
+          texts: [
+            "أستاذ مساعد تصميم الصوتيات",
+            "جامعة كيوشو"
+          ],
+          link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
+        }
     ],
   },
 };

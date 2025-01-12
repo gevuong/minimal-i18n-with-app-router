@@ -1,4 +1,5 @@
 import {
+  AdamLeipzig,
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
@@ -6,6 +7,7 @@ import {
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KoheiWakamiya,
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
@@ -273,6 +275,27 @@ const people: People = {
           '理学修士（生化学）、ムンバイ大学',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+      },
+      {
+        img: AdamLeipzig,
+        name: 'アダム・レイプニッツ',
+        role: '規制業務アドバイザー',
+        texts: [
+          'エンターテインメントメディアパートナーズのCEO',
+          'ナショナルジオグラフィックフィルムズの元社長',
+          'バークレー・ハース経営大学院のプロフェッショナルファカルティ'
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
+      {
+        img: KoheiWakamiya,
+        name: '若宮 耕平',
+        role: '音声AI顧問',
+        texts: [
+          '音声AIアドバイザー',
+          '九州大学'
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
       },
     ],
   },

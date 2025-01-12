@@ -26,8 +26,11 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  AdamLeipzig,
+  KoheiWakamiya
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
+
 
 const people: People = {
   titleImage:
@@ -279,6 +282,27 @@ const people: People = {
           'M.S., Biochemistry, University of Mumbai',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+      },
+      {
+        img: AdamLeipzig,
+        name: 'Adam Leipzig',
+        role: 'Executive Advisor',
+        texts: [
+          'CEO, Entertainment Media Partners',
+          'Former President, National Geographic Films',
+          'Professional Faculty, Berkeley Haas School of Business',
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
+      {
+        img: KoheiWakamiya,
+        name: 'Kohei Wakamiya',
+        role: 'Audio AI Advisor',
+        texts: [
+          'Acoustic Design Assistant Professor',
+          'Kyushu University'
+        ],
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
     ],
   },
