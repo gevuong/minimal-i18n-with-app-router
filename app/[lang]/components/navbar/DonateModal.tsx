@@ -65,7 +65,7 @@ export default function DonateModal({
                 </button>
               </a>
               <a
-                href="https://www.gofundme.com/f/virufy-covid19"
+                href="https://www.gofundme.com/f/donate-virufy"
                 target="_blank"
               >
                 {/* gofundme button */}
