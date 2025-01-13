@@ -179,6 +179,17 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
+        img: AdamLeipzig,
+        name: 'Adam Leipzig',
+        role: 'Executive Advisor',
+        texts: [
+          'CEO, Entertainment Media Partners',
+          'Former President, National Geographic Films',
+          'Professional Faculty, Berkeley Haas School of Business',
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
+      {
         img: RokSosic,
         name: 'Rok Sosic',
         role: 'Artificial Intelligence Advisor',
@@ -263,6 +274,16 @@ const people: People = {
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       {
+        img: KoheiWakamiya,
+        name: 'Kohei Wakamiya',
+        role: 'Audio AI Advisor',
+        texts: [
+          'Acoustic Design Assistant Professor',
+          'Kyushu University'
+        ],
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
+      },
+      {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
@@ -282,27 +303,6 @@ const people: People = {
           'M.S., Biochemistry, University of Mumbai',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-      },
-      {
-        img: AdamLeipzig,
-        name: 'Adam Leipzig',
-        role: 'Executive Advisor',
-        texts: [
-          'CEO, Entertainment Media Partners',
-          'Former President, National Geographic Films',
-          'Professional Faculty, Berkeley Haas School of Business',
-        ],
-        link: 'https://www.linkedin.com/in/adamleipzig/',
-      },
-      {
-        img: KoheiWakamiya,
-        name: 'Kohei Wakamiya',
-        role: 'Audio AI Advisor',
-        texts: [
-          'Acoustic Design Assistant Professor',
-          'Kyushu University'
-        ],
-        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
     ],
   },
