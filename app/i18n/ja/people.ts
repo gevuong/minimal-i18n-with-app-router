@@ -1,4 +1,5 @@
 import {
+  AdamLeipzig,
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
@@ -6,6 +7,7 @@ import {
   JureLeskovec,
   KaraMeister,
   KhwajaShaik,
+  KoheiWakamiya,
   KutsunaSatoshi,
   LesAtlas,
   MadhavDatt,
@@ -172,6 +174,17 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       {
+        img: AdamLeipzig,
+        name: "آدم لايبزيغ",
+        role: "المستشار التنفيذي",
+        texts: [
+          "الرئيس التنفيذي لشركة Entertainment Media Partners",
+          "الرئيس السابق لشركة National Geographic Films",
+          "عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس"
+        ],
+        "link": "https://www.linkedin.com/in/adamleipzig/"
+      },
+      {
         img: RokSosic,
         name: 'ロック・ソシック',
         role: '人工知能アドバイザー',
@@ -254,6 +267,16 @@ const people: People = {
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       {
+        img: KoheiWakamiya,
+        name: '若宮 耕平',
+        role: '音声AI顧問',
+        texts: [
+          '音声AIアドバイザー',
+          '九州大学'
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
+      {
         img: TamerFahmy,
         name: 'タマー・ファーミー',
         role: '中東・アフリカ市場アドバイザー',
@@ -273,6 +296,17 @@ const people: People = {
           '理学修士（生化学）、ムンバイ大学',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+      },
+      {
+        img: AdamLeipzig,
+        name: 'アダム・レイプニッツ',
+        role: '規制業務アドバイザー',
+        texts: [
+          'エンターテインメントメディアパートナーズのCEO',
+          'ナショナルジオグラフィックフィルムズの元社長',
+          'バークレー・ハース経営大学院のプロフェッショナルファカルティ'
+        ],
+        link: 'https://www.linkedin.com/in/adamleipzig/',
       },
     ],
   },
